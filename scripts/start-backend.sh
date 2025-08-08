@@ -1,5 +1,6 @@
 #!/bin/bash
 echo "Starting Open Policy Backend..."
-cd backend/OpenPolicyAshBack
+cd ../backend
 source venv/bin/activate
-python manage.py run
+cd api
+uvicorn main:app --host 0.0.0.0 --port 8000 --reload

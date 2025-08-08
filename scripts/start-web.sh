@@ -1,4 +1,4 @@
 #!/bin/bash
 echo "Starting Open Policy Web Interface..."
-cd apps/open-policy-web
+cd ../web
 npm run dev
