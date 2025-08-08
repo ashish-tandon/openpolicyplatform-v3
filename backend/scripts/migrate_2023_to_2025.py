@@ -50,6 +50,8 @@ class DatabaseMigration2023To2025:
             
         except Exception as e:
             logger.error(f"Migration failed: {e}")
+            # Attempt rollback
+            self.rollback_migration()
             raise
     
     def backup_current_data(self):
@@ -384,6 +386,125 @@ class DatabaseMigration2023To2025:
                     
             except Exception as e:
                 logger.error(f"Data freshness check failed: {e}")
+    
+    def rollback_migration(self):
+        """Rollback migration in case of failure"""
+        logger.info("Starting migration rollback")
+        
+        try:
+            # Restore from backup if available
+            backup_files = [f for f in os.listdir('.') if f.startswith('backup_2023_')]
+            if backup_files:
+                latest_backup = max(backup_files)
+                logger.info(f"Restoring from backup: {latest_backup}")
+                
+                # Restore database from backup
+                os.system(f"psql -h {db_config.host} -p {db_config.port} -U {db_config.username} -d {db_config.database} < {latest_backup}")
+                
+                logger.info("Database restored from backup")
+            else:
+                logger.warning("No backup file found for rollback")
+                
+        except Exception as e:
+            logger.error(f"Rollback failed: {e}")
+            raise
+    
+    def add_progress_tracking(self):
+        """Add progress tracking to migration"""
+        logger.info("Adding progress tracking")
+        
+        with self.engine.connect() as conn:
+            # Create progress tracking table
+            progress_table = """
+            CREATE TABLE IF NOT EXISTS migration_progress (
+                id SERIAL PRIMARY KEY,
+                step_name VARCHAR(100) NOT NULL,
+                status VARCHAR(20) NOT NULL,
+                start_time TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+                end_time TIMESTAMP,
+                records_processed INTEGER DEFAULT 0,
+                error_message TEXT
+            )
+            """
+            
+            try:
+                conn.execute(text(progress_table))
+                conn.commit()
+                logger.info("Created migration progress tracking table")
+            except Exception as e:
+                logger.warning(f"Progress table creation warning: {e}")
+                conn.rollback()
+    
+    def track_progress(self, step_name, status, records_processed=0, error_message=None):
+        """Track migration progress"""
+        with self.engine.connect() as conn:
+            if status == 'started':
+                insert_sql = """
+                INSERT INTO migration_progress (step_name, status, start_time)
+                VALUES (:step_name, :status, CURRENT_TIMESTAMP)
+                """
+                conn.execute(text(insert_sql), {"step_name": step_name, "status": status})
+            else:
+                update_sql = """
+                UPDATE migration_progress 
+                SET status = :status, end_time = CURRENT_TIMESTAMP, 
+                    records_processed = :records_processed, error_message = :error_message
+                WHERE step_name = :step_name AND status = 'started'
+                ORDER BY start_time DESC LIMIT 1
+                """
+                conn.execute(text(update_sql), {
+                    "step_name": step_name, 
+                    "status": status, 
+                    "records_processed": records_processed,
+                    "error_message": error_message
+                })
+            
+            conn.commit()
+    
+    def add_data_validation(self):
+        """Add comprehensive data validation"""
+        logger.info("Adding data validation")
+        
+        with self.engine.connect() as conn:
+            # Validate bill data
+            validation_queries = [
+                """
+                SELECT COUNT(*) as invalid_bills
+                FROM bills_bill 
+                WHERE bill_number IS NULL OR title IS NULL OR jurisdiction IS NULL
+                """,
+                
+                """
+                SELECT COUNT(*) as invalid_politicians
+                FROM politicians_politician 
+                WHERE name IS NULL OR jurisdiction IS NULL
+                """,
+                
+                """
+                SELECT COUNT(*) as invalid_votes
+                FROM votes_vote 
+                WHERE bill_number IS NULL OR vote_date IS NULL
+                """,
+                
+                """
+                SELECT COUNT(*) as orphaned_votes
+                FROM votes_vote v
+                LEFT JOIN bills_bill b ON v.bill_number = b.bill_number
+                WHERE b.bill_number IS NULL
+                """
+            ]
+            
+            for query in validation_queries:
+                try:
+                    result = conn.execute(text(query))
+                    count = result.fetchone()[0]
+                    if count > 0:
+                        logger.warning(f"Data validation found {count} issues")
+                    else:
+                        logger.info("Data validation passed")
+                except Exception as e:
+                    logger.error(f"Data validation error: {e}")
+                    conn.rollback()
 
 def main():
     """Main migration function"""
