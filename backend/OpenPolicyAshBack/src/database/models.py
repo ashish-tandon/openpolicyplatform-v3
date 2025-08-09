@@ -72,33 +72,8 @@ class Jurisdiction(Base):
     id = Column(UUID(as_uuid=True), primary_key=True, default=uuid.uuid4)
     name = Column(String(255), nullable=False)
     jurisdiction_type = Column(Enum(JurisdictionType), nullable=False)
-    
-    # Handle missing columns gracefully
-    @property
-    def code(self):
-        """Get code column if it exists, otherwise return a generated one"""
-        if hasattr(self, '_code'):
-            return self._code
-        # Generate a code based on name if column doesn't exist
-        return self.name.lower().replace(' ', '_').replace(',', '').replace('.', '')
-    
-    @code.setter
-    def code(self, value):
-        """Set code value"""
-        self._code = value
-    
-    @property
-    def website(self):
-        """Get website column if it exists, otherwise return None"""
-        if hasattr(self, '_website'):
-            return self._website
-        return None
-    
-    @website.setter
-    def website(self, value):
-        """Set website value"""
-        self._website = value
-    
+    code = Column(String(50), unique=True, nullable=False)  # Now exists in database
+    website = Column(String(500))  # Now exists in database
     created_at = Column(DateTime, default=datetime.utcnow)
     updated_at = Column(DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
     
