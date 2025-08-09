@@ -1,0 +1,82 @@
+# Large SQL files
+*.sql
+!*.sql.example
+
+# Backup files
+backup_*.sql
+*_backup.sql
+
+# Database dumps
+*.dump
+*.backup
+
+# Log files
+*.log
+logs/
+
+# Environment files
+.env
+.env.local
+.env.production
+
+# Node modules
+node_modules/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.so
+
+# Virtual environments
+venv/
+env/
+.venv/
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.temp
+temp/
+tmp/
+
+# Build files
+build/
+dist/
+*.egg-info/
+
+# Coverage reports
+htmlcov/
+.coverage
+coverage.xml
+
+# Test results
+.pytest_cache/
+test-results/
+
+# Large data files
+*.csv
+*.json
+!package.json
+!package-lock.json
+!tsconfig.json
+!*.config.json
+
+# Documentation builds
+docs/_build/
+site/
+
+# Docker
+.dockerignore
+docker-compose.override.yml
