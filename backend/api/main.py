@@ -9,9 +9,13 @@ from contextlib import asynccontextmanager
 import uvicorn
 from typing import List
 
-# Temporarily use basic imports to get server running
-from .routers import policies, scrapers, admin, auth, health
-# from .routers import scraper_monitoring, data_management, dashboard
+# Import all routers
+from .routers import policies, scrapers, admin, auth, health, scraper_monitoring, data_management, dashboard
+
+# Import middleware
+from .middleware.performance import PerformanceMiddleware
+from .middleware.security import SecurityMiddleware, InputValidationMiddleware, RateLimitMiddleware
+
 from .dependencies import get_current_user
 from .config import settings
 
@@ -22,6 +26,8 @@ async def lifespan(app: FastAPI):
     print("🚀 Starting Open Policy Platform API...")
     print(f"📊 Database: {settings.database_url}")
     print(f"🔧 Environment: {settings.environment}")
+    print("🛡️ Security middleware enabled")
+    print("⚡ Performance middleware enabled")
     
     yield
     
@@ -40,7 +46,15 @@ def create_app() -> FastAPI:
         lifespan=lifespan
     )
     
-    # Add middleware
+    # Add security middleware first
+    app.add_middleware(SecurityMiddleware)
+    app.add_middleware(InputValidationMiddleware)
+    app.add_middleware(RateLimitMiddleware, requests_per_minute=100)
+    
+    # Add performance middleware
+    app.add_middleware(PerformanceMiddleware, cache_ttl=300, rate_limit_per_minute=100)
+    
+    # Add CORS middleware
     app.add_middleware(
         CORSMiddleware,
         allow_origins=settings.allowed_origins,
@@ -59,9 +73,9 @@ def create_app() -> FastAPI:
     app.include_router(auth.router, prefix="/api/v1/auth", tags=["Authentication"])
     app.include_router(policies.router, prefix="/api/v1/policies", tags=["Policies"])
     app.include_router(scrapers.router, prefix="/api/v1/scrapers", tags=["Scrapers"])
-    # app.include_router(scraper_monitoring.router, tags=["Scraper Monitoring"])
-    # app.include_router(data_management.router, tags=["Data Management"])
-    # app.include_router(dashboard.router, tags=["Dashboard"])
+    app.include_router(scraper_monitoring.router, tags=["Scraper Monitoring"])
+    app.include_router(data_management.router, tags=["Data Management"])
+    app.include_router(dashboard.router, tags=["Dashboard"])
     app.include_router(admin.router, prefix="/api/v1/admin", tags=["Admin"])
     
     @app.get("/")
@@ -71,7 +85,9 @@ def create_app() -> FastAPI:
             "message": "Open Policy Platform API",
             "version": "1.0.0",
             "status": "running",
-            "docs": "/docs" if settings.environment != "production" else None
+            "docs": "/docs" if settings.environment != "production" else None,
+            "security": "enabled",
+            "performance": "optimized"
         }
     
     @app.get("/health")
@@ -80,7 +96,9 @@ def create_app() -> FastAPI:
         return {
             "status": "healthy",
             "timestamp": "2024-08-08T00:00:00Z",
-            "version": "1.0.0"
+            "version": "1.0.0",
+            "security": "enabled",
+            "performance": "optimized"
         }
     
     return app
