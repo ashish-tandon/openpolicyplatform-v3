@@ -85,9 +85,9 @@ def create_engine_from_config(config_or_url) -> 'Engine':
 
 def get_session_factory(engine=None):
     """Get session factory"""
-    if engine:
-        return sessionmaker(autocommit=False, autoflush=False, bind=engine)
-    return SessionLocal
+    if engine is None:
+        engine = get_engine()
+    return sessionmaker(autocommit=False, autoflush=False, bind=engine)
 
 
 def get_db():

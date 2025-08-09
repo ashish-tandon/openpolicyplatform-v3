@@ -81,7 +81,7 @@ from src.database.models import (
     Base, Jurisdiction, Representative, Bill, Committee, Event, Vote,
     ScrapingRun, DataQualityIssue, JurisdictionType, RepresentativeRole
 )
-from src.database.config import get_database_url, SessionLocal
+from src.database.config import get_database_url, get_session_factory
 
 # Configure logging
 logging.basicConfig(
@@ -148,7 +148,7 @@ class ScraperTestingFramework:
         self.min_workers = min_workers
         self.max_workers = max_workers
         self.engine = None  # Will be created when needed
-        self.SessionLocal = SessionLocal
+        self.SessionLocal = get_session_factory()  # Get session factory
         self.results: List[ScraperTestResult] = []
         self.results_lock = threading.Lock()  # Thread-safe results storage
         
@@ -642,7 +642,7 @@ class ScraperTestingFramework:
         try:
             # Get database session
             engine = create_engine(self.database_url)
-            SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
+            SessionLocal = get_session_factory(engine)
             session = SessionLocal()
             
             inserted_count = 0
