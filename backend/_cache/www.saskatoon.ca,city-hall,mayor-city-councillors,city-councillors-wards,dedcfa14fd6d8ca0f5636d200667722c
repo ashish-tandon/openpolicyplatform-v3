@@ -1,24 +1,24 @@
 status: 200
 encoding: UTF-8
-Content-Length: 57203
 Content-Type: text/html; charset=UTF-8
-Date: Sat, 09 Aug 2025 00:03:23 GMT
+Date: Sat, 09 Aug 2025 04:13:19 GMT
 Accept-Ranges: bytes
-Age: 18
+Age: 0
 Cache-Control: max-age=31536000, public
 Content-Encoding: gzip
 Content-Language: en
-ETag: W/"1754697800"
-Expires: Sun, 09 Aug 2026 00:03:20 GMT
-Last-Modified: Sat, 09 Aug 2025 00:03:20 GMT
-Set-Cookie: ARRAffinity=a6ad9dde632331165f724def356c50b9bc3d16110b54b656f79f6f68a509d8e1;Path=/;HttpOnly;Secure;Domain=www.saskatoon.ca, ARRAffinitySameSite=a6ad9dde632331165f724def356c50b9bc3d16110b54b656f79f6f68a509d8e1;Path=/;HttpOnly;SameSite=None;Secure;Domain=www.saskatoon.ca
+ETag: W/"1754712796"
+Expires: Sun, 09 Aug 2026 04:13:16 GMT
+Last-Modified: Sat, 09 Aug 2025 04:13:16 GMT
+Set-Cookie: ARRAffinity=fe769e47681fa79fbe6041e4c425ae5085859241fe86445769d2722357b9ff87;Path=/;HttpOnly;Secure;Domain=www.saskatoon.ca, ARRAffinitySameSite=fe769e47681fa79fbe6041e4c425ae5085859241fe86445769d2722357b9ff87;Path=/;HttpOnly;SameSite=None;Secure;Domain=www.saskatoon.ca
+Transfer-Encoding: chunked
 Vary: Cookie, Accept-Encoding
 Strict-Transport-Security: max-age=31536000; includeSubDomains
 X-Content-Type-Options: nosniff
 X-Frame-Options: SAMEORIGIN
 X-XSS-Protection: 1; mode=block
-X-Varnish: 4850007 2460589
-X-Varnish-Cache: HIT
+X-Varnish: 23116977
+X-Varnish-Cache: MISS
 
 <!DOCTYPE html>
 <html  lang="en" dir="ltr" prefix="content: http://purl.org/rss/1.0/modules/content/  dc: http://purl.org/dc/terms/  foaf: http://xmlns.com/foaf/0.1/  og: http://ogp.me/ns#  rdfs: http://www.w3.org/2000/01/rdf-schema#  schema: http://schema.org/  sioc: http://rdfs.org/sioc/ns#  sioct: http://rdfs.org/sioc/types#  skos: http://www.w3.org/2004/02/skos/core#  xsd: http://www.w3.org/2001/XMLSchema# ">

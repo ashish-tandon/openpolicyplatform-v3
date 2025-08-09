@@ -1,6 +1,6 @@
 status: 200
 encoding: UTF-8
-Date: Sat, 09 Aug 2025 01:51:04 GMT
+Date: Sat, 09 Aug 2025 05:45:09 GMT
 Content-Type: text/html; charset=UTF-8
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -16,14 +16,14 @@ x-xss-protection: 1
 strict-transport-security: max-age=31536000
 x-drupal-cache: UNCACHEABLE (response policy)
 vary: Accept-Encoding
-x-request-id: v-4f1b4634-74c3-11f0-8537-2f8d2c92b8ba
+x-request-id: v-0223fbde-74e4-11f0-8b74-6fd112af550c
 x-ah-environment: prod
 Age: 0
 via: varnish
 x-cache: MISS
 cf-cache-status: DYNAMIC
 Server: cloudflare
-CF-RAY: 96c39b33c84aaaad-YYZ
+CF-RAY: 96c4f2148fb539c5-YYZ
 
 <!DOCTYPE html>
 <html lang="en" dir="ltr" prefix="content: http://purl.org/rss/1.0/modules/content/  dc: http://purl.org/dc/terms/  foaf: http://xmlns.com/foaf/0.1/  og: http://ogp.me/ns#  rdfs: http://www.w3.org/2000/01/rdf-schema#  schema: http://schema.org/  sioc: http://rdfs.org/sioc/ns#  sioct: http://rdfs.org/sioc/types#  skos: http://www.w3.org/2004/02/skos/core#  xsd: http://www.w3.org/2001/XMLSchema# ">
@@ -1022,7 +1022,7 @@ CF-RAY: 96c39b33c84aaaad-YYZ
       </div>
   <div class="contact__details">
           <div class="contact__detail contact__detail--email">
-        <a href="/cdn-cgi/l/email-protection#7a091b0c541e121b16130d1b163a180f08141b180354191b" rel="noopener" target="_blank"><span class="__cf_email__" data-cfemail="c4b7a5b2eaa0aca5a8adb3a5a884a6b1b6aaa5a6bdeaa7a5">[email&#160;protected]</span></a>
+        <a href="/cdn-cgi/l/email-protection#413220376f2529202d2836202d012334332f2023386f2220" rel="noopener" target="_blank"><span class="__cf_email__" data-cfemail="c9baa8bfe7ada1a8a5a0bea8a589abbcbba7a8abb0e7aaa8">[email&#160;protected]</span></a>
       </div>
               <div class="contact__detail contact__detail--phone">
           <div class="paragraph paragraph--type--phone-number-and-description paragraph--view-mode--default">
@@ -1085,12 +1085,12 @@ CF-RAY: 96c39b33c84aaaad-YYZ
     
   <div class="accordion__item-header">
     <h4 class="accordion__item-title">
-      <button class="accordion__item-toggle accordion__expand-option" role="tab" id="accordion-tab-2103917015" aria-controls="accordion-tabpanel-2103917015"  aria-expanded="false" aria-selected="false">
+      <button class="accordion__item-toggle accordion__expand-option" role="tab" id="accordion-tab-865142067" aria-controls="accordion-tabpanel-865142067"  aria-expanded="false" aria-selected="false">
         Community involvement
       </button>
     </h4>
   </div>
-  <div class="accordion__item-content wysiwyg" role="tabpanel" id="accordion-tabpanel-2103917015" aria-labeledby="accordion-tab-2103917015">
+  <div class="accordion__item-content wysiwyg" role="tabpanel" id="accordion-tabpanel-865142067" aria-labeledby="accordion-tab-865142067">
     <ul>
 	<li data-gc-list-depth="1" data-gc-list-style="bullet">Volunteered for several minor sports organizations including serving as president of the <a data-gc-link="https://www.burnabyminor.com/" href="https://www.burnabyminor.com/" rel="noopener noreferrer" target="_blank">Burnaby Minor Hockey Association</a> and in recognition of my role, was made a Life Member in 1997</li>
 	<li data-gc-list-depth="1" data-gc-list-style="bullet">Volunteered as founding chair of the <a data-gc-link="http://www.burnabysportshalloffame.ca/" href="http://www.burnabysportshalloffame.ca/" rel="noopener noreferrer" target="_blank">Burnaby Sports Hall of Fame</a> Committee and worked closely with the City in designing the Bill Copeland Sports Centre</li>
@@ -1108,12 +1108,12 @@ CF-RAY: 96c39b33c84aaaad-YYZ
     
   <div class="accordion__item-header">
     <h4 class="accordion__item-title">
-      <button class="accordion__item-toggle accordion__expand-option" role="tab" id="accordion-tab-1469666500" aria-controls="accordion-tabpanel-1469666500"  aria-expanded="false" aria-selected="false">
+      <button class="accordion__item-toggle accordion__expand-option" role="tab" id="accordion-tab-998142505" aria-controls="accordion-tabpanel-998142505"  aria-expanded="false" aria-selected="false">
         Memberships and committee appointments 
       </button>
     </h4>
   </div>
-  <div class="accordion__item-content wysiwyg" role="tabpanel" id="accordion-tabpanel-1469666500" aria-labeledby="accordion-tab-1469666500">
+  <div class="accordion__item-content wysiwyg" role="tabpanel" id="accordion-tabpanel-998142505" aria-labeledby="accordion-tab-998142505">
     <ul>
 	<li>Chair, <a data-entity-substitution="canonical" data-entity-type="node" data-entity-uuid="54e7dadb-b52b-4338-816a-15d086847f5e" href="/our-city/meetings-and-public-hearings/advisory-bodies-and-boards/audit-committee" title="Audit Committee">Audit Committee</a></li>
 	<li>Chair,&nbsp;<a data-entity-substitution="canonical" data-entity-type="node" data-entity-uuid="96168e93-e1e4-4acf-b780-449faf0a8496" href="/our-city/meetings-and-public-hearings/advisory-bodies-and-boards/executive-committee-of-council" title="Executive Committee of Council">Executive Committee of Council</a></li>
@@ -1134,12 +1134,12 @@ CF-RAY: 96c39b33c84aaaad-YYZ
     
   <div class="accordion__item-header">
     <h4 class="accordion__item-title">
-      <button class="accordion__item-toggle accordion__expand-option" role="tab" id="accordion-tab-976255602" aria-controls="accordion-tabpanel-976255602"  aria-expanded="false" aria-selected="false">
+      <button class="accordion__item-toggle accordion__expand-option" role="tab" id="accordion-tab-1761781356" aria-controls="accordion-tabpanel-1761781356"  aria-expanded="false" aria-selected="false">
         Recognitions
       </button>
     </h4>
   </div>
-  <div class="accordion__item-content wysiwyg" role="tabpanel" id="accordion-tabpanel-976255602" aria-labeledby="accordion-tab-976255602">
+  <div class="accordion__item-content wysiwyg" role="tabpanel" id="accordion-tabpanel-1761781356" aria-labeledby="accordion-tab-1761781356">
     <ul>
 	<li data-gc-list-depth="1" data-gc-list-style="bullet">Recognized for services to the community by the Government of Canada, the University of British Columbia, the Fiji Association of British Columbia, the Goel Family Charitable Foundation and the Chetna Association of Canada.</li>
 </ul>
@@ -1253,8 +1253,8 @@ CF-RAY: 96c39b33c84aaaad-YYZ
 <input data-drupal-selector="edit-title" type="hidden" name="title" value="Councillor Sav Dhaliwal" />
 <input data-drupal-selector="edit-path" type="hidden" name="path" value="/node/1126" />
 <input data-drupal-selector="edit-alias" type="hidden" name="alias" value="/our-city/mayor-and-council/councillor-sav-dhaliwal" />
-<input data-drupal-selector="edit-honeypot-time" type="hidden" name="honeypot_time" value="ZvpvPBLF2RKK7xIBEFA21UWqxoXPeL_j8eHIqZc6nWs" />
-<input autocomplete="off" data-drupal-selector="form-c9asu6uv3xwprf3be-1pav9gnf-ao7dugfgirji5o9c" type="hidden" name="form_build_id" value="form-C9ASU6uV3XWPrF3BE-1pav9gNF-Ao7dUGFgIRJi5o9c" />
+<input data-drupal-selector="edit-honeypot-time" type="hidden" name="honeypot_time" value="Eht7n7bsfezkyji6tRI9SznyqocMKyo3Jv9lM3d6nJE" />
+<input autocomplete="off" data-drupal-selector="form-7tqb9vkeazigfdg7c6bfpjpr5zq9iigrrz-6zjr-xlw" type="hidden" name="form_build_id" value="form-7tqB9VKEazigfDg7c6bfpJPR5Zq9iIGRrz-6zJr_XLw" />
 <input data-drupal-selector="edit-was-this-useful-form" type="hidden" name="form_id" value="was_this_useful_form" />
 <input data-drupal-selector="edit-antibot-key" type="hidden" name="antibot_key" value="" />
 <div class="url_homepage-textfield js-form-wrapper form-wrapper" style="display: none !important;"><div class="js-form-item form-item js-form-type-textfield form-type-textfield js-form-item-url-homepage form-item-url-homepage">

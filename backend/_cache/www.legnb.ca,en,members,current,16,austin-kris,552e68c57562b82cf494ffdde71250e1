@@ -1,6 +1,6 @@
 status: 200
 encoding: utf-8
-Date: Sat, 09 Aug 2025 01:50:28 GMT
+Date: Sat, 09 Aug 2025 05:44:39 GMT
 Content-Type: text/html; charset=utf-8
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -16,7 +16,7 @@ cross-origin-resource-policy: cross-origin
 permissions-policy: accelerometer=(), autoplay=(), camera=(), encrypted-media=(), fullscreen=*, geolocation=(), gyroscope=(), magnetometer=(), microphone=(), midi=(), payment=(), picture-in-picture=(), sync-xhr=(), usb=()
 cf-cache-status: DYNAMIC
 Server: cloudflare
-CF-RAY: 96c39a53cdd3ab3a-YYZ
+CF-RAY: 96c4f15c58b8ebbc-YYZ
 
 <!DOCTYPE html>
 <html translate="no" lang="en" dir="ltr">
@@ -294,7 +294,7 @@ CF-RAY: 96c39a53cdd3ab3a-YYZ
                         <img src="/content\members\portraits\61-1\Kris_Austin_lg.jpg" />
                 </div>
                     <div class="member-details-contacts">
-                            <span><a href="/cdn-cgi/l/email-protection#a5eed7ccd68be4d0d6d1cccbe5c2cbc78bc6c4"><span class="__cf_email__" data-cfemail="c08bb2a9b3ee81b5b3b4a9ae80a7aea2eea3a1">[email&#160;protected]</span></a></span>
+                            <span><a href="/cdn-cgi/l/email-protection#4d063f243e630c383e3924230d2a232f632e2c"><span class="__cf_email__" data-cfemail="84cff6edf7aac5f1f7f0edeac4e3eae6aae7e5">[email&#160;protected]</span></a></span>
                     </div>
                 <aside class="p-2">
                     <span class="aside-header">

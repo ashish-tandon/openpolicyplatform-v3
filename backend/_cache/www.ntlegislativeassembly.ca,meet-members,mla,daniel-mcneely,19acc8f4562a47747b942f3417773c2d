@@ -13,14 +13,14 @@ X-Drupal-Cache: HIT
 X-Drupal-Dynamic-Cache: MISS
 X-Frame-Options: SAMEORIGIN
 X-Generator: Drupal 10 (https://www.drupal.org)
-X-Pantheon-Styx-Hostname: styx-fe1fe2-g-665fc5f84f-xfzbr
-X-Styx-Req-Id: 39bc0d78-74c3-11f0-b1f7-7235aa0b38c1
+X-Pantheon-Styx-Hostname: styx-fe1fe2-h-75998989c4-jlzhm
+X-Styx-Req-Id: f0926ce2-74e3-11f0-94d3-724f1662072d
 X-Xss-Protection: 0
-Date: Sat, 09 Aug 2025 01:50:28 GMT
+Date: Sat, 09 Aug 2025 05:44:39 GMT
 X-Served-By: cache-yyz4566-YYZ
 X-Cache: MISS
 X-Cache-Hits: 0
-X-Timer: S1754704228.447717,VS0,VE48
+X-Timer: S1754718279.095485,VS0,VE37
 Vary: Accept-Encoding, Cookie
 Age: 0
 Accept-Ranges: bytes
@@ -1302,7 +1302,7 @@ transfer-encoding: chunked
 <div class="views-element-container block block-views block-views-block--hansard-speech-list-by-member-block" id="block-nc-theme-views-block-hansard-speech-list-by-member-block">
   
     
-      <div region="content"><div class="view view-hansard-speech view-id-hansard_speech view-display-id-list_by_member_block js-view-dom-id-c62ffd9bd443423926e1bbd78fbec5343b02840d84faafec9e8051aaa60db22a">
+      <div region="content"><div class="view view-hansard-speech view-id-hansard_speech view-display-id-list_by_member_block js-view-dom-id-c38b2f9430793eba06944651668dc12a8f53dd0348e99123d4ef17cdb0497f47">
   
     
       <div class="view-header">
@@ -1310,7 +1310,11 @@ transfer-encoding: chunked
     </div>
       
       <div class="view-content">
-          <div class="views-row"><div class="views-field views-field-field-topic"><div class="field-content"><a href='/node/5001?keyword=Question%20751-20%281%29%3A%20Senior%20Envoy%20to%20the%20Government%20of%20Canada'>Question 751-20(1): Senior Envoy to the Government of Canada</a></div></div><div class="views-field views-field-title"><span class="field-content">Debates of <time datetime="2025-05-29T12:00:00Z" class="datetime">May 29, 2025</time>
+          <div class="views-row"><div class="views-field views-field-field-topic"><div class="field-content"><a href='/node/5001?keyword=Bill%2029%3A%20First%20Responders%20Workers%26amp%3B%23039%3B%20Compensation%20Amendment%20Act.%20Carried'>Bill 29: First Responders Workers&amp;#039; Compensation Amendment Act. Carried</a></div></div><div class="views-field views-field-title"><span class="field-content">Debates of <time datetime="2025-05-29T12:00:00Z" class="datetime">May 29, 2025</time>
+, 20th Assembly, 1st Session (day 62)</span></div><div class="views-field views-field-field-body"><div class="field-content">  <p>Thank you, Mr. Speaker. I, too, will be supporting this bill, and I can't say enough or any more that hasn't been said already by previous speakers other than to say thank you to the first responders, and we've had discussions earlier, and this will be applicable to the smaller communities and the volunteers that we have out there. They face many challenges, and I've seen that firsthand as well. And I want to say a huge thank you to the gallery crowd. Mahsi.</p>
+
+</div></div></div>
+    <div class="views-row"><div class="views-field views-field-field-topic"><div class="field-content"><a href='/node/5001?keyword=Question%20751-20%281%29%3A%20Senior%20Envoy%20to%20the%20Government%20of%20Canada'>Question 751-20(1): Senior Envoy to the Government of Canada</a></div></div><div class="views-field views-field-title"><span class="field-content">Debates of <time datetime="2025-05-29T12:00:00Z" class="datetime">May 29, 2025</time>
 , 20th Assembly, 1st Session (day 62)</span></div><div class="views-field views-field-field-body"><div class="field-content">  <p>Thank you, Mr. Speaker. And thanks to the Premier for that reply. Yes, I have talked to our Indigenous governments in my area. I appreciate that we are including Indigenous governments in this important work, Mr. Speaker. I know this envoy position is relatively new, but could the Premier advise the House of any results from this new position? Thank you.</p>
 
 </div></div></div>
@@ -1330,8 +1334,8 @@ transfer-encoding: chunked
 , 20th Assembly, 1st Session (day 62)</span></div><div class="views-field views-field-field-body"><div class="field-content">  <p>Thank you, Mr. Speaker. Education promotion, Mr. Speaker. Labour trades, professions, the shortages continue in all sectors is a huge concern clear across our Canadian country. However, closer to home, the geography, costs of living, the isolated inventory greatly adds to attracting staff in neither the private nor public services sector. Mr. Speaker, trade shortages, we are at the pivotal point drafting and essential planning in addressing the situation as fundamental and critical to our approach and the remaining term of this Assembly.</p><p>Yes, Mr. Speaker, we have tools in our toolbox. Examples...</p>
 
 </div></div></div>
-    <div class="views-row"><div class="views-field views-field-field-topic"><div class="field-content"><a href='/node/5001?keyword=Bill%2029%3A%20First%20Responders%20Workers%26amp%3B%23039%3B%20Compensation%20Amendment%20Act.%20Carried'>Bill 29: First Responders Workers&amp;#039; Compensation Amendment Act. Carried</a></div></div><div class="views-field views-field-title"><span class="field-content">Debates of <time datetime="2025-05-29T12:00:00Z" class="datetime">May 29, 2025</time>
-, 20th Assembly, 1st Session (day 62)</span></div><div class="views-field views-field-field-body"><div class="field-content">  <p>Thank you, Mr. Speaker. I, too, will be supporting this bill, and I can't say enough or any more that hasn't been said already by previous speakers other than to say thank you to the first responders, and we've had discussions earlier, and this will be applicable to the smaller communities and the volunteers that we have out there. They face many challenges, and I've seen that firsthand as well. And I want to say a huge thank you to the gallery crowd. Mahsi.</p>
+    <div class="views-row"><div class="views-field views-field-field-topic"><div class="field-content"><a href='/node/5000?keyword=Member%E2%80%99s%20Statement%20675-20%281%29%3A%20Mackenzie%20Valley%20Highway'>Member’s Statement 675-20(1): Mackenzie Valley Highway</a></div></div><div class="views-field views-field-title"><span class="field-content">Debates of <time datetime="2025-05-28T12:00:00Z" class="datetime">May 28, 2025</time>
+, 20th Assembly, 1st Session (day 61)</span></div><div class="views-field views-field-field-body"><div class="field-content">  <p>Thank you, Mr. Speaker. Low water solutions. Mr. Speaker, there is no better time than the present for us to work together with the federal government to realize the dream that is fully completing the Mackenzie Valley Highway, or MVH. Mr. Speaker, becoming a reality, the MVH campaign plan will involve the federal engagements with our Member of Parliament, Cabinet Minister, GNWT envoy to Ottawa, and Sahtu Secretariat Incorporated MOU arrangement. This next step is overwhelming and, more importantly, extremely encouraging.</p><p>Mr. Speaker, we are in the infancy of a new federal Liberal government...</p>
 
 </div></div></div>
     <div class="views-row"><div class="views-field views-field-field-topic"><div class="field-content"><a href='/node/5000?keyword=Question%20741-20%281%29%3A%20Mackenzie%20Valley%20Highway%20Update'>Question 741-20(1): Mackenzie Valley Highway Update</a></div></div><div class="views-field views-field-title"><span class="field-content">Debates of <time datetime="2025-05-28T12:00:00Z" class="datetime">May 28, 2025</time>
@@ -1344,10 +1348,6 @@ transfer-encoding: chunked
 </div></div></div>
     <div class="views-row"><div class="views-field views-field-field-topic"><div class="field-content"><a href='/node/5000?keyword=Question%20741-20%281%29%3A%20Mackenzie%20Valley%20Highway%20Update'>Question 741-20(1): Mackenzie Valley Highway Update</a></div></div><div class="views-field views-field-title"><span class="field-content">Debates of <time datetime="2025-05-28T12:00:00Z" class="datetime">May 28, 2025</time>
 , 20th Assembly, 1st Session (day 61)</span></div><div class="views-field views-field-field-body"><div class="field-content">  <p>Thank you, Mr. Speaker, and thanks to the Minister for that information update. I can see our -- my constituents are getting very happy. I see the smiles.</p><p>My next question is will the GNWT work with the communities of the Sahtu so that they are ready for this project? Mahsi.</p>
-
-</div></div></div>
-    <div class="views-row"><div class="views-field views-field-field-topic"><div class="field-content"><a href='/node/5000?keyword=Member%E2%80%99s%20Statement%20675-20%281%29%3A%20Mackenzie%20Valley%20Highway'>Member’s Statement 675-20(1): Mackenzie Valley Highway</a></div></div><div class="views-field views-field-title"><span class="field-content">Debates of <time datetime="2025-05-28T12:00:00Z" class="datetime">May 28, 2025</time>
-, 20th Assembly, 1st Session (day 61)</span></div><div class="views-field views-field-field-body"><div class="field-content">  <p>Thank you, Mr. Speaker. Low water solutions. Mr. Speaker, there is no better time than the present for us to work together with the federal government to realize the dream that is fully completing the Mackenzie Valley Highway, or MVH. Mr. Speaker, becoming a reality, the MVH campaign plan will involve the federal engagements with our Member of Parliament, Cabinet Minister, GNWT envoy to Ottawa, and Sahtu Secretariat Incorporated MOU arrangement. This next step is overwhelming and, more importantly, extremely encouraging.</p><p>Mr. Speaker, we are in the infancy of a new federal Liberal government...</p>
 
 </div></div></div>
 
@@ -1471,7 +1471,7 @@ transfer-encoding: chunked
   
       <h2>Members</h2>
     
-      <div region="sidebar_first"><div class="view view-member view-id-member view-display-id-menu_block js-view-dom-id-b11e64aa861f507c65971bf941a67fd4823e9cf73db3cb3abb4e176a10c37d86">
+      <div region="sidebar_first"><div class="view view-member view-id-member view-display-id-menu_block js-view-dom-id-123dd40ee9a2220f746aba4552e78e1ff221389edd3a969f8f6ab5be77153a0c">
   
     
       

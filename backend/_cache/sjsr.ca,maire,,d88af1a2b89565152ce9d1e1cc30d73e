@@ -1,12 +1,12 @@
 status: 200
 encoding: UTF-8
 Server: nginx
-Date: Sat, 09 Aug 2025 01:51:14 GMT
+Date: Sat, 09 Aug 2025 05:45:16 GMT
 Content-Type: text/html; charset=UTF-8
 Transfer-Encoding: chunked
 Connection: keep-alive
 Vary: Accept-Encoding, Accept-Encoding,User-Agent
-Last-Modified: Fri, 08 Aug 2025 16:07:49 GMT
+Last-Modified: Sat, 09 Aug 2025 04:03:59 GMT
 X-Nginx-Cache-Status: HIT
 x-cache-enabled: true
 Content-Encoding: gzip
@@ -160,7 +160,7 @@ jQuery(document).ready(function ($) {
                     type: 'POST',
                     data: {
                         action: 'load_quick_search_items',
-                        nonce: 'fbfb42b51a'
+                        nonce: '0e2ca69162'
                     },
                     success: function (response) {
                         // Insérer la réponse et retirer le loader
@@ -912,7 +912,7 @@ Comité d’acquisition d’œuvres d’art</p>
 <script data-minify="1" src="https://sjsr.ca/wp-content/cache/min/1/wp-content/plugins/matricule/js/matricule.js?ver=1754668304" id="matricule-js-js"></script>
 <script src="https://sjsr.ca/wp-content/plugins/wp-media-folder/assets/js/display-gallery/jquery.magnific-popup.min.js?ver=0.9.9" id="wpmf-gallery-popup-js"></script>
 <script id="ajax_searchwp_js-js-extra">
-var ajax_searchwp_object = {"ajax_url":"https:\/\/sjsr.ca\/wp-admin\/admin-ajax.php","no_results_text":"No results found","ajax_nonce":"a217c4409b"};
+var ajax_searchwp_object = {"ajax_url":"https:\/\/sjsr.ca\/wp-admin\/admin-ajax.php","no_results_text":"No results found","ajax_nonce":"6288937407"};
 </script>
 <script data-minify="1" src="https://sjsr.ca/wp-content/cache/min/1/wp-content/plugins/ajax-searchwp/assets/js/script.js?ver=1754668304" id="ajax_searchwp_js-js"></script>
 <script data-minify="1" src="https://sjsr.ca/wp-content/cache/min/1/wp-content/plugins/page-links-to/dist/new-tab.js?ver=1754668304" id="page-links-to-js"></script>
@@ -931,7 +931,7 @@ var wpald = {"url":"https:\/\/sjsr.ca\/wp-json\/wp\/v2\/media","type":"jquery","
 </script>
 <script src="https://sjsr.ca/wp-content/plugins/wp-accessibility/js/longdesc.min.js?ver=1.7.0" id="wpa.longdesc-js" defer data-wp-strategy="defer"></script>
 <script id="wp-accessibility-js-extra">
-var wpa = {"skiplinks":{"enabled":true,"output":""},"target":"","tabindex":"1","underline":{"enabled":false,"target":"a"},"dir":"ltr","lang":"fr-FR","titles":"1","labels":"1","wpalabels":{"s":"Recherche","author":"Nom","email":"E-mail","url":"Site web","comment":"Commentaire"},"current":"","errors":"","tracking":"1","ajaxurl":"https:\/\/sjsr.ca\/wp-admin\/admin-ajax.php","security":"c652e9a14b","action":"wpa_stats_action","url":"https:\/\/sjsr.ca\/mairesse\/","post_id":"9178","continue":""};
+var wpa = {"skiplinks":{"enabled":true,"output":""},"target":"","tabindex":"1","underline":{"enabled":false,"target":"a"},"dir":"ltr","lang":"fr-FR","titles":"1","labels":"1","wpalabels":{"s":"Recherche","author":"Nom","email":"E-mail","url":"Site web","comment":"Commentaire"},"current":"","errors":"","tracking":"1","ajaxurl":"https:\/\/sjsr.ca\/wp-admin\/admin-ajax.php","security":"c51bc71e3a","action":"wpa_stats_action","url":"https:\/\/sjsr.ca\/mairesse\/","post_id":"9178","continue":""};
 </script>
 <script src="https://sjsr.ca/wp-content/plugins/wp-accessibility/js/wp-accessibility.min.js?ver=1.7.0" id="wp-accessibility-js" defer data-wp-strategy="defer"></script>
 <script src="https://sjsr.ca/wp-content/plugins/bb-plugin/js/jquery.ba-throttle-debounce.min.js?ver=2.9.2.1" id="jquery-throttle-js"></script>
@@ -945,4 +945,4 @@ var themeopts = {"medium_breakpoint":"992","mobile_breakpoint":"768","lightbox":
 <script></script></body>
 </html>
 
-<!-- This website is like a Rocket, isn't it? Performance optimized by WP Rocket. Learn more: https://wp-rocket.me - Debug: cached@1754669269 -->
+<!-- This website is like a Rocket, isn't it? Performance optimized by WP Rocket. Learn more: https://wp-rocket.me - Debug: cached@1754712239 -->

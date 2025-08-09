@@ -1,6 +1,6 @@
 status: 200
 encoding: utf-8
-Date: Sat, 09 Aug 2025 01:51:05 GMT
+Date: Sat, 09 Aug 2025 05:45:10 GMT
 Content-Type: text/html; charset=utf-8
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -14,7 +14,7 @@ Content-Encoding: gzip
 Vary: Accept-Encoding
 X-Frame-Options: SAMEORIGIN
 Referrer-Policy: unsafe-url
-Last-Modified: Sat, 09 Aug 2025 01:51:03 GMT
+Last-Modified: Sat, 09 Aug 2025 05:45:07 GMT
 X-Content-Type-Options: nosniff
 X-XSS-Protection: 1; mode=block
 Server: Sucuri/Cloudproxy
@@ -229,13 +229,13 @@ ga('send', 'pageview');
 
 <h3><img src="/images/Election_2020/Council/District_3_Esmond_Marshall.jpg" alt="District 3" width="150" height="225" class="image_right_border" title="District 3" />Esmond "Blue" Marshall</h3>
 <p>127 Beach Rd.Eskasoni, NS B1W 1A8</p>
-<p><span id="cloak690bc23e2b9f2cc0f76313f6384bf194">This email address is being protected from spambots. You need JavaScript enabled to view it.</span><script type='text/javascript'>
-				document.getElementById('cloak690bc23e2b9f2cc0f76313f6384bf194').innerHTML = '';
+<p><span id="cloakd9a1b82d3072f8ec6fedca102ef66e42">This email address is being protected from spambots. You need JavaScript enabled to view it.</span><script type='text/javascript'>
+				document.getElementById('cloakd9a1b82d3072f8ec6fedca102ef66e42').innerHTML = '';
 				var prefix = '&#109;a' + 'i&#108;' + '&#116;o';
 				var path = 'hr' + 'ef' + '=';
-				var addy690bc23e2b9f2cc0f76313f6384bf194 = '&#101;pm&#97;rsh&#97;ll' + '&#64;';
-				addy690bc23e2b9f2cc0f76313f6384bf194 = addy690bc23e2b9f2cc0f76313f6384bf194 + 'cbrm' + '&#46;' + 'ns' + '&#46;' + 'c&#97;';
-				var addy_text690bc23e2b9f2cc0f76313f6384bf194 = '&#101;pm&#97;rsh&#97;ll' + '&#64;' + 'cbrm' + '&#46;' + 'ns' + '&#46;' + 'c&#97;';document.getElementById('cloak690bc23e2b9f2cc0f76313f6384bf194').innerHTML += '<a ' + path + '\'' + prefix + ':' + addy690bc23e2b9f2cc0f76313f6384bf194 + '\'>'+addy_text690bc23e2b9f2cc0f76313f6384bf194+'<\/a>';
+				var addyd9a1b82d3072f8ec6fedca102ef66e42 = '&#101;pm&#97;rsh&#97;ll' + '&#64;';
+				addyd9a1b82d3072f8ec6fedca102ef66e42 = addyd9a1b82d3072f8ec6fedca102ef66e42 + 'cbrm' + '&#46;' + 'ns' + '&#46;' + 'c&#97;';
+				var addy_textd9a1b82d3072f8ec6fedca102ef66e42 = '&#101;pm&#97;rsh&#97;ll' + '&#64;' + 'cbrm' + '&#46;' + 'ns' + '&#46;' + 'c&#97;';document.getElementById('cloakd9a1b82d3072f8ec6fedca102ef66e42').innerHTML += '<a ' + path + '\'' + prefix + ':' + addyd9a1b82d3072f8ec6fedca102ef66e42 + '\'>'+addy_textd9a1b82d3072f8ec6fedca102ef66e42+'<\/a>';
 		</script>&nbsp;</p>
 <p>Cell: (902) 574-1869</p>
 <p>The populations referenced in this description is based on the 2011 census.</p>

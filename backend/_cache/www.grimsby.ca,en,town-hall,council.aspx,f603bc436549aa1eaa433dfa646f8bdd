@@ -1,12 +1,12 @@
 status: 200
 encoding: utf-8
-Date: Sat, 09 Aug 2025 01:51:12 GMT
+Date: Sat, 09 Aug 2025 05:45:14 GMT
 Content-Type: text/html; charset=utf-8
 Transfer-Encoding: chunked
 Connection: keep-alive
 Content-Encoding: gzip
 Vary: Accept-Encoding
-x-azure-ref: 20250809T015112Z-185659d9b78k7kszhC1YTO8mh400000003ag00000000dnnq
+x-azure-ref: 20250809T054514Z-185659d9b78wnpxnhC1YTOpmaw0000000d5g000000003pzd
 X-Cache: CONFIG_NOCACHE
 Strict-Transport-Security: max-age=31536000; includeSubDomains
 X-Frame-Options: SAMEORIGIN
@@ -758,11 +758,11 @@ var notificationExDays = 365;        </script>
 
                         <div class="repeatable accordion tab-basic " data-os-animation="fadeIn" data-os-animation-delay="0s" data-os-animation-duration="1.2s">
                         <p class="tab ">
-                            <a class="nav-link nav-button-link collapsed" data-toggle="collapse" href="#collapse_d20a401d-8299-4101-82ff-cca56fe0e17f_1" aria-controls="collapse_d20a401d-8299-4101-82ff-cca56fe0e17f_1" aria-expanded="false" role="button">
+                            <a class="nav-link nav-button-link collapsed" data-toggle="collapse" href="#collapse_2ef7a51b-cb82-465c-867c-6ee8dd741158_1" aria-controls="collapse_2ef7a51b-cb82-465c-867c-6ee8dd741158_1" aria-expanded="false" role="button">
                                 Ward 1
                             </a>
                         </p>
-                        <div id="collapse_d20a401d-8299-4101-82ff-cca56fe0e17f_1" class="info repeatable-content collapse  ">
+                        <div id="collapse_2ef7a51b-cb82-465c-867c-6ee8dd741158_1" class="info repeatable-content collapse  ">
                             <div class="text"><p><a rel="noopener noreferrer" href="/media/4jsnk5vv/ward1.pdf" target="_blank" title="Open new window to view Ward 1 Map" class="defaultButton-Green" aria-label="Ward 1 Map opens in new window">Ward 1 Map</a></p>
 <h5><strong><img style="width: 200px;" src="/media/sdie4jze/_7500304.jpg" alt="A picture of Councillor Delight Davoli." title="Councillor Delight Davoli (2022-2026 Council Term)" align="text-top"></strong></h5>
 <h5><strong>Councillor Delight Davoli</strong></h5>
@@ -777,11 +777,11 @@ var notificationExDays = 365;        </script>
 <p>Email Form: <a href="mailto:rfreake@grimsby.ca" title="Send an email to Reg Freake">Email Councillor Freake</a></p></div>
                         </div>
                         <p class="tab ">
-                            <a class="nav-link nav-button-link collapsed" data-toggle="collapse" href="#collapse_d20a401d-8299-4101-82ff-cca56fe0e17f_2" aria-controls="collapse_d20a401d-8299-4101-82ff-cca56fe0e17f_2" aria-expanded="false" role="button">
+                            <a class="nav-link nav-button-link collapsed" data-toggle="collapse" href="#collapse_2ef7a51b-cb82-465c-867c-6ee8dd741158_2" aria-controls="collapse_2ef7a51b-cb82-465c-867c-6ee8dd741158_2" aria-expanded="false" role="button">
                                 Ward 2
                             </a>
                         </p>
-                        <div id="collapse_d20a401d-8299-4101-82ff-cca56fe0e17f_2" class="info repeatable-content collapse  ">
+                        <div id="collapse_2ef7a51b-cb82-465c-867c-6ee8dd741158_2" class="info repeatable-content collapse  ">
                             <div class="text"><p><a rel="noopener" href="/media/cdblwca4/ward2.pdf" target="_blank" title="Open new window to view Ward 2 Map" class="defaultButton-Green" aria-label="Ward 2 Map opens in new window">Ward 2 Map</a></p>
 <h5><img style="width: 200px;" src="/media/spib4bmf/_7500307.jpg" alt="A picture of Councillor Don Howe." title="Councillor Don Howe (2022-2026 Council Term)" align="text-top"></h5>
 <h5>Councillor Don Howe</h5>
@@ -796,11 +796,11 @@ var notificationExDays = 365;        </script>
 <p>Email Form: <a href="mailto:lvardy@grimsby.ca" title="Email Lianne Vardy">Email Councillor Vardy</a></p></div>
                         </div>
                         <p class="tab ">
-                            <a class="nav-link nav-button-link collapsed" data-toggle="collapse" href="#collapse_d20a401d-8299-4101-82ff-cca56fe0e17f_3" aria-controls="collapse_d20a401d-8299-4101-82ff-cca56fe0e17f_3" aria-expanded="false" role="button">
+                            <a class="nav-link nav-button-link collapsed" data-toggle="collapse" href="#collapse_2ef7a51b-cb82-465c-867c-6ee8dd741158_3" aria-controls="collapse_2ef7a51b-cb82-465c-867c-6ee8dd741158_3" aria-expanded="false" role="button">
                                 Ward 3
                             </a>
                         </p>
-                        <div id="collapse_d20a401d-8299-4101-82ff-cca56fe0e17f_3" class="info repeatable-content collapse  ">
+                        <div id="collapse_2ef7a51b-cb82-465c-867c-6ee8dd741158_3" class="info repeatable-content collapse  ">
                             <div class="text"><p><a rel="noopener" href="/media/vcffxaq3/ward3.pdf" target="_blank" title="Open new window to view Ward 3 Map" class="defaultButton-Green" aria-label="Ward 3 Map opens in new window">Ward 3 Map</a></p>
 <h5><img style="width: 200px;" src="/media/qnic21v3/_7500351.jpg" alt="A picture of Councillor Veronica Charrois." title="Councillor Veronica Charrois (2022-2026 Council Term)"></h5>
 <h5>Councillor Veronica Charrois</h5>
@@ -815,11 +815,11 @@ var notificationExDays = 365;        </script>
 <p>Email Form: <a href="mailto:jkorstanje@grimsby.ca" title="Email Jennifer Korstanje">Email Councillor Korstanje</a><a title="Open new window to send an email to Randy Vaine"><br></a></p></div>
                         </div>
                         <p class="tab ">
-                            <a class="nav-link nav-button-link collapsed" data-toggle="collapse" href="#collapse_d20a401d-8299-4101-82ff-cca56fe0e17f_4" aria-controls="collapse_d20a401d-8299-4101-82ff-cca56fe0e17f_4" aria-expanded="false" role="button">
+                            <a class="nav-link nav-button-link collapsed" data-toggle="collapse" href="#collapse_2ef7a51b-cb82-465c-867c-6ee8dd741158_4" aria-controls="collapse_2ef7a51b-cb82-465c-867c-6ee8dd741158_4" aria-expanded="false" role="button">
                                 Ward 4
                             </a>
                         </p>
-                        <div id="collapse_d20a401d-8299-4101-82ff-cca56fe0e17f_4" class="info repeatable-content collapse  ">
+                        <div id="collapse_2ef7a51b-cb82-465c-867c-6ee8dd741158_4" class="info repeatable-content collapse  ">
                             <div class="text"><p><a rel="noopener" href="/media/iiui15ly/ward4.pdf" target="_blank" title="Open new window to view Ward 4 Map" class="defaultButton-Green" aria-label="Ward 4 Map opens in new window">Ward 4 Map</a></p>
 <h5><img style="width: 200px;" src="/media/zwwoarc1/_7500403.jpg" alt="A picture of Councillor Jacob Baradziej." title="Councillor Jacob Baradziej (2022-2026 Council Term)"></h5>
 <h5>Councillor Jacob Baradziej</h5>

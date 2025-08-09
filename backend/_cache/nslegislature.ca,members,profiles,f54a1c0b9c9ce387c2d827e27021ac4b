@@ -1,6 +1,6 @@
 status: 200
 encoding: utf-8
-Date: Sat, 09 Aug 2025 01:50:25 GMT
+Date: Sat, 09 Aug 2025 05:44:36 GMT
 Expires: Sun, 19 Nov 1978 05:00:00 GMT
 Cache-Control: no-cache, must-revalidate
 Content-Language: en
@@ -14,7 +14,7 @@ Referrer-Policy: strict-origin
 Keep-Alive: timeout=5, max=100
 Connection: Keep-Alive
 Content-Type: text/html; charset=utf-8
-Set-Cookie: TS0163bbb3=012df0be5f3d74f30d1b4a28193cf35c8a80ebdb32c142c3930ceeb3859ee6ead622e5e72a5cd6be2e299ee8044318fe8cbc6cd2f3; Path=/; Domain=.nslegislature.ca; Secure; HTTPOnly
+Set-Cookie: TS0163bbb3=012df0be5f2e5f95e4cfe90aa680d1768a9c57de34854b5ebe4b7d8684c9fd1e4a2a681a554bbddbc1837d24771abe5f9c48d94351; Path=/; Domain=.nslegislature.ca; Secure; HTTPOnly
 Transfer-Encoding: chunked
 
 <!DOCTYPE html>
@@ -105,7 +105,7 @@ Transfer-Encoding: chunked
 <script src="https://nslegislature.ca/sites/all/themes/ns_leg/ns_leg_colorbox/ns_leg_colorbox_style.js?szk52e"></script>
 <script src="https://nslegislature.ca/sites/all/themes/ns_leg/js/meanmenu/jquery.meanmenu.js?szk52e"></script>
 <script src="https://nslegislature.ca/sites/all/themes/ns_leg/js/script.js?szk52e"></script>
-<script>jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","setHasJsCookie":0,"ajaxPageState":{"theme":"ns_leg","theme_token":"l3aTM5ipx7NW2BMozuKOt2ZtPzDGjQD34Oxoxcxr0q8","js":{"sites\/all\/modules\/jquery_update\/replace\/jquery\/1.10\/jquery.min.js":1,"misc\/jquery-extend-3.4.0.js":1,"misc\/jquery-html-prefilter-3.5.0-backport.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"sites\/all\/libraries\/chosen\/chosen.jquery.min.js":1,"https:\/\/www.googletagmanager.com\/gtag\/js?id=G-QBZGNH1RJX":1,"0":1,"sites\/all\/libraries\/colorbox\/jquery.colorbox-min.js":1,"sites\/all\/modules\/colorbox\/js\/colorbox.js":1,"sites\/all\/modules\/colorbox\/js\/colorbox_inline.js":1,"sites\/all\/modules\/compact_forms\/compact_forms.js":1,"sites\/all\/modules\/better_exposed_filters\/better_exposed_filters.js":1,"sites\/all\/modules\/chosen\/chosen.js":1,"sites\/all\/themes\/ns_leg\/js\/superfish\/hoverIntent.js":1,"sites\/all\/themes\/ns_leg\/js\/superfish\/superfish.min.js":1,"sites\/all\/themes\/ns_leg\/ns_leg_colorbox\/ns_leg_colorbox_style.js":1,"sites\/all\/themes\/ns_leg\/js\/meanmenu\/jquery.meanmenu.js":1,"sites\/all\/themes\/ns_leg\/js\/script.js":1},"css":{"modules\/system\/system.base.css":1,"modules\/system\/system.menus.css":1,"modules\/system\/system.messages.css":1,"modules\/system\/system.theme.css":1,"sites\/all\/libraries\/chosen\/chosen.css":1,"sites\/all\/modules\/chosen\/css\/chosen-drupal.css":1,"sites\/all\/modules\/calendar\/css\/calendar_multiday.css":1,"sites\/all\/modules\/date\/date_api\/date.css":1,"sites\/all\/modules\/date\/date_popup\/themes\/datepicker.1.7.css":1,"sites\/all\/modules\/date\/date_repeat_field\/date_repeat_field.css":1,"modules\/field\/theme\/field.css":1,"modules\/node\/node.css":1,"modules\/search\/search.css":1,"modules\/user\/user.css":1,"sites\/all\/modules\/ctools\/css\/ctools.css":1,"sites\/all\/modules\/panels\/css\/panels.css":1,"sites\/all\/modules\/panels\/plugins\/layouts\/twocol_stacked\/twocol_stacked.css":1,"modules\/locale\/locale.css":1,"sites\/all\/modules\/compact_forms\/compact_forms.css":1,"sites\/all\/modules\/panels\/plugins\/layouts\/onecol\/onecol.css":1,"sites\/all\/themes\/ns_leg\/system.base.css":1,"sites\/all\/themes\/ns_leg\/system.menus.css":1,"sites\/all\/themes\/ns_leg\/system.messages.css":1,"sites\/all\/themes\/ns_leg\/system.theme.css":1,"sites\/all\/themes\/ns_leg\/comment.css":1,"sites\/all\/themes\/ns_leg\/node.css":1,"sites\/all\/themes\/ns_leg\/ns_leg_colorbox\/ns_leg_colorbox_style.css":1,"sites\/all\/themes\/ns_leg\/js\/meanmenu\/meanmenu.css":1,"sites\/all\/themes\/ns_leg\/css\/styles.css":1}},"colorbox":{"opacity":"0.85","current":"{current} of {total}","previous":"\u00ab Prev","next":"Next \u00bb","close":"Close","maxWidth":"98%","maxHeight":"98%","fixed":true,"mobiledetect":true,"mobiledevicewidth":"480px","file_public_path":"\/sites\/default\/files","specificPagesDefaultValue":"admin*\nimagebrowser*\nimg_assist*\nimce*\nnode\/add\/*\nnode\/*\/edit\nprint\/*\nprintpdf\/*\nsystem\/ajax\nsystem\/ajax\/*"},"better_exposed_filters":{"datepicker":false,"slider":false,"settings":[],"autosubmit":false,"views":{"mla_profile_listing":{"displays":{"page_mlas_current_tiles":{"filters":{"assembly":{"required":true},"field_party_value":{"required":false},"field_gender_value":{"required":false},"field_last_name_value":{"required":false}}},"block_current_standings":{"filters":{"assembly":{"required":true}}},"block_current_gender_count":{"filters":{"assembly":{"required":true}}}}}}},"chosen":{"selector":".view-speaker-s-rulings.view-id-speaker_s_rulings select:visible","minimum_single":25,"minimum_multiple":0,"minimum_width":0,"options":{"allow_single_deselect":false,"disable_search":false,"disable_search_threshold":0,"search_contains":false,"placeholder_text_multiple":"Choose some options","placeholder_text_single":"Choose an option","no_results_text":"No results match","inherit_select_classes":true}},"urlIsAjaxTrusted":{"\/members\/profiles":true,"":true},"compactForms":{"forms":["views-exposed-form-search-search-panel-pane","views-exposed-form-mla-search-search-panel-pane","views-exposed-form-mla-profile-search-mla-profile-search-pane","global-search"],"stars":2}});</script>
+<script>jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","setHasJsCookie":0,"ajaxPageState":{"theme":"ns_leg","theme_token":"nQR7S9qcgruBY7DNT-2L6eehXC7Y-iXFctYnLDb-rUw","js":{"sites\/all\/modules\/jquery_update\/replace\/jquery\/1.10\/jquery.min.js":1,"misc\/jquery-extend-3.4.0.js":1,"misc\/jquery-html-prefilter-3.5.0-backport.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"sites\/all\/libraries\/chosen\/chosen.jquery.min.js":1,"https:\/\/www.googletagmanager.com\/gtag\/js?id=G-QBZGNH1RJX":1,"0":1,"sites\/all\/libraries\/colorbox\/jquery.colorbox-min.js":1,"sites\/all\/modules\/colorbox\/js\/colorbox.js":1,"sites\/all\/modules\/colorbox\/js\/colorbox_inline.js":1,"sites\/all\/modules\/compact_forms\/compact_forms.js":1,"sites\/all\/modules\/better_exposed_filters\/better_exposed_filters.js":1,"sites\/all\/modules\/chosen\/chosen.js":1,"sites\/all\/themes\/ns_leg\/js\/superfish\/hoverIntent.js":1,"sites\/all\/themes\/ns_leg\/js\/superfish\/superfish.min.js":1,"sites\/all\/themes\/ns_leg\/ns_leg_colorbox\/ns_leg_colorbox_style.js":1,"sites\/all\/themes\/ns_leg\/js\/meanmenu\/jquery.meanmenu.js":1,"sites\/all\/themes\/ns_leg\/js\/script.js":1},"css":{"modules\/system\/system.base.css":1,"modules\/system\/system.menus.css":1,"modules\/system\/system.messages.css":1,"modules\/system\/system.theme.css":1,"sites\/all\/libraries\/chosen\/chosen.css":1,"sites\/all\/modules\/chosen\/css\/chosen-drupal.css":1,"sites\/all\/modules\/calendar\/css\/calendar_multiday.css":1,"sites\/all\/modules\/date\/date_api\/date.css":1,"sites\/all\/modules\/date\/date_popup\/themes\/datepicker.1.7.css":1,"sites\/all\/modules\/date\/date_repeat_field\/date_repeat_field.css":1,"modules\/field\/theme\/field.css":1,"modules\/node\/node.css":1,"modules\/search\/search.css":1,"modules\/user\/user.css":1,"sites\/all\/modules\/ctools\/css\/ctools.css":1,"sites\/all\/modules\/panels\/css\/panels.css":1,"sites\/all\/modules\/panels\/plugins\/layouts\/twocol_stacked\/twocol_stacked.css":1,"modules\/locale\/locale.css":1,"sites\/all\/modules\/compact_forms\/compact_forms.css":1,"sites\/all\/modules\/panels\/plugins\/layouts\/onecol\/onecol.css":1,"sites\/all\/themes\/ns_leg\/system.base.css":1,"sites\/all\/themes\/ns_leg\/system.menus.css":1,"sites\/all\/themes\/ns_leg\/system.messages.css":1,"sites\/all\/themes\/ns_leg\/system.theme.css":1,"sites\/all\/themes\/ns_leg\/comment.css":1,"sites\/all\/themes\/ns_leg\/node.css":1,"sites\/all\/themes\/ns_leg\/ns_leg_colorbox\/ns_leg_colorbox_style.css":1,"sites\/all\/themes\/ns_leg\/js\/meanmenu\/meanmenu.css":1,"sites\/all\/themes\/ns_leg\/css\/styles.css":1}},"colorbox":{"opacity":"0.85","current":"{current} of {total}","previous":"\u00ab Prev","next":"Next \u00bb","close":"Close","maxWidth":"98%","maxHeight":"98%","fixed":true,"mobiledetect":true,"mobiledevicewidth":"480px","file_public_path":"\/sites\/default\/files","specificPagesDefaultValue":"admin*\nimagebrowser*\nimg_assist*\nimce*\nnode\/add\/*\nnode\/*\/edit\nprint\/*\nprintpdf\/*\nsystem\/ajax\nsystem\/ajax\/*"},"better_exposed_filters":{"datepicker":false,"slider":false,"settings":[],"autosubmit":false,"views":{"mla_profile_listing":{"displays":{"page_mlas_current_tiles":{"filters":{"assembly":{"required":true},"field_party_value":{"required":false},"field_gender_value":{"required":false},"field_last_name_value":{"required":false}}},"block_current_standings":{"filters":{"assembly":{"required":true}}},"block_current_gender_count":{"filters":{"assembly":{"required":true}}}}}}},"chosen":{"selector":".view-speaker-s-rulings.view-id-speaker_s_rulings select:visible","minimum_single":25,"minimum_multiple":0,"minimum_width":0,"options":{"allow_single_deselect":false,"disable_search":false,"disable_search_threshold":0,"search_contains":false,"placeholder_text_multiple":"Choose some options","placeholder_text_single":"Choose an option","no_results_text":"No results match","inherit_select_classes":true}},"urlIsAjaxTrusted":{"\/members\/profiles":true,"":true},"compactForms":{"forms":["views-exposed-form-search-search-panel-pane","views-exposed-form-mla-search-search-panel-pane","views-exposed-form-mla-profile-search-mla-profile-search-pane","global-search"],"stars":2}});</script>
       <!--[if lt IE 9]>
     <script src="/sites/all/themes/zen/js/html5shiv.min.js"></script>
     <![endif]-->
@@ -151,7 +151,7 @@ Transfer-Encoding: chunked
   
       
   
-  <form onsubmit="event.preventDefault();" id="global-search" class="global-search" action="" method="" accept-charset="UTF-8"><div><input type="hidden" name="form_build_id" value="form-dJhltSL9J-y91a7DGSy78aLZ7GF5u2j-eoVOauvp4x8" />
+  <form onsubmit="event.preventDefault();" id="global-search" class="global-search" action="" method="" accept-charset="UTF-8"><div><input type="hidden" name="form_build_id" value="form-Vr_gSnmsnLL-tl4od4BKwYpS7BlI63NYj3wbqXyjD3U" />
 <input type="hidden" name="form_id" value="global_search" />
 <div class="search-keywords-wrapper form-wrapper" id="edit-keywords-wrapper"><div class="form-item form-type-textfield form-item-q">
   <label for="edit-keywords">Search </label>
@@ -222,7 +222,7 @@ Transfer-Encoding: chunked
   
       
   
-  <div class="view view-mla-profile-listing view-id-mla_profile_listing view-display-id-page_mlas_current_tiles current-standings view-dom-id-72b5ab29121c1dcc114919665f2075d8">
+  <div class="view view-mla-profile-listing view-id-mla_profile_listing view-display-id-page_mlas_current_tiles current-standings view-dom-id-e38f5ebb86b2655f96d1f4127596d6e3">
             <div class="view-header">
       <div class="menu-strip"><span class="menu-strip-item">Displaying 1 - 55 of 55</span><span class="menu-strip-item"><span class="icon-tiles">View Tiles</span></span><span class="menu-strip-item"><a href="/members/profiles-table" class="icon-table">View List</a></span><a href="#standings">Standings</a></div>    </div>
   
@@ -591,7 +591,7 @@ Transfer-Encoding: chunked
       Political Affiliation    </h4>
     
   
-  <div class="view view-mla-profile-listing view-id-mla_profile_listing view-display-id-block_current_standings current-standings view-dom-id-4850c5a0df384c3c0dc23d7c814f4117">
+  <div class="view view-mla-profile-listing view-id-mla_profile_listing view-display-id-block_current_standings current-standings view-dom-id-b034dd4d5e53a50390989ddefb028bcd">
         
   
   
@@ -628,7 +628,7 @@ Transfer-Encoding: chunked
       Gender    </h4>
     
   
-  <div class="view view-mla-profile-listing view-id-mla_profile_listing view-display-id-block_current_gender_count current-standings view-dom-id-97c0e424c22b9fc20da0484b8984e127">
+  <div class="view view-mla-profile-listing view-id-mla_profile_listing view-display-id-block_current_gender_count current-standings view-dom-id-131ed15ce03cb1dbdc3702dcc02a9715">
         
   
   

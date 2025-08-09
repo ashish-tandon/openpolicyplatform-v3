@@ -1,7 +1,11 @@
+import sys
+import os
+sys.path.insert(0, os.path.dirname(os.path.dirname(__file__)))
 from utils import CSVScraper
 
 
 class TorontoPersonScraper(CSVScraper):
+    organization_classification = "legislature"
     # https://open.toronto.ca/dataset/elected-officials-contact-information/
     csv_url = "https://ckan0.cf.opendata.inter.prod-toronto.ca/dataset/27aa4651-4548-4e57-bf00-53a346931251/resource/dea217a2-f7c1-4e62-aec1-48fffaad1170/download/2022-2026%20Elected%20Officials%20Contact%20Info.csv"
     corrections = {

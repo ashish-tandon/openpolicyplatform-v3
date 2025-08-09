@@ -17,14 +17,14 @@ X-AH-Environment: prod
 Referrer-Policy: strict-origin-when-cross-origin
 Permissions-Policy: geolocation=(), microphone=(), camera=()
 X-Acquia-View: 1
-X-Age: 1813
+X-Age: 3628
 Accept-Ranges: bytes
-X-Served-By: cache-iad-kiad7000116-IAD
-X-Cache-Hits: 4, 0
-X-Timer: S1754679059.643104,VS0,VE46
-Cache-Control: public, max-age=56
-Expires: Sat, 09 Aug 2025 01:51:21 GMT
-Date: Sat, 09 Aug 2025 01:50:25 GMT
+X-Served-By: cache-chi-klot8100047-CHI
+X-Cache-Hits: 6, 0
+X-Timer: S1754680873.717757,VS0,VE155
+Cache-Control: public, max-age=300
+Expires: Sat, 09 Aug 2025 05:49:36 GMT
+Date: Sat, 09 Aug 2025 05:44:36 GMT
 Connection: keep-alive
 Vary: Accept-Encoding
 Strict-Transport-Security: max-age=15768000

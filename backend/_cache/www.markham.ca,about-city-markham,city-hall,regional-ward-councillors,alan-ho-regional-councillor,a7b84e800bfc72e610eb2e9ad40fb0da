@@ -1,27 +1,31 @@
 status: 200
 encoding: UTF-8
 Server: nginx/1.20.2
-Date: Sat, 09 Aug 2025 01:51:01 GMT
+Date: Sat, 09 Aug 2025 05:45:03 GMT
 Content-Type: text/html; charset=UTF-8
-Content-Length: 27365
+Content-Length: 27361
 Connection: keep-alive
 Keep-Alive: timeout=20
-Cache-Control: must-revalidate, no-cache, private
+Cache-Control: max-age=2764800, public
+X-Drupal-Dynamic-Cache: MISS
 Content-language: en
 X-Content-Type-Options: nosniff
 X-Frame-Options: SAMEORIGIN
 Expires: Sun, 19 Nov 1978 05:00:00 GMT
+Vary: Cookie,Accept-Encoding
 X-Generator: Drupal 10 (https://www.drupal.org)
-Set-Cookie: hlat=deleted; expires=Thu, 01 Jan 1970 00:00:01 GMT; Max-Age=0; path=/; domain=.markham.ca; secure; HttpOnly; SameSite=none
-Vary: Accept-Encoding
+X-Drupal-Cache: MISS
+Last-Modified: Sat, 09 Aug 2025 05:26:48 GMT
+ETag: "1754717208-gzip"
 Content-Encoding: gzip
-X-Request-ID: v-4c32fdae-74c3-11f0-ad84-9bb9518d88c9
+X-Request-ID: v-72551440-74e1-11f0-a5e6-e32ff5abeab9
 X-AH-Environment: prod
-Age: 0
+Age: 1094
 Via: varnish
-X-Cache: MISS
+X-Cache: HIT
+X-Cache-Hits: 4
 Accept-Ranges: bytes
-X-DIS-Request-ID: 9db9bcf185907ca199edeb838e4d3813
+X-DIS-Request-ID: 80b79754f9442f92931363ae6dc48e90
 
 
 
@@ -2087,7 +2091,7 @@ X-DIS-Request-ID: 9db9bcf185907ca199edeb838e4d3813
 
       </div>
 
-<div class="block--spacer block"><div class="spacer-block spacer-okubobwtjz-439 d-flex justify-content-center"></div><style>.spacer-okubobwtjz-439{height:40px;}@media (min-width: 640px) {.spacer-okubobwtjz-439{height:;}}@media (min-width: 768px) {.spacer-okubobwtjz-439{height:;}}@media (min-width: 1024px){.spacer-okubobwtjz-439{height:;}}@media (min-width: 1280px) {.spacer-okubobwtjz-439{height: ;}}</style></div>
+<div class="block--spacer block"><div class="spacer-block spacer-aemudoidoi-330 d-flex justify-content-center"></div><style>.spacer-aemudoidoi-330{height:40px;}@media (min-width: 640px) {.spacer-aemudoidoi-330{height:;}}@media (min-width: 768px) {.spacer-aemudoidoi-330{height:;}}@media (min-width: 1024px){.spacer-aemudoidoi-330{height:;}}@media (min-width: 1280px) {.spacer-aemudoidoi-330{height: ;}}</style></div>
     </div>
   </div>
   <div class="container mx-auto px-4 no-container-content no-gaps layout--threecol-section--33-34-33 no-match-height layout layout--threecol-section">
@@ -2169,7 +2173,7 @@ X-DIS-Request-ID: 9db9bcf185907ca199edeb838e4d3813
 
       </div>
 
-<div class="block--spacer block"><div class="spacer-block spacer-ytbajsmqxn-875 d-flex justify-content-center"></div><style>.spacer-ytbajsmqxn-875{height:20px;}@media (min-width: 640px) {.spacer-ytbajsmqxn-875{height:20px;}}@media (min-width: 768px) {.spacer-ytbajsmqxn-875{height:20px;}}@media (min-width: 1024px){.spacer-ytbajsmqxn-875{height:20px;}}@media (min-width: 1280px) {.spacer-ytbajsmqxn-875{height: 20px;}}</style></div>
+<div class="block--spacer block"><div class="spacer-block spacer-erpzhresaj-258 d-flex justify-content-center"></div><style>.spacer-erpzhresaj-258{height:20px;}@media (min-width: 640px) {.spacer-erpzhresaj-258{height:20px;}}@media (min-width: 768px) {.spacer-erpzhresaj-258{height:20px;}}@media (min-width: 1024px){.spacer-erpzhresaj-258{height:20px;}}@media (min-width: 1280px) {.spacer-erpzhresaj-258{height: 20px;}}</style></div>
 <div class="block--basic">
   
     
@@ -2236,7 +2240,7 @@ X-DIS-Request-ID: 9db9bcf185907ca199edeb838e4d3813
   <div class="container mx-auto px-4 no-container-content layout layout--onecol">
     <div  class="layout__region layout__region--content">
       
-<div class="block--spacer block block--spacer-40px"><div class="spacer-block spacer-unluwkmhvx-979 d-flex justify-content-center"></div><style>.spacer-unluwkmhvx-979{height:40px;}@media (min-width: 640px) {.spacer-unluwkmhvx-979{height:;}}@media (min-width: 768px) {.spacer-unluwkmhvx-979{height:;}}@media (min-width: 1024px){.spacer-unluwkmhvx-979{height:;}}@media (min-width: 1280px) {.spacer-unluwkmhvx-979{height: ;}}</style></div>
+<div class="block--spacer block block--spacer-40px"><div class="spacer-block spacer-hlcvbclait-996 d-flex justify-content-center"></div><style>.spacer-hlcvbclait-996{height:40px;}@media (min-width: 640px) {.spacer-hlcvbclait-996{height:;}}@media (min-width: 768px) {.spacer-hlcvbclait-996{height:;}}@media (min-width: 1024px){.spacer-hlcvbclait-996{height:;}}@media (min-width: 1280px) {.spacer-hlcvbclait-996{height: ;}}</style></div>
 <div class="block--basic">
   
     
@@ -2269,7 +2273,7 @@ X-DIS-Request-ID: 9db9bcf185907ca199edeb838e4d3813
 
 
 <script>
-  const carousel20 = new Glide('.grid-image-gallery-carousel-20', {
+  const carousel21 = new Glide('.grid-image-gallery-carousel-21', {
     type: "carousel",
     perView: 1,
     focusAt: "center",
@@ -2281,7 +2285,7 @@ X-DIS-Request-ID: 9db9bcf185907ca199edeb838e4d3813
     classes: {activeNav: "glide__bullet--active-#000000"}
   });
 
-  const thumbnails20 = new Glide('.grid-image-gallery-carousel__thumbnails-20', {
+  const thumbnails21 = new Glide('.grid-image-gallery-carousel__thumbnails-21', {
         type: "carousel",
     focusAt: "center",
     perView: 11,
@@ -2299,49 +2303,49 @@ X-DIS-Request-ID: 9db9bcf185907ca199edeb838e4d3813
     classes: {activeNav: "glide__bullet--active-#000000"}
   });
 
-  const glideCarouselInit20 = (el) => {
+  const glideCarouselInit21 = (el) => {
     if (el !== undefined) {
-      carousel20.mount().update({startAt: el});
-      thumbnails20.mount().update({startAt: el})
+      carousel21.mount().update({startAt: el});
+      thumbnails21.mount().update({startAt: el})
 
-      Array.from(document.querySelectorAll('.grid-image-gallery-carousel__thumbnail-20')).forEach(el => {
+      Array.from(document.querySelectorAll('.grid-image-gallery-carousel__thumbnail-21')).forEach(el => {
         el.addEventListener('click', function () {
-          carousel20.go('=' + (el.dataset.index))
-          thumbnails20.go('=' + (el.dataset.index))
+          carousel21.go('=' + (el.dataset.index))
+          thumbnails21.go('=' + (el.dataset.index))
         })
       })
     }
   }
 
-  const glideCarouselDestroy20 = () => {
-    carousel20.destroy();
-    thumbnails20.destroy();
+  const glideCarouselDestroy21 = () => {
+    carousel21.destroy();
+    thumbnails21.destroy();
   }
 
-  carousel20.on('swipe.end', function () {
-    thumbnails20.go('=' + (carousel20.index))
+  carousel21.on('swipe.end', function () {
+    thumbnails21.go('=' + (carousel21.index))
   });
 
-  carousel20.on('move.after', function () {
-    thumbnails20.go('=' + (carousel20.index))
+  carousel21.on('move.after', function () {
+    thumbnails21.go('=' + (carousel21.index))
   });
 </script>
 
 <div
-  class="grid-image-gallery-carousel grid-image-gallery-carousel-20 max-w-full bg-darkBlue text-white font-bold">
+  class="grid-image-gallery-carousel grid-image-gallery-carousel-21 max-w-full bg-darkBlue text-white font-bold">
   <div class="grid-image-gallery-carousel-container">
         <div
       x-data="{
-        carouselModal20 : false,
-        dataIndex20 : 0,
+        carouselModal21 : false,
+        dataIndex21 : 0,
       }">
       <template
         @carousel-modal.window="
-          carouselModal20 = $event.detail.carouselModal20;
-          dataIndex20 = $event.detail.dataIndex20;
-          console.log($event.detail.dataIndex20);
-          $nextTick(() => {($event.detail.dataIndex20 !== undefined) ? glideCarouselInit20($event.detail.dataIndex20) : null});"
-        x-if="carouselModal20">
+          carouselModal21 = $event.detail.carouselModal21;
+          dataIndex21 = $event.detail.dataIndex21;
+          console.log($event.detail.dataIndex21);
+          $nextTick(() => {($event.detail.dataIndex21 !== undefined) ? glideCarouselInit21($event.detail.dataIndex21) : null});"
+        x-if="carouselModal21">
         <div x-transition:enter="transition ease-out duration-300"
              x-transition:enter-start="opacity-0 transform scale-90"
              x-transition:enter-end="opacity-100 transform scale-100"
@@ -2351,18 +2355,18 @@ X-DIS-Request-ID: 9db9bcf185907ca199edeb838e4d3813
              class="carousel-overlay p-2 fixed h-100 inset-0 z-50 overflow-hidden flex justify-center items-center bg-white container mx-auto">
           <div
             @click.away="
-            carouselModal20 = false;
-            $dispatch('closed-modal', { showModal20: carouselModal20 });
-            $nextTick(() => glideCarouselDestroy20);
+            carouselModal21 = false;
+            $dispatch('closed-modal', { showModal21: carouselModal21 });
+            $nextTick(() => glideCarouselDestroy21);
             document.body.classList.remove('modal-gallery-opened')"
             class="flex flex-col max-h-full overflow-auto">
             <div class="close-button z-5 absolute">
               <button
                 class="outline-none focus:outline-none bg-brightBlue p-2 rounded"
                 @click="
-                carouselModal20 = false;
-                $dispatch('closed-modal', { showModal20: carouselModal20 });
-                $nextTick(() => glideCarouselDestroy20);
+                carouselModal21 = false;
+                $dispatch('closed-modal', { showModal21: carouselModal21 });
+                $nextTick(() => glideCarouselDestroy21);
                 document.body.classList.remove('modal-gallery-opened')"
                 aria-label="Close">
                   <svg class="fill-current text-white"  xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
@@ -2432,18 +2436,18 @@ X-DIS-Request-ID: 9db9bcf185907ca199edeb838e4d3813
               </div>
 
                             <div
-                class="glide w-full mt-5 xs:block md:mt-8 xl:max-w-1154 grid-image-gallery-carousel__thumbnails grid-image-gallery-carousel__thumbnails-20">
+                class="glide w-full mt-5 xs:block md:mt-8 xl:max-w-1154 grid-image-gallery-carousel__thumbnails grid-image-gallery-carousel__thumbnails-21">
                 <div class="glide__track" data-glide-el="track">
                   <ul class="glide__slides">
                                           <li
-                        class="glide__slide grid-image-gallery-carousel__thumbnail grid-image-gallery-carousel__thumbnail-20 thumbnail cursor-pointer"
+                        class="glide__slide grid-image-gallery-carousel__thumbnail grid-image-gallery-carousel__thumbnail-21 thumbnail cursor-pointer"
                         data-index="0">
                         <div class="image w-full text-center">
                                                       <img src="https://www.markham.ca/sites/default/files/styles/grid_gallery_carousel_thumbnail/public/2024-07/Alanh1%401.5x.png.webp?itok=by9oINGV">
                                                   </div>
                       </li>
                                           <li
-                        class="glide__slide grid-image-gallery-carousel__thumbnail grid-image-gallery-carousel__thumbnail-20 thumbnail cursor-pointer"
+                        class="glide__slide grid-image-gallery-carousel__thumbnail grid-image-gallery-carousel__thumbnail-21 thumbnail cursor-pointer"
                         data-index="1">
                         <div class="image w-full text-center">
                                                       <img src="https://www.markham.ca/sites/default/files/styles/grid_gallery_carousel_thumbnail/public/2024-07/d5ffb09e-001f-4f09-acbe-e90733cde547%401.5x.jpeg.webp?itok=hI7HcHRS">
@@ -2459,8 +2463,8 @@ X-DIS-Request-ID: 9db9bcf185907ca199edeb838e4d3813
     </div>
 
         <div class="m-auto overflow-hidden pt-32 pb-32"
-         x-data="{ showModal20 : false, dataIndex20 : 0}"
-         @closed-modal.window="showModal20 = $event.detail.showModal20">
+         x-data="{ showModal21 : false, dataIndex21 : 0}"
+         @closed-modal.window="showModal21 = $event.detail.showModal21">
               <h3 class="carousel-title mb-14 text-black text-26px leading-33px uppercase">PHOTOS</h3>
             <ul
         class="grid gap-2 sm:gap-4 grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-4">
@@ -2470,8 +2474,8 @@ X-DIS-Request-ID: 9db9bcf185907ca199edeb838e4d3813
                 tabindex="0"
                 data-index="0"
                 @click="
-                showModal20 = !showModal20;
-                $dispatch('carousel-modal', { carouselModal20: showModal20, dataIndex20: 0});
+                showModal21 = !showModal21;
+                $dispatch('carousel-modal', { carouselModal21: showModal21, dataIndex21: 0});
                 document.body.classList.add('modal-gallery-opened');setTimeout(function(){window.dispatchEvent(new Event('resize'));},250);"
                 class="image-gallery__cell--link cursor-pointer overflow-hidden">
                 <div class="image-gallery__image--cell image w-full h-auto flex-shrink-0 mx-auto">
@@ -2499,8 +2503,8 @@ X-DIS-Request-ID: 9db9bcf185907ca199edeb838e4d3813
                 tabindex="0"
                 data-index="1"
                 @click="
-                showModal20 = !showModal20;
-                $dispatch('carousel-modal', { carouselModal20: showModal20, dataIndex20: 1});
+                showModal21 = !showModal21;
+                $dispatch('carousel-modal', { carouselModal21: showModal21, dataIndex21: 1});
                 document.body.classList.add('modal-gallery-opened');setTimeout(function(){window.dispatchEvent(new Event('resize'));},250);"
                 class="image-gallery__cell--link cursor-pointer overflow-hidden">
                 <div class="image-gallery__image--cell image w-full h-auto flex-shrink-0 mx-auto">

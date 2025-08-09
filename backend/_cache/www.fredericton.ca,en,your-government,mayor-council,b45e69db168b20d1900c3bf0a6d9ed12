@@ -1,6 +1,6 @@
 status: 200
 encoding: UTF-8
-Date: Sat, 09 Aug 2025 01:05:03 GMT
+Date: Sat, 09 Aug 2025 05:24:11 GMT
 Server: Apache
 Cache-Control: max-age=86400, public
 X-Drupal-Dynamic-Cache: MISS
@@ -12,10 +12,10 @@ Vary: Cookie,Accept-Encoding
 X-Generator: Drupal 10 (https://www.drupal.org)
 X-Drupal-Cache: HIT
 Strict-Transport-Security: max-age=15768000; includeSubDomains
-Last-Modified: Sat, 09 Aug 2025 01:05:03 GMT
-ETag: "1754701503-gzip"
+Last-Modified: Sat, 09 Aug 2025 05:24:11 GMT
+ETag: "1754717051-gzip"
 Content-Encoding: gzip
-Content-Length: 16750
+Content-Length: 16754
 Keep-Alive: timeout=5, max=99
 Connection: Keep-Alive
 Content-Type: text/html; charset=UTF-8
@@ -1639,7 +1639,7 @@ Content-Type: text/html; charset=UTF-8
     <div class="views-element-container block block-views block-views-blockbanner-block-1" id="block-fredericton-views-block-banner-block-1">
   
     
-      <div><div class="view view-banner view-id-banner view-display-id-block_1 js-view-dom-id-c461a4a317dfc60702f07e24a368df65e74dad76bccf52bc6b135b46e19535e5 contextual-region">
+      <div><div class="view view-banner view-id-banner view-display-id-block_1 js-view-dom-id-a0938da819ff45c1c8fb0ded5de4980cd4e85833e2277f54a2fbdf65559cd016 contextual-region">
   
     
       
@@ -1981,7 +1981,7 @@ Content-Type: text/html; charset=UTF-8
       <div class="field field--name-field-row-component field--type-entity-reference-revisions field--label-hidden field__items content-row__component">
               <div class="field__item">  <div class="paragraph paragraph--type--view paragraph--view-mode--default">
           
-            <div class="field field--name-field-view field--type-viewsreference field--label-hidden field__item"><div class="views-element-container"><div class="view view-councillor view-id-councillor view-display-id-block_1 js-view-dom-id-d3ed1e673732df8478a9a1e1470c30213a8f8c7c5d981e3aa909e077c70aee89 contextual-region">
+            <div class="field field--name-field-view field--type-viewsreference field--label-hidden field__item"><div class="views-element-container"><div class="view view-councillor view-id-councillor view-display-id-block_1 js-view-dom-id-8aa6d1e6b7b0867c13a7ba8fe29a68bfd37fcd811a3f06da208d10cbf445f50d contextual-region">
   
     
       
@@ -2026,16 +2026,6 @@ Content-Type: text/html; charset=UTF-8
 <div class="twitter"><span class="fa-brands fa-twitter"></span><a href="https://twitter.com/kevin_darrah">Twitter</a></div>
 </div>
 <a class="button button--emphasis" href="/your-government/mayor-council/kevin-darrah">Kevin Darrah's Bio</a></span></div></div>
-    <div class="views-row"><div class="views-field views-field-field-image"><div class="field-content">  <img loading="lazy" src="/sites/default/files/styles/1_1_660/public/2023-04/greg_ericson.jpg?itok=IEkX-lEW" width="660" height="660" alt="greg_ericson.jpg" typeof="foaf:Image" class="image-style-_-1-660" />
-
-
-</div></div><div class="views-field views-field-title"><h3 class="field-content mb-4"><a href="/your-government/mayor-council/greg-ericson" hreflang="en">Greg Ericson</a></h3></div><div class="views-field views-field-field-councillor-title"><div class="field-content">Councillor, Ward 8 (Skyline Acres)</div></div><div class="views-field views-field-nothing"><span class="field-content"><div>
-<div class="email"><span class="fa-solid fa-at"></span> <a href="mailto:greg.ericson@fredericton.ca">greg.ericson@fredericton.ca</a></div>
-<div class="phone"><span class="fa-solid fa-phone"></span> 506-470-4761</div>
-<div class="facebook"><span class="fa-brands fa-facebook-f"></span><a href="https://www.facebook.com/GregEricsonWard8">Facebook</a></div>
-<div class="twitter"><span class="fa-brands fa-twitter"></span><a href="https://twitter.com/gregericson">Twitter</a></div>
-</div>
-<a class="button button--emphasis" href="/your-government/mayor-council/greg-ericson">Greg Ericson's Bio</a></span></div></div>
     <div class="views-row"><div class="views-field views-field-field-image"><div class="field-content">  <img loading="lazy" src="/sites/default/files/styles/1_1_660/public/2023-04/council-grandy.png?itok=G8QRKnMc" width="660" height="660" alt="council-grandy.png" typeof="foaf:Image" class="image-style-_-1-660" />
 
 
@@ -2046,6 +2036,16 @@ Content-Type: text/html; charset=UTF-8
 <div class="twitter"><span class="fa-brands fa-twitter"></span><a href="https://www.twitter.com/BruceGrandy">Twitter</a></div>
 </div>
 <a class="button button--emphasis" href="/your-government/mayor-council/bruce-grandy">Bruce Grandy's Bio</a></span></div></div>
+    <div class="views-row"><div class="views-field views-field-field-image"><div class="field-content">  <img loading="lazy" src="/sites/default/files/styles/1_1_660/public/2023-04/greg_ericson.jpg?itok=IEkX-lEW" width="660" height="660" alt="greg_ericson.jpg" typeof="foaf:Image" class="image-style-_-1-660" />
+
+
+</div></div><div class="views-field views-field-title"><h3 class="field-content mb-4"><a href="/your-government/mayor-council/greg-ericson" hreflang="en">Greg Ericson</a></h3></div><div class="views-field views-field-field-councillor-title"><div class="field-content">Councillor, Ward 8 (Skyline Acres)</div></div><div class="views-field views-field-nothing"><span class="field-content"><div>
+<div class="email"><span class="fa-solid fa-at"></span> <a href="mailto:greg.ericson@fredericton.ca">greg.ericson@fredericton.ca</a></div>
+<div class="phone"><span class="fa-solid fa-phone"></span> 506-470-4761</div>
+<div class="facebook"><span class="fa-brands fa-facebook-f"></span><a href="https://www.facebook.com/GregEricsonWard8">Facebook</a></div>
+<div class="twitter"><span class="fa-brands fa-twitter"></span><a href="https://twitter.com/gregericson">Twitter</a></div>
+</div>
+<a class="button button--emphasis" href="/your-government/mayor-council/greg-ericson">Greg Ericson's Bio</a></span></div></div>
     <div class="views-row"><div class="views-field views-field-field-image"><div class="field-content">  <img loading="lazy" src="/sites/default/files/styles/1_1_660/public/2023-04/steve_hicks.jpg?itok=vMzcglVw" width="660" height="660" alt="steve_hicks.jpg" typeof="foaf:Image" class="image-style-_-1-660" />
 
 
@@ -2254,7 +2254,7 @@ E3B 1B5</address>                <div class="contact-hours">
   </div>
 
     
-    <script type="application/json" data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/","pathPrefix":"","currentPath":"node\/1148","currentPathIsAdmin":false,"isFront":false,"currentLanguage":"en"},"pluralDelimiter":"\u0003","suppressDeprecationErrors":true,"ajaxPageState":{"libraries":"eJx1kFFuxCAMRC9El6-eBzngEDeOjTC0SU-_tLtRlZX6YzxvpLHNhK1hDbgXNUxhJh7SfEbBCuwig9nhJzA8-w3NIKOdWjQNT3UljCqG0vxFvW0kL76NoSR5RGjFEVA3YPpGh3tjktWn2gvw7SndXDFhpdhU_KzS7EIy6zQ2zaqZMYAAH43iOOEFuAIVcoWy2Dngj9y6lD4x2YLJGUKNS4BCAXrTqFthbOj_4c4Oa7g9PmnkSi8B0rjax_XdfRJ-mf-tN_iA_QI2TZ3xgcKPGxaypvXwz_cOQLqkHA","theme":"fredericton","theme_token":null},"ajaxTrustedUrl":{"\/search":true},"cookieconsent":{"message":"This website uses cookies to ensure you get the best experience on our website","dismiss":"Close","learnMore":"More info.","link":"","path":"\/","expiry":365,"target":"_self","domain":".www.fredericton.ca","markup":"\u003Cdiv class=\u0022cc_banner cc_container cc_container--open\u0022 id=\u0022cc_banner\u0022\u003E\n  \u003Cp class=\u0022cc_message\u0022\u003EThis website uses cookies to ensure you get the best experience on our website \u003Ca data-cc-if=\u0022options.link\u0022 target=\u0022_self\u0022 class=\u0022cc_more_info\u0022 href=\u0022\u0022\u003EMore info.\u003C\/a\u003E\u003C\/p\u003E\n  \u003Cbutton data-cc-event=\u0022click:dismiss\u0022 class=\u0022cc_btn cc_btn_accept_all\u0022 aria-controls=\u0022cc_banner\u0022\u003EClose\u003C\/button\u003E\n\u003C\/div\u003E\n","container":null,"theme":""},"google_analytics":{"account":"G-M7BY6F321Z","trackOutbound":true,"trackMailto":true,"trackTel":true,"trackDownload":true,"trackDownloadExtensions":"7z|aac|arc|arj|asf|asx|avi|bin|csv|doc(x|m)?|dot(x|m)?|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt(x|m)?|pot(x|m)?|pps(x|m)?|ppam|sld(x|m)?|thmx|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls(x|m|b)?|xlt(x|m)|xlam|xml|z|zip"},"data":{"extlink":{"extTarget":false,"extTargetNoOverride":false,"extNofollow":false,"extNoreferrer":true,"extFollowNoOverride":false,"extClass":"0","extLabel":"(link is external)","extImgClass":false,"extSubdomains":true,"extExclude":"","extInclude":"","extCssExclude":"","extCssExplicit":"","extAlert":false,"extAlertText":"This link will take you to an external web site. We are not responsible for their content.","mailtoClass":"0","mailtoLabel":"(link sends email)","extUseFontAwesome":false,"extIconPlacement":"append","extFaLinkClasses":"fa fa-external-link","extFaMailtoClasses":"fa fa-envelope-o","whitelistedDomains":[]}},"field_group":{"html_element":{"mode":"default","context":"view","settings":{"classes":"quicklink","show_empty_fields":false,"id":"","element":"div","show_label":false,"label_element":"h3","label_element_classes":"","attributes":"","effect":"none","speed":"fast"}}},"search_api_autocomplete":{"search_solr":{"auto_submit":true,"min_length":3}},"viewsAjaxHistory":{"renderPageItem":0,"initialExposedInput":{"views_dom_id:d3ed1e673732df8478a9a1e1470c30213a8f8c7c5d981e3aa909e077c70aee89":null}},"views":{"ajax_path":"\/views\/ajax","ajaxViews":{"views_dom_id:d3ed1e673732df8478a9a1e1470c30213a8f8c7c5d981e3aa909e077c70aee89":{"view_name":"councillor","view_display_id":"block_1","view_args":"","view_path":"\/node\/1148","view_base_path":null,"view_dom_id":"d3ed1e673732df8478a9a1e1470c30213a8f8c7c5d981e3aa909e077c70aee89","pager_element":0,"viewsreference":{"data":{"limit":"","offset":"","argument":null,"pager":"","title":0,"exposed_filters":null},"enabled_settings":{"limit":"limit","offset":"offset","argument":"argument","pager":"pager","title":"title","exposed_filters":"exposed_filters"},"parent_entity_type":"paragraph","parent_entity_id":"2835","parent_field_name":"field_view"}}}},"user":{"uid":0,"permissionsHash":"107ad179a44cbd7c89a67ffb16f43a8f6b9c2ee2c115662f391d3bf91ba0d85e"}}</script>
+    <script type="application/json" data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/","pathPrefix":"","currentPath":"node\/1148","currentPathIsAdmin":false,"isFront":false,"currentLanguage":"en"},"pluralDelimiter":"\u0003","suppressDeprecationErrors":true,"ajaxPageState":{"libraries":"eJx1kFFuxCAMRC9El6-eBzngEDeOjTC0SU-_tLtRlZX6YzxvpLHNhK1hDbgXNUxhJh7SfEbBCuwig9nhJzA8-w3NIKOdWjQNT3UljCqG0vxFvW0kL76NoSR5RGjFEVA3YPpGh3tjktWn2gvw7SndXDFhpdhU_KzS7EIy6zQ2zaqZMYAAH43iOOEFuAIVcoWy2Dngj9y6lD4x2YLJGUKNS4BCAXrTqFthbOj_4c4Oa7g9PmnkSi8B0rjax_XdfRJ-mf-tN_iA_QI2TZ3xgcKPGxaypvXwz_cOQLqkHA","theme":"fredericton","theme_token":null},"ajaxTrustedUrl":{"\/search":true},"cookieconsent":{"message":"This website uses cookies to ensure you get the best experience on our website","dismiss":"Close","learnMore":"More info.","link":"","path":"\/","expiry":365,"target":"_self","domain":".www.fredericton.ca","markup":"\u003Cdiv class=\u0022cc_banner cc_container cc_container--open\u0022 id=\u0022cc_banner\u0022\u003E\n  \u003Cp class=\u0022cc_message\u0022\u003EThis website uses cookies to ensure you get the best experience on our website \u003Ca data-cc-if=\u0022options.link\u0022 target=\u0022_self\u0022 class=\u0022cc_more_info\u0022 href=\u0022\u0022\u003EMore info.\u003C\/a\u003E\u003C\/p\u003E\n  \u003Cbutton data-cc-event=\u0022click:dismiss\u0022 class=\u0022cc_btn cc_btn_accept_all\u0022 aria-controls=\u0022cc_banner\u0022\u003EClose\u003C\/button\u003E\n\u003C\/div\u003E\n","container":null,"theme":""},"google_analytics":{"account":"G-M7BY6F321Z","trackOutbound":true,"trackMailto":true,"trackTel":true,"trackDownload":true,"trackDownloadExtensions":"7z|aac|arc|arj|asf|asx|avi|bin|csv|doc(x|m)?|dot(x|m)?|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt(x|m)?|pot(x|m)?|pps(x|m)?|ppam|sld(x|m)?|thmx|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls(x|m|b)?|xlt(x|m)|xlam|xml|z|zip"},"data":{"extlink":{"extTarget":false,"extTargetNoOverride":false,"extNofollow":false,"extNoreferrer":true,"extFollowNoOverride":false,"extClass":"0","extLabel":"(link is external)","extImgClass":false,"extSubdomains":true,"extExclude":"","extInclude":"","extCssExclude":"","extCssExplicit":"","extAlert":false,"extAlertText":"This link will take you to an external web site. We are not responsible for their content.","mailtoClass":"0","mailtoLabel":"(link sends email)","extUseFontAwesome":false,"extIconPlacement":"append","extFaLinkClasses":"fa fa-external-link","extFaMailtoClasses":"fa fa-envelope-o","whitelistedDomains":[]}},"field_group":{"html_element":{"mode":"default","context":"view","settings":{"classes":"quicklink","show_empty_fields":false,"id":"","element":"div","show_label":false,"label_element":"h3","label_element_classes":"","attributes":"","effect":"none","speed":"fast"}}},"search_api_autocomplete":{"search_solr":{"auto_submit":true,"min_length":3}},"viewsAjaxHistory":{"renderPageItem":0,"initialExposedInput":{"views_dom_id:8aa6d1e6b7b0867c13a7ba8fe29a68bfd37fcd811a3f06da208d10cbf445f50d":null}},"views":{"ajax_path":"\/views\/ajax","ajaxViews":{"views_dom_id:8aa6d1e6b7b0867c13a7ba8fe29a68bfd37fcd811a3f06da208d10cbf445f50d":{"view_name":"councillor","view_display_id":"block_1","view_args":"","view_path":"\/node\/1148","view_base_path":null,"view_dom_id":"8aa6d1e6b7b0867c13a7ba8fe29a68bfd37fcd811a3f06da208d10cbf445f50d","pager_element":0,"viewsreference":{"data":{"limit":"","offset":"","argument":null,"pager":"","title":0,"exposed_filters":null},"enabled_settings":{"limit":"limit","offset":"offset","argument":"argument","pager":"pager","title":"title","exposed_filters":"exposed_filters"},"parent_entity_type":"paragraph","parent_entity_id":"2835","parent_field_name":"field_view"}}}},"user":{"uid":0,"permissionsHash":"107ad179a44cbd7c89a67ffb16f43a8f6b9c2ee2c115662f391d3bf91ba0d85e"}}</script>
 <script src="/sites/default/files/js/js_NXQIcl3oCD4OzX-vqGQcIj758fE2fhlpvhfVtS_L_Bo.js?scope=footer&amp;delta=0&amp;language=en&amp;theme=fredericton&amp;include=eJx1jVsSgzAIRTeUmiVlMGKkImQCtrr72tYfO9MfmHN43Kw6E2YVQ_Fo6E5SLOSLvtBtIQlFtTAmEODdKVv8FWFsOGCj7CqxsPbAATdnkjkOba3A3YmhP0KxJdyqGg5pJD7w-IiC7bgyhJanBJUSrK5Zl8roGP_48CB8WoI7bGkic217PPt3FD-1ey-8ADKlZT0"></script>
 <script src="https://kit.fontawesome.com/5cfddd6fef.js"></script>
 <script src="/sites/default/files/js/js_pBR5xfaKzP_ghCKf7tyfjd3vPY601jOC5rHh8NcCFzI.js?scope=footer&amp;delta=2&amp;language=en&amp;theme=fredericton&amp;include=eJx1jVsSgzAIRTeUmiVlMGKkImQCtrr72tYfO9MfmHN43Kw6E2YVQ_Fo6E5SLOSLvtBtIQlFtTAmEODdKVv8FWFsOGCj7CqxsPbAATdnkjkOba3A3YmhP0KxJdyqGg5pJD7w-IiC7bgyhJanBJUSrK5Zl8roGP_48CB8WoI7bGkic217PPt3FD-1ey-8ADKlZT0"></script>

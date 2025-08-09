@@ -1,6 +1,6 @@
 status: 200
 encoding: UTF-8
-Date: Fri, 08 Aug 2025 23:50:28 GMT
+Date: Sat, 09 Aug 2025 03:14:00 GMT
 Server: Apache
 X-Drupal-Dynamic-Cache: UNCACHEABLE (poor cacheability)
 Content-language: en
@@ -13,8 +13,8 @@ X-Frame-Options: SAMEORIGIN
 X-XSS-Protection: 1; mode=block
 Strict-Transport-Security: max-age=31536000; includeSubDomains
 Referrer-Policy: no-referrer-when-downgrade
-Last-Modified: Fri, 08 Aug 2025 23:50:26 GMT
-ETag: "1754697026-gzip"
+Last-Modified: Sat, 09 Aug 2025 03:13:59 GMT
+ETag: "1754709239-gzip"
 Content-Encoding: gzip
 Content-Length: 12097
 Content-Type: text/html; charset=UTF-8
@@ -293,7 +293,7 @@ Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
         </div>
       </div>
     </div>
-          <div class="views-element-container"><div class="view view-emergency-alerts view-id-emergency_alerts view-display-id-block_1 js-view-dom-id-25f1144233c25b8bc3363702a57c3570d429a4a2d0f95a21b8a925d5a4bca6d7">
+          <div class="views-element-container"><div class="view view-emergency-alerts view-id-emergency_alerts view-display-id-block_1 js-view-dom-id-07e330894da24256e7d9ea191a82fbccad9dba2306a5f4a48ee9ebc4fff42e8b">
   
     
       
@@ -757,7 +757,7 @@ Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
 			</span>
 		</div>
   <h3>
-    <a href="/sites/default/files/public-files/assets/PDF/Citywide-WardMap.pdf?cb=1754697026" target="_blank" class="nopdfviewer">
+    <a href="/sites/default/files/public-files/assets/PDF/Citywide-WardMap.pdf?cb=1754709239" target="_blank" class="nopdfviewer">
       
             Ward Boundary &amp; Neighbourhood Map 
       
@@ -869,7 +869,7 @@ Edmonton, Alberta T5J 2R7</p>
 
 
 
-      <div class="views-element-container"><div class="view view-footer-notices view-id-footer_notices view-display-id-block_1 js-view-dom-id-ff28eabfd518cd7afcb3d579744f7a0f2e2fce03de56374b154054db9086767e">
+      <div class="views-element-container"><div class="view view-footer-notices view-id-footer_notices view-display-id-block_1 js-view-dom-id-e3ed618b29f376d1cdbe606bcff317431f325e5feca55450c1ceb318ef3d6a7f">
   
     
       

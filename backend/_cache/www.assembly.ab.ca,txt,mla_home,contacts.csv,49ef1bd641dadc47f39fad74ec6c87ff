@@ -2,9 +2,9 @@ status: 200
 encoding: None
 Cache-Control: max-age=2678400
 Content-Type: application/octet-stream
-Last-Modified: Sat, 09 Aug 2025 01:48:57 GMT
+Last-Modified: Sat, 09 Aug 2025 05:36:50 GMT
 Accept-Ranges: bytes
-ETag: "c4750c5cf8dc1:0"
+ETag: "e1b2b89aef8dc1:0"
 Server: Microsoft-IIS/10.0
 Content-Security-Policy: default-src 'self'; script-src *.googleapis.com *.gstatic.com www.google.com apis.google.com connect.facebook.net ajax.aspnetcdn.com platform.twitter.com https://syndication.twitter.com/ https://s.ytimg.com https://publish.twitter.com *.twimg.com platform.linkedin.com http://platform.stumbleupon.com/1/widgets.js *.youtube.com *.googletagmanager.com *.google-analytics.com https://www.youtube.com/iframe_api https://dec.azureedge.net/ munchkin.marketo.net *.eloqua.com js.hs-scripts.com js.hs-analytics.net *.en25.com *.assembly.ab.ca 'self' https://cdn.insight.sitefinity.com https://dec.azureedge.net cdn.ampproject.org web-chat.nativechat.com 'unsafe-inline' 'unsafe-eval'; style-src *.googleapis.com *.gstatic.com netdna.bootstrapcdn.com kendo.cdn.telerik.com www.google.com platform.twitter.com/css/ *.twimg.com *.envoke.com *.assembly.ab.ca 'self' https://cdn.insight.sitefinity.com https://dec.azureedge.net web-chat.nativechat.com 'unsafe-inline'; img-src *.gstatic.com *.googleapis.com platform.tumblr.com web.facebook.com www.facebook.com www.redditstatic.com www.linkedin.com https://syndication.twitter.com https://static.licdn.com/scds/common/u/images/apps/connect/sprites/sprite_connect_v14.png pbs.twimg.com platform.twitter.com/css/ *.twimg.com data: blob: *.google-analytics.com https://*.insight.sitefinity.com https://*.dec.sitefinity.com *.eloqua.com track.hubspot.com https://i.ytimg.com https://www.google.ca/ads/* *.envoke.io https://www.google.ca/ads *.envoke.com *.assembly.ab.ca 'self' https://cdn.insight.sitefinity.com https://dec.azureedge.net web-chat.nativechat.com; font-src 'self' fonts.gstatic.com kendo.cdn.telerik.com netdna.bootstrapcdn.com data: *.bootstrapcdn.com *.assembly.ab.ca; frame-src *.google.com *.googletagmanager.com *.youtube.com *.assembly.ab.ca 'self' web-chat.nativechat.com; connect-src accounts.google.com *.mktoresp.com analytics.google.com https://www.google-analytics.com https://stats.g.doubleclick.net https://info.assembly.ab.ca *.assembly.ab.ca 'self' https://*.insight.sitefinity.com https://*.dec.sitefinity.com; media-src 'self' data: blob: *.assembly.ab.ca; child-src https://platform.twitter.com/ https://syndication.twitter.com/ https://www.youtube.com/ https://player.vimeo.com/ https://w.soundcloud.com/ apis.google.com accounts.google.com staticxx.facebook.com www.facebook.com web.facebook.com badge.stumbleupon.com *.assembly.ab.ca 'self' web-chat.nativechat.com
 Referrer-Policy: no-referrer-when-downgrade
@@ -13,11 +13,11 @@ X-Content-Type-Options: nosniff
 X-Frame-Options: SAMEORIGIN
 X-XSS-Protection: 1; mode=block
 X-Powered-By: ASP.NET
-Date: Sat, 09 Aug 2025 01:50:29 GMT
+Date: Sat, 09 Aug 2025 05:44:37 GMT
 Content-Length: 27236
 
 Date file created
-"2025-Aug-08 19:48:57 -06:00"
+"2025-Aug-08 23:36:49 -06:00"
 
 "Constituency Number","Constituency Name","MLA Title","MLA First Name","MLA Middle Names","MLA Last Name","Caucus","Address Type","Address Line1","Address Line2","City","Province","Country","Postal Code","Phone Number","Fax Number","Address Type","Address Line1","Address Line2","City","Province","Country","Postal Code","Phone Number","Toll-Free Number","Fax Number","Email"
 "47","Airdrie-Cochrane","Hon.","Pete","","Guthrie","IND","Legislature Office","4th Floor","9820-107 Street","Edmonton","AB","","T5K 1E7","","","Constituency Office","Suite 1B, 60 Railway Street East","","Cochrane","AB","Canada","T4C 1B5","587.493.2050","","403.840.0439","Airdrie.Cochrane@assembly.ab.ca"

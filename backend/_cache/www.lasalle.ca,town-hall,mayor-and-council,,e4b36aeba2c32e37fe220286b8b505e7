@@ -1,12 +1,12 @@
 status: 200
 encoding: utf-8
-Date: Sat, 09 Aug 2025 01:50:56 GMT
+Date: Sat, 09 Aug 2025 05:45:00 GMT
 Content-Type: text/html; charset=utf-8
 Transfer-Encoding: chunked
 Connection: keep-alive
 Content-Encoding: gzip
 Vary: Accept-Encoding
-x-azure-ref: 20250809T015056Z-185659d9b78rwq5nhC1YTOcte00000000bq0000000005g28
+x-azure-ref: 20250809T054500Z-185659d9b78jvbd6hC1YTO4g3800000005c000000000a9b0
 X-Cache: CONFIG_NOCACHE
 Strict-Transport-Security: max-age=31536000; includeSubDomains
 X-Frame-Options: SAMEORIGIN
@@ -627,11 +627,11 @@ var notificationExDays = 365;        </script>
 
                         <div class="repeatable accordion anchored-accordion tab-basic " data-os-animation="fadeIn" data-os-animation-delay="0s" data-os-animation-duration="1.2s">
                         <p class="tab " >
-                        <a class="nav-link nav-button-link anchored-accordion-item collapsed" data-toggle="collapse" href="#collapse_1942413d-0e5d-4fbe-9356-51df5278c50f_1" name="2022-2026" aria-expanded="false" aria-controls="collapse_1942413d-0e5d-4fbe-9356-51df5278c50f_1" role="button">
+                        <a class="nav-link nav-button-link anchored-accordion-item collapsed" data-toggle="collapse" href="#collapse_ab71dd40-945d-48dc-af31-b2fae7132fc7_1" name="2022-2026" aria-expanded="false" aria-controls="collapse_ab71dd40-945d-48dc-af31-b2fae7132fc7_1" role="button">
                                 2022-2026
                             </a>
                         </p>
-                        <div id="collapse_1942413d-0e5d-4fbe-9356-51df5278c50f_1" class="info repeatable-content collapse  ">
+                        <div id="collapse_ab71dd40-945d-48dc-af31-b2fae7132fc7_1" class="info repeatable-content collapse  ">
                             <div class="text"><div id="AccordionPanel-2-1" class="AccordionContent" aria-labelledby="AccordionTitle-2-1" aria-hidden="false">
 <p>Mayor - Crystal Meloche</p>
 <p>Deputy Mayor - Michael Akpata</p>
@@ -643,11 +643,11 @@ var notificationExDays = 365;        </script>
 </div></div>
                         </div>
                         <p class="tab " >
-                        <a class="nav-link nav-button-link anchored-accordion-item collapsed" data-toggle="collapse" href="#collapse_1942413d-0e5d-4fbe-9356-51df5278c50f_2" name="2018-2022" aria-expanded="false" aria-controls="collapse_1942413d-0e5d-4fbe-9356-51df5278c50f_2" role="button">
+                        <a class="nav-link nav-button-link anchored-accordion-item collapsed" data-toggle="collapse" href="#collapse_ab71dd40-945d-48dc-af31-b2fae7132fc7_2" name="2018-2022" aria-expanded="false" aria-controls="collapse_ab71dd40-945d-48dc-af31-b2fae7132fc7_2" role="button">
                                 2018-2022
                             </a>
                         </p>
-                        <div id="collapse_1942413d-0e5d-4fbe-9356-51df5278c50f_2" class="info repeatable-content collapse  ">
+                        <div id="collapse_ab71dd40-945d-48dc-af31-b2fae7132fc7_2" class="info repeatable-content collapse  ">
                             <div class="text"><div id="AccordionPanel-2-2" class="AccordionContent" aria-labelledby="AccordionTitle-2-2" aria-hidden="false">
 <p>Mayor - Marc Bondy</p>
 <p>Deputy Mayor - Crystal Meloche</p>
@@ -659,11 +659,11 @@ var notificationExDays = 365;        </script>
 </div></div>
                         </div>
                         <p class="tab " >
-                        <a class="nav-link nav-button-link anchored-accordion-item collapsed" data-toggle="collapse" href="#collapse_1942413d-0e5d-4fbe-9356-51df5278c50f_3" name="2014-2018" aria-expanded="false" aria-controls="collapse_1942413d-0e5d-4fbe-9356-51df5278c50f_3" role="button">
+                        <a class="nav-link nav-button-link anchored-accordion-item collapsed" data-toggle="collapse" href="#collapse_ab71dd40-945d-48dc-af31-b2fae7132fc7_3" name="2014-2018" aria-expanded="false" aria-controls="collapse_ab71dd40-945d-48dc-af31-b2fae7132fc7_3" role="button">
                                 2014 - 2018
                             </a>
                         </p>
-                        <div id="collapse_1942413d-0e5d-4fbe-9356-51df5278c50f_3" class="info repeatable-content collapse  ">
+                        <div id="collapse_ab71dd40-945d-48dc-af31-b2fae7132fc7_3" class="info repeatable-content collapse  ">
                             <div class="text"><div id="AccordionPanel-2-3" class="AccordionContent" aria-labelledby="AccordionTitle-2-3" aria-hidden="false">
 <p>Mayor - Ken Antaya</p>
 <p>Deputy Mayor - Marc Bondy</p>
@@ -675,11 +675,11 @@ var notificationExDays = 365;        </script>
 </div></div>
                         </div>
                         <p class="tab " >
-                        <a class="nav-link nav-button-link anchored-accordion-item collapsed" data-toggle="collapse" href="#collapse_1942413d-0e5d-4fbe-9356-51df5278c50f_4" name="2010-2014" aria-expanded="false" aria-controls="collapse_1942413d-0e5d-4fbe-9356-51df5278c50f_4" role="button">
+                        <a class="nav-link nav-button-link anchored-accordion-item collapsed" data-toggle="collapse" href="#collapse_ab71dd40-945d-48dc-af31-b2fae7132fc7_4" name="2010-2014" aria-expanded="false" aria-controls="collapse_ab71dd40-945d-48dc-af31-b2fae7132fc7_4" role="button">
                                 2010 - 2014
                             </a>
                         </p>
-                        <div id="collapse_1942413d-0e5d-4fbe-9356-51df5278c50f_4" class="info repeatable-content collapse  ">
+                        <div id="collapse_ab71dd40-945d-48dc-af31-b2fae7132fc7_4" class="info repeatable-content collapse  ">
                             <div class="text"><div id="AccordionPanel-2-4" class="AccordionContent" aria-labelledby="AccordionTitle-2-4" aria-hidden="false">
 <p>Mayor - Ken Antaya</p>
 <p>Deputy Mayor - Mark Carrick</p>
@@ -691,11 +691,11 @@ var notificationExDays = 365;        </script>
 </div></div>
                         </div>
                         <p class="tab " >
-                        <a class="nav-link nav-button-link anchored-accordion-item collapsed" data-toggle="collapse" href="#collapse_1942413d-0e5d-4fbe-9356-51df5278c50f_5" name="2006-2010" aria-expanded="false" aria-controls="collapse_1942413d-0e5d-4fbe-9356-51df5278c50f_5" role="button">
+                        <a class="nav-link nav-button-link anchored-accordion-item collapsed" data-toggle="collapse" href="#collapse_ab71dd40-945d-48dc-af31-b2fae7132fc7_5" name="2006-2010" aria-expanded="false" aria-controls="collapse_ab71dd40-945d-48dc-af31-b2fae7132fc7_5" role="button">
                                 2006 - 2010
                             </a>
                         </p>
-                        <div id="collapse_1942413d-0e5d-4fbe-9356-51df5278c50f_5" class="info repeatable-content collapse  ">
+                        <div id="collapse_ab71dd40-945d-48dc-af31-b2fae7132fc7_5" class="info repeatable-content collapse  ">
                             <div class="text"><div id="AccordionPanel-2-5" class="AccordionContent" aria-labelledby="AccordionTitle-2-5" aria-hidden="false">
 <p>Mayor - Gary Baxter</p>
 <p>Deputy Mayor - Mark Carrick</p>
@@ -707,11 +707,11 @@ var notificationExDays = 365;        </script>
 </div></div>
                         </div>
                         <p class="tab " >
-                        <a class="nav-link nav-button-link anchored-accordion-item collapsed" data-toggle="collapse" href="#collapse_1942413d-0e5d-4fbe-9356-51df5278c50f_6" name="2003-2006" aria-expanded="false" aria-controls="collapse_1942413d-0e5d-4fbe-9356-51df5278c50f_6" role="button">
+                        <a class="nav-link nav-button-link anchored-accordion-item collapsed" data-toggle="collapse" href="#collapse_ab71dd40-945d-48dc-af31-b2fae7132fc7_6" name="2003-2006" aria-expanded="false" aria-controls="collapse_ab71dd40-945d-48dc-af31-b2fae7132fc7_6" role="button">
                                 2003 - 2006
                             </a>
                         </p>
-                        <div id="collapse_1942413d-0e5d-4fbe-9356-51df5278c50f_6" class="info repeatable-content collapse  ">
+                        <div id="collapse_ab71dd40-945d-48dc-af31-b2fae7132fc7_6" class="info repeatable-content collapse  ">
                             <div class="text"><div id="AccordionPanel-2-6" class="AccordionContent" aria-labelledby="AccordionTitle-2-6" aria-hidden="false">
 <p>Mayor - Mike Raymond</p>
 <p>Deputy Mayor - William (Bill) Varga</p>
@@ -723,11 +723,11 @@ var notificationExDays = 365;        </script>
 </div></div>
                         </div>
                         <p class="tab " >
-                        <a class="nav-link nav-button-link anchored-accordion-item collapsed" data-toggle="collapse" href="#collapse_1942413d-0e5d-4fbe-9356-51df5278c50f_7" name="2000-2003" aria-expanded="false" aria-controls="collapse_1942413d-0e5d-4fbe-9356-51df5278c50f_7" role="button">
+                        <a class="nav-link nav-button-link anchored-accordion-item collapsed" data-toggle="collapse" href="#collapse_ab71dd40-945d-48dc-af31-b2fae7132fc7_7" name="2000-2003" aria-expanded="false" aria-controls="collapse_ab71dd40-945d-48dc-af31-b2fae7132fc7_7" role="button">
                                 2000 - 2003
                             </a>
                         </p>
-                        <div id="collapse_1942413d-0e5d-4fbe-9356-51df5278c50f_7" class="info repeatable-content collapse  ">
+                        <div id="collapse_ab71dd40-945d-48dc-af31-b2fae7132fc7_7" class="info repeatable-content collapse  ">
                             <div class="text"><div id="AccordionPanel-2-7" class="AccordionContent" aria-labelledby="AccordionTitle-2-7" aria-hidden="false">
 <p>Mayor - William (Bill) Varga</p>
 <p>Deputy Mayor - Mike Raymond</p>
@@ -739,11 +739,11 @@ var notificationExDays = 365;        </script>
 </div></div>
                         </div>
                         <p class="tab " >
-                        <a class="nav-link nav-button-link anchored-accordion-item collapsed" data-toggle="collapse" href="#collapse_1942413d-0e5d-4fbe-9356-51df5278c50f_8" name="1997-2000" aria-expanded="false" aria-controls="collapse_1942413d-0e5d-4fbe-9356-51df5278c50f_8" role="button">
+                        <a class="nav-link nav-button-link anchored-accordion-item collapsed" data-toggle="collapse" href="#collapse_ab71dd40-945d-48dc-af31-b2fae7132fc7_8" name="1997-2000" aria-expanded="false" aria-controls="collapse_ab71dd40-945d-48dc-af31-b2fae7132fc7_8" role="button">
                                 1997 - 2000
                             </a>
                         </p>
-                        <div id="collapse_1942413d-0e5d-4fbe-9356-51df5278c50f_8" class="info repeatable-content collapse  ">
+                        <div id="collapse_ab71dd40-945d-48dc-af31-b2fae7132fc7_8" class="info repeatable-content collapse  ">
                             <div class="text"><div class="AccordionTrigger open"></div>
 <div id="AccordionPanel-2-8" class="AccordionContent" aria-labelledby="AccordionTitle-2-8" aria-hidden="false">
 <p>Mayor - Vince Marcotte</p>
@@ -756,11 +756,11 @@ var notificationExDays = 365;        </script>
 </div></div>
                         </div>
                         <p class="tab " >
-                        <a class="nav-link nav-button-link anchored-accordion-item collapsed" data-toggle="collapse" href="#collapse_1942413d-0e5d-4fbe-9356-51df5278c50f_9" name="1994-1997" aria-expanded="false" aria-controls="collapse_1942413d-0e5d-4fbe-9356-51df5278c50f_9" role="button">
+                        <a class="nav-link nav-button-link anchored-accordion-item collapsed" data-toggle="collapse" href="#collapse_ab71dd40-945d-48dc-af31-b2fae7132fc7_9" name="1994-1997" aria-expanded="false" aria-controls="collapse_ab71dd40-945d-48dc-af31-b2fae7132fc7_9" role="button">
                                 1994 - 1997
                             </a>
                         </p>
-                        <div id="collapse_1942413d-0e5d-4fbe-9356-51df5278c50f_9" class="info repeatable-content collapse  ">
+                        <div id="collapse_ab71dd40-945d-48dc-af31-b2fae7132fc7_9" class="info repeatable-content collapse  ">
                             <div class="text"><div id="AccordionPanel-2-9" class="AccordionContent" aria-labelledby="AccordionTitle-2-9" aria-hidden="false">
 <p>Mayor - Vince Marcotte</p>
 <p>Deputy Mayor - William (Bill) Varga</p>
@@ -772,11 +772,11 @@ var notificationExDays = 365;        </script>
 </div></div>
                         </div>
                         <p class="tab " >
-                        <a class="nav-link nav-button-link anchored-accordion-item collapsed" data-toggle="collapse" href="#collapse_1942413d-0e5d-4fbe-9356-51df5278c50f_10" name="1991-1994" aria-expanded="false" aria-controls="collapse_1942413d-0e5d-4fbe-9356-51df5278c50f_10" role="button">
+                        <a class="nav-link nav-button-link anchored-accordion-item collapsed" data-toggle="collapse" href="#collapse_ab71dd40-945d-48dc-af31-b2fae7132fc7_10" name="1991-1994" aria-expanded="false" aria-controls="collapse_ab71dd40-945d-48dc-af31-b2fae7132fc7_10" role="button">
                                 1991 - 1994
                             </a>
                         </p>
-                        <div id="collapse_1942413d-0e5d-4fbe-9356-51df5278c50f_10" class="info repeatable-content collapse  ">
+                        <div id="collapse_ab71dd40-945d-48dc-af31-b2fae7132fc7_10" class="info repeatable-content collapse  ">
                             <div class="text"><div class="AccordionTrigger open"></div>
 <div id="AccordionPanel-2-10" class="AccordionContent" aria-labelledby="AccordionTitle-2-10" aria-hidden="false">
 <p>Mayor - Vince Marcotte</p>
@@ -789,11 +789,11 @@ var notificationExDays = 365;        </script>
 </div></div>
                         </div>
                         <p class="tab " >
-                        <a class="nav-link nav-button-link anchored-accordion-item collapsed" data-toggle="collapse" href="#collapse_1942413d-0e5d-4fbe-9356-51df5278c50f_11" name="1988-1990,TownshipofSandwichWest" aria-expanded="false" aria-controls="collapse_1942413d-0e5d-4fbe-9356-51df5278c50f_11" role="button">
+                        <a class="nav-link nav-button-link anchored-accordion-item collapsed" data-toggle="collapse" href="#collapse_ab71dd40-945d-48dc-af31-b2fae7132fc7_11" name="1988-1990,TownshipofSandwichWest" aria-expanded="false" aria-controls="collapse_ab71dd40-945d-48dc-af31-b2fae7132fc7_11" role="button">
                                 1988 - 1990, Township of Sandwich West
                             </a>
                         </p>
-                        <div id="collapse_1942413d-0e5d-4fbe-9356-51df5278c50f_11" class="info repeatable-content collapse  ">
+                        <div id="collapse_ab71dd40-945d-48dc-af31-b2fae7132fc7_11" class="info repeatable-content collapse  ">
                             <div class="text"><div id="AccordionPanel-2-11" class="AccordionContent" aria-labelledby="AccordionTitle-2-11" aria-hidden="false">
 <p>Reeve - Vince Marcotte</p>
 <p>Deputy Reeve - William (Bill) Varga</p>
@@ -803,11 +803,11 @@ var notificationExDays = 365;        </script>
 </div></div>
                         </div>
                         <p class="tab " >
-                        <a class="nav-link nav-button-link anchored-accordion-item collapsed" data-toggle="collapse" href="#collapse_1942413d-0e5d-4fbe-9356-51df5278c50f_12" name="1985-1988,TownshipofSandwichWest" aria-expanded="false" aria-controls="collapse_1942413d-0e5d-4fbe-9356-51df5278c50f_12" role="button">
+                        <a class="nav-link nav-button-link anchored-accordion-item collapsed" data-toggle="collapse" href="#collapse_ab71dd40-945d-48dc-af31-b2fae7132fc7_12" name="1985-1988,TownshipofSandwichWest" aria-expanded="false" aria-controls="collapse_ab71dd40-945d-48dc-af31-b2fae7132fc7_12" role="button">
                                 1985 - 1988, Township of Sandwich West
                             </a>
                         </p>
-                        <div id="collapse_1942413d-0e5d-4fbe-9356-51df5278c50f_12" class="info repeatable-content collapse  ">
+                        <div id="collapse_ab71dd40-945d-48dc-af31-b2fae7132fc7_12" class="info repeatable-content collapse  ">
                             <div class="text"><div id="AccordionPanel-2-12" class="AccordionContent" aria-labelledby="AccordionTitle-2-12" aria-hidden="false">
 <p>Reeve - Vince Marcotte</p>
 <p>Deputy Reeve - William (Bill) Varga</p>
@@ -817,11 +817,11 @@ var notificationExDays = 365;        </script>
 </div></div>
                         </div>
                         <p class="tab " >
-                        <a class="nav-link nav-button-link anchored-accordion-item collapsed" data-toggle="collapse" href="#collapse_1942413d-0e5d-4fbe-9356-51df5278c50f_13" name="1982-1985,TownshipofSandwichWest" aria-expanded="false" aria-controls="collapse_1942413d-0e5d-4fbe-9356-51df5278c50f_13" role="button">
+                        <a class="nav-link nav-button-link anchored-accordion-item collapsed" data-toggle="collapse" href="#collapse_ab71dd40-945d-48dc-af31-b2fae7132fc7_13" name="1982-1985,TownshipofSandwichWest" aria-expanded="false" aria-controls="collapse_ab71dd40-945d-48dc-af31-b2fae7132fc7_13" role="button">
                                 1982 - 1985, Township of Sandwich West
                             </a>
                         </p>
-                        <div id="collapse_1942413d-0e5d-4fbe-9356-51df5278c50f_13" class="info repeatable-content collapse  ">
+                        <div id="collapse_ab71dd40-945d-48dc-af31-b2fae7132fc7_13" class="info repeatable-content collapse  ">
                             <div class="text"><div id="AccordionPanel-2-13" class="AccordionContent" aria-labelledby="AccordionTitle-2-13" aria-hidden="false">
 <p>Reeve - John Menard</p>
 <p>Deputy Reeve - Eddie Pare</p>
@@ -831,11 +831,11 @@ var notificationExDays = 365;        </script>
 </div></div>
                         </div>
                         <p class="tab " >
-                        <a class="nav-link nav-button-link anchored-accordion-item collapsed" data-toggle="collapse" href="#collapse_1942413d-0e5d-4fbe-9356-51df5278c50f_14" name="1980-1982,TownshipofSandwichWest&#xA0;" aria-expanded="false" aria-controls="collapse_1942413d-0e5d-4fbe-9356-51df5278c50f_14" role="button">
+                        <a class="nav-link nav-button-link anchored-accordion-item collapsed" data-toggle="collapse" href="#collapse_ab71dd40-945d-48dc-af31-b2fae7132fc7_14" name="1980-1982,TownshipofSandwichWest&#xA0;" aria-expanded="false" aria-controls="collapse_ab71dd40-945d-48dc-af31-b2fae7132fc7_14" role="button">
                                 1980 - 1982, Township of Sandwich West 
                             </a>
                         </p>
-                        <div id="collapse_1942413d-0e5d-4fbe-9356-51df5278c50f_14" class="info repeatable-content collapse  ">
+                        <div id="collapse_ab71dd40-945d-48dc-af31-b2fae7132fc7_14" class="info repeatable-content collapse  ">
                             <div class="text"><div class="AccordionTrigger open"></div>
 <div id="AccordionPanel-2-14" class="AccordionContent" aria-labelledby="AccordionTitle-2-14" aria-hidden="false">
 <p>Reeve - John Menard</p>
@@ -846,11 +846,11 @@ var notificationExDays = 365;        </script>
 </div></div>
                         </div>
                         <p class="tab " >
-                        <a class="nav-link nav-button-link anchored-accordion-item collapsed" data-toggle="collapse" href="#collapse_1942413d-0e5d-4fbe-9356-51df5278c50f_15" name="1977-1980,TownshipofSandwichWest" aria-expanded="false" aria-controls="collapse_1942413d-0e5d-4fbe-9356-51df5278c50f_15" role="button">
+                        <a class="nav-link nav-button-link anchored-accordion-item collapsed" data-toggle="collapse" href="#collapse_ab71dd40-945d-48dc-af31-b2fae7132fc7_15" name="1977-1980,TownshipofSandwichWest" aria-expanded="false" aria-controls="collapse_ab71dd40-945d-48dc-af31-b2fae7132fc7_15" role="button">
                                 1977 - 1980, Township of Sandwich West
                             </a>
                         </p>
-                        <div id="collapse_1942413d-0e5d-4fbe-9356-51df5278c50f_15" class="info repeatable-content collapse  ">
+                        <div id="collapse_ab71dd40-945d-48dc-af31-b2fae7132fc7_15" class="info repeatable-content collapse  ">
                             <div class="text"><div class="AccordionTrigger open"></div>
 <div id="AccordionPanel-2-15" class="AccordionContent" aria-labelledby="AccordionTitle-2-15" aria-hidden="false">
 <p>Reeve - John Menard</p>
@@ -862,11 +862,11 @@ var notificationExDays = 365;        </script>
 </div></div>
                         </div>
                         <p class="tab " >
-                        <a class="nav-link nav-button-link anchored-accordion-item collapsed" data-toggle="collapse" href="#collapse_1942413d-0e5d-4fbe-9356-51df5278c50f_16" name="1975-1976,TownshipofSandwichWest" aria-expanded="false" aria-controls="collapse_1942413d-0e5d-4fbe-9356-51df5278c50f_16" role="button">
+                        <a class="nav-link nav-button-link anchored-accordion-item collapsed" data-toggle="collapse" href="#collapse_ab71dd40-945d-48dc-af31-b2fae7132fc7_16" name="1975-1976,TownshipofSandwichWest" aria-expanded="false" aria-controls="collapse_ab71dd40-945d-48dc-af31-b2fae7132fc7_16" role="button">
                                 1975 - 1976, Township of Sandwich West
                             </a>
                         </p>
-                        <div id="collapse_1942413d-0e5d-4fbe-9356-51df5278c50f_16" class="info repeatable-content collapse  ">
+                        <div id="collapse_ab71dd40-945d-48dc-af31-b2fae7132fc7_16" class="info repeatable-content collapse  ">
                             <div class="text"><div class="AccordionTrigger open"></div>
 <div id="AccordionPanel-2-16" class="AccordionContent" aria-labelledby="AccordionTitle-2-16" aria-hidden="false">
 <p>Reeve - John Menard</p>
@@ -877,11 +877,11 @@ var notificationExDays = 365;        </script>
 </div></div>
                         </div>
                         <p class="tab " >
-                        <a class="nav-link nav-button-link anchored-accordion-item collapsed" data-toggle="collapse" href="#collapse_1942413d-0e5d-4fbe-9356-51df5278c50f_17" name="1974,TownshipofSandwichWest" aria-expanded="false" aria-controls="collapse_1942413d-0e5d-4fbe-9356-51df5278c50f_17" role="button">
+                        <a class="nav-link nav-button-link anchored-accordion-item collapsed" data-toggle="collapse" href="#collapse_ab71dd40-945d-48dc-af31-b2fae7132fc7_17" name="1974,TownshipofSandwichWest" aria-expanded="false" aria-controls="collapse_ab71dd40-945d-48dc-af31-b2fae7132fc7_17" role="button">
                                 1974, Township of Sandwich West
                             </a>
                         </p>
-                        <div id="collapse_1942413d-0e5d-4fbe-9356-51df5278c50f_17" class="info repeatable-content collapse  ">
+                        <div id="collapse_ab71dd40-945d-48dc-af31-b2fae7132fc7_17" class="info repeatable-content collapse  ">
                             <div class="text"><div class="AccordionTrigger open"></div>
 <div id="AccordionPanel-2-17" class="AccordionContent" aria-labelledby="AccordionTitle-2-17" aria-hidden="false">
 <p>Reeve - H. Runstedler</p>
@@ -892,11 +892,11 @@ var notificationExDays = 365;        </script>
 </div></div>
                         </div>
                         <p class="tab " >
-                        <a class="nav-link nav-button-link anchored-accordion-item collapsed" data-toggle="collapse" href="#collapse_1942413d-0e5d-4fbe-9356-51df5278c50f_18" name="1971-1973,TownshipofSandwichWest" aria-expanded="false" aria-controls="collapse_1942413d-0e5d-4fbe-9356-51df5278c50f_18" role="button">
+                        <a class="nav-link nav-button-link anchored-accordion-item collapsed" data-toggle="collapse" href="#collapse_ab71dd40-945d-48dc-af31-b2fae7132fc7_18" name="1971-1973,TownshipofSandwichWest" aria-expanded="false" aria-controls="collapse_ab71dd40-945d-48dc-af31-b2fae7132fc7_18" role="button">
                                 1971 - 1973, Township of Sandwich West
                             </a>
                         </p>
-                        <div id="collapse_1942413d-0e5d-4fbe-9356-51df5278c50f_18" class="info repeatable-content collapse  ">
+                        <div id="collapse_ab71dd40-945d-48dc-af31-b2fae7132fc7_18" class="info repeatable-content collapse  ">
                             <div class="text"><div class="AccordionTrigger open"></div>
 <div id="AccordionPanel-2-18" class="AccordionContent" aria-labelledby="AccordionTitle-2-18" aria-hidden="false">
 <p>Reeve - H. Runstedler</p>
@@ -907,11 +907,11 @@ var notificationExDays = 365;        </script>
 </div></div>
                         </div>
                         <p class="tab " >
-                        <a class="nav-link nav-button-link anchored-accordion-item collapsed" data-toggle="collapse" href="#collapse_1942413d-0e5d-4fbe-9356-51df5278c50f_19" name="1968-1970,TownshipofSandwichWest" aria-expanded="false" aria-controls="collapse_1942413d-0e5d-4fbe-9356-51df5278c50f_19" role="button">
+                        <a class="nav-link nav-button-link anchored-accordion-item collapsed" data-toggle="collapse" href="#collapse_ab71dd40-945d-48dc-af31-b2fae7132fc7_19" name="1968-1970,TownshipofSandwichWest" aria-expanded="false" aria-controls="collapse_ab71dd40-945d-48dc-af31-b2fae7132fc7_19" role="button">
                                 1968 - 1970, Township of Sandwich West
                             </a>
                         </p>
-                        <div id="collapse_1942413d-0e5d-4fbe-9356-51df5278c50f_19" class="info repeatable-content collapse  ">
+                        <div id="collapse_ab71dd40-945d-48dc-af31-b2fae7132fc7_19" class="info repeatable-content collapse  ">
                             <div class="text"><div class="AccordionTrigger open"></div>
 <div id="AccordionPanel-2-19" class="AccordionContent" aria-labelledby="AccordionTitle-2-19" aria-hidden="false">
 <p>Reeve - L. Brunet</p>

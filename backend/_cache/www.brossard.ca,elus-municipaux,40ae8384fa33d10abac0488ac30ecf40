@@ -1,14 +1,14 @@
 status: 200
 encoding: UTF-8
-Date: Sat, 09 Aug 2025 01:50:49 GMT
+Date: Sat, 09 Aug 2025 05:44:54 GMT
 Content-Type: text/html; charset=UTF-8
 Transfer-Encoding: chunked
 Connection: keep-alive
 Content-Encoding: gzip
-CF-Ray: 96c39ad7299a39e7-YYZ
+CF-Ray: 96c4f1bb6853a21a-YYZ
 CF-Cache-Status: DYNAMIC
-Age: 1554
-Last-Modified: Sat, 09 Aug 2025 01:24:55 GMT
+Age: 1237
+Last-Modified: Sat, 09 Aug 2025 05:24:17 GMT
 Link: <https://brossard.ca/wp-json/>; rel="https://api.w.org/", <https://brossard.ca/wp-json/wp/v2/pages/923>; rel="alternate"; title="JSON"; type="application/json", <https://brossard.ca/?p=923>; rel=shortlink
 Strict-Transport-Security: max-age=31536000
 Vary: Accept-Encoding, Accept-Encoding
@@ -18,7 +18,7 @@ x-cache: HIT
 x-content-type-options: nosniff
 x-frame-options: SAMEORIGIN
 x-xss-protection: 1; mode=block
-Set-Cookie: __cf_bm=rtHVOQmbny5dYXNER5V3FtwccKOdO2G3tYW8GwKV_u4-1754704249-1.0.1.1-QWIv_GUNfvv29dEI04xHG7N6wX1whWxObRgfjIOtU9ZwzFx28_JUBZEJlOc.ZJLF98CBSMqtSA41U58Ks6rE8K5KY3ltdxbMwGiS5fvnBRM; path=/; expires=Sat, 09-Aug-25 02:20:49 GMT; domain=.brossard.ca; HttpOnly; Secure; SameSite=None
+Set-Cookie: __cf_bm=omKqMoIiWWlxHjq6FdRAuzcrtt5nuHJ7.FgViwTN09c-1754718294-1.0.1.1-.kU0cKqFNwl8ADP1Ky_Pcwiu2uHOBZN2Sr38af166r3hjDWKlzHQbsGGgzK3CZOqAkbeZbyE7XuMe0MSRCx4cLItJ5R0pb6lcs2PBMIrToo; path=/; expires=Sat, 09-Aug-25 06:14:54 GMT; domain=.brossard.ca; HttpOnly; Secure; SameSite=None
 Server: cloudflare
 alt-svc: h3=":443"; ma=86400
 
@@ -1266,7 +1266,7 @@ button.ncm-cookie-popup-btn-tertiaire:hover {
                                 </span>  
                                 <a class="text-decoration-none" href="http://450 923-6325">450 923-6325</a>
                                                               </span>
-                                                                                      <a href="/cdn-cgi/l/email-protection#a2cfc3cbd0cbc7e2c0d0cdd1d1c3d0c68cc1c3" class="members-email" aria-label="Envoyer un e-mail à ">
+                                                                                      <a href="/cdn-cgi/l/email-protection#bdd0dcd4cfd4d8fddfcfd2cecedccfd993dedc" class="members-email" aria-label="Envoyer un e-mail à ">
                                 <span class="icon">
                                   <i data-lucide="mail" width="20" height="20" color="#231E20" aria-hidden="true"></i>
                                 </span>
@@ -1333,7 +1333,7 @@ button.ncm-cookie-popup-btn-tertiaire:hover {
                                     <a class="text-decoration-none" href="http://450%20923-6311">450 923-6311</a>
                                                                           <span class="ms-2">Poste 6509</span>
                                                                       </span>
-                                                                                                  <a href="/cdn-cgi/l/email-protection#c9a4a0aaa1aca5a5ace7a1bca089abbba6babaa8bbade7aaa8" class="members-email" aria-label="Envoyer un e-mail à michelle.hui@brossard.ca">
+                                                                                                  <a href="/cdn-cgi/l/email-protection#cca1a5afa4a9a0a0a9e2a4b9a58caebea3bfbfadbea8e2afad" class="members-email" aria-label="Envoyer un e-mail à michelle.hui@brossard.ca">
                                     <span class="icon">
                                       <i data-lucide="mail" width="20" height="20" color="#231E20" aria-hidden="true"></i>
                                     </span>
@@ -1359,7 +1359,7 @@ button.ncm-cookie-popup-btn-tertiaire:hover {
                                     <a class="text-decoration-none" href="http://450%20923-6311">450 923-6311</a>
                                                                           <span class="ms-2">Poste 6508</span>
                                                                       </span>
-                                                                                                  <a href="/cdn-cgi/l/email-protection#4b332233226527220b29392438382a392f65282a" class="members-email" aria-label="Envoyer un e-mail à xixi.li@brossard.ca">
+                                                                                                  <a href="/cdn-cgi/l/email-protection#e49c8d9c8dca888da486968b9797859680ca8785" class="members-email" aria-label="Envoyer un e-mail à xixi.li@brossard.ca">
                                     <span class="icon">
                                       <i data-lucide="mail" width="20" height="20" color="#231E20" aria-hidden="true"></i>
                                     </span>
@@ -1385,7 +1385,7 @@ button.ncm-cookie-popup-btn-tertiaire:hover {
                                     <a class="text-decoration-none" href="http://450%20923-6311">450 923-6311</a>
                                                                           <span class="ms-2">Poste 6507</span>
                                                                       </span>
-                                                                                                  <a href="/cdn-cgi/l/email-protection#dabbb4aeb5b3b4bff4bba9a9bbbc9ab8a8b5a9a9bba8bef4b9bb" class="members-email" aria-label="Envoyer un e-mail à antoine.assaf@brossard.ca">
+                                                                                                  <a href="/cdn-cgi/l/email-protection#25444b514a4c4b400b44565644436547574a56564457410b4644" class="members-email" aria-label="Envoyer un e-mail à antoine.assaf@brossard.ca">
                                     <span class="icon">
                                       <i data-lucide="mail" width="20" height="20" color="#231E20" aria-hidden="true"></i>
                                     </span>
@@ -1411,7 +1411,7 @@ button.ncm-cookie-popup-btn-tertiaire:hover {
                                     <a class="text-decoration-none" href="http://450%20923-6311">450 923-6311</a>
                                                                           <span class="ms-2">Poste 6506</span>
                                                                       </span>
-                                                                                                  <a href="/cdn-cgi/l/email-protection#daa9b5aab2b3bff4bbb6b6bba8be9ab8a8b5a9a9bba8bef4b9bb" class="members-email" aria-label="Envoyer un e-mail à sophie.allard@brossard.ca">
+                                                                                                  <a href="/cdn-cgi/l/email-protection#98ebf7e8f0f1fdb6f9f4f4f9eafcd8faeaf7ebebf9eafcb6fbf9" class="members-email" aria-label="Envoyer un e-mail à sophie.allard@brossard.ca">
                                     <span class="icon">
                                       <i data-lucide="mail" width="20" height="20" color="#231E20" aria-hidden="true"></i>
                                     </span>
@@ -1437,7 +1437,7 @@ button.ncm-cookie-popup-btn-tertiaire:hover {
                                     <a class="text-decoration-none" href="http://450%20923-6311">450 923-6311</a>
                                                                           <span class="ms-2">Poste 6505</span>
                                                                       </span>
-                                                                                                  <a href="/cdn-cgi/l/email-protection#f3909f9286979a9cdd91969d96979687879ab391819c8080928197dd9092" class="members-email" aria-label="Envoyer un e-mail à claudio.benedetti@brossard.ca">
+                                                                                                  <a href="/cdn-cgi/l/email-protection#8ae9e6ebffeee3e5a4e8efe4efeeeffefee3cae8f8e5f9f9ebf8eea4e9eb" class="members-email" aria-label="Envoyer un e-mail à claudio.benedetti@brossard.ca">
                                     <span class="icon">
                                       <i data-lucide="mail" width="20" height="20" color="#231E20" aria-hidden="true"></i>
                                     </span>
@@ -1463,7 +1463,7 @@ button.ncm-cookie-popup-btn-tertiaire:hover {
                                     <a class="text-decoration-none" href="http://450%20923-6311">450 923-6311</a>
                                                                           <span class="ms-2">Poste 6504</span>
                                                                       </span>
-                                                                                                  <a href="/cdn-cgi/l/email-protection#eb9b8a9f99828880c5878a858c87848298ab89998498988a998fc5888a" class="members-email" aria-label="Envoyer un e-mail à patrick.langlois@brossard.ca">
+                                                                                                  <a href="/cdn-cgi/l/email-protection#ea9a8b9e98838981c4868b848d86858399aa88988599998b988ec4898b" class="members-email" aria-label="Envoyer un e-mail à patrick.langlois@brossard.ca">
                                     <span class="icon">
                                       <i data-lucide="mail" width="20" height="20" color="#231E20" aria-hidden="true"></i>
                                     </span>
@@ -1489,7 +1489,7 @@ button.ncm-cookie-popup-btn-tertiaire:hover {
                                     <a class="text-decoration-none" href="http://450%20923-6311">450 923-6311</a>
                                                                           <span class="ms-2">Poste 6503</span>
                                                                       </span>
-                                                                                                  <a href="/cdn-cgi/l/email-protection#285b5c4d58404946414d06595d41465c4944684a5a475b5b495a4c064b49" class="members-email" aria-label="Envoyer un e-mail à stephanie.quintal@brossard.ca">
+                                                                                                  <a href="/cdn-cgi/l/email-protection#fb888f9e8b939a95929ed58a8e92958f9a97bb99899488889a899fd5989a" class="members-email" aria-label="Envoyer un e-mail à stephanie.quintal@brossard.ca">
                                     <span class="icon">
                                       <i data-lucide="mail" width="20" height="20" color="#231E20" aria-hidden="true"></i>
                                     </span>
@@ -1515,7 +1515,7 @@ button.ncm-cookie-popup-btn-tertiaire:hover {
                                     <a class="text-decoration-none" href="http://450%20923-6311">450 923-6311</a>
                                                                           <span class="ms-2">Poste 6502</span>
                                                                       </span>
-                                                                                                  <a href="/cdn-cgi/l/email-protection#d4a0bdbab5fab0b1b8a2b1b7b7bcbdbb94b6a6bba7a7b5a6b0fab7b5" class="members-email" aria-label="Envoyer un e-mail à tina.delvecchio@brossard.ca">
+                                                                                                  <a href="/cdn-cgi/l/email-protection#57233e39367933323b213234343f3e38173525382424362533793436" class="members-email" aria-label="Envoyer un e-mail à tina.delvecchio@brossard.ca">
                                     <span class="icon">
                                       <i data-lucide="mail" width="20" height="20" color="#231E20" aria-hidden="true"></i>
                                     </span>
@@ -1541,7 +1541,7 @@ button.ncm-cookie-popup-btn-tertiaire:hover {
                                     <a class="text-decoration-none" href="http://450%20923%206311">450 923 6311</a>
                                                                           <span class="ms-2">Poste 6501</span>
                                                                       </span>
-                                                                                                  <a href="/cdn-cgi/l/email-protection#07646f756e74736e6669296066726362737362476575687474667563296466" class="members-email" aria-label="Envoyer un e-mail à christian.gaudette@brossard.ca">
+                                                                                                  <a href="/cdn-cgi/l/email-protection#63000b110a10170a020d4d04021607061717062301110c10100211074d0002" class="members-email" aria-label="Envoyer un e-mail à christian.gaudette@brossard.ca">
                                     <span class="icon">
                                       <i data-lucide="mail" width="20" height="20" color="#231E20" aria-hidden="true"></i>
                                     </span>
@@ -1586,7 +1586,7 @@ button.ncm-cookie-popup-btn-tertiaire:hover {
 											<div class="box-account">
 															<a href="https://maps.app.goo.gl/ErEQCjhy6THMLCWu6" class="info-address" target="_blank" aria-label="Google Map (s'ouvre dans un nouvel onglet)" rel="noopener noreferrer">2001 Boul. de Rome </br> Brossard, QC J4W 3K5</a>
 																						<a href="tel:4509236311" class="info-phone mb-4" target="">450 923-6311</a>
-																						<a href="/cdn-cgi/l/email-protection#394a5c4b4f505a5c4a795b4b564a4a584b5d175a58" class="info-email"><span class="__cf_email__" data-cfemail="6112041317080204122103130e12120013054f0200">[email&#160;protected]</span></a>
+																						<a href="/cdn-cgi/l/email-protection#8ffceafdf9e6eceafccfedfde0fcfceefdeba1ecee" class="info-email"><span class="__cf_email__" data-cfemail="66150314100f050315260414091515071402480507">[email&#160;protected]</span></a>
 													</div>
 									</div>
 				<div class="col-lg-8 col-xxl-7 offset-xxl-1">

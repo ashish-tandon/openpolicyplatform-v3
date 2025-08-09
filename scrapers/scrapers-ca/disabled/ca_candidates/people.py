@@ -4,6 +4,7 @@ from utils import CSVScraper
 
 
 class CanadaCandidatesPersonScraper(CSVScraper):
+    organization_classification = "legislature"
     csv_url = "https://docs.google.com/spreadsheets/d/e/2PACX-1vQg-GxpZeCdOMumAu5AbmDC6Ff2fXpcnSkIGaKTbow_PPwtznC4riqKxBuJZlX4c7XB4n7opnPzFdGI/pub?output=csv"
     updated_at = date(2019, 4, 17)
     contact_person = "andrew@newmode.net"

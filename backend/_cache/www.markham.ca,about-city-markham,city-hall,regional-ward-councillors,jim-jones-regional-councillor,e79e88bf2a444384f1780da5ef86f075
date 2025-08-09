@@ -1,27 +1,31 @@
 status: 200
 encoding: UTF-8
 Server: nginx/1.20.2
-Date: Sat, 09 Aug 2025 01:50:57 GMT
+Date: Sat, 09 Aug 2025 05:45:01 GMT
 Content-Type: text/html; charset=UTF-8
-Content-Length: 25505
+Content-Length: 25503
 Connection: keep-alive
 Keep-Alive: timeout=20
-Cache-Control: must-revalidate, no-cache, private
+Cache-Control: max-age=2764800, public
+X-Drupal-Dynamic-Cache: MISS
 Content-language: en
 X-Content-Type-Options: nosniff
 X-Frame-Options: SAMEORIGIN
 Expires: Sun, 19 Nov 1978 05:00:00 GMT
+Vary: Cookie,Accept-Encoding
 X-Generator: Drupal 10 (https://www.drupal.org)
-Set-Cookie: hlat=deleted; expires=Thu, 01 Jan 1970 00:00:01 GMT; Max-Age=0; path=/; domain=.markham.ca; secure; HttpOnly; SameSite=none
-Vary: Accept-Encoding
+X-Drupal-Cache: MISS
+Last-Modified: Sat, 09 Aug 2025 05:26:46 GMT
+ETag: "1754717206-gzip"
 Content-Encoding: gzip
-X-Request-ID: v-4a39c550-74c3-11f0-94c0-6fc48bffb3ac
+X-Request-ID: v-7122b4d8-74e1-11f0-8824-2b9f0051fd4d
 X-AH-Environment: prod
-Age: 0
+Age: 1094
 Via: varnish
-X-Cache: MISS
+X-Cache: HIT
+X-Cache-Hits: 6
 Accept-Ranges: bytes
-X-DIS-Request-ID: fe0ec1899590061c255e7b0795348dcf
+X-DIS-Request-ID: 761a90166971fb293c79683f0e1b8af1
 
 
 
@@ -2085,7 +2089,7 @@ X-DIS-Request-ID: fe0ec1899590061c255e7b0795348dcf
 
       </div>
 
-<div class="block--spacer block"><div class="spacer-block spacer-zhrjduvmhm-757 d-flex justify-content-center"></div><style>.spacer-zhrjduvmhm-757{height:40px;}@media (min-width: 640px) {.spacer-zhrjduvmhm-757{height:;}}@media (min-width: 768px) {.spacer-zhrjduvmhm-757{height:;}}@media (min-width: 1024px){.spacer-zhrjduvmhm-757{height:;}}@media (min-width: 1280px) {.spacer-zhrjduvmhm-757{height: ;}}</style></div>
+<div class="block--spacer block"><div class="spacer-block spacer-harorrejkl-702 d-flex justify-content-center"></div><style>.spacer-harorrejkl-702{height:40px;}@media (min-width: 640px) {.spacer-harorrejkl-702{height:;}}@media (min-width: 768px) {.spacer-harorrejkl-702{height:;}}@media (min-width: 1024px){.spacer-harorrejkl-702{height:;}}@media (min-width: 1280px) {.spacer-harorrejkl-702{height: ;}}</style></div>
     </div>
   </div>
   <div class="container mx-auto px-4 no-container-content no-gaps layout--threecol-section--33-34-33 no-match-height layout layout--threecol-section">
@@ -2238,7 +2242,7 @@ X-DIS-Request-ID: fe0ec1899590061c255e7b0795348dcf
   <div class="container mx-auto px-4 no-container-content layout layout--onecol">
     <div  class="layout__region layout__region--content">
       
-<div class="block--spacer block block--spacer-40px"><div class="spacer-block spacer-ikiojzmfbv-53 d-flex justify-content-center"></div><style>.spacer-ikiojzmfbv-53{height:40px;}@media (min-width: 640px) {.spacer-ikiojzmfbv-53{height:;}}@media (min-width: 768px) {.spacer-ikiojzmfbv-53{height:;}}@media (min-width: 1024px){.spacer-ikiojzmfbv-53{height:;}}@media (min-width: 1280px) {.spacer-ikiojzmfbv-53{height: ;}}</style></div>
+<div class="block--spacer block block--spacer-40px"><div class="spacer-block spacer-tabalkicpe-568 d-flex justify-content-center"></div><style>.spacer-tabalkicpe-568{height:40px;}@media (min-width: 640px) {.spacer-tabalkicpe-568{height:;}}@media (min-width: 768px) {.spacer-tabalkicpe-568{height:;}}@media (min-width: 1024px){.spacer-tabalkicpe-568{height:;}}@media (min-width: 1280px) {.spacer-tabalkicpe-568{height: ;}}</style></div>
 <div class="block--basic">
   
     

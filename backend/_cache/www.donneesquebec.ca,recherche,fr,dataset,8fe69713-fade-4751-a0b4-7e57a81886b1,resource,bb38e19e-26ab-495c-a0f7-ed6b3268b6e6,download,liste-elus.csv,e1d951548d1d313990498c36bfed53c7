@@ -1,6 +1,6 @@
 status: 200
 encoding: ISO-8859-1
-Date: Sat, 09 Aug 2025 01:50:56 GMT
+Date: Sat, 09 Aug 2025 05:45:01 GMT
 Content-Type: text/csv
 Content-Length: 20458
 Connection: keep-alive
@@ -9,7 +9,7 @@ Content-Disposition: inline; filename=liste-elus.csv
 Last-Modified: Tue, 14 Feb 2023 15:04:56 GMT
 Cache-Control: no-cache, public, max-age=0, must-revalidate
 ETag: "1676387096.243489-20458-1309873714"
-Set-cookie: ckan=c4c4cb148ca002e707fc1cc9d6b717282f3e0ed4gAJ9cQAoWAcAAABfZG9tYWlucQFOWAUAAABfcGF0aHECWAEAAAAvcQNYAwAAAF9pZHEEWCAAAAA3NGE0NzE2OGJhNjg0YzBlOTVlZWQ2YjM4YjMxNTQ5Y3EFWAYAAABfZnJlc2hxBolYDgAAAF9jcmVhdGlvbl90aW1lcQdHQdolqmA8bjtYDgAAAF9hY2Nlc3NlZF90aW1lcQhHQdolqmA8bj91Lg==; expires=Mon, 18-Jan-2038 22:14:07 GMT; HttpOnly; Path=/; SameSite=Lax; Secure
+Set-cookie: ckan=47766f96bd63cbbe04baabe97bb24e20a338705cgAJ9cQAoWAcAAABfZG9tYWlucQFOWAUAAABfcGF0aHECWAEAAAAvcQNYAwAAAF9pZHEEWCAAAAAzMzRjMzEwOTYyOTk0NWNmYjdiY2NiZjEyYjMyMDJlNnEFWAYAAABfZnJlc2hxBolYDgAAAF9jcmVhdGlvbl90aW1lcQdHQdoluBd+pNdYDgAAAF9hY2Nlc3NlZF90aW1lcQhHQdoluBd+pNx1Lg==; expires=Mon, 18-Jan-2038 22:14:07 GMT; HttpOnly; Path=/; SameSite=Lax; Secure
 Access-Control-Allow-Origin: *
 Strict-Transport-Security: max-age=31536000; includeSubdomains;
 X-Frame-Options: SAMEORIGIN

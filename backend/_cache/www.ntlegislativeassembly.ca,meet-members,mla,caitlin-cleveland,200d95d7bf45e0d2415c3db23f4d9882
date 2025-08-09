@@ -13,14 +13,14 @@ X-Drupal-Cache: HIT
 X-Drupal-Dynamic-Cache: MISS
 X-Frame-Options: SAMEORIGIN
 X-Generator: Drupal 10 (https://www.drupal.org)
-X-Pantheon-Styx-Hostname: styx-fe1fe2-h-75998989c4-jlzhm
-X-Styx-Req-Id: 38898214-74c3-11f0-94d3-724f1662072d
+X-Pantheon-Styx-Hostname: styx-fe1fe2-g-665fc5f84f-7v2s5
+X-Styx-Req-Id: ef604830-74e3-11f0-bea0-2e646c8708a4
 X-Xss-Protection: 0
-Date: Sat, 09 Aug 2025 01:50:26 GMT
+Date: Sat, 09 Aug 2025 05:44:37 GMT
 X-Served-By: cache-yyz4566-YYZ
 X-Cache: MISS
 X-Cache-Hits: 0
-X-Timer: S1754704226.435376,VS0,VE47
+X-Timer: S1754718277.087881,VS0,VE39
 Vary: Accept-Encoding, Cookie
 Age: 0
 Accept-Ranges: bytes
@@ -1342,7 +1342,7 @@ transfer-encoding: chunked
 <div class="views-element-container block block-views block-views-block--hansard-speech-list-by-member-block" id="block-nc-theme-views-block-hansard-speech-list-by-member-block">
   
     
-      <div region="content"><div class="view view-hansard-speech view-id-hansard_speech view-display-id-list_by_member_block js-view-dom-id-3d4681bc28699523b8d1aa69f76bf59c0b9a4e994aa59df3dc7ec1b0e9b9dcde">
+      <div region="content"><div class="view view-hansard-speech view-id-hansard_speech view-display-id-list_by_member_block js-view-dom-id-4eabe30dda640c83f041a80e3120c0cb45fba7e6d81b47fe6dc6a552459d672b">
   
     
       <div class="view-header">
@@ -1350,23 +1350,7 @@ transfer-encoding: chunked
     </div>
       
       <div class="view-content">
-          <div class="views-row"><div class="views-field views-field-field-topic"><div class="field-content"><a href='/node/5001?keyword=Tabled%20Document%20358-20%281%29%3A%20Canada%20Energy%20Regulator%E2%80%99s%202024-25%20Annual%20Report%20of%20Activities%20under%20the%20Northwest%20Territories%E2%80%99%20Oil%20and%20Gas%20Operations%20Act'>Tabled Document 358-20(1): Canada Energy Regulator’s 2024-25 Annual Report of Activities under the Northwest Territories’ Oil and Gas Operations Act</a></div></div><div class="views-field views-field-title"><span class="field-content">Debates of <time datetime="2025-05-29T12:00:00Z" class="datetime">May 29, 2025</time>
-, 20th Assembly, 1st Session (day 62)</span></div><div class="views-field views-field-field-body"><div class="field-content">  <p>Mr. Speaker, I wish to table the following three documents: Plain Language Summary for Bill 28, An Act to Amend the Student Financial Assistance Act, No. 2; Statement of Consistency for Bill 28, An Act to Amend the Student Financial Assistance Act, No. 2; and Canada Energy Regulator's 2024-2025 Annual Report of Activities under the Northwest Territories Oil and Gas Operations Act.  Thank you, Mr. Speaker.</p>
-
-</div></div></div>
-    <div class="views-row"><div class="views-field views-field-field-topic"><div class="field-content"><a href='/node/5001?keyword=Question%20756-20%281%29%3A%20Supporting%20Northern%20Businesses%20Affected%20by%20Tariffs'>Question 756-20(1): Supporting Northern Businesses Affected by Tariffs</a></div></div><div class="views-field views-field-title"><span class="field-content">Debates of <time datetime="2025-05-29T12:00:00Z" class="datetime">May 29, 2025</time>
-, 20th Assembly, 1st Session (day 62)</span></div><div class="views-field views-field-field-body"><div class="field-content">  <p>Thank you very much, Mr. Speaker. Mr. Speaker, at this point we're certainly working with the business community mostly through our chambers to decipher any increases in costs that we're seeing to northern businesses. We did recently see implications to our diamond industry for multiple reasons, one of which was tariffs. And certainly, Mr. Speaker, always happy to have the conversation, but I could never agree to that on the floor of the House because we have processes where I would need to, of course, have the support of all Cabinet. It's not a one-person decision. Thank you.</p>
-
-</div></div></div>
-    <div class="views-row"><div class="views-field views-field-field-topic"><div class="field-content"><a href='/node/5001?keyword=Question%20755-20%281%29%3A%20Research%20and%20Innovation%20in%20the%20Northwest%20Territories'>Question 755-20(1): Research and Innovation in the Northwest Territories</a></div></div><div class="views-field views-field-title"><span class="field-content">Debates of <time datetime="2025-05-29T12:00:00Z" class="datetime">May 29, 2025</time>
-, 20th Assembly, 1st Session (day 62)</span></div><div class="views-field views-field-field-body"><div class="field-content">  <p>Thank you, Mr. Speaker. And thank you to the Member for the question. So, Mr. Speaker, the new board chair and I do have a very close working relationship. We are only ever a text message away, and I can say we are not shy to text one another often. We've already met multiple times since he assumed this role, and I very much appreciate his energetic drive and the vision that he brings to this role. I really look forward to working with him and the entire board of governors as we advance the mandate agreement for the transformation of Aurora College. Mr. Speaker, I can say that the board chair...</p>
-
-</div></div></div>
-    <div class="views-row"><div class="views-field views-field-field-topic"><div class="field-content"><a href='/node/5001?keyword=Question%20755-20%281%29%3A%20Research%20and%20Innovation%20in%20the%20Northwest%20Territories'>Question 755-20(1): Research and Innovation in the Northwest Territories</a></div></div><div class="views-field views-field-title"><span class="field-content">Debates of <time datetime="2025-05-29T12:00:00Z" class="datetime">May 29, 2025</time>
-, 20th Assembly, 1st Session (day 62)</span></div><div class="views-field views-field-field-body"><div class="field-content">  <p>Thank you very much, Mr. Speaker. So, Mr. Speaker, I'd say in everything that we've heard come out of the new Prime Minister, there is an undercurrent of an education foundation, whether we're talking about trade, whether we're talking about bolstering our economy or our production across Canada. All of that has an educational foundation to it and a diverse expectation for our education system as well.</p><p>In addition, Mr. Speaker, to infrastructure funding, we also heard about the importance of economic resilience, growth, and also supporting reconciliation in the words from this new government...</p>
-
-</div></div></div>
-    <div class="views-row"><div class="views-field views-field-field-topic"><div class="field-content"><a href='/node/5001?keyword=Question%20754-20%281%29%3A%20Aurora%20College%20Community%20Learning%20Centres'>Question 754-20(1): Aurora College Community Learning Centres</a></div></div><div class="views-field views-field-title"><span class="field-content">Debates of <time datetime="2025-05-29T12:00:00Z" class="datetime">May 29, 2025</time>
+          <div class="views-row"><div class="views-field views-field-field-topic"><div class="field-content"><a href='/node/5001?keyword=Question%20754-20%281%29%3A%20Aurora%20College%20Community%20Learning%20Centres'>Question 754-20(1): Aurora College Community Learning Centres</a></div></div><div class="views-field views-field-title"><span class="field-content">Debates of <time datetime="2025-05-29T12:00:00Z" class="datetime">May 29, 2025</time>
 , 20th Assembly, 1st Session (day 62)</span></div><div class="views-field views-field-field-body"><div class="field-content">  <p>Thank you very much, Mr. Speaker. Mr. Speaker, within that critical path, there are some items that Education, Culture and Employment is able to fund from within through money that they retained through the MOU that they did have with Aurora College, and there are additional items that would require additional funding. Thank you.</p>
 
 </div></div></div>
@@ -1388,6 +1372,22 @@ transfer-encoding: chunked
 </div></div></div>
     <div class="views-row"><div class="views-field views-field-field-topic"><div class="field-content"><a href='/node/5001?keyword=Question%20755-20%281%29%3A%20Research%20and%20Innovation%20in%20the%20Northwest%20Territories'>Question 755-20(1): Research and Innovation in the Northwest Territories</a></div></div><div class="views-field views-field-title"><span class="field-content">Debates of <time datetime="2025-05-29T12:00:00Z" class="datetime">May 29, 2025</time>
 , 20th Assembly, 1st Session (day 62)</span></div><div class="views-field views-field-field-body"><div class="field-content">  <p>Thank you very much, Mr. Speaker. Mr. Speaker, certainly any time that we are writing to the federal government, speaking to the federal government on the phone, or having virtual conversations with Ministers -- I hosted a virtual FTP earlier today with a federal Minister on the line, two federal Ministers on the line, and so any of these opportunities are great for relationship building, and we carry those forward in conversations about post-secondary as well.</p><p>Mr. Speaker, in addition to that, the Aurora College board of governors does have a deliverable mandate item that's found in the...</p>
+
+</div></div></div>
+    <div class="views-row"><div class="views-field views-field-field-topic"><div class="field-content"><a href='/node/5001?keyword=Question%20754-20%281%29%3A%20Aurora%20College%20Community%20Learning%20Centres'>Question 754-20(1): Aurora College Community Learning Centres</a></div></div><div class="views-field views-field-title"><span class="field-content">Debates of <time datetime="2025-05-29T12:00:00Z" class="datetime">May 29, 2025</time>
+, 20th Assembly, 1st Session (day 62)</span></div><div class="views-field views-field-field-body"><div class="field-content">  <p>Thank you, Mr. Speaker. So, Mr. Speaker, the letter that I've sent to committee outlines both a short-term response acknowledging that, you know, adult learning is very important in communities, and then also longer term conversation about solutions that would take us far beyond our short-term solutions. So in terms of what that looks like, I am asking committee first to respond back to the letter so I can garner their thinking and their perspectives on this. I need to reach out to Indigenous governments to advise them of short term and long-term solutions that we're looking at here, and then...</p>
+
+</div></div></div>
+    <div class="views-row"><div class="views-field views-field-field-topic"><div class="field-content"><a href='/node/5001?keyword=Question%20754-20%281%29%3A%20Aurora%20College%20Community%20Learning%20Centres'>Question 754-20(1): Aurora College Community Learning Centres</a></div></div><div class="views-field views-field-title"><span class="field-content">Debates of <time datetime="2025-05-29T12:00:00Z" class="datetime">May 29, 2025</time>
+, 20th Assembly, 1st Session (day 62)</span></div><div class="views-field views-field-field-body"><div class="field-content">  <p>Thank you very much, Mr. Speaker. Mr. Speaker, as we were all gearing up and packing up our computers to walk in here today, Members would have received an email from me with a letter that outlined what that critical path and timeline is. And in addition to that, there is a deadline in the letter by which time I would appreciate feedback from committee so that we can further this conversation together. Thank you.</p>
+
+</div></div></div>
+    <div class="views-row"><div class="views-field views-field-field-topic"><div class="field-content"><a href='/node/5001?keyword=Tabled%20Document%20358-20%281%29%3A%20Canada%20Energy%20Regulator%E2%80%99s%202024-25%20Annual%20Report%20of%20Activities%20under%20the%20Northwest%20Territories%E2%80%99%20Oil%20and%20Gas%20Operations%20Act'>Tabled Document 358-20(1): Canada Energy Regulator’s 2024-25 Annual Report of Activities under the Northwest Territories’ Oil and Gas Operations Act</a></div></div><div class="views-field views-field-title"><span class="field-content">Debates of <time datetime="2025-05-29T12:00:00Z" class="datetime">May 29, 2025</time>
+, 20th Assembly, 1st Session (day 62)</span></div><div class="views-field views-field-field-body"><div class="field-content">  <p>Mr. Speaker, I wish to table the following three documents: Plain Language Summary for Bill 28, An Act to Amend the Student Financial Assistance Act, No. 2; Statement of Consistency for Bill 28, An Act to Amend the Student Financial Assistance Act, No. 2; and Canada Energy Regulator's 2024-2025 Annual Report of Activities under the Northwest Territories Oil and Gas Operations Act.  Thank you, Mr. Speaker.</p>
+
+</div></div></div>
+    <div class="views-row"><div class="views-field views-field-field-topic"><div class="field-content"><a href='/node/5001?keyword=Question%20756-20%281%29%3A%20Supporting%20Northern%20Businesses%20Affected%20by%20Tariffs'>Question 756-20(1): Supporting Northern Businesses Affected by Tariffs</a></div></div><div class="views-field views-field-title"><span class="field-content">Debates of <time datetime="2025-05-29T12:00:00Z" class="datetime">May 29, 2025</time>
+, 20th Assembly, 1st Session (day 62)</span></div><div class="views-field views-field-field-body"><div class="field-content">  <p>Thank you very much, Mr. Speaker. Mr. Speaker, at this point we're certainly working with the business community mostly through our chambers to decipher any increases in costs that we're seeing to northern businesses. We did recently see implications to our diamond industry for multiple reasons, one of which was tariffs. And certainly, Mr. Speaker, always happy to have the conversation, but I could never agree to that on the floor of the House because we have processes where I would need to, of course, have the support of all Cabinet. It's not a one-person decision. Thank you.</p>
 
 </div></div></div>
 
@@ -1511,7 +1511,7 @@ transfer-encoding: chunked
   
       <h2>Members</h2>
     
-      <div region="sidebar_first"><div class="view view-member view-id-member view-display-id-menu_block js-view-dom-id-9e7dba396cb2e3b99d671462bcac2868ff7ddb82e95b8cdab92d1d619639b79c">
+      <div region="sidebar_first"><div class="view view-member view-id-member view-display-id-menu_block js-view-dom-id-d12311c1f3f899e501ef9247d28035c6d3fe3a40efa0f8d6dd8b832d43140c9f">
   
     
       

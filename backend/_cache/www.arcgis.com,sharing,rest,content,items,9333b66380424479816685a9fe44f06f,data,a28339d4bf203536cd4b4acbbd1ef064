@@ -3,7 +3,7 @@ encoding: None
 Content-Type: application/octet-stream
 Content-Length: 1019
 Connection: keep-alive
-Date: Sat, 09 Aug 2025 01:51:06 GMT
+Date: Sat, 09 Aug 2025 05:45:10 GMT
 Content-Disposition: attachment; filename="CouncilContactInformation.csv"; size=1019
 X-XSS-Protection: 1; mode=block
 X-Frame-Options: SAMEORIGIN
@@ -13,9 +13,9 @@ Cache-Control: max-age=0, must-revalidate
 ETag: "1869a8820d0"
 Vary: Origin
 X-Cache: Miss from cloudfront
-Via: 1.1 8dcd9254a55f402810e7b8368cbdc0c2.cloudfront.net (CloudFront)
+Via: 1.1 ede5c8e7b29cc9290d2f384042d78428.cloudfront.net (CloudFront)
 X-Amz-Cf-Pop: YTO50-P3
-X-Amz-Cf-Id: TuDFuJfQ7Be5pk8De_aOzvpolfbskEsehoHDoUa2RkapkMZj4dp95Q==
+X-Amz-Cf-Id: wYeV7oEoZF4XpDXpTkV-MvZXW5CgA-qPG-71X3mgKTqkWZSeNTaaBw==
 
 District name,Primary role,First name,Last name,Email,Address line 1,Address line 2,Locality,Province,Postal code,Phone
 Kelowna,Councillor,Ron,Cannan,rcannan@kelowna.ca,1435 Water St,,Kelowna,BC,V1Y 1J4,250-864-9537

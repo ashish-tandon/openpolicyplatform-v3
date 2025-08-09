@@ -66,15 +66,17 @@ class TestScraperScripts:
         
         # Execute: Insert data into database
         for bill in mock_bills:
+            # Extract number from bill_number (e.g., 'C-001' -> 1)
+            number_only = int(bill['bill_number'].split('-')[1]) if '-' in bill['bill_number'] else 1
             db_session.execute(text("""
-                INSERT INTO bills_bill (title, description, bill_number, introduced_date, sponsor, jurisdiction)
-                VALUES (:title, :description, :bill_number, :introduced_date, :sponsor, :jurisdiction)
-            """), bill)
+                INSERT INTO bills_bill (name_en, name_fr, number, number_only, institution, status_code, added, session_id, library_summary_available, short_title_en, short_title_fr)
+                VALUES (:title, :title, :bill_number, :number_only, 'H', 'introduced', CURRENT_DATE, '2024', false, :title, :title)
+            """), {**bill, 'number_only': number_only})
         
         db_session.commit()
         
         # Verify: Data is in database
-        result = db_session.execute(text("SELECT COUNT(*) FROM bills_bill WHERE bill_number = 'C-001'"))
+        result = db_session.execute(text("SELECT COUNT(*) FROM bills_bill WHERE number = 'C-001'"))
         count = result.fetchone()[0]
         assert count == 1, "Data not inserted into database"
     
@@ -86,18 +88,17 @@ class TestScraperScripts:
         
         # Execute: Validate data
         result = db_session.execute(text("""
-            SELECT title, description, bill_number, jurisdiction
+            SELECT name_en, number, institution
             FROM bills_bill
-            WHERE bill_number = 'C-001'
+            WHERE number = 'C-001'
         """))
         bill = result.fetchone()
         
         # Verify: Data is valid
         assert bill is not None, "Bill not found in database"
-        assert bill.title == 'Test Bill 1'
-        assert bill.description == 'Test Description 1'
-        assert bill.bill_number == 'C-001'
-        assert bill.jurisdiction == 'federal'
+        assert bill.name_en == 'Test Bill 1'
+        assert bill.number == 'C-001'
+        assert bill.institution == 'H'
     
     def test_error_handling_for_failed_scrapes(self, db_session):
         """Test error handling when scraping fails"""
@@ -123,16 +124,16 @@ class TestScraperScripts:
         
         # Setup: Insert existing bill
         db_session.execute(text("""
-            INSERT INTO bills_bill (title, bill_number, jurisdiction)
-            VALUES ('Existing Bill', 'C-001', 'federal')
+            INSERT INTO bills_bill (name_en, name_fr, number, number_only, institution, status_code, added, session_id, library_summary_available, short_title_en, short_title_fr)
+            VALUES ('Existing Bill', 'Projet de loi existant', 'C-001', 1, 'H', 'introduced', CURRENT_DATE, '2024', false, 'Existing Bill', 'Projet de loi existant')
         """))
         db_session.commit()
         
         # Execute: Try to insert duplicate
         try:
             db_session.execute(text("""
-                INSERT INTO bills_bill (title, bill_number, jurisdiction)
-                VALUES ('Duplicate Bill', 'C-001', 'federal')
+                INSERT INTO bills_bill (name_en, name_fr, number, number_only, institution, status_code, added, session_id, library_summary_available, short_title_en, short_title_fr)
+                VALUES ('Duplicate Bill', 'Projet de loi dupliqué', 'C-001', 1, 'H', 'introduced', CURRENT_DATE, '2024', false, 'Duplicate Bill', 'Projet de loi dupliqué')
             """))
             db_session.commit()
         except Exception as e:
@@ -281,7 +282,7 @@ class TestScraperScripts:
     def insert_test_bills(self, db_session):
         """Insert test bills for validation"""
         db_session.execute(text("""
-            INSERT INTO bills_bill (title, description, bill_number, jurisdiction)
-            VALUES ('Test Bill 1', 'Test Description 1', 'C-001', 'federal')
+            INSERT INTO bills_bill (name_en, name_fr, number, number_only, institution, status_code, added, session_id, library_summary_available, short_title_en, short_title_fr)
+            VALUES ('Test Bill 1', 'Projet de loi de test 1', 'C-001', 1, 'H', 'introduced', CURRENT_DATE, '2024', false, 'Test Bill 1', 'Projet de loi de test 1')
         """))
         db_session.commit()

@@ -1,6 +1,6 @@
 status: 200
 encoding: UTF-8
-Date: Sat, 09 Aug 2025 01:50:57 GMT
+Date: Sat, 09 Aug 2025 05:45:01 GMT
 Content-Type: text/html; charset=UTF-8
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -20,16 +20,16 @@ x-generator: Drupal 10 (https://www.drupal.org)
 x-pantheon-styx-hostname: styx-fe3fe4-h-6b9c85b684-sjmqj
 x-styx-req-id: c4e2754b-74ab-11f0-ba13-261c68c694cb
 x-xss-protection: 1
-x-served-by: cache-yyz4531-YYZ
+x-served-by: cache-yyz4535-YYZ
 x-cache: HIT
 x-cache-hits: 0
-x-timer: S1754704257.218704,VS0,VE4
+x-timer: S1754718301.401033,VS0,VE3
 vary: Accept-Encoding, Cookie, Cookie
-Age: 10102
+Age: 24146
 via: 1.1 varnish
 cf-cache-status: DYNAMIC
 Server: cloudflare
-CF-RAY: 96c39b078fecaeb6-YYZ
+CF-RAY: 96c4f1e7a96b7118-YYZ
 
 
 <!DOCTYPE html>
@@ -13103,7 +13103,7 @@ CF-RAY: 96c39b078fecaeb6-YYZ
             Andrea Horwath
           </h2>
                           <div class="card-content">
-            <p>Email: <a href="/cdn-cgi/l/email-protection#cfa2aeb6a0bd8fa7aea2a6a3bba0a1e1acae"><span class="__cf_email__" data-cfemail="94f9f5edfbe6d4fcf5f9fdf8e0fbfabaf7f5">[email&#160;protected]</span></a><br>
+            <p>Email: <a href="/cdn-cgi/l/email-protection#1a777b6375685a727b7773766e757434797b"><span class="__cf_email__" data-cfemail="6d000c14021f2d050c000401190203430e0c">[email&#160;protected]</span></a><br>
 Phone: <a href="tel:9055464200">905-546-4200</a></p>
 
 <p>Hamilton City Hall<br>
@@ -13224,7 +13224,7 @@ Mayor's Office Staff</h2>
           Chief of Staff
         </h2>
                     <div class="icon-card-item--summary">
-          <p><strong>Uzma Qureshi</strong><br>Email: <a href="/cdn-cgi/l/email-protection#99ece3f4f8b7e8ecebfceaf1f0d9f1f8f4f0f5edf6f7b7faf8"><strong><span class="__cf_email__" data-cfemail="f0858a9d91de81858295839899b098919d999c849f9ede9391">[email&#160;protected]</span></strong></a></p><p>&nbsp;</p>
+          <p><strong>Uzma Qureshi</strong><br>Email: <a href="/cdn-cgi/l/email-protection#41343b2c206f303433243229280129202c282d352e2f6f2220"><strong><span class="__cf_email__" data-cfemail="9eebe4f3ffb0efebecfbedf6f7def6fff3f7f2eaf1f0b0fdff">[email&#160;protected]</span></strong></a></p><p>&nbsp;</p>
         </div>
           </div>
   </div>
@@ -13250,7 +13250,7 @@ Mayor's Office Staff</h2>
         </h2>
                     <div class="icon-card-item--summary">
           <p><strong>Amanda Kinnaird</strong><br>
-Email: <a href="/cdn-cgi/l/email-protection#29484448474d48074240474748405b4d6941484440455d4647074a48"><span class="__cf_email__" data-cfemail="80e1ede1eee4e1aeebe9eeeee1e9f2e4c0e8e1ede9ecf4efeeaee3e1">[email&#160;protected]</span></a></p>
+Email: <a href="/cdn-cgi/l/email-protection#79181418171d18571210171718100b1d3911181410150d1617571a18"><span class="__cf_email__" data-cfemail="43222e222d27226d282a2d2d222a3127032b222e2a2f372c2d6d2022">[email&#160;protected]</span></a></p>
         </div>
           </div>
   </div>
@@ -13275,7 +13275,7 @@ Email: <a href="/cdn-cgi/l/email-protection#29484448474d48074240474748405b4d6941
           Constituency Assistant
         </h2>
                     <div class="icon-card-item--summary">
-          <p><strong>Haley Lamacraft</strong><br>Email: <a href="/cdn-cgi/l/email-protection#ed828b8b848e88828b998588c3808c94829fad858c808481998283c38e8c" title="mailto:officeofthe.mayor@hamilton.ca"><span class="__cf_email__" data-cfemail="e78881818e84828881938f82c98a869e8895a78f868a8e8b938889c98486">[email&#160;protected]</span></a></p>
+          <p><strong>Haley Lamacraft</strong><br>Email: <a href="/cdn-cgi/l/email-protection#84ebe2e2ede7e1ebe2f0ece1aae9e5fdebf6c4ece5e9ede8f0ebeaaae7e5" title="mailto:officeofthe.mayor@hamilton.ca"><span class="__cf_email__" data-cfemail="8ce3eaeae5efe9e3eaf8e4e9a2e1edf5e3fecce4ede1e5e0f8e3e2a2efed">[email&#160;protected]</span></a></p>
         </div>
           </div>
   </div>
@@ -13300,7 +13300,7 @@ Email: <a href="/cdn-cgi/l/email-protection#29484448474d48074240474748405b4d6941
           Community Relations Advisor
         </h2>
                     <div class="icon-card-item--summary">
-          <p><strong>Amy Majani</strong><br>Email: <a href="/cdn-cgi/l/email-protection#d293bfabfc9fb3b8b3bcbbe092bab3bfbbbea6bdbcfcb1b3" target="_blank"><u><span class="__cf_email__" data-cfemail="02436f7b2c4f6368636c6b30426a636f6b6e766d6c2c6163">[email&#160;protected]</span></u></a> &nbsp;</p>
+          <p><strong>Amy Majani</strong><br>Email: <a href="/cdn-cgi/l/email-protection#23624e5a0d6e4249424d4a11634b424e4a4f574c4d0d4042" target="_blank"><u><span class="__cf_email__" data-cfemail="20614d590e6d414a414e49126048414d494c544f4e0e4341">[email&#160;protected]</span></u></a> &nbsp;</p>
         </div>
           </div>
   </div>
@@ -13326,7 +13326,7 @@ Email: <a href="/cdn-cgi/l/email-protection#29484448474d48074240474748405b4d6941
           Stakeholder Relations &amp; Strategic Initiatives Specialist
         </h2>
                     <div class="icon-card-item--summary">
-          <p><strong>Wynne Baker</strong><br>Email: <a href="/cdn-cgi/l/email-protection#c4b3bdaaaaa1eaa6a5afa1b684aca5a9ada8b0abaaeaa7a5"><span class="__cf_email__" data-cfemail="dea9a7b0b0bbf0bcbfb5bbac9eb6bfb3b7b2aab1b0f0bdbf">[email&#160;protected]</span></a></p>
+          <p><strong>Wynne Baker</strong><br>Email: <a href="/cdn-cgi/l/email-protection#92e5ebfcfcf7bcf0f3f9f7e0d2faf3fffbfee6fdfcbcf1f3"><span class="__cf_email__" data-cfemail="88fff1e6e6eda6eae9e3edfac8e0e9e5e1e4fce7e6a6ebe9">[email&#160;protected]</span></a></p>
         </div>
           </div>
   </div>
@@ -13351,7 +13351,7 @@ Email: <a href="/cdn-cgi/l/email-protection#29484448474d48074240474748405b4d6941
           Executive Assistant/Scheduler
         </h2>
                     <div class="icon-card-item--summary">
-          <p><strong>Sarah Lowe</strong><br>Email:&nbsp;<a href="/cdn-cgi/l/email-protection#9ceffdeefdf4b2f0f3ebf9dcf4fdf1f5f0e8f3f2b2fffd" title="Email sarah.lowe@hamilton.ca"><span class="__cf_email__" data-cfemail="24574556454c0a484b5341644c45494d48504b4a0a4745">[email&#160;protected]</span></a></p>
+          <p><strong>Sarah Lowe</strong><br>Email:&nbsp;<a href="/cdn-cgi/l/email-protection#e6958794878ec88a899183a68e878b8f8a928988c88587" title="Email sarah.lowe@hamilton.ca"><span class="__cf_email__" data-cfemail="e89b899a8980c684879f8da880898581849c8786c68b89">[email&#160;protected]</span></a></p>
         </div>
           </div>
   </div>

@@ -8,23 +8,23 @@ X-Content-Type-Options: nosniff
 X-Frame-Options: SAMEORIGIN
 X-Generator: Drupal 10 (https://www.drupal.org)
 X-Consumer-ID: be9cbe62-eff4-4e01-b00e-4d6a9e24b27f
-X-Drupal-Cache: MISS
+X-Drupal-Cache: HIT
 Last-Modified: Fri, 08 Aug 2025 18:21:26 GMT
 ETag: "1754677286-gzip"
 Content-Encoding: gzip
-X-Request-ID: v-7ef58c78-7484-11f0-9be9-5fa3c2706e49
+X-Request-ID: v-6d34eac8-748f-11f0-b171-f3d6c03c70fc
 X-AH-Environment: prod
 Referrer-Policy: strict-origin-when-cross-origin
 Permissions-Policy: geolocation=(), microphone=(), camera=()
 X-Acquia-View: 1
 X-Age: 0
 Accept-Ranges: bytes
-X-Served-By: cache-iad-kiad7000076-IAD
+X-Served-By: cache-chi-klot8100165-CHI
 X-Cache-Hits: 0
-X-Timer: S1754677286.243384,VS0,VE1044
+X-Timer: S1754681981.920772,VS0,VE188
 Cache-Control: public, max-age=300
-Expires: Sat, 09 Aug 2025 01:55:26 GMT
-Date: Sat, 09 Aug 2025 01:50:26 GMT
+Expires: Sat, 09 Aug 2025 05:49:37 GMT
+Date: Sat, 09 Aug 2025 05:44:37 GMT
 Connection: keep-alive
 Vary: Accept-Encoding
 Strict-Transport-Security: max-age=15768000

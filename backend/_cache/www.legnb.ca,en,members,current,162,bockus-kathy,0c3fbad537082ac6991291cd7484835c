@@ -1,6 +1,6 @@
 status: 200
 encoding: utf-8
-Date: Sat, 09 Aug 2025 01:50:29 GMT
+Date: Sat, 09 Aug 2025 05:44:40 GMT
 Content-Type: text/html; charset=utf-8
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -16,7 +16,7 @@ cross-origin-resource-policy: cross-origin
 permissions-policy: accelerometer=(), autoplay=(), camera=(), encrypted-media=(), fullscreen=*, geolocation=(), gyroscope=(), magnetometer=(), microphone=(), midi=(), payment=(), picture-in-picture=(), sync-xhr=(), usb=()
 cf-cache-status: DYNAMIC
 Server: cloudflare
-CF-RAY: 96c39a5a0cd7ab3a-YYZ
+CF-RAY: 96c4f1629f27ebbc-YYZ
 
 <!DOCTYPE html>
 <html translate="no" lang="en" dir="ltr">
@@ -294,7 +294,7 @@ CF-RAY: 96c39a5a0cd7ab3a-YYZ
                         <img src="/content\members\portraits\61-1\Kathy_Bockus_lg.jpg" />
                 </div>
                     <div class="member-details-contacts">
-                            <span><a href="/cdn-cgi/l/email-protection#dc97bda8b4a5f29eb3bfb7a9af9cbbb2bef2bfbd"><span class="__cf_email__" data-cfemail="521933263a2b7c103d3139272112353c307c3133">[email&#160;protected]</span></a></span>
+                            <span><a href="/cdn-cgi/l/email-protection#a7ecc6d3cfde89e5c8c4ccd2d4e7c0c9c589c4c6"><span class="__cf_email__" data-cfemail="e3a882978b9acda18c80889690a3848d81cd8082">[email&#160;protected]</span></a></span>
                     </div>
                 <aside class="p-2">
                     <span class="aside-header">

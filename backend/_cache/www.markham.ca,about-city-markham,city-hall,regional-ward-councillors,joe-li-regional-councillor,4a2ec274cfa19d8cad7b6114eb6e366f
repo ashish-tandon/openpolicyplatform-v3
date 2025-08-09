@@ -1,27 +1,31 @@
 status: 200
 encoding: UTF-8
 Server: nginx/1.20.2
-Date: Sat, 09 Aug 2025 01:50:59 GMT
+Date: Sat, 09 Aug 2025 05:45:02 GMT
 Content-Type: text/html; charset=UTF-8
-Content-Length: 28917
+Content-Length: 28915
 Connection: keep-alive
 Keep-Alive: timeout=20
-Cache-Control: must-revalidate, no-cache, private
+Cache-Control: max-age=2764800, public
+X-Drupal-Dynamic-Cache: MISS
 Content-language: en
 X-Content-Type-Options: nosniff
 X-Frame-Options: SAMEORIGIN
 Expires: Sun, 19 Nov 1978 05:00:00 GMT
+Vary: Cookie,Accept-Encoding
 X-Generator: Drupal 10 (https://www.drupal.org)
-Set-Cookie: hlat=deleted; expires=Thu, 01 Jan 1970 00:00:01 GMT; Max-Age=0; path=/; domain=.markham.ca; secure; HttpOnly; SameSite=none
-Vary: Accept-Encoding
+X-Drupal-Cache: HIT
+Last-Modified: Sat, 09 Aug 2025 05:26:47 GMT
+ETag: "1754717207-gzip"
 Content-Encoding: gzip
-X-Request-ID: v-4b1dae78-74c3-11f0-b554-cf4976b19861
+X-Request-ID: v-cac07e76-74e1-11f0-a873-afdbb34dc97b
 X-AH-Environment: prod
-Age: 0
+Age: 945
 Via: varnish
-X-Cache: MISS
+X-Cache: HIT
+X-Cache-Hits: 3
 Accept-Ranges: bytes
-X-DIS-Request-ID: 556a1dad8f964d26aa4f3bc412e634fd
+X-DIS-Request-ID: 799bd6237f566238deb85acb6a0b4126
 
 
 
@@ -2087,7 +2091,7 @@ X-DIS-Request-ID: 556a1dad8f964d26aa4f3bc412e634fd
 
       </div>
 
-<div class="block--spacer block"><div class="spacer-block spacer-fgrmyuiiyy-683 d-flex justify-content-center"></div><style>.spacer-fgrmyuiiyy-683{height:40px;}@media (min-width: 640px) {.spacer-fgrmyuiiyy-683{height:;}}@media (min-width: 768px) {.spacer-fgrmyuiiyy-683{height:;}}@media (min-width: 1024px){.spacer-fgrmyuiiyy-683{height:;}}@media (min-width: 1280px) {.spacer-fgrmyuiiyy-683{height: ;}}</style></div>
+<div class="block--spacer block"><div class="spacer-block spacer-rbqpnvvvmx-21 d-flex justify-content-center"></div><style>.spacer-rbqpnvvvmx-21{height:40px;}@media (min-width: 640px) {.spacer-rbqpnvvvmx-21{height:;}}@media (min-width: 768px) {.spacer-rbqpnvvvmx-21{height:;}}@media (min-width: 1024px){.spacer-rbqpnvvvmx-21{height:;}}@media (min-width: 1280px) {.spacer-rbqpnvvvmx-21{height: ;}}</style></div>
     </div>
   </div>
   <div class="container mx-auto px-4 no-container-content no-gaps layout--threecol-section--33-34-33 no-match-height layout layout--threecol-section">
@@ -2232,7 +2236,7 @@ X-DIS-Request-ID: 556a1dad8f964d26aa4f3bc412e634fd
   <div class="container mx-auto px-4 no-container-content layout layout--onecol">
     <div  class="layout__region layout__region--content">
       
-<div class="block--spacer block block--spacer-40px"><div class="spacer-block spacer-ymrdhjrznz-437 d-flex justify-content-center"></div><style>.spacer-ymrdhjrznz-437{height:40px;}@media (min-width: 640px) {.spacer-ymrdhjrznz-437{height:;}}@media (min-width: 768px) {.spacer-ymrdhjrznz-437{height:;}}@media (min-width: 1024px){.spacer-ymrdhjrznz-437{height:;}}@media (min-width: 1280px) {.spacer-ymrdhjrznz-437{height: ;}}</style></div>
+<div class="block--spacer block block--spacer-40px"><div class="spacer-block spacer-mjohsyzvda-475 d-flex justify-content-center"></div><style>.spacer-mjohsyzvda-475{height:40px;}@media (min-width: 640px) {.spacer-mjohsyzvda-475{height:;}}@media (min-width: 768px) {.spacer-mjohsyzvda-475{height:;}}@media (min-width: 1024px){.spacer-mjohsyzvda-475{height:;}}@media (min-width: 1280px) {.spacer-mjohsyzvda-475{height: ;}}</style></div>
 <div class="block--basic">
   
     
@@ -2270,7 +2274,7 @@ X-DIS-Request-ID: 556a1dad8f964d26aa4f3bc412e634fd
 
 
 <script>
-  const carousel93 = new Glide('.grid-image-gallery-carousel-93', {
+  const carousel30 = new Glide('.grid-image-gallery-carousel-30', {
     type: "carousel",
     perView: 1,
     focusAt: "center",
@@ -2282,7 +2286,7 @@ X-DIS-Request-ID: 556a1dad8f964d26aa4f3bc412e634fd
     classes: {activeNav: "glide__bullet--active-#000000"}
   });
 
-  const thumbnails93 = new Glide('.grid-image-gallery-carousel__thumbnails-93', {
+  const thumbnails30 = new Glide('.grid-image-gallery-carousel__thumbnails-30', {
         type: "carousel",
     focusAt: "center",
     perView: 11,
@@ -2300,49 +2304,49 @@ X-DIS-Request-ID: 556a1dad8f964d26aa4f3bc412e634fd
     classes: {activeNav: "glide__bullet--active-#000000"}
   });
 
-  const glideCarouselInit93 = (el) => {
+  const glideCarouselInit30 = (el) => {
     if (el !== undefined) {
-      carousel93.mount().update({startAt: el});
-      thumbnails93.mount().update({startAt: el})
+      carousel30.mount().update({startAt: el});
+      thumbnails30.mount().update({startAt: el})
 
-      Array.from(document.querySelectorAll('.grid-image-gallery-carousel__thumbnail-93')).forEach(el => {
+      Array.from(document.querySelectorAll('.grid-image-gallery-carousel__thumbnail-30')).forEach(el => {
         el.addEventListener('click', function () {
-          carousel93.go('=' + (el.dataset.index))
-          thumbnails93.go('=' + (el.dataset.index))
+          carousel30.go('=' + (el.dataset.index))
+          thumbnails30.go('=' + (el.dataset.index))
         })
       })
     }
   }
 
-  const glideCarouselDestroy93 = () => {
-    carousel93.destroy();
-    thumbnails93.destroy();
+  const glideCarouselDestroy30 = () => {
+    carousel30.destroy();
+    thumbnails30.destroy();
   }
 
-  carousel93.on('swipe.end', function () {
-    thumbnails93.go('=' + (carousel93.index))
+  carousel30.on('swipe.end', function () {
+    thumbnails30.go('=' + (carousel30.index))
   });
 
-  carousel93.on('move.after', function () {
-    thumbnails93.go('=' + (carousel93.index))
+  carousel30.on('move.after', function () {
+    thumbnails30.go('=' + (carousel30.index))
   });
 </script>
 
 <div
-  class="grid-image-gallery-carousel grid-image-gallery-carousel-93 max-w-full bg-darkBlue text-white font-bold">
+  class="grid-image-gallery-carousel grid-image-gallery-carousel-30 max-w-full bg-darkBlue text-white font-bold">
   <div class="grid-image-gallery-carousel-container">
         <div
       x-data="{
-        carouselModal93 : false,
-        dataIndex93 : 0,
+        carouselModal30 : false,
+        dataIndex30 : 0,
       }">
       <template
         @carousel-modal.window="
-          carouselModal93 = $event.detail.carouselModal93;
-          dataIndex93 = $event.detail.dataIndex93;
-          console.log($event.detail.dataIndex93);
-          $nextTick(() => {($event.detail.dataIndex93 !== undefined) ? glideCarouselInit93($event.detail.dataIndex93) : null});"
-        x-if="carouselModal93">
+          carouselModal30 = $event.detail.carouselModal30;
+          dataIndex30 = $event.detail.dataIndex30;
+          console.log($event.detail.dataIndex30);
+          $nextTick(() => {($event.detail.dataIndex30 !== undefined) ? glideCarouselInit30($event.detail.dataIndex30) : null});"
+        x-if="carouselModal30">
         <div x-transition:enter="transition ease-out duration-300"
              x-transition:enter-start="opacity-0 transform scale-90"
              x-transition:enter-end="opacity-100 transform scale-100"
@@ -2352,18 +2356,18 @@ X-DIS-Request-ID: 556a1dad8f964d26aa4f3bc412e634fd
              class="carousel-overlay p-2 fixed h-100 inset-0 z-50 overflow-hidden flex justify-center items-center bg-white container mx-auto">
           <div
             @click.away="
-            carouselModal93 = false;
-            $dispatch('closed-modal', { showModal93: carouselModal93 });
-            $nextTick(() => glideCarouselDestroy93);
+            carouselModal30 = false;
+            $dispatch('closed-modal', { showModal30: carouselModal30 });
+            $nextTick(() => glideCarouselDestroy30);
             document.body.classList.remove('modal-gallery-opened')"
             class="flex flex-col max-h-full overflow-auto">
             <div class="close-button z-5 absolute">
               <button
                 class="outline-none focus:outline-none bg-brightBlue p-2 rounded"
                 @click="
-                carouselModal93 = false;
-                $dispatch('closed-modal', { showModal93: carouselModal93 });
-                $nextTick(() => glideCarouselDestroy93);
+                carouselModal30 = false;
+                $dispatch('closed-modal', { showModal30: carouselModal30 });
+                $nextTick(() => glideCarouselDestroy30);
                 document.body.classList.remove('modal-gallery-opened')"
                 aria-label="Close">
                   <svg class="fill-current text-white"  xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
@@ -2458,53 +2462,53 @@ X-DIS-Request-ID: 556a1dad8f964d26aa4f3bc412e634fd
               </div>
 
                             <div
-                class="glide w-full mt-5 xs:block md:mt-8 xl:max-w-1154 grid-image-gallery-carousel__thumbnails grid-image-gallery-carousel__thumbnails-93">
+                class="glide w-full mt-5 xs:block md:mt-8 xl:max-w-1154 grid-image-gallery-carousel__thumbnails grid-image-gallery-carousel__thumbnails-30">
                 <div class="glide__track" data-glide-el="track">
                   <ul class="glide__slides">
                                           <li
-                        class="glide__slide grid-image-gallery-carousel__thumbnail grid-image-gallery-carousel__thumbnail-93 thumbnail cursor-pointer"
+                        class="glide__slide grid-image-gallery-carousel__thumbnail grid-image-gallery-carousel__thumbnail-30 thumbnail cursor-pointer"
                         data-index="0">
                         <div class="image w-full text-center">
                                                       <img src="https://www.markham.ca/sites/default/files/styles/grid_gallery_carousel_thumbnail/public/2024-07/RC-Li-001%401.5x.jpg.webp?itok=UrOJZI99">
                                                   </div>
                       </li>
                                           <li
-                        class="glide__slide grid-image-gallery-carousel__thumbnail grid-image-gallery-carousel__thumbnail-93 thumbnail cursor-pointer"
+                        class="glide__slide grid-image-gallery-carousel__thumbnail grid-image-gallery-carousel__thumbnail-30 thumbnail cursor-pointer"
                         data-index="1">
                         <div class="image w-full text-center">
                                                       <img src="https://www.markham.ca/sites/default/files/styles/grid_gallery_carousel_thumbnail/public/2024-07/RC-Li-002%401.5x.jpg.webp?itok=QmG0AkZq">
                                                   </div>
                       </li>
                                           <li
-                        class="glide__slide grid-image-gallery-carousel__thumbnail grid-image-gallery-carousel__thumbnail-93 thumbnail cursor-pointer"
+                        class="glide__slide grid-image-gallery-carousel__thumbnail grid-image-gallery-carousel__thumbnail-30 thumbnail cursor-pointer"
                         data-index="2">
                         <div class="image w-full text-center">
                                                       <img src="https://www.markham.ca/sites/default/files/styles/grid_gallery_carousel_thumbnail/public/2024-07/RC-Li-003%401.5x.jpg.webp?itok=YBz0pFWX">
                                                   </div>
                       </li>
                                           <li
-                        class="glide__slide grid-image-gallery-carousel__thumbnail grid-image-gallery-carousel__thumbnail-93 thumbnail cursor-pointer"
+                        class="glide__slide grid-image-gallery-carousel__thumbnail grid-image-gallery-carousel__thumbnail-30 thumbnail cursor-pointer"
                         data-index="3">
                         <div class="image w-full text-center">
                                                       <img src="https://www.markham.ca/sites/default/files/styles/grid_gallery_carousel_thumbnail/public/2024-07/RC-Li-004%401.5x.jpg.webp?itok=yI2OvM9z">
                                                   </div>
                       </li>
                                           <li
-                        class="glide__slide grid-image-gallery-carousel__thumbnail grid-image-gallery-carousel__thumbnail-93 thumbnail cursor-pointer"
+                        class="glide__slide grid-image-gallery-carousel__thumbnail grid-image-gallery-carousel__thumbnail-30 thumbnail cursor-pointer"
                         data-index="4">
                         <div class="image w-full text-center">
                                                       <img src="https://www.markham.ca/sites/default/files/styles/grid_gallery_carousel_thumbnail/public/2024-07/RC-Li-006%401.5x.jpg.webp?itok=Bbhz-Eix">
                                                   </div>
                       </li>
                                           <li
-                        class="glide__slide grid-image-gallery-carousel__thumbnail grid-image-gallery-carousel__thumbnail-93 thumbnail cursor-pointer"
+                        class="glide__slide grid-image-gallery-carousel__thumbnail grid-image-gallery-carousel__thumbnail-30 thumbnail cursor-pointer"
                         data-index="5">
                         <div class="image w-full text-center">
                                                       <img src="https://www.markham.ca/sites/default/files/styles/grid_gallery_carousel_thumbnail/public/2024-07/RC-Li-007%401.5x.jpg.webp?itok=YOYDUYAu">
                                                   </div>
                       </li>
                                           <li
-                        class="glide__slide grid-image-gallery-carousel__thumbnail grid-image-gallery-carousel__thumbnail-93 thumbnail cursor-pointer"
+                        class="glide__slide grid-image-gallery-carousel__thumbnail grid-image-gallery-carousel__thumbnail-30 thumbnail cursor-pointer"
                         data-index="6">
                         <div class="image w-full text-center">
                                                       <img src="https://www.markham.ca/sites/default/files/styles/grid_gallery_carousel_thumbnail/public/2024-07/RC-Li-005%401.5x.jpg.webp?itok=1Lez56Wn">
@@ -2520,8 +2524,8 @@ X-DIS-Request-ID: 556a1dad8f964d26aa4f3bc412e634fd
     </div>
 
         <div class="m-auto overflow-hidden pt-32 pb-32"
-         x-data="{ showModal93 : false, dataIndex93 : 0}"
-         @closed-modal.window="showModal93 = $event.detail.showModal93">
+         x-data="{ showModal30 : false, dataIndex30 : 0}"
+         @closed-modal.window="showModal30 = $event.detail.showModal30">
               <h3 class="carousel-title mb-14 text-black text-26px leading-33px uppercase">PHOTOS</h3>
             <ul
         class="grid gap-2 sm:gap-4 grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-4">
@@ -2531,8 +2535,8 @@ X-DIS-Request-ID: 556a1dad8f964d26aa4f3bc412e634fd
                 tabindex="0"
                 data-index="0"
                 @click="
-                showModal93 = !showModal93;
-                $dispatch('carousel-modal', { carouselModal93: showModal93, dataIndex93: 0});
+                showModal30 = !showModal30;
+                $dispatch('carousel-modal', { carouselModal30: showModal30, dataIndex30: 0});
                 document.body.classList.add('modal-gallery-opened');setTimeout(function(){window.dispatchEvent(new Event('resize'));},250);"
                 class="image-gallery__cell--link cursor-pointer overflow-hidden">
                 <div class="image-gallery__image--cell image w-full h-auto flex-shrink-0 mx-auto">
@@ -2560,8 +2564,8 @@ X-DIS-Request-ID: 556a1dad8f964d26aa4f3bc412e634fd
                 tabindex="0"
                 data-index="1"
                 @click="
-                showModal93 = !showModal93;
-                $dispatch('carousel-modal', { carouselModal93: showModal93, dataIndex93: 1});
+                showModal30 = !showModal30;
+                $dispatch('carousel-modal', { carouselModal30: showModal30, dataIndex30: 1});
                 document.body.classList.add('modal-gallery-opened');setTimeout(function(){window.dispatchEvent(new Event('resize'));},250);"
                 class="image-gallery__cell--link cursor-pointer overflow-hidden">
                 <div class="image-gallery__image--cell image w-full h-auto flex-shrink-0 mx-auto">
@@ -2589,8 +2593,8 @@ X-DIS-Request-ID: 556a1dad8f964d26aa4f3bc412e634fd
                 tabindex="0"
                 data-index="2"
                 @click="
-                showModal93 = !showModal93;
-                $dispatch('carousel-modal', { carouselModal93: showModal93, dataIndex93: 2});
+                showModal30 = !showModal30;
+                $dispatch('carousel-modal', { carouselModal30: showModal30, dataIndex30: 2});
                 document.body.classList.add('modal-gallery-opened');setTimeout(function(){window.dispatchEvent(new Event('resize'));},250);"
                 class="image-gallery__cell--link cursor-pointer overflow-hidden">
                 <div class="image-gallery__image--cell image w-full h-auto flex-shrink-0 mx-auto">
@@ -2618,8 +2622,8 @@ X-DIS-Request-ID: 556a1dad8f964d26aa4f3bc412e634fd
                 tabindex="0"
                 data-index="3"
                 @click="
-                showModal93 = !showModal93;
-                $dispatch('carousel-modal', { carouselModal93: showModal93, dataIndex93: 3});
+                showModal30 = !showModal30;
+                $dispatch('carousel-modal', { carouselModal30: showModal30, dataIndex30: 3});
                 document.body.classList.add('modal-gallery-opened');setTimeout(function(){window.dispatchEvent(new Event('resize'));},250);"
                 class="image-gallery__cell--link cursor-pointer overflow-hidden">
                 <div class="image-gallery__image--cell image w-full h-auto flex-shrink-0 mx-auto">
@@ -2647,8 +2651,8 @@ X-DIS-Request-ID: 556a1dad8f964d26aa4f3bc412e634fd
                 tabindex="0"
                 data-index="4"
                 @click="
-                showModal93 = !showModal93;
-                $dispatch('carousel-modal', { carouselModal93: showModal93, dataIndex93: 4});
+                showModal30 = !showModal30;
+                $dispatch('carousel-modal', { carouselModal30: showModal30, dataIndex30: 4});
                 document.body.classList.add('modal-gallery-opened');setTimeout(function(){window.dispatchEvent(new Event('resize'));},250);"
                 class="image-gallery__cell--link cursor-pointer overflow-hidden">
                 <div class="image-gallery__image--cell image w-full h-auto flex-shrink-0 mx-auto">
@@ -2676,8 +2680,8 @@ X-DIS-Request-ID: 556a1dad8f964d26aa4f3bc412e634fd
                 tabindex="0"
                 data-index="5"
                 @click="
-                showModal93 = !showModal93;
-                $dispatch('carousel-modal', { carouselModal93: showModal93, dataIndex93: 5});
+                showModal30 = !showModal30;
+                $dispatch('carousel-modal', { carouselModal30: showModal30, dataIndex30: 5});
                 document.body.classList.add('modal-gallery-opened');setTimeout(function(){window.dispatchEvent(new Event('resize'));},250);"
                 class="image-gallery__cell--link cursor-pointer overflow-hidden">
                 <div class="image-gallery__image--cell image w-full h-auto flex-shrink-0 mx-auto">
@@ -2705,8 +2709,8 @@ X-DIS-Request-ID: 556a1dad8f964d26aa4f3bc412e634fd
                 tabindex="0"
                 data-index="6"
                 @click="
-                showModal93 = !showModal93;
-                $dispatch('carousel-modal', { carouselModal93: showModal93, dataIndex93: 6});
+                showModal30 = !showModal30;
+                $dispatch('carousel-modal', { carouselModal30: showModal30, dataIndex30: 6});
                 document.body.classList.add('modal-gallery-opened');setTimeout(function(){window.dispatchEvent(new Event('resize'));},250);"
                 class="image-gallery__cell--link cursor-pointer overflow-hidden">
                 <div class="image-gallery__image--cell image w-full h-auto flex-shrink-0 mx-auto">
@@ -2735,7 +2739,7 @@ X-DIS-Request-ID: 556a1dad8f964d26aa4f3bc412e634fd
 </div>
   </div>
 
-<div class="block--spacer block block--spacer-40px"><div class="spacer-block spacer-suxrpewpqp-17 d-flex justify-content-center"></div><style>.spacer-suxrpewpqp-17{height:40px;}@media (min-width: 640px) {.spacer-suxrpewpqp-17{height:;}}@media (min-width: 768px) {.spacer-suxrpewpqp-17{height:;}}@media (min-width: 1024px){.spacer-suxrpewpqp-17{height:;}}@media (min-width: 1280px) {.spacer-suxrpewpqp-17{height: ;}}</style></div>
+<div class="block--spacer block block--spacer-40px"><div class="spacer-block spacer-hktexksodo-545 d-flex justify-content-center"></div><style>.spacer-hktexksodo-545{height:40px;}@media (min-width: 640px) {.spacer-hktexksodo-545{height:;}}@media (min-width: 768px) {.spacer-hktexksodo-545{height:;}}@media (min-width: 1024px){.spacer-hktexksodo-545{height:;}}@media (min-width: 1280px) {.spacer-hktexksodo-545{height: ;}}</style></div>
     </div>
   </div>
   <div class="no-container no-container-content layout--no-bottom-gap layout layout--onecol">

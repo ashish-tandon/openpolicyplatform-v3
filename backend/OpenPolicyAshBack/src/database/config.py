@@ -9,6 +9,7 @@ from typing import Optional
 from dataclasses import dataclass
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
+from sqlalchemy.pool import QueuePool
 
 
 @dataclass
@@ -39,21 +40,39 @@ def get_database_config() -> DatabaseConfig:
     )
 
 
-def get_database_url() -> str:
-    """Get the database URL from environment or config"""
-    # Check for explicit DATABASE_URL first
-    database_url = os.getenv("DATABASE_URL")
-    if database_url:
-        return database_url
+def get_database_url():
+    """Get database URL from environment variables or use default"""
+    host = os.getenv('DB_HOST', 'localhost')
+    port = os.getenv('DB_PORT', '5432')
+    name = os.getenv('DB_NAME', 'openpolicy')
+    user = os.getenv('DB_USER', 'openpolicy')
+    password = os.getenv('DB_PASSWORD', 'openpolicy123')
     
-    # Fall back to PostgreSQL config
-    config = get_database_config()
-    return config.get_url()
+    return f"postgresql://{user}:{password}@{host}:{port}/{name}"
 
+def get_engine():
+    """Get SQLAlchemy engine with connection pooling"""
+    database_url = get_database_url()
+    
+    # Configure connection pooling
+    engine = create_engine(
+        database_url,
+        poolclass=QueuePool,
+        pool_size=5,  # Maximum number of connections in the pool
+        max_overflow=10,  # Maximum number of connections that can be created beyond pool_size
+        pool_timeout=30,  # Timeout for getting a connection from the pool
+        pool_recycle=3600,  # Recycle connections after 1 hour
+        pool_pre_ping=True,  # Verify connections before use
+        echo=False  # Set to True for SQL logging
+    )
+    
+    return engine
 
-# Create engine and session factory
-engine = create_engine(get_database_url(), echo=False)
-SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
+def get_session():
+    """Get database session"""
+    engine = get_engine()
+    SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
+    return SessionLocal()
 
 
 def create_engine_from_config(config_or_url) -> 'Engine':

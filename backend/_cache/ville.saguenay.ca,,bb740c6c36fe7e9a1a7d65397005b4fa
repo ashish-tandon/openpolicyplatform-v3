@@ -1,7 +1,7 @@
 status: 200
 encoding: UTF-8
 Server: nginx
-Date: Sat, 09 Aug 2025 01:51:08 GMT
+Date: Sat, 09 Aug 2025 05:45:12 GMT
 Content-Type: text/html; charset=UTF-8
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -41,7 +41,7 @@ Content-Encoding: gzip
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,500" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
 
-        <link rel="stylesheet" href="https://ville.saguenay.ca/themes/v2017/assets/css/app.css?1754704087">
+        <link rel="stylesheet" href="https://ville.saguenay.ca/themes/v2017/assets/css/app.css?1754718298">
     <link rel="stylesheet" href="https://ville.saguenay.ca/themes/v2017/assets/css/foundation-datepicker.css">
 
 
@@ -221,7 +221,7 @@ Content-Encoding: gzip
 <!--
     Header photo  -->
 <div class="home-header-photo" style="top:76px;"
-     data-interchange="[https://ville.saguenay.ca/themes/v2017/assets/img/home/header/header4_small.jpg, small], [https://ville.saguenay.ca/themes/v2017/assets/img/home/header/header4_medium.jpg, medium], [https://ville.saguenay.ca/themes/v2017/assets/img/home/header/header4_large.jpg, large], [https://ville.saguenay.ca/themes/v2017/assets/img/home/header/header4_xlarge.jpg, xlarge]"></div>
+     data-interchange="[https://ville.saguenay.ca/themes/v2017/assets/img/home/header/header7_small.jpg, small], [https://ville.saguenay.ca/themes/v2017/assets/img/home/header/header7_medium.jpg, medium], [https://ville.saguenay.ca/themes/v2017/assets/img/home/header/header7_large.jpg, large], [https://ville.saguenay.ca/themes/v2017/assets/img/home/header/header7_xlarge.jpg, xlarge]"></div>
 
 
 <!--
@@ -257,7 +257,7 @@ Content-Encoding: gzip
     <div class="row xlarge-collapse">
 
         <div class="columns">
-            <div class="home-date">08 août 2025</div>
+            <div class="home-date">09 août 2025</div>
         </div>
 
     </div>
@@ -1521,7 +1521,7 @@ Content-Encoding: gzip
 
 <script src="https://ville.saguenay.ca/themes/v2017/javascript/app.js"></script>
 <script src="https://ville.saguenay.ca/themes/v2017/javascript/vendor-dist.js"></script>
-<script src="https://ville.saguenay.ca/themes/v2017/javascript/custom-dist.js?1754704088"></script>
+<script src="https://ville.saguenay.ca/themes/v2017/javascript/custom-dist.js?1754718298"></script>
 
 
 <script>

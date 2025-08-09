@@ -14,7 +14,7 @@ X-Drupal-Cache: HIT
 Last-Modified: Fri, 08 Aug 2025 19:21:02 GMT
 ETag: "1754680862-gzip"
 Content-Encoding: gzip
-Keep-Alive: timeout=5, max=98
+Keep-Alive: timeout=5, max=90
 Connection: Keep-Alive
 Content-Type: text/html; charset=UTF-8
 Transfer-Encoding: chunked

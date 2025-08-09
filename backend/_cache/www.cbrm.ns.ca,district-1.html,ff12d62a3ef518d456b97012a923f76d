@@ -1,6 +1,6 @@
 status: 200
 encoding: utf-8
-Date: Sat, 09 Aug 2025 01:51:03 GMT
+Date: Sat, 09 Aug 2025 05:45:08 GMT
 Content-Type: text/html; charset=utf-8
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -14,7 +14,7 @@ Content-Encoding: gzip
 Vary: Accept-Encoding
 X-Frame-Options: SAMEORIGIN
 Referrer-Policy: unsafe-url
-Last-Modified: Sat, 09 Aug 2025 01:51:01 GMT
+Last-Modified: Sat, 09 Aug 2025 05:45:05 GMT
 X-Content-Type-Options: nosniff
 X-XSS-Protection: 1; mode=block
 Server: Sucuri/Cloudproxy
@@ -229,13 +229,13 @@ ga('send', 'pageview');
 
 <h3><img title="District 1" class="image_right_border" alt="" src="/images/Election_2020/Council/District%201%20-%20Gordon%20MacDonald.jpg" />Gordon MacDonald</h3>
 <p>5 Tobin Rd.<br />North Sydney, NS&nbsp; B2A3K5</p>
-<p><span id="cloakc356a43453df3a03018baad9bdf0b4cf">This email address is being protected from spambots. You need JavaScript enabled to view it.</span><script type='text/javascript'>
-				document.getElementById('cloakc356a43453df3a03018baad9bdf0b4cf').innerHTML = '';
+<p><span id="cloak701e72311210d33496452f588abfede8">This email address is being protected from spambots. You need JavaScript enabled to view it.</span><script type='text/javascript'>
+				document.getElementById('cloak701e72311210d33496452f588abfede8').innerHTML = '';
 				var prefix = '&#109;a' + 'i&#108;' + '&#116;o';
 				var path = 'hr' + 'ef' + '=';
-				var addyc356a43453df3a03018baad9bdf0b4cf = 'gdm&#97;cd&#111;n&#97;ld' + '&#64;';
-				addyc356a43453df3a03018baad9bdf0b4cf = addyc356a43453df3a03018baad9bdf0b4cf + 'cbrm' + '&#46;' + 'ns' + '&#46;' + 'c&#97;';
-				var addy_textc356a43453df3a03018baad9bdf0b4cf = 'gdm&#97;cd&#111;n&#97;ld' + '&#64;' + 'cbrm' + '&#46;' + 'ns' + '&#46;' + 'c&#97;';document.getElementById('cloakc356a43453df3a03018baad9bdf0b4cf').innerHTML += '<a ' + path + '\'' + prefix + ':' + addyc356a43453df3a03018baad9bdf0b4cf + '\'>'+addy_textc356a43453df3a03018baad9bdf0b4cf+'<\/a>';
+				var addy701e72311210d33496452f588abfede8 = 'gdm&#97;cd&#111;n&#97;ld' + '&#64;';
+				addy701e72311210d33496452f588abfede8 = addy701e72311210d33496452f588abfede8 + 'cbrm' + '&#46;' + 'ns' + '&#46;' + 'c&#97;';
+				var addy_text701e72311210d33496452f588abfede8 = 'gdm&#97;cd&#111;n&#97;ld' + '&#64;' + 'cbrm' + '&#46;' + 'ns' + '&#46;' + 'c&#97;';document.getElementById('cloak701e72311210d33496452f588abfede8').innerHTML += '<a ' + path + '\'' + prefix + ':' + addy701e72311210d33496452f588abfede8 + '\'>'+addy_text701e72311210d33496452f588abfede8+'<\/a>';
 		</script></p>
 <p><a></a>Phone: (902) 574-3924</p>
 <p>The populations referenced in this description is based on the 2011 census.</p>

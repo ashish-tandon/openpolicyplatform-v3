@@ -1,6 +1,6 @@
 status: 200
 encoding: UTF-8
-Date: Sat, 09 Aug 2025 01:50:59 GMT
+Date: Sat, 09 Aug 2025 05:45:03 GMT
 Content-Type: text/html; charset=UTF-8
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -20,16 +20,16 @@ x-generator: Drupal 10 (https://www.drupal.org)
 x-pantheon-styx-hostname: styx-fe3fe4-g-74df85cdf8-lmnxv
 x-styx-req-id: ae52b46d-7497-11f0-83b2-5adfc64e017a
 x-xss-protection: 1
-x-served-by: cache-yyz4531-YYZ
+x-served-by: cache-yyz4535-YYZ
 x-cache: HIT
 x-cache-hits: 0
-x-timer: S1754704259.244938,VS0,VE5
+x-timer: S1754718303.406927,VS0,VE4
 vary: Accept-Encoding, Cookie, Cookie
-Age: 18732
+Age: 32776
 via: 1.1 varnish
 cf-cache-status: DYNAMIC
 Server: cloudflare
-CF-RAY: 96c39b14186aaeb6-YYZ
+CF-RAY: 96c4f1f4390c7118-YYZ
 
 
 <!DOCTYPE html>
@@ -13216,7 +13216,7 @@ CF-RAY: 96c39b14186aaeb6-YYZ
             Cameron Kroetsch (he/him)
           </h2>
                           <div class="card-content">
-            <p>Email: <a href="/cdn-cgi/l/email-protection#374056455305775f565a5e5b435859195456"><span class="__cf_email__" data-cfemail="f1a6908395c3b199909c989d859e9fdf9290">[email&#160;protected]</span></a><br>Phone: <a href="tel:905-546-2197">905-546-2197</a></p><p>Hamilton City Hall<br>2nd floor - 71 Main Street West<br>Hamilton, Ontario L8P 4Y5</p>
+            <p>Email: <a href="/cdn-cgi/l/email-protection#5d2a3c2f396f1d353c303431293233733e3c"><span class="__cf_email__" data-cfemail="f4a3958690c6b49c95999d98809b9ada9795">[email&#160;protected]</span></a><br>Phone: <a href="tel:905-546-2197">905-546-2197</a></p><p>Hamilton City Hall<br>2nd floor - 71 Main Street West<br>Hamilton, Ontario L8P 4Y5</p>
           </div>
                           <div class="cta">
             
@@ -13225,7 +13225,7 @@ CF-RAY: 96c39b14186aaeb6-YYZ
 
 
     <div  class="cta--content cta--type-transparent">
-        <div class="cta--link"><a href="/cdn-cgi/l/email-protection#b6d5d7dbd3c4d9d898ddc4d9d3c2c5d5def6ded7dbdfdac2d9d898d5d7">Email Councillor Kroetsch</a></div>
+        <div class="cta--link"><a href="/cdn-cgi/l/email-protection#8feceee2eafde0e1a1e4fde0eafbfcece7cfe7eee2e6e3fbe0e1a1ecee">Email Councillor Kroetsch</a></div>
     </div>
 
 
@@ -13262,7 +13262,7 @@ CF-RAY: 96c39b14186aaeb6-YYZ
 
 
   </article>
-</div><div class="col-md-8"><p><strong>Liesl Thomas (she/her)</strong><br>Constituency Coordinator<br>Phone: <a href="tel:9055462197">905-546-2197</a><br>Email: <a href="/cdn-cgi/l/email-protection#074b6e62746b29536f686a6674476f666a6e6b736869296466"><span class="__cf_email__" data-cfemail="5f13363a2c33710b3730323e2c1f373e3236332b3031713c3e">[email&#160;protected]</span></a><br>Email: <a href="/cdn-cgi/l/email-protection#a9dec8dbcd9be9c1c8c4c0c5ddc6c787cac8"><span class="__cf_email__" data-cfemail="6e390f1c0a5c2e060f0307021a0100400d0f">[email&#160;protected]</span></a></p></div></div></div><div class="bs_grid ck-widget bs_grid ck-widget"><div class="row ck-widget row ck-widget" data-row-none="none" data-row-sm="none" data-row-md="4_8" data-row-lg="none" data-row-xl="none" data-row-xxl="none"><div class="col-md-4"><article class="align-left media media--type-image media--view-mode-small">
+</div><div class="col-md-8"><p><strong>Liesl Thomas (she/her)</strong><br>Constituency Coordinator<br>Phone: <a href="tel:9055462197">905-546-2197</a><br>Email: <a href="/cdn-cgi/l/email-protection#65290c0016094b310d0a080416250d04080c09110a0b4b0604"><span class="__cf_email__" data-cfemail="d79bbeb2a4bbf983bfb8bab6a497bfb6babebba3b8b9f9b4b6">[email&#160;protected]</span></a><br>Email: <a href="/cdn-cgi/l/email-protection#5d2a3c2f396f1d353c303431293233733e3c"><span class="__cf_email__" data-cfemail="83d4e2f1e7b1c3ebe2eeeaeff7ecedade0e2">[email&#160;protected]</span></a></p></div></div></div><div class="bs_grid ck-widget bs_grid ck-widget"><div class="row ck-widget row ck-widget" data-row-none="none" data-row-sm="none" data-row-md="4_8" data-row-lg="none" data-row-xl="none" data-row-xxl="none"><div class="col-md-4"><article class="align-left media media--type-image media--view-mode-small">
   
           <picture>
             <img loading="lazy" src="/sites/default/files/styles/wysiwyg_small_default_/public/2023-06/McCullough-Joey2022-300px.jpg?itok=vQ14Q-zQ" width="320" height="320" alt="Headshot of Ward 2 Constituent Coordinator Joey McCullough" class="img-fluid">
@@ -13271,7 +13271,7 @@ CF-RAY: 96c39b14186aaeb6-YYZ
 
 
   </article>
-</div><div class="col-md-8"><p><strong>Joey McCullough (he/him)</strong><br>Constituency Coordinator<br>Phone: <a href="tel:9055462197">905-546-2197</a><br>Email: <a href="/cdn-cgi/l/email-protection#eb81848e92c58688889e8787849e8c83ab838a8682879f8485c5888a" title="Email joey.mccullough@hamilton.ca"><span class="__cf_email__" data-cfemail="0c4663697522416f6f79606063796b644c646d616560786362226f6d">[email&#160;protected]</span></a><br>Email: <a href="/cdn-cgi/l/email-protection#dfa8beadbbed9fb7beb2b6b3abb0b1f1bcbe"><span class="__cf_email__" data-cfemail="de89bfacbaec9eb6bfb3b7b2aab1b0f0bdbf">[email&#160;protected]</span></a></p></div></div></div><div class="bs_grid ck-widget bs_grid ck-widget "><div class="row ck-widget row ck-widget" data-row-none="none" data-row-sm="none" data-row-md="4_8" data-row-lg="none" data-row-xl="none" data-row-xxl="none"><div class="col-md-4"><article class="align-left media media--type-image media--view-mode-small">
+</div><div class="col-md-8"><p><strong>Joey McCullough (he/him)</strong><br>Constituency Coordinator<br>Phone: <a href="tel:9055462197">905-546-2197</a><br>Email: <a href="/cdn-cgi/l/email-protection#aec4c1cbd780c3cdcddbc2c2c1dbc9c6eec6cfc3c7c2dac1c080cdcf" title="Email joey.mccullough@hamilton.ca"><span class="__cf_email__" data-cfemail="511b3e34287f1c3232243d3d3e2436391139303c383d253e3f7f3230">[email&#160;protected]</span></a><br>Email: <a href="/cdn-cgi/l/email-protection#cbbcaab9aff98ba3aaa6a2a7bfa4a5e5a8aa"><span class="__cf_email__" data-cfemail="e2b5839086d0a28a838f8b8e968d8ccc8183">[email&#160;protected]</span></a></p></div></div></div><div class="bs_grid ck-widget bs_grid ck-widget "><div class="row ck-widget row ck-widget" data-row-none="none" data-row-sm="none" data-row-md="4_8" data-row-lg="none" data-row-xl="none" data-row-xxl="none"><div class="col-md-4"><article class="align-left media media--type-image media--view-mode-small">
   
           <picture>
             <img loading="lazy" src="/sites/default/files/styles/wysiwyg_small_default_/public/2024-08/Friesen-Phoenix20240300px.jpg?itok=qvCAofO8" width="320" height="320" alt="Headshot of Phoenix Friesen, Constituency Coordinator Ward 2" class="img-fluid">
@@ -13280,7 +13280,7 @@ CF-RAY: 96c39b14186aaeb6-YYZ
 
 
   </article>
-</div><div class="col-md-8"><p><strong>Phoenix Friesen (they/he)</strong><br>Constituency Coordinator<br>Phone: <a href="tel:9055462197">905-546-2197</a><br>Email: <a href="/cdn-cgi/l/email-protection#89d9e1e6ece7e0f1a7cffbe0ecfaece7c9e1e8e4e0e5fde6e7a7eae8"><span class="__cf_email__" data-cfemail="beeed6d1dbd0d7c690f8ccd7dbcddbd0fed6dfd3d7d2cad1d090dddf">[email&#160;protected]</span></a><br>Email: <a href="/cdn-cgi/l/email-protection#80f7e1f2e4b2c0e8e1ede9ecf4efeeaee3e1"><span class="__cf_email__" data-cfemail="2b7c4a594f196b434a4642475f444505484a">[email&#160;protected]</span></a></p></div></div></div>
+</div><div class="col-md-8"><p><strong>Phoenix Friesen (they/he)</strong><br>Constituency Coordinator<br>Phone: <a href="tel:9055462197">905-546-2197</a><br>Email: <a href="/cdn-cgi/l/email-protection#80d0e8efe5eee9f8aec6f2e9e5f3e5eec0e8e1ede9ecf4efeeaee3e1"><span class="__cf_email__" data-cfemail="5101393e343f38297f1723383422343f1139303c383d253e3f7f3230">[email&#160;protected]</span></a><br>Email: <a href="/cdn-cgi/l/email-protection#0d7a6c7f693f4d656c606461796263236e6c"><span class="__cf_email__" data-cfemail="fbac9a899fc9bb939a9692978f9495d5989a">[email&#160;protected]</span></a></p></div></div></div>
   </div>
 </div>
 

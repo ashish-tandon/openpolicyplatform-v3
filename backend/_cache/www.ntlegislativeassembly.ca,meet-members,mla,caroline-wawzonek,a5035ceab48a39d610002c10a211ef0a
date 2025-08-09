@@ -9,18 +9,18 @@ Expires: Sun, 19 Nov 1978 05:00:00 GMT
 Server: nginx
 Strict-Transport-Security: max-age=31622400; includeSubDomains; preload
 X-Content-Type-Options: nosniff
-X-Drupal-Cache: MISS
+X-Drupal-Cache: HIT
 X-Drupal-Dynamic-Cache: MISS
 X-Frame-Options: SAMEORIGIN
 X-Generator: Drupal 10 (https://www.drupal.org)
 X-Pantheon-Styx-Hostname: styx-fe1fe2-h-75998989c4-hqkhk
-X-Styx-Req-Id: 39229b5e-74c3-11f0-a04c-f217964d4a3e
+X-Styx-Req-Id: eff95ed0-74e3-11f0-a04c-f217964d4a3e
 X-Xss-Protection: 0
-Date: Sat, 09 Aug 2025 01:50:28 GMT
+Date: Sat, 09 Aug 2025 05:44:38 GMT
 X-Served-By: cache-yyz4566-YYZ
 X-Cache: MISS
 X-Cache-Hits: 0
-X-Timer: S1754704227.441248,VS0,VE615
+X-Timer: S1754718278.092668,VS0,VE45
 Vary: Accept-Encoding, Cookie
 Age: 0
 Accept-Ranges: bytes
@@ -1334,7 +1334,7 @@ transfer-encoding: chunked
 <div class="views-element-container block block-views block-views-block--hansard-speech-list-by-member-block" id="block-nc-theme-views-block-hansard-speech-list-by-member-block">
   
     
-      <div region="content"><div class="view view-hansard-speech view-id-hansard_speech view-display-id-list_by_member_block js-view-dom-id-55d23f87507ac67cf2af71e0776618049a1120cd0bd78d74ec0427dca3e6ffd2">
+      <div region="content"><div class="view view-hansard-speech view-id-hansard_speech view-display-id-list_by_member_block js-view-dom-id-3f03d35b1314bea590aac628335ff855c475feb8970fb3f074f50c38264a6366">
   
     
       <div class="view-header">
@@ -1503,7 +1503,7 @@ transfer-encoding: chunked
   
       <h2>Members</h2>
     
-      <div region="sidebar_first"><div class="view view-member view-id-member view-display-id-menu_block js-view-dom-id-1e1f19ef67f6af32f8634cff7ea5e7004a6cc9bc7ad0d6ba235689acaf63aa7d">
+      <div region="sidebar_first"><div class="view view-member view-id-member view-display-id-menu_block js-view-dom-id-12134c252303fa73486b8d9888d18b560ca84904ed315424b2a4b0ce9af05cb5">
   
     
       

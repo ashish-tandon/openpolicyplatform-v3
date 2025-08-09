@@ -1,6 +1,6 @@
 status: 200
 encoding: utf-8
-Date: Sat, 09 Aug 2025 01:50:30 GMT
+Date: Sat, 09 Aug 2025 05:44:41 GMT
 Content-Type: text/html; charset=utf-8
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -16,7 +16,7 @@ cross-origin-resource-policy: cross-origin
 permissions-policy: accelerometer=(), autoplay=(), camera=(), encrypted-media=(), fullscreen=*, geolocation=(), gyroscope=(), magnetometer=(), microphone=(), midi=(), payment=(), picture-in-picture=(), sync-xhr=(), usb=()
 cf-cache-status: DYNAMIC
 Server: cloudflare
-CF-RAY: 96c39a604cbbab3a-YYZ
+CF-RAY: 96c4f168dddbebbc-YYZ
 
 <!DOCTYPE html>
 <html translate="no" lang="en" dir="ltr">
@@ -300,7 +300,7 @@ CF-RAY: 96c39a604cbbab3a-YYZ
                         <img src="/content\members\portraits\61-1\Lyne_Chantal_Boudreau_lg.jpg" />
                 </div>
                     <div class="member-details-contacts">
-                            <span><a href="/cdn-cgi/l/email-protection#24685d4a41674c454a5045480a664b51405641455164434a460a4745"><span class="__cf_email__" data-cfemail="397540575c7a5158574d5855177b564c5d4b5c584c795e575b175a58">[email&#160;protected]</span></a></span>
+                            <span><a href="/cdn-cgi/l/email-protection#723e0b1c17311a131c06131e5c301d07160017130732151c105c1113"><span class="__cf_email__" data-cfemail="713d081f143219101f05101d5f331e04150314100431161f135f1210">[email&#160;protected]</span></a></span>
                     </div>
                 <aside class="p-2">
                     <span class="aside-header">

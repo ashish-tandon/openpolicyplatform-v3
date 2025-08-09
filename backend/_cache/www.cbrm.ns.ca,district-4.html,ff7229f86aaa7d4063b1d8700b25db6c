@@ -1,6 +1,6 @@
 status: 200
 encoding: utf-8
-Date: Sat, 09 Aug 2025 01:51:06 GMT
+Date: Sat, 09 Aug 2025 05:45:11 GMT
 Content-Type: text/html; charset=utf-8
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -14,7 +14,7 @@ Content-Encoding: gzip
 Vary: Accept-Encoding
 X-Frame-Options: SAMEORIGIN
 Referrer-Policy: unsafe-url
-Last-Modified: Sat, 09 Aug 2025 01:51:04 GMT
+Last-Modified: Sat, 09 Aug 2025 05:45:08 GMT
 X-Content-Type-Options: nosniff
 X-XSS-Protection: 1; mode=block
 Server: Sucuri/Cloudproxy
@@ -229,13 +229,13 @@ ga('send', 'pageview');
 
 <h3><img width="150" height="200" title="Steve Gillespie" class="image_right_border" alt="District 4 - Steve Gillespie" src="/images/stories/Election_2016/Council/District%204%20-%20Steve%20Gillespie.jpg" />Steve Gillespie</h3>
 <p>320 Esplanade<br />Sydney, NS B1P 7B9</p>
-<p><span id="cloakec286e3cc854c1e34c909770350dad1f">This email address is being protected from spambots. You need JavaScript enabled to view it.</span><script type='text/javascript'>
-				document.getElementById('cloakec286e3cc854c1e34c909770350dad1f').innerHTML = '';
+<p><span id="cloak87d6ae84bc0be08783ad187736b3ec12">This email address is being protected from spambots. You need JavaScript enabled to view it.</span><script type='text/javascript'>
+				document.getElementById('cloak87d6ae84bc0be08783ad187736b3ec12').innerHTML = '';
 				var prefix = '&#109;a' + 'i&#108;' + '&#116;o';
 				var path = 'hr' + 'ef' + '=';
-				var addyec286e3cc854c1e34c909770350dad1f = 'sdg&#105;ll&#101;sp&#105;&#101;' + '&#64;';
-				addyec286e3cc854c1e34c909770350dad1f = addyec286e3cc854c1e34c909770350dad1f + 'cbrm' + '&#46;' + 'ns' + '&#46;' + 'c&#97;';
-				var addy_textec286e3cc854c1e34c909770350dad1f = 'sdg&#105;ll&#101;sp&#105;&#101;' + '&#64;' + 'cbrm' + '&#46;' + 'ns' + '&#46;' + 'c&#97;';document.getElementById('cloakec286e3cc854c1e34c909770350dad1f').innerHTML += '<a ' + path + '\'' + prefix + ':' + addyec286e3cc854c1e34c909770350dad1f + '\'>'+addy_textec286e3cc854c1e34c909770350dad1f+'<\/a>';
+				var addy87d6ae84bc0be08783ad187736b3ec12 = 'sdg&#105;ll&#101;sp&#105;&#101;' + '&#64;';
+				addy87d6ae84bc0be08783ad187736b3ec12 = addy87d6ae84bc0be08783ad187736b3ec12 + 'cbrm' + '&#46;' + 'ns' + '&#46;' + 'c&#97;';
+				var addy_text87d6ae84bc0be08783ad187736b3ec12 = 'sdg&#105;ll&#101;sp&#105;&#101;' + '&#64;' + 'cbrm' + '&#46;' + 'ns' + '&#46;' + 'c&#97;';document.getElementById('cloak87d6ae84bc0be08783ad187736b3ec12').innerHTML += '<a ' + path + '\'' + prefix + ':' + addy87d6ae84bc0be08783ad187736b3ec12 + '\'>'+addy_text87d6ae84bc0be08783ad187736b3ec12+'<\/a>';
 		</script></p>
 <p>Phone: (902) 539-2144</p>
 <p>The populations referenced in this description is based on the 2011 census.</p>

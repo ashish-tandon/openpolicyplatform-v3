@@ -1,7 +1,7 @@
 status: 200
 encoding: utf-8
 Server: nginx
-Date: Sat, 09 Aug 2025 01:50:56 GMT
+Date: Sat, 09 Aug 2025 05:45:00 GMT
 Content-Type: application/json;charset=utf-8
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -18,7 +18,7 @@ Content-Encoding: gzip
 Age: 0
 X-Socrata-Region: aws-us-east-1-fedramp-prod
 Strict-Transport-Security: max-age=31536000; includeSubDomains
-X-Socrata-RequestId: 2980cac8634adc89e37cdea1be61c54d
+X-Socrata-RequestId: f14b3113f5cae6c37430b383d474cb30
 
 [{"name_english":"Winnipeg","current_council":false,"name_french":"Winnipeg","ward_id":"0","year":"2014","web_name":"winnipeg","person":"Brian Bowman","position_english":"Mayor","position_french":"maire de","email_link_english":"https://winnipeg.ca/shared/mailforms/clerks/council/contact.asp?Recipient=CLK-MayorWebMail&Title=Contact%20City%20of%20Winnipeg%20Mayor's%C2%A0Office&Message=If%20you%20need%20to%20reach%20us%20by%20telephone,%20please%20call%20204-986-5665%20and%20explain%20the%20nature%20of%20your%20inquiry","email_link_french":"https://winnipeg.ca/shared/mailforms/francais/clerks/council/contact.asp?Recipient=CLK-MayorWebMail&Title=Communiquer%20avec%20le%20Bureau%20du%20maire%20de%20Winnipeg&Message=Si%20vous%20devez%20nous%20joindre%20par%20tÃ©lÃ©phone,%20veuillez%20composer%20le%20204-986-5665%20et%20expliquer%20la%20nature%20de%20votre%20demande.","phone":"204-986-5665","fax":"204-949-0566","website":"https://www.mayorbowman.ca/","portrait":"https://winnipeg.ca/council/photos/bowman2.jpg","ward_url":"https://wwwdev.winnipeg.ca/interhom/mayor/default.asp"}
 ,{"name_english":"St. Vital","current_council":false,"name_french":"Saint-Vital","ward_id":"11","year":"2014","web_name":"st-vital","person":"Brian Mayes","position_english":"Councillor","position_french":"Conseiller","email_link_english":"https://winnipeg.ca/shared/mailforms/clerks/council/contact.asp?Recipient=bmayes&Title=Contact%20City%20of%20Winnipeg%20Councillor%20Brian%C2%A0Mayes","email_link_french":"https://winnipeg.ca/shared/mailforms/francais/clerks/council/contact.asp?Recipient=bmayes&Title=Communiquer%20avec%20le%20conseiller%20municipal%20de%20Winnipeg%20Brian%C2%A0Mayes","phone":"204-986-5088","fax":"204-986-3725","website":"http://www.brianmayes.com/","portrait":"https://winnipeg.ca/Council/images/mayes2.png","legal_description_english_url":"https://winnipeg.ca/clerks/pdfs/elections/election2014/councilWardMaps/legal_descriptions/StVitalWard2014.pdf","legal_description_french_url":"https://winnipeg.ca/clerks/pdfs/elections/election2014/councilWardMaps/legal_descriptions/StVitalWard2014_fr.pdf","neighbourhoods":"Alpine Place, Elm Park, Glenwood, Lavalee, Norberry, St. George, Varennes, Worthington, Kingston Crescent, Minnetonka, Pulberry, Victoria Crescent, Vista, Dakota Crossing, St. Vital Centre, St. Vital Perimeter South, Maple Grove Park, Meadowood","label_position":{"latitude":"49.78837","longitude":"-97.07784","human_address":"{\"address\": \"\", \"city\": \"\", \"state\": \"\", \"zip\": \"\"}"},"ward_url":"https://winnipeg.ca/council/wards/#/ward/2014/st-vital","point":{"type":"Point","coordinates":[-97.07784,49.78837]},":@computed_region_38v8_cedi":"68",":@computed_region_6rfj_69jf":"11",":@computed_region_66r8_mmhg":"3"}

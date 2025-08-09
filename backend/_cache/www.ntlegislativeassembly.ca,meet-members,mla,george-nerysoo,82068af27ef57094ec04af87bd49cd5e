@@ -9,18 +9,18 @@ Expires: Sun, 19 Nov 1978 05:00:00 GMT
 Server: nginx
 Strict-Transport-Security: max-age=31622400; includeSubDomains; preload
 X-Content-Type-Options: nosniff
-X-Drupal-Cache: MISS
+X-Drupal-Cache: HIT
 X-Drupal-Dynamic-Cache: MISS
 X-Frame-Options: SAMEORIGIN
 X-Generator: Drupal 10 (https://www.drupal.org)
-X-Pantheon-Styx-Hostname: styx-fe1fe2-g-665fc5f84f-7v2s5
-X-Styx-Req-Id: 3af3ab02-74c3-11f0-bea0-2e646c8708a4
+X-Pantheon-Styx-Hostname: styx-fe1fe2-h-75998989c4-hqkhk
+X-Styx-Req-Id: f1c40864-74e3-11f0-a04c-f217964d4a3e
 X-Xss-Protection: 0
-Date: Sat, 09 Aug 2025 01:50:30 GMT
+Date: Sat, 09 Aug 2025 05:44:41 GMT
 X-Served-By: cache-yyz4566-YYZ
 X-Cache: MISS
 X-Cache-Hits: 0
-X-Timer: S1754704230.449914,VS0,VE472
+X-Timer: S1754718281.099398,VS0,VE41
 Vary: Accept-Encoding, Cookie
 Age: 0
 Accept-Ranges: bytes
@@ -1339,7 +1339,7 @@ transfer-encoding: chunked
 <div class="views-element-container block block-views block-views-block--hansard-speech-list-by-member-block" id="block-nc-theme-views-block-hansard-speech-list-by-member-block">
   
     
-      <div region="content"><div class="view view-hansard-speech view-id-hansard_speech view-display-id-list_by_member_block js-view-dom-id-0dcebb8d253830b88b7d38682729b2ed3d92844a7b66c5469f7309216a4b59cd">
+      <div region="content"><div class="view view-hansard-speech view-id-hansard_speech view-display-id-list_by_member_block js-view-dom-id-5b79ec80658ff8bf785f437a356e0a8945b05d5b5005cdfd0ae55d6a3726aef9">
   
     
       <div class="view-header">
@@ -1348,6 +1348,10 @@ transfer-encoding: chunked
       
       <div class="view-content">
           <div class="views-row"><div class="views-field views-field-field-topic"><div class="field-content"><a href='/node/4877?keyword=Question%20654-20%281%29%3A%20Supports%20for%20Addictions%20Recovery%20%2F%20Illicit%20Drugs%20in%20Small%20Communities'>Question 654-20(1): Supports for Addictions Recovery / Illicit Drugs in Small Communities</a></div></div><div class="views-field views-field-title"><span class="field-content">Debates of <time datetime="2025-03-13T12:00:00Z" class="datetime">March 13, 2025</time>
+, 20th Assembly, 1st Session (day 55)</span></div><div class="views-field views-field-field-body"><div class="field-content">  <p>Thank you, Mr. Speaker. As our last Minister's visit did not go well in Fort McPherson due to a death, will the Minister commit to visiting Fort McPherson in April of 2025 to address some of the concerns of the residents? Thank you, Mr. Speaker.</p>
+
+</div></div></div>
+    <div class="views-row"><div class="views-field views-field-field-topic"><div class="field-content"><a href='/node/4877?keyword=Question%20654-20%281%29%3A%20Supports%20for%20Addictions%20Recovery%20%2F%20Illicit%20Drugs%20in%20Small%20Communities'>Question 654-20(1): Supports for Addictions Recovery / Illicit Drugs in Small Communities</a></div></div><div class="views-field views-field-title"><span class="field-content">Debates of <time datetime="2025-03-13T12:00:00Z" class="datetime">March 13, 2025</time>
 , 20th Assembly, 1st Session (day 55)</span></div><div class="views-field views-field-field-body"><div class="field-content">  <p>Thank you, Mr. Speaker. Further to my Member's statement, you know, can you imagine that there are numerous people out there, like the young lady I was referring to, who wants help to overcome their addictions but the help from -- but they need the help from their own people within their own communities. Trust is a huge factor in -- when you're dealing with addiction recovery.</p><p>Will the Minister look at having her department look at supporting the residents of our smaller communities with financial resources to heal the residents of our smaller communities? Thank you, Mr. Speaker.</p>
 
 </div></div></div>
@@ -1369,10 +1373,6 @@ transfer-encoding: chunked
 </div></div></div>
     <div class="views-row"><div class="views-field views-field-field-topic"><div class="field-content"><a href='/node/4877?keyword=Member%E2%80%99s%20Statement%20609-20%281%29%3A%20Illegal%20Drug%20Activity%20in%20Small%20Communities'>Member’s Statement 609-20(1): Illegal Drug Activity in Small Communities</a></div></div><div class="views-field views-field-title"><span class="field-content">Debates of <time datetime="2025-03-13T12:00:00Z" class="datetime">March 13, 2025</time>
 , 20th Assembly, 1st Session (day 55)</span></div><div class="views-field views-field-field-body"><div class="field-content">  <p>Thank you, Mr. Speaker. Mr. Speaker, I would like to follow up on my Member's statement from Tuesday, March 11th, 2025. In my Member's statement, I referred to the illegal drug trade within the community of Tetlit Zheh and other small communities throughout the Northwest Territories.</p><p>The Voice of Denendeh met is one of their stories, and it was placed on social media. I've received a lot of feedback from people throughout the NWT in my efforts to find ways to combat this criminal activity that is happening right within our backyard.</p><p>Mr. Speaker, people from all walks of life gave me feedback on...</p>
-
-</div></div></div>
-    <div class="views-row"><div class="views-field views-field-field-topic"><div class="field-content"><a href='/node/4877?keyword=Question%20654-20%281%29%3A%20Supports%20for%20Addictions%20Recovery%20%2F%20Illicit%20Drugs%20in%20Small%20Communities'>Question 654-20(1): Supports for Addictions Recovery / Illicit Drugs in Small Communities</a></div></div><div class="views-field views-field-title"><span class="field-content">Debates of <time datetime="2025-03-13T12:00:00Z" class="datetime">March 13, 2025</time>
-, 20th Assembly, 1st Session (day 55)</span></div><div class="views-field views-field-field-body"><div class="field-content">  <p>Thank you, Mr. Speaker. As our last Minister's visit did not go well in Fort McPherson due to a death, will the Minister commit to visiting Fort McPherson in April of 2025 to address some of the concerns of the residents? Thank you, Mr. Speaker.</p>
 
 </div></div></div>
     <div class="views-row"><div class="views-field views-field-field-topic"><div class="field-content"><a href='/node/4873?keyword=Member%E2%80%99s%20Statement%20604-20%281%29%3A%20Eulogy%20for%20Evelyn%20Perry'>Member’s Statement 604-20(1): Eulogy for Evelyn Perry</a></div></div><div class="views-field views-field-title"><span class="field-content">Debates of <time datetime="2025-03-12T12:00:00Z" class="datetime">March 12, 2025</time>
@@ -1508,7 +1508,7 @@ transfer-encoding: chunked
   
       <h2>Members</h2>
     
-      <div region="sidebar_first"><div class="view view-member view-id-member view-display-id-menu_block js-view-dom-id-05990f9165659068831bc588101a92bf32f89edfcc4ca40947f86860a6871e2d">
+      <div region="sidebar_first"><div class="view view-member view-id-member view-display-id-menu_block js-view-dom-id-798be33333023d0a82df71a2752e68dead1dd84d0ae637fe140b648cf5630679">
   
     
       

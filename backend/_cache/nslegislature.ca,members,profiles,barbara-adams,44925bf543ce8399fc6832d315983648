@@ -1,6 +1,6 @@
 status: 200
 encoding: utf-8
-Date: Sat, 09 Aug 2025 01:50:26 GMT
+Date: Sat, 09 Aug 2025 05:44:37 GMT
 Expires: Sun, 19 Nov 1978 05:00:00 GMT
 Cache-Control: no-cache, must-revalidate
 Content-Language: en
@@ -14,7 +14,7 @@ Referrer-Policy: strict-origin
 Keep-Alive: timeout=5, max=99
 Connection: Keep-Alive
 Content-Type: text/html; charset=utf-8
-Set-Cookie: TS0163bbb3=012df0be5f3d74f30d1b4a28193cf35c8a80ebdb32c142c3930ceeb3859ee6ead622e5e72a5cd6be2e299ee8044318fe8cbc6cd2f3; Path=/; Domain=.nslegislature.ca; Secure; HTTPOnly
+Set-Cookie: TS0163bbb3=012df0be5f2e5f95e4cfe90aa680d1768a9c57de34854b5ebe4b7d8684c9fd1e4a2a681a554bbddbc1837d24771abe5f9c48d94351; Path=/; Domain=.nslegislature.ca; Secure; HTTPOnly
 Transfer-Encoding: chunked
 
 <!DOCTYPE html>
@@ -100,7 +100,7 @@ Transfer-Encoding: chunked
 <script src="https://nslegislature.ca/sites/all/themes/ns_leg/ns_leg_colorbox/ns_leg_colorbox_style.js?szk52e"></script>
 <script src="https://nslegislature.ca/sites/all/themes/ns_leg/js/meanmenu/jquery.meanmenu.js?szk52e"></script>
 <script src="https://nslegislature.ca/sites/all/themes/ns_leg/js/script.js?szk52e"></script>
-<script>jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","setHasJsCookie":0,"ajaxPageState":{"theme":"ns_leg","theme_token":"qO9w8GQK1n-CShcwvVcNBoJfsKMC3_Eoihh4NbY7MTI","js":{"sites\/all\/modules\/jquery_update\/replace\/jquery\/1.10\/jquery.min.js":1,"misc\/jquery-extend-3.4.0.js":1,"misc\/jquery-html-prefilter-3.5.0-backport.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"https:\/\/www.googletagmanager.com\/gtag\/js?id=G-QBZGNH1RJX":1,"0":1,"sites\/all\/libraries\/colorbox\/jquery.colorbox-min.js":1,"sites\/all\/modules\/colorbox\/js\/colorbox.js":1,"sites\/all\/modules\/colorbox\/js\/colorbox_inline.js":1,"sites\/all\/modules\/compact_forms\/compact_forms.js":1,"sites\/all\/themes\/ns_leg\/js\/superfish\/hoverIntent.js":1,"sites\/all\/themes\/ns_leg\/js\/superfish\/superfish.min.js":1,"sites\/all\/themes\/ns_leg\/ns_leg_colorbox\/ns_leg_colorbox_style.js":1,"sites\/all\/themes\/ns_leg\/js\/meanmenu\/jquery.meanmenu.js":1,"sites\/all\/themes\/ns_leg\/js\/script.js":1},"css":{"modules\/system\/system.base.css":1,"modules\/system\/system.menus.css":1,"modules\/system\/system.messages.css":1,"modules\/system\/system.theme.css":1,"sites\/all\/modules\/calendar\/css\/calendar_multiday.css":1,"sites\/all\/modules\/date\/date_api\/date.css":1,"sites\/all\/modules\/date\/date_popup\/themes\/datepicker.1.7.css":1,"sites\/all\/modules\/date\/date_repeat_field\/date_repeat_field.css":1,"modules\/field\/theme\/field.css":1,"modules\/node\/node.css":1,"modules\/search\/search.css":1,"modules\/user\/user.css":1,"sites\/all\/modules\/ctools\/css\/ctools.css":1,"sites\/all\/modules\/panels\/css\/panels.css":1,"sites\/all\/modules\/panels\/plugins\/layouts\/flexible\/flexible.css":1,"public:\/\/ctools\/css\/9e64d96dd15a6997dfacf50d209d9684.css":1,"sites\/all\/modules\/panels\/plugins\/layouts\/twocol_stacked\/twocol_stacked.css":1,"modules\/locale\/locale.css":1,"sites\/all\/modules\/compact_forms\/compact_forms.css":1,"sites\/all\/modules\/panels\/plugins\/layouts\/onecol\/onecol.css":1,"sites\/all\/themes\/ns_leg\/system.base.css":1,"sites\/all\/themes\/ns_leg\/system.menus.css":1,"sites\/all\/themes\/ns_leg\/system.messages.css":1,"sites\/all\/themes\/ns_leg\/system.theme.css":1,"sites\/all\/themes\/ns_leg\/comment.css":1,"sites\/all\/themes\/ns_leg\/node.css":1,"sites\/all\/themes\/ns_leg\/ns_leg_colorbox\/ns_leg_colorbox_style.css":1,"sites\/all\/themes\/ns_leg\/js\/meanmenu\/meanmenu.css":1,"sites\/all\/themes\/ns_leg\/css\/styles.css":1}},"colorbox":{"opacity":"0.85","current":"{current} of {total}","previous":"\u00ab Prev","next":"Next \u00bb","close":"Close","maxWidth":"98%","maxHeight":"98%","fixed":true,"mobiledetect":true,"mobiledevicewidth":"480px","file_public_path":"\/sites\/default\/files","specificPagesDefaultValue":"admin*\nimagebrowser*\nimg_assist*\nimce*\nnode\/add\/*\nnode\/*\/edit\nprint\/*\nprintpdf\/*\nsystem\/ajax\nsystem\/ajax\/*"},"better_exposed_filters":{"views":{"mla_profile_page_helper":{"displays":{"mla_title_block":{"filters":[]},"mla_sidebox_block":{"filters":[]},"term_info_table_block":{"filters":[]}}},"cabinet":{"displays":{"block_per_mla":{"filters":[]}}},"committee_listings":{"displays":{"block_per_mla":{"filters":[]}}},"bills_listings":{"displays":{"block_mla_recent":{"filters":[]},"page_mla_bills_current_session":{"filters":[]},"page_mla_bills_all_time":{"filters":[]}}}}},"compactForms":{"forms":["views-exposed-form-search-search-panel-pane","views-exposed-form-mla-search-search-panel-pane","views-exposed-form-mla-profile-search-mla-profile-search-pane","global-search"],"stars":2},"urlIsAjaxTrusted":{"":true}});</script>
+<script>jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","setHasJsCookie":0,"ajaxPageState":{"theme":"ns_leg","theme_token":"UEGn44Gp7-yOV8nU_GAyKSNiThorTa68WzJ_yNMNuW4","js":{"sites\/all\/modules\/jquery_update\/replace\/jquery\/1.10\/jquery.min.js":1,"misc\/jquery-extend-3.4.0.js":1,"misc\/jquery-html-prefilter-3.5.0-backport.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"https:\/\/www.googletagmanager.com\/gtag\/js?id=G-QBZGNH1RJX":1,"0":1,"sites\/all\/libraries\/colorbox\/jquery.colorbox-min.js":1,"sites\/all\/modules\/colorbox\/js\/colorbox.js":1,"sites\/all\/modules\/colorbox\/js\/colorbox_inline.js":1,"sites\/all\/modules\/compact_forms\/compact_forms.js":1,"sites\/all\/themes\/ns_leg\/js\/superfish\/hoverIntent.js":1,"sites\/all\/themes\/ns_leg\/js\/superfish\/superfish.min.js":1,"sites\/all\/themes\/ns_leg\/ns_leg_colorbox\/ns_leg_colorbox_style.js":1,"sites\/all\/themes\/ns_leg\/js\/meanmenu\/jquery.meanmenu.js":1,"sites\/all\/themes\/ns_leg\/js\/script.js":1},"css":{"modules\/system\/system.base.css":1,"modules\/system\/system.menus.css":1,"modules\/system\/system.messages.css":1,"modules\/system\/system.theme.css":1,"sites\/all\/modules\/calendar\/css\/calendar_multiday.css":1,"sites\/all\/modules\/date\/date_api\/date.css":1,"sites\/all\/modules\/date\/date_popup\/themes\/datepicker.1.7.css":1,"sites\/all\/modules\/date\/date_repeat_field\/date_repeat_field.css":1,"modules\/field\/theme\/field.css":1,"modules\/node\/node.css":1,"modules\/search\/search.css":1,"modules\/user\/user.css":1,"sites\/all\/modules\/ctools\/css\/ctools.css":1,"sites\/all\/modules\/panels\/css\/panels.css":1,"sites\/all\/modules\/panels\/plugins\/layouts\/flexible\/flexible.css":1,"public:\/\/ctools\/css\/9e64d96dd15a6997dfacf50d209d9684.css":1,"sites\/all\/modules\/panels\/plugins\/layouts\/twocol_stacked\/twocol_stacked.css":1,"modules\/locale\/locale.css":1,"sites\/all\/modules\/compact_forms\/compact_forms.css":1,"sites\/all\/modules\/panels\/plugins\/layouts\/onecol\/onecol.css":1,"sites\/all\/themes\/ns_leg\/system.base.css":1,"sites\/all\/themes\/ns_leg\/system.menus.css":1,"sites\/all\/themes\/ns_leg\/system.messages.css":1,"sites\/all\/themes\/ns_leg\/system.theme.css":1,"sites\/all\/themes\/ns_leg\/comment.css":1,"sites\/all\/themes\/ns_leg\/node.css":1,"sites\/all\/themes\/ns_leg\/ns_leg_colorbox\/ns_leg_colorbox_style.css":1,"sites\/all\/themes\/ns_leg\/js\/meanmenu\/meanmenu.css":1,"sites\/all\/themes\/ns_leg\/css\/styles.css":1}},"colorbox":{"opacity":"0.85","current":"{current} of {total}","previous":"\u00ab Prev","next":"Next \u00bb","close":"Close","maxWidth":"98%","maxHeight":"98%","fixed":true,"mobiledetect":true,"mobiledevicewidth":"480px","file_public_path":"\/sites\/default\/files","specificPagesDefaultValue":"admin*\nimagebrowser*\nimg_assist*\nimce*\nnode\/add\/*\nnode\/*\/edit\nprint\/*\nprintpdf\/*\nsystem\/ajax\nsystem\/ajax\/*"},"better_exposed_filters":{"views":{"mla_profile_page_helper":{"displays":{"mla_title_block":{"filters":[]},"mla_sidebox_block":{"filters":[]},"term_info_table_block":{"filters":[]}}},"cabinet":{"displays":{"block_per_mla":{"filters":[]}}},"committee_listings":{"displays":{"block_per_mla":{"filters":[]}}},"bills_listings":{"displays":{"block_mla_recent":{"filters":[]},"page_mla_bills_current_session":{"filters":[]},"page_mla_bills_all_time":{"filters":[]}}}}},"compactForms":{"forms":["views-exposed-form-search-search-panel-pane","views-exposed-form-mla-search-search-panel-pane","views-exposed-form-mla-profile-search-mla-profile-search-pane","global-search"],"stars":2},"urlIsAjaxTrusted":{"":true}});</script>
       <!--[if lt IE 9]>
     <script src="/sites/all/themes/zen/js/html5shiv.min.js"></script>
     <![endif]-->
@@ -146,7 +146,7 @@ Transfer-Encoding: chunked
   
       
   
-  <form onsubmit="event.preventDefault();" id="global-search" class="global-search" action="" method="" accept-charset="UTF-8"><div><input type="hidden" name="form_build_id" value="form-KglUjSEPLODCmRuosKSZpqp_c-HgOhgrMlEL246puK4" />
+  <form onsubmit="event.preventDefault();" id="global-search" class="global-search" action="" method="" accept-charset="UTF-8"><div><input type="hidden" name="form_build_id" value="form-4J0OAggYRRgg5kQfBbd8Vd7TW9k8TBMMklP7Ndm0WFc" />
 <input type="hidden" name="form_id" value="global_search" />
 <div class="search-keywords-wrapper form-wrapper" id="edit-keywords-wrapper"><div class="form-item form-type-textfield form-item-q">
   <label for="edit-keywords">Search </label>
@@ -197,7 +197,7 @@ Transfer-Encoding: chunked
   
       
   
-  <div class="view view-mla-profile-page-helper view-id-mla_profile_page_helper view-display-id-mla_title_block view-dom-id-6d3f17e39a7364553297955883719047">
+  <div class="view view-mla-profile-page-helper view-id-mla_profile_page_helper view-display-id-mla_title_block view-dom-id-b8d26f9d9bb4ac70e6000e9306ac6540">
         
   
   
@@ -219,7 +219,7 @@ Transfer-Encoding: chunked
   
       
   
-  <div class="view view-mla-profile-page-helper view-id-mla_profile_page_helper view-display-id-mla_sidebox_block view-dom-id-fe91492bbc924d23f945b217ee312bcb">
+  <div class="view view-mla-profile-page-helper view-id-mla_profile_page_helper view-display-id-mla_sidebox_block view-dom-id-a649a456f3279558c85a3e66d3b9092e">
         
   
   
@@ -258,7 +258,7 @@ Transfer-Encoding: chunked
   
       
   
-  <div class="view view-mla-profile-page-helper view-id-mla_profile_page_helper view-display-id-term_info_table_block view-dom-id-8a09adbca7391cd9e3c444c7db4b8be7">
+  <div class="view view-mla-profile-page-helper view-id-mla_profile_page_helper view-display-id-term_info_table_block view-dom-id-1ffd15c3def99a032b36993633bc9d8d">
         
   
   
@@ -309,7 +309,7 @@ Transfer-Encoding: chunked
       Current cabinet responsibilities    </h2>
     
   
-  <div class="view view-cabinet view-id-cabinet view-display-id-block_per_mla view-dom-id-9e4754904950dbe82d735e6bd9529f5b">
+  <div class="view view-cabinet view-id-cabinet view-display-id-block_per_mla view-dom-id-66642b7cd12e8143e1769115d73e4232">
         
   
   
@@ -346,7 +346,7 @@ Transfer-Encoding: chunked
       Recent Bills    </h4>
     
   
-  <div class="view view-bills-listings view-id-bills_listings view-display-id-block_mla_recent view-dom-id-c8baadbdba1f69eba36fa92a811e2f87">
+  <div class="view view-bills-listings view-id-bills_listings view-display-id-block_mla_recent view-dom-id-0108a4b4215f7f2b26ed48a406c36c90">
         
   
   
@@ -381,7 +381,7 @@ Transfer-Encoding: chunked
       <a href="/members/profiles/barbara-adams/bills">View bills introduced by this member.</a>    </div>
     
   
-  <div class="view view-bills-listings view-id-bills_listings view-display-id-page_mla_bills_all_time view-dom-id-ef5533b566af0a458f4e45103e99cc2f">
+  <div class="view view-bills-listings view-id-bills_listings view-display-id-page_mla_bills_all_time view-dom-id-f7c2c5c5270ba55e3cceb1607ad704d2">
             <div class="view-header">
       <h1>Bills introduced by Barbara Adams .</h1>    </div>
   

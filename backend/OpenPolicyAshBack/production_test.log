@@ -1,0 +1,194 @@
+2025-08-09 01:54:19,864 - __main__ - INFO - 🚀 Starting comprehensive production system test...
+2025-08-09 01:54:19,864 - __main__ - INFO - 
+==================================================
+2025-08-09 01:54:19,864 - __main__ - INFO - Running Database Connectivity test...
+2025-08-09 01:54:19,864 - __main__ - INFO - ==================================================
+2025-08-09 01:54:19,864 - __main__ - INFO - 🔍 Testing database connectivity...
+2025-08-09 01:54:19,973 - __main__ - INFO - ✅ Database connection successful
+2025-08-09 01:54:19,990 - __main__ - INFO - 📊 Database stats: 2774 representatives, 241 jurisdictions
+2025-08-09 01:54:19,990 - __main__ - INFO - ✅ Database Connectivity test PASSED
+2025-08-09 01:54:19,990 - __main__ - INFO - 
+==================================================
+2025-08-09 01:54:19,990 - __main__ - INFO - Running Monitoring System test...
+2025-08-09 01:54:19,990 - __main__ - INFO - ==================================================
+2025-08-09 01:54:19,990 - __main__ - INFO - 🔍 Testing monitoring system...
+2025-08-09 01:54:21,037 - monitoring_system - ERROR - Failed to collect scraper metrics: (psycopg2.errors.UndefinedColumn) column scraping_runs.scraper_name does not exist
+LINE 1: ...jurisdiction_id AS scraping_runs_jurisdiction_id, scraping_r...
+                                                             ^
+
+[SQL: SELECT scraping_runs.id AS scraping_runs_id, scraping_runs.jurisdiction_id AS scraping_runs_jurisdiction_id, scraping_runs.scraper_name AS scraping_runs_scraper_name, scraping_runs.start_time AS scraping_runs_start_time, scraping_runs.end_time AS scraping_runs_end_time, scraping_runs.status AS scraping_runs_status, scraping_runs.records_processed AS scraping_runs_records_processed, scraping_runs.records_created AS scraping_runs_records_created, scraping_runs.records_updated AS scraping_runs_records_updated, scraping_runs.error_message AS scraping_runs_error_message, scraping_runs.created_at AS scraping_runs_created_at 
+FROM scraping_runs 
+WHERE scraping_runs.start_time >= %(start_time_1)s]
+[parameters: {'start_time_1': datetime.datetime(2025, 8, 8, 5, 54, 21, 22161)}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-08-09 01:54:21,052 - monitoring_system - ERROR - Failed to collect data quality metrics: (psycopg2.errors.GroupingError) column "representatives.id" must appear in the GROUP BY clause or be used in an aggregate function
+LINE 2: FROM (SELECT representatives.id AS representatives_id, repre...
+                     ^
+
+[SQL: SELECT count(*) AS count_1 
+FROM (SELECT representatives.id AS representatives_id, representatives.jurisdiction_id AS representatives_jurisdiction_id, representatives.name AS representatives_name, representatives.role AS representatives_role, representatives.party AS representatives_party, representatives.riding AS representatives_riding, representatives.email AS representatives_email, representatives.phone AS representatives_phone, representatives.website AS representatives_website, representatives.bio AS representatives_bio, representatives.image_url AS representatives_image_url, representatives.created_at AS representatives_created_at, representatives.updated_at AS representatives_updated_at 
+FROM representatives 
+WHERE representatives.name IS NOT NULL GROUP BY representatives.name, representatives.jurisdiction_id 
+HAVING count(representatives.id) > %(count_2)s) AS anon_1]
+[parameters: {'count_2': 1}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-08-09 01:54:21,052 - __main__ - INFO - ✅ Monitoring system test successful
+2025-08-09 01:54:21,052 - __main__ - INFO - 📊 System metrics: CPU 10.8%, Memory 51.3%
+2025-08-09 01:54:21,052 - __main__ - INFO - ✅ Monitoring System test PASSED
+2025-08-09 01:54:21,052 - __main__ - INFO - 
+==================================================
+2025-08-09 01:54:21,052 - __main__ - INFO - Running Dashboard test...
+2025-08-09 01:54:21,052 - __main__ - INFO - ==================================================
+2025-08-09 01:54:21,052 - __main__ - INFO - 🔍 Testing dashboard...
+2025-08-09 01:54:21,088 - dashboard - ERROR - Exception on / [GET]
+Traceback (most recent call last):
+  File "/Users/ashishtandon/Github/Base Code/backend/venv/lib/python3.13/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/ashishtandon/Github/Base Code/backend/venv/lib/python3.13/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/ashishtandon/Github/Base Code/backend/venv/lib/python3.13/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/ashishtandon/Github/Base Code/backend/venv/lib/python3.13/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "/Users/ashishtandon/Github/Base Code/backend/OpenPolicyAshBack/dashboard.py", line 48, in dashboard
+    return render_template('dashboard.html')
+  File "/Users/ashishtandon/Github/Base Code/backend/venv/lib/python3.13/site-packages/flask/templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "/Users/ashishtandon/Github/Base Code/backend/venv/lib/python3.13/site-packages/jinja2/environment.py", line 1087, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ashishtandon/Github/Base Code/backend/venv/lib/python3.13/site-packages/jinja2/environment.py", line 1016, in get_template
+    return self._load_template(name, globals)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/Users/ashishtandon/Github/Base Code/backend/venv/lib/python3.13/site-packages/jinja2/environment.py", line 975, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "/Users/ashishtandon/Github/Base Code/backend/venv/lib/python3.13/site-packages/jinja2/loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+                                 ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "/Users/ashishtandon/Github/Base Code/backend/venv/lib/python3.13/site-packages/flask/templating.py", line 65, in get_source
+    return self._get_source_fast(environment, template)
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ashishtandon/Github/Base Code/backend/venv/lib/python3.13/site-packages/flask/templating.py", line 99, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: dashboard.html
+2025-08-09 01:54:21,090 - __main__ - ERROR - ❌ Dashboard main page failed: 500
+2025-08-09 01:54:21,090 - __main__ - ERROR - ❌ Dashboard test FAILED
+2025-08-09 01:54:21,090 - __main__ - INFO - 
+==================================================
+2025-08-09 01:54:21,090 - __main__ - INFO - Running Data Quality test...
+2025-08-09 01:54:21,090 - __main__ - INFO - ==================================================
+2025-08-09 01:54:21,090 - __main__ - INFO - 🔍 Testing data quality...
+2025-08-09 01:54:21,104 - __main__ - INFO - ✅ Data quality test successful: 100.0% quality score
+2025-08-09 01:54:21,104 - __main__ - INFO - 📊 Data stats: 2774/2774 complete records
+2025-08-09 01:54:21,105 - __main__ - INFO - ✅ Data Quality test PASSED
+2025-08-09 01:54:21,105 - __main__ - INFO - 
+==================================================
+2025-08-09 01:54:21,105 - __main__ - INFO - Running System Performance test...
+2025-08-09 01:54:21,105 - __main__ - INFO - ==================================================
+2025-08-09 01:54:21,105 - __main__ - INFO - 🔍 Testing system performance...
+2025-08-09 01:54:22,109 - __main__ - INFO - ✅ System performance test successful
+2025-08-09 01:54:22,109 - __main__ - INFO - 📊 Performance: CPU 10.4%, Memory 51.4%, Disk 0.8%
+2025-08-09 01:54:22,109 - __main__ - INFO - ✅ System Performance test PASSED
+2025-08-09 01:54:22,109 - __main__ - INFO - 
+==================================================
+2025-08-09 01:54:22,109 - __main__ - INFO - Running Deployment Scripts test...
+2025-08-09 01:54:22,109 - __main__ - INFO - ==================================================
+2025-08-09 01:54:22,109 - __main__ - INFO - 🔍 Testing deployment scripts...
+2025-08-09 01:54:22,147 - __main__ - INFO - ✅ Deploy script test successful
+2025-08-09 01:54:22,186 - __main__ - INFO - ✅ Production startup script test successful
+2025-08-09 01:54:22,186 - __main__ - INFO - ✅ Deployment Scripts test PASSED
+2025-08-09 01:54:22,186 - __main__ - INFO - 
+==================================================
+2025-08-09 01:54:22,186 - __main__ - INFO - 🎯 TEST RESULTS SUMMARY
+2025-08-09 01:54:22,186 - __main__ - INFO - ==================================================
+2025-08-09 01:54:22,186 - __main__ - INFO - Tests Passed: 5/6
+2025-08-09 01:54:22,186 - __main__ - INFO - Success Rate: 83.3%
+2025-08-09 01:54:22,186 - __main__ - INFO - Overall Status: ✅ PASSED
+2025-08-09 01:54:22,194 - __main__ - INFO - 📄 Test results saved to: /Users/ashishtandon/Github/Base Code/backend/OpenPolicyAshBack/production_test_results_20250809_055422.json
+2025-08-09 01:54:22,194 - __main__ - INFO - 
+🎉 Production system test completed successfully!
+2025-08-09 01:54:22,194 - __main__ - INFO - 🚀 OpenPolicy Platform is ready for production deployment!
+2025-08-09 01:55:51,265 - __main__ - INFO - 🚀 Starting comprehensive production system test...
+2025-08-09 01:55:51,265 - __main__ - INFO - 
+==================================================
+2025-08-09 01:55:51,265 - __main__ - INFO - Running Database Connectivity test...
+2025-08-09 01:55:51,265 - __main__ - INFO - ==================================================
+2025-08-09 01:55:51,265 - __main__ - INFO - 🔍 Testing database connectivity...
+2025-08-09 01:55:51,372 - __main__ - INFO - ✅ Database connection successful
+2025-08-09 01:55:51,389 - __main__ - INFO - 📊 Database stats: 2774 representatives, 241 jurisdictions
+2025-08-09 01:55:51,389 - __main__ - INFO - ✅ Database Connectivity test PASSED
+2025-08-09 01:55:51,389 - __main__ - INFO - 
+==================================================
+2025-08-09 01:55:51,389 - __main__ - INFO - Running Monitoring System test...
+2025-08-09 01:55:51,389 - __main__ - INFO - ==================================================
+2025-08-09 01:55:51,389 - __main__ - INFO - 🔍 Testing monitoring system...
+2025-08-09 01:55:52,435 - monitoring_system - ERROR - Failed to collect scraper metrics: (psycopg2.errors.UndefinedColumn) column scraping_runs.scraper_name does not exist
+LINE 1: ...jurisdiction_id AS scraping_runs_jurisdiction_id, scraping_r...
+                                                             ^
+
+[SQL: SELECT scraping_runs.id AS scraping_runs_id, scraping_runs.jurisdiction_id AS scraping_runs_jurisdiction_id, scraping_runs.scraper_name AS scraping_runs_scraper_name, scraping_runs.start_time AS scraping_runs_start_time, scraping_runs.end_time AS scraping_runs_end_time, scraping_runs.status AS scraping_runs_status, scraping_runs.records_processed AS scraping_runs_records_processed, scraping_runs.records_created AS scraping_runs_records_created, scraping_runs.records_updated AS scraping_runs_records_updated, scraping_runs.error_message AS scraping_runs_error_message, scraping_runs.created_at AS scraping_runs_created_at 
+FROM scraping_runs 
+WHERE scraping_runs.start_time >= %(start_time_1)s]
+[parameters: {'start_time_1': datetime.datetime(2025, 8, 8, 5, 55, 52, 421813)}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-08-09 01:55:52,455 - monitoring_system - ERROR - Failed to collect data quality metrics: (psycopg2.errors.GroupingError) column "representatives.id" must appear in the GROUP BY clause or be used in an aggregate function
+LINE 2: FROM (SELECT representatives.id AS representatives_id, repre...
+                     ^
+
+[SQL: SELECT count(*) AS count_1 
+FROM (SELECT representatives.id AS representatives_id, representatives.jurisdiction_id AS representatives_jurisdiction_id, representatives.name AS representatives_name, representatives.role AS representatives_role, representatives.party AS representatives_party, representatives.riding AS representatives_riding, representatives.email AS representatives_email, representatives.phone AS representatives_phone, representatives.website AS representatives_website, representatives.bio AS representatives_bio, representatives.image_url AS representatives_image_url, representatives.created_at AS representatives_created_at, representatives.updated_at AS representatives_updated_at 
+FROM representatives 
+WHERE representatives.name IS NOT NULL GROUP BY representatives.name, representatives.jurisdiction_id 
+HAVING count(representatives.id) > %(count_2)s) AS anon_1]
+[parameters: {'count_2': 1}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-08-09 01:55:52,455 - __main__ - INFO - ✅ Monitoring system test successful
+2025-08-09 01:55:52,455 - __main__ - INFO - 📊 System metrics: CPU 6.7%, Memory 50.6%
+2025-08-09 01:55:52,455 - __main__ - INFO - ✅ Monitoring System test PASSED
+2025-08-09 01:55:52,455 - __main__ - INFO - 
+==================================================
+2025-08-09 01:55:52,455 - __main__ - INFO - Running Dashboard test...
+2025-08-09 01:55:52,455 - __main__ - INFO - ==================================================
+2025-08-09 01:55:52,455 - __main__ - INFO - 🔍 Testing dashboard...
+2025-08-09 01:55:52,493 - __main__ - INFO - ✅ Dashboard main page accessible
+2025-08-09 01:55:53,497 - __main__ - INFO - ✅ API endpoint /api/system-metrics accessible
+2025-08-09 01:55:53,508 - __main__ - WARNING - ⚠️ API endpoint /api/scraper-metrics returned 500
+2025-08-09 01:55:53,524 - __main__ - WARNING - ⚠️ API endpoint /api/data-quality returned 500
+2025-08-09 01:55:53,541 - __main__ - WARNING - ⚠️ API endpoint /api/database-health returned 500
+2025-08-09 01:55:53,541 - __main__ - INFO - ✅ Dashboard test PASSED
+2025-08-09 01:55:53,541 - __main__ - INFO - 
+==================================================
+2025-08-09 01:55:53,541 - __main__ - INFO - Running Data Quality test...
+2025-08-09 01:55:53,541 - __main__ - INFO - ==================================================
+2025-08-09 01:55:53,541 - __main__ - INFO - 🔍 Testing data quality...
+2025-08-09 01:55:53,553 - __main__ - INFO - ✅ Data quality test successful: 100.0% quality score
+2025-08-09 01:55:53,554 - __main__ - INFO - 📊 Data stats: 2774/2774 complete records
+2025-08-09 01:55:53,554 - __main__ - INFO - ✅ Data Quality test PASSED
+2025-08-09 01:55:53,554 - __main__ - INFO - 
+==================================================
+2025-08-09 01:55:53,554 - __main__ - INFO - Running System Performance test...
+2025-08-09 01:55:53,554 - __main__ - INFO - ==================================================
+2025-08-09 01:55:53,554 - __main__ - INFO - 🔍 Testing system performance...
+2025-08-09 01:55:54,559 - __main__ - INFO - ✅ System performance test successful
+2025-08-09 01:55:54,559 - __main__ - INFO - 📊 Performance: CPU 14.5%, Memory 50.8%, Disk 0.8%
+2025-08-09 01:55:54,559 - __main__ - INFO - ✅ System Performance test PASSED
+2025-08-09 01:55:54,559 - __main__ - INFO - 
+==================================================
+2025-08-09 01:55:54,559 - __main__ - INFO - Running Deployment Scripts test...
+2025-08-09 01:55:54,560 - __main__ - INFO - ==================================================
+2025-08-09 01:55:54,560 - __main__ - INFO - 🔍 Testing deployment scripts...
+2025-08-09 01:55:54,613 - __main__ - INFO - ✅ Deploy script test successful
+2025-08-09 01:55:54,645 - __main__ - INFO - ✅ Production startup script test successful
+2025-08-09 01:55:54,645 - __main__ - INFO - ✅ Deployment Scripts test PASSED
+2025-08-09 01:55:54,645 - __main__ - INFO - 
+==================================================
+2025-08-09 01:55:54,645 - __main__ - INFO - 🎯 TEST RESULTS SUMMARY
+2025-08-09 01:55:54,645 - __main__ - INFO - ==================================================
+2025-08-09 01:55:54,646 - __main__ - INFO - Tests Passed: 6/6
+2025-08-09 01:55:54,646 - __main__ - INFO - Success Rate: 100.0%
+2025-08-09 01:55:54,646 - __main__ - INFO - Overall Status: ✅ PASSED
+2025-08-09 01:55:54,646 - __main__ - INFO - 📄 Test results saved to: /Users/ashishtandon/Github/Base Code/backend/OpenPolicyAshBack/production_test_results_20250809_055554.json
+2025-08-09 01:55:54,646 - __main__ - INFO - 
+🎉 Production system test completed successfully!
+2025-08-09 01:55:54,646 - __main__ - INFO - 🚀 OpenPolicy Platform is ready for production deployment!

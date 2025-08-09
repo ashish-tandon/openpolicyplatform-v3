@@ -1,27 +1,31 @@
 status: 200
 encoding: UTF-8
 Server: nginx/1.20.2
-Date: Sat, 09 Aug 2025 01:50:55 GMT
+Date: Sat, 09 Aug 2025 05:45:00 GMT
 Content-Type: text/html; charset=UTF-8
-Content-Length: 24939
+Content-Length: 24938
 Connection: keep-alive
 Keep-Alive: timeout=20
-Cache-Control: must-revalidate, no-cache, private
+Cache-Control: max-age=2764800, public
+X-Drupal-Dynamic-Cache: MISS
 Content-language: en
 X-Content-Type-Options: nosniff
 X-Frame-Options: SAMEORIGIN
 Expires: Sun, 19 Nov 1978 05:00:00 GMT
+Vary: Cookie,Accept-Encoding
 X-Generator: Drupal 10 (https://www.drupal.org)
-Set-Cookie: hlat=deleted; expires=Thu, 01 Jan 1970 00:00:01 GMT; Max-Age=0; path=/; domain=.markham.ca; secure; HttpOnly; SameSite=none
-Vary: Accept-Encoding
+X-Drupal-Cache: HIT
+Last-Modified: Sat, 09 Aug 2025 05:26:45 GMT
+ETag: "1754717205-gzip"
 Content-Encoding: gzip
-X-Request-ID: v-494af84e-74c3-11f0-9beb-e7cdf65cf1a9
+X-Request-ID: v-c98e9eb6-74e1-11f0-99a5-e7b6d8a676bc
 X-AH-Environment: prod
-Age: 0
+Age: 945
 Via: varnish
-X-Cache: MISS
+X-Cache: HIT
+X-Cache-Hits: 4
 Accept-Ranges: bytes
-X-DIS-Request-ID: f311a5ae50d0fa561fd85a4b2243204a
+X-DIS-Request-ID: fdf344db41fb6d7f9fef313dc35c17be
 
 
 
@@ -2226,7 +2230,7 @@ X-DIS-Request-ID: f311a5ae50d0fa561fd85a4b2243204a
   <div class="container mx-auto px-4 no-container-content layout layout--onecol">
     <div  class="layout__region layout__region--content">
       
-<div class="block--spacer block block--space-40px"><div class="spacer-block spacer-cndbkoqynj-291 d-flex justify-content-center"></div><style>.spacer-cndbkoqynj-291{height:40px;}@media (min-width: 640px) {.spacer-cndbkoqynj-291{height:;}}@media (min-width: 768px) {.spacer-cndbkoqynj-291{height:;}}@media (min-width: 1024px){.spacer-cndbkoqynj-291{height:;}}@media (min-width: 1280px) {.spacer-cndbkoqynj-291{height: ;}}</style></div>
+<div class="block--spacer block block--space-40px"><div class="spacer-block spacer-gqntgsoaav-317 d-flex justify-content-center"></div><style>.spacer-gqntgsoaav-317{height:40px;}@media (min-width: 640px) {.spacer-gqntgsoaav-317{height:;}}@media (min-width: 768px) {.spacer-gqntgsoaav-317{height:;}}@media (min-width: 1024px){.spacer-gqntgsoaav-317{height:;}}@media (min-width: 1280px) {.spacer-gqntgsoaav-317{height: ;}}</style></div>
 <div class="block--basic">
   
     
@@ -2251,7 +2255,7 @@ X-DIS-Request-ID: f311a5ae50d0fa561fd85a4b2243204a
       
       </div>
 
-<div class="block--spacer block block--space-40px"><div class="spacer-block spacer-jslikpjpbg-430 d-flex justify-content-center"></div><style>.spacer-jslikpjpbg-430{height:40px;}@media (min-width: 640px) {.spacer-jslikpjpbg-430{height:;}}@media (min-width: 768px) {.spacer-jslikpjpbg-430{height:;}}@media (min-width: 1024px){.spacer-jslikpjpbg-430{height:;}}@media (min-width: 1280px) {.spacer-jslikpjpbg-430{height: ;}}</style></div>
+<div class="block--spacer block block--space-40px"><div class="spacer-block spacer-pskitvqtwn-366 d-flex justify-content-center"></div><style>.spacer-pskitvqtwn-366{height:40px;}@media (min-width: 640px) {.spacer-pskitvqtwn-366{height:;}}@media (min-width: 768px) {.spacer-pskitvqtwn-366{height:;}}@media (min-width: 1024px){.spacer-pskitvqtwn-366{height:;}}@media (min-width: 1280px) {.spacer-pskitvqtwn-366{height: ;}}</style></div>
     </div>
   </div>
   <div class="no-container no-container-content layout--no-bottom-gap layout layout--onecol">

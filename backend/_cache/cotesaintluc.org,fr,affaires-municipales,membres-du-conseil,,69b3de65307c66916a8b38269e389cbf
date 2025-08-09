@@ -1,22 +1,22 @@
 status: 200
 encoding: utf-8
-Date: Sat, 09 Aug 2025 01:50:56 GMT
+Date: Sat, 09 Aug 2025 05:45:01 GMT
 Content-Type: text/html; charset=utf-8
 Transfer-Encoding: chunked
 Connection: keep-alive
 Server: cloudflare
 Cache-Provider: CLOUDWAYS-CACHE-DE
-Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=QcpVE8v8FMyaa4UJKrdxk2s0kpw6FDQuL%2FpB9S9aECrUSfnSVtsIv0Isfbe398sXt5PclzLV4zqTxc%2FP%2BHetbwPfGIJm1DwJ4%2BiYKtg2VHY%3D"}]}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=bExdDhjut8bJKlExMWM7dsv3Z21qcyCXPDs%2BO9X08TOHsL7qRjYLLQcVCOq8Ijk16xhHpvUoFVFDiJNdXccuVrW7k1YxkQGKkrCfialtDMU%3D"}]}
 Vary: Accept-Encoding
 Last-Modified: Sat, 09 Aug 2025 01:25:02 GMT
 Cache-Control: max-age=0, s-maxage=2592000
 Expires: Sat, 09 Aug 2025 01:50:56 GMT
-Age: 0
-X-Cache: MISS
+Age: 14045
+X-Cache: HIT
 Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
 Cf-Cache-Status: DYNAMIC
 Content-Encoding: gzip
-CF-RAY: 96c39b04dbfbac6c-YYZ
+CF-RAY: 96c4f1ea9f2debb5-YYZ
 alt-svc: h3=":443"; ma=86400
 
 <!DOCTYPE html>
@@ -683,7 +683,7 @@ var wpml_cookies = {"wp-wpml_current_language":{"value":"fr","expires":1,"path":
 
 
 
-<p id="option-2-soumettre-une-question-ecrite-a-lavance"><strong>Mitchell Brownstein</strong><br>Maire<br><a href="tel:514-485-6945">514-485-6945</a><br><a href="/cdn-cgi/l/email-protection#f59897879a829b8681909c9bb5969a819086949c9b81998096db9a8792"><span class="__cf_email__" data-cfemail="fd909f8f928a938e89989493bd9e9289988e9c94938991889ed3928f9a">[email&#160;protected]</span></a></p>
+<p id="option-2-soumettre-une-question-ecrite-a-lavance"><strong>Mitchell Brownstein</strong><br>Maire<br><a href="tel:514-485-6945">514-485-6945</a><br><a href="/cdn-cgi/l/email-protection#4b262939243c25383f2e22250b28243f2e382a22253f273e286524392c"><span class="__cf_email__" data-cfemail="88e5eafae7ffe6fbfcede1e6c8ebe7fcedfbe9e1e6fce4fdeba6e7faef">[email&#160;protected]</span></a></p>
 
 
 <div class="gb-container gb-container-b005f768 gb-accordion">
@@ -723,7 +723,7 @@ var wpml_cookies = {"wp-wpml_current_language":{"value":"fr","expires":1,"path":
 
 
 
-<p><strong>Oren Sebag</strong><br>Conseiller, <a href="https://cotesaintluc.org/wp-content/uploads/2021/12/WP_Oren_Sebag_1.png">District 1</a><br><a href="tel:514-485-6945">514-485-6945</a><br><a href="/cdn-cgi/l/email-protection#137c607671727453707c677660727a7d677f66703d7c6174"><span class="__cf_email__" data-cfemail="630c100601020423000c170610020a0d170f16004d0c1104">[email&#160;protected]</span></a></p>
+<p><strong>Oren Sebag</strong><br>Conseiller, <a href="https://cotesaintluc.org/wp-content/uploads/2021/12/WP_Oren_Sebag_1.png">District 1</a><br><a href="tel:514-485-6945">514-485-6945</a><br><a href="/cdn-cgi/l/email-protection#8de2fee8efeceacdeee2f9e8feece4e3f9e1f8eea3e2ffea"><span class="__cf_email__" data-cfemail="a7c8d4c2c5c6c0e7c4c8d3c2d4c6cec9d3cbd2c489c8d5c0">[email&#160;protected]</span></a></p>
 
 
 <div class="gb-container gb-container-c61a340a gb-accordion">
@@ -763,7 +763,7 @@ var wpml_cookies = {"wp-wpml_current_language":{"value":"fr","expires":1,"path":
 
 
 
-<p><strong>Mike Cohen</strong><br>Conseiller, <a href="https://cotesaintluc.org/wp-content/uploads/2021/12/WP_Mike_Cohen_2.png">District 2</a><br><a href="tel:514-485-6945">514-485-6945</a><br><a href="/cdn-cgi/l/email-protection#84e9e7ebece1eac4e7ebf0e1f7e5edeaf0e8f1e7aaebf6e3"><span class="__cf_email__" data-cfemail="84e9e7ebece1eac4e7ebf0e1f7e5edeaf0e8f1e7aaebf6e3">[email&#160;protected]</span></a></p>
+<p><strong>Mike Cohen</strong><br>Conseiller, <a href="https://cotesaintluc.org/wp-content/uploads/2021/12/WP_Mike_Cohen_2.png">District 2</a><br><a href="tel:514-485-6945">514-485-6945</a><br><a href="/cdn-cgi/l/email-protection#1f727c70777a715f7c706b7a6c7e76716b736a7c31706d78"><span class="__cf_email__" data-cfemail="b0ddd3dfd8d5def0d3dfc4d5c3d1d9dec4dcc5d39edfc2d7">[email&#160;protected]</span></a></p>
 
 
 <div class="gb-container gb-container-f16d95f7 gb-accordion">
@@ -849,7 +849,7 @@ var wpml_cookies = {"wp-wpml_current_language":{"value":"fr","expires":1,"path":
 
 
 
-<p id="option-2-soumettre-une-question-ecrite-a-lavance"><strong>Dida Berku</strong><br>Conseillère, <a href="https://cotesaintluc.org/wp-content/uploads/2021/12/WP_Dida_Berku_32.png">District 3</a><br><a href="tel:514-485-6945">514-485-6945</a><br><a href="/cdn-cgi/l/email-protection#6c080e091e07192c0f0318091f0d05021800190f42031e0b"><span class="__cf_email__" data-cfemail="c1a5a3a4b3aab481a2aeb5a4b2a0a8afb5adb4a2efaeb3a6">[email&#160;protected]</span></a></p>
+<p id="option-2-soumettre-une-question-ecrite-a-lavance"><strong>Dida Berku</strong><br>Conseillère, <a href="https://cotesaintluc.org/wp-content/uploads/2021/12/WP_Dida_Berku_32.png">District 3</a><br><a href="tel:514-485-6945">514-485-6945</a><br><a href="/cdn-cgi/l/email-protection#4226202730293702212d362731232b2c362e37216c2d3025"><span class="__cf_email__" data-cfemail="a3c7c1c6d1c8d6e3c0ccd7c6d0c2cacdd7cfd6c08dccd1c4">[email&#160;protected]</span></a></p>
 
 
 <div class="gb-container gb-container-e657b360 gb-accordion">
@@ -915,7 +915,7 @@ var wpml_cookies = {"wp-wpml_current_language":{"value":"fr","expires":1,"path":
 
 
 
-<p><strong>Steven Erdelyi</strong><br>Conseiller, <a href="https://cotesaintluc.org/wp-content/uploads/2021/12/WP_Steven_Erdelyi_4.png">District 4</a><br><a href="tel:514-485-6945">514-485-6945</a><br><a href="/cdn-cgi/l/email-protection#2754425543424b5e4e674448534254464e49534b524409485540"><span class="__cf_email__" data-cfemail="780b1d0a1c1d140111381b170c1d0b1911160c140d1b56170a1f">[email&#160;protected]</span></a></p>
+<p><strong>Steven Erdelyi</strong><br>Conseiller, <a href="https://cotesaintluc.org/wp-content/uploads/2021/12/WP_Steven_Erdelyi_4.png">District 4</a><br><a href="tel:514-485-6945">514-485-6945</a><br><a href="/cdn-cgi/l/email-protection#0b786e796f6e6772624b68647f6e786a62657f677e682564796c"><span class="__cf_email__" data-cfemail="e59680978180899c8ca5868a918096848c8b91899086cb8a9782">[email&#160;protected]</span></a></p>
 
 
 <div class="gb-container gb-container-8dbb69dc gb-accordion">
@@ -983,7 +983,7 @@ var wpml_cookies = {"wp-wpml_current_language":{"value":"fr","expires":1,"path":
 
 
 
-<p><strong>Mitch Kujavsky</strong><br>Conseiller, <a href="https://cotesaintluc.org/wp-content/uploads/2021/12/WP_Mitch_Kujavsky_52.png">District 5</a><br><a href="tel:514-485-6945">514-485-6945</a><br><a href="/cdn-cgi/l/email-protection#305d5b455a5146435b4970535f44554351595e445c45531e5f4257"><span class="__cf_email__" data-cfemail="f29f998798938481998bb2919d869781939b9c869e8791dc9d8095">[email&#160;protected]</span></a></p>
+<p><strong>Mitch Kujavsky</strong><br>Conseiller, <a href="https://cotesaintluc.org/wp-content/uploads/2021/12/WP_Mitch_Kujavsky_52.png">District 5</a><br><a href="tel:514-485-6945">514-485-6945</a><br><a href="/cdn-cgi/l/email-protection#adc0c6d8c7ccdbdec6d4edcec2d9c8deccc4c3d9c1d8ce83c2dfca"><span class="__cf_email__" data-cfemail="214c4a544b4057524a5861424e55445240484f554d54420f4e5346">[email&#160;protected]</span></a></p>
 
 
 <div class="gb-container gb-container-54d96cd0 gb-accordion">
@@ -1053,7 +1053,7 @@ var wpml_cookies = {"wp-wpml_current_language":{"value":"fr","expires":1,"path":
 
 
 
-<p id="option-2-soumettre-une-question-ecrite-a-lavance"><strong>Lior Azerad</strong><br>Conseillère, <a href="https://cotesaintluc.org/wp-content/uploads/2021/12/WP_Lior_Azerad_62.png">District 6</a><br><a href="tel:514-485-6945">514-485-6945</a><br><a href="/cdn-cgi/l/email-protection#375b564d52455653775458435244565e59435b425419584550"><span class="__cf_email__" data-cfemail="c7aba6bda2b5a6a387a4a8b3a2b4a6aea9b3abb2a4e9a8b5a0">[email&#160;protected]</span></a></p>
+<p id="option-2-soumettre-une-question-ecrite-a-lavance"><strong>Lior Azerad</strong><br>Conseillère, <a href="https://cotesaintluc.org/wp-content/uploads/2021/12/WP_Lior_Azerad_62.png">District 6</a><br><a href="tel:514-485-6945">514-485-6945</a><br><a href="/cdn-cgi/l/email-protection#b3dfd2c9d6c1d2d7f3d0dcc7d6c0d2daddc7dfc6d09ddcc1d4"><span class="__cf_email__" data-cfemail="e78b869d82958683a78488938294868e89938b9284c9889580">[email&#160;protected]</span></a></p>
 
 
 <div class="gb-container gb-container-ab91de14 gb-accordion">
@@ -1105,7 +1105,7 @@ var wpml_cookies = {"wp-wpml_current_language":{"value":"fr","expires":1,"path":
 
 
 
-<p><strong>Sidney Benizri</strong><br>Conseiller, <a href="https://cotesaintluc.org/wp-content/uploads/2021/12/WP_Sidney_Benizri_7.png">District 7</a><br><a href="tel:514-485-6945">514-485-6945</a><br><a href="/cdn-cgi/l/email-protection#e39081868d8a99918aa3808c978690828a8d978f9680cd8c9184"><span class="__cf_email__" data-cfemail="2e5d4c4b4047545c476e4d415a4b5d4f47405a425b4d00415c49">[email&#160;protected]</span></a></p>
+<p><strong>Sidney Benizri</strong><br>Conseiller, <a href="https://cotesaintluc.org/wp-content/uploads/2021/12/WP_Sidney_Benizri_7.png">District 7</a><br><a href="tel:514-485-6945">514-485-6945</a><br><a href="/cdn-cgi/l/email-protection#9eedfcfbf0f7e4ecf7defdf1eafbedfff7f0eaf2ebfdb0f1ecf9"><span class="__cf_email__" data-cfemail="493a2b2c2720333b20092a263d2c3a2820273d253c2a67263b2e">[email&#160;protected]</span></a></p>
 
 
 <div class="gb-container gb-container-e8b77eca gb-accordion">
@@ -1165,7 +1165,7 @@ var wpml_cookies = {"wp-wpml_current_language":{"value":"fr","expires":1,"path":
 
 
 
-<p><strong>Andee Shuster</strong><br>Conseillère, <a href="https://cotesaintluc.org/wp-content/uploads/2021/12/WP_Andee_Shuster_8.png">District 8</a><br><a href="tel:514-485-6945">514-485-6945</a><br><a href="/cdn-cgi/l/email-protection#31504259444245544371525e45544250585f455d44521f5e4356"><span class="__cf_email__" data-cfemail="cbaab8a3beb8bfaeb98ba8a4bfaeb8aaa2a5bfa7bea8e5a4b9ac">[email&#160;protected]</span></a></p>
+<p><strong>Andee Shuster</strong><br>Conseillère, <a href="https://cotesaintluc.org/wp-content/uploads/2021/12/WP_Andee_Shuster_8.png">District 8</a><br><a href="tel:514-485-6945">514-485-6945</a><br><a href="/cdn-cgi/l/email-protection#c3a2b0abb6b0b7a6b183a0acb7a6b0a2aaadb7afb6a0edacb1a4"><span class="__cf_email__" data-cfemail="afcedcc7dadcdbcaddefccc0dbcadccec6c1dbc3dacc81c0ddc8">[email&#160;protected]</span></a></p>
 
 
 <div class="gb-container gb-container-3c391ede gb-accordion">
@@ -1288,7 +1288,7 @@ var wpml_cookies = {"wp-wpml_current_language":{"value":"fr","expires":1,"path":
 
 
 
-<p><a href="https://cotesaintluc.org/fr/ville/nous-joindre/signaler-un-probleme/" data-type="URL" data-id="https://cotesaintluc.org/fr/ville/nous-joindre/signaler-un-probleme/">Signalez un problème</a><br><a href="/cdn-cgi/l/email-protection#32415740445b515772515d465741535b5c465e47511c5d4055"><span class="__cf_email__" data-cfemail="f182948387989294b1929e85948290989f859d8492df9e8396">[email&#160;protected]</span></a><br></p>
+<p><a href="https://cotesaintluc.org/fr/ville/nous-joindre/signaler-un-probleme/" data-type="URL" data-id="https://cotesaintluc.org/fr/ville/nous-joindre/signaler-un-probleme/">Signalez un problème</a><br><a href="/cdn-cgi/l/email-protection#9be8fee9edf2f8fedbf8f4effee8faf2f5eff7eef8b5f4e9fc"><span class="__cf_email__" data-cfemail="63100611150a000623000c170610020a0d170f16004d0c1104">[email&#160;protected]</span></a><br></p>
 
 </div></div>
 </div>

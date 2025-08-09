@@ -1,6 +1,6 @@
 status: 200
 encoding: utf-8
-Date: Sat, 09 Aug 2025 01:51:07 GMT
+Date: Sat, 09 Aug 2025 05:45:12 GMT
 Content-Type: text/html; charset=utf-8
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -14,7 +14,7 @@ Content-Encoding: gzip
 Vary: Accept-Encoding
 X-Frame-Options: SAMEORIGIN
 Referrer-Policy: unsafe-url
-Last-Modified: Sat, 09 Aug 2025 01:51:05 GMT
+Last-Modified: Sat, 09 Aug 2025 05:45:09 GMT
 X-Content-Type-Options: nosniff
 X-XSS-Protection: 1; mode=block
 Server: Sucuri/Cloudproxy
@@ -72,9 +72,9 @@ JCEMediaBox.init({popup:{width:"",height:"",legacy:0,lightbox:0,shadowbox:0,resi
 	<!-- Perfect Link with Article Images on Facebook -->
 	<meta property="og:title" content="District 5"/>
 	<meta property="og:type" content="article"/>
-	<meta property="og:url" content="https://cbrm.ns.ca/district-5.html"/>
+	<meta property="og:url" content="https://www.cbrm.ns.ca/district-5.html"/>
 	<meta property="og:site_name" content="Cape Breton Regional Municipality"/>
-	<meta property="og:image" content="https://cbrm.ns.ca/images/Election_2020/Council/District%205%20-%20Eldon%20MacDonald.jpg"/>
+	<meta property="og:image" content="https://www.cbrm.ns.ca/images/Election_2020/Council/District%205%20-%20Eldon%20MacDonald.jpg"/>
 
 <link rel="stylesheet" href="/templates/lesc_cbrm/css/bootstrap-responsive.min.css">
 <link rel="stylesheet" href="/templates/lesc_cbrm/css/bootstrap.min.css">
@@ -229,13 +229,13 @@ ga('send', 'pageview');
 
 <h3><img title="District 5" class="image_right_border" alt="District 5" src="/images/Election_2020/Council/District%205%20-%20Eldon%20MacDonald.jpg" />Eldon MacDonald</h3>
 <p>320 Esplanade<br />Sydney, NS&nbsp; B1P 7B9</p>
-<p><span id="cloak1be29d4f93ddf322dbb108090928d3ff">This email address is being protected from spambots. You need JavaScript enabled to view it.</span><script type='text/javascript'>
-				document.getElementById('cloak1be29d4f93ddf322dbb108090928d3ff').innerHTML = '';
+<p><span id="cloakeb8b3ae2c66e140f33798f10a969ab39">This email address is being protected from spambots. You need JavaScript enabled to view it.</span><script type='text/javascript'>
+				document.getElementById('cloakeb8b3ae2c66e140f33798f10a969ab39').innerHTML = '';
 				var prefix = '&#109;a' + 'i&#108;' + '&#116;o';
 				var path = 'hr' + 'ef' + '=';
-				var addy1be29d4f93ddf322dbb108090928d3ff = '&#101;m&#97;cd&#111;n&#97;ld' + '&#64;';
-				addy1be29d4f93ddf322dbb108090928d3ff = addy1be29d4f93ddf322dbb108090928d3ff + 'cbrm' + '&#46;' + 'ns' + '&#46;' + 'c&#97;';
-				var addy_text1be29d4f93ddf322dbb108090928d3ff = '&#101;m&#97;cd&#111;n&#97;ld' + '&#64;' + 'cbrm' + '&#46;' + 'ns' + '&#46;' + 'c&#97;';document.getElementById('cloak1be29d4f93ddf322dbb108090928d3ff').innerHTML += '<a ' + path + '\'' + prefix + ':' + addy1be29d4f93ddf322dbb108090928d3ff + '\'>'+addy_text1be29d4f93ddf322dbb108090928d3ff+'<\/a>';
+				var addyeb8b3ae2c66e140f33798f10a969ab39 = '&#101;m&#97;cd&#111;n&#97;ld' + '&#64;';
+				addyeb8b3ae2c66e140f33798f10a969ab39 = addyeb8b3ae2c66e140f33798f10a969ab39 + 'cbrm' + '&#46;' + 'ns' + '&#46;' + 'c&#97;';
+				var addy_texteb8b3ae2c66e140f33798f10a969ab39 = '&#101;m&#97;cd&#111;n&#97;ld' + '&#64;' + 'cbrm' + '&#46;' + 'ns' + '&#46;' + 'c&#97;';document.getElementById('cloakeb8b3ae2c66e140f33798f10a969ab39').innerHTML += '<a ' + path + '\'' + prefix + ':' + addyeb8b3ae2c66e140f33798f10a969ab39 + '\'>'+addy_texteb8b3ae2c66e140f33798f10a969ab39+'<\/a>';
 		</script></p>
 <p>Phone: (902) 539-0588<br />Cell:&nbsp;(902) 574-3358</p>
 <p>The populations referenced in this description is based on the 2011 census.</p>

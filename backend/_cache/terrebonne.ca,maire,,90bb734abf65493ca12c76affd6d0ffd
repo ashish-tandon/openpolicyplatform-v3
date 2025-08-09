@@ -1,6 +1,6 @@
 status: 200
 encoding: UTF-8
-Date: Sat, 09 Aug 2025 01:50:48 GMT
+Date: Sat, 09 Aug 2025 05:44:54 GMT
 Content-Type: text/html; charset=UTF-8
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -13,11 +13,11 @@ X-Frame-Options: SAMEORIGIN
 X-Content-Type-Options: nosniff
 Referrer-Policy: strict-origin-when-cross-origin
 X-XSS-Protection: 1; mode=block
-Last-Modified: Sat, 09 Aug 2025 01:24:54 GMT
+Last-Modified: Sat, 09 Aug 2025 05:24:15 GMT
 CF-Cache-Status: HIT
-Age: 1554
+Age: 1239
 Server: cloudflare
-CF-RAY: 96c39ad13cd3ab63-YYZ
+CF-RAY: 96c4f1bdb817aba2-YYZ
 
 <!doctype html>
 <!--[if lt IE 9]><html class="no-js no-svg ie lt-ie9 lt-ie8 lt-ie7" lang="fr-CA"> <![endif]-->
@@ -134,8 +134,8 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/16
 :root :where(.wp-block-table){margin-top: 30px;margin-bottom: 30px;}
 :root :where(.wp-block-list){margin-top: 30px;}
 </style>
-<link rel='stylesheet' id='site-critical-css' href='https://terrebonne.ca/wp-content/themes/ville-de-terrebonne/dist/styles/critical.css?ver=1754702694' type='text/css' media='all' />
-<link rel='stylesheet' id='site-style-css' href='https://terrebonne.ca/wp-content/themes/ville-de-terrebonne/dist/styles/app.css?ver=1754702694' type='text/css' media='all' />
+<link rel='stylesheet' id='site-critical-css' href='https://terrebonne.ca/wp-content/themes/ville-de-terrebonne/dist/styles/critical.css?ver=1754717055' type='text/css' media='all' />
+<link rel='stylesheet' id='site-style-css' href='https://terrebonne.ca/wp-content/themes/ville-de-terrebonne/dist/styles/app.css?ver=1754717055' type='text/css' media='all' />
 <link rel="https://api.w.org/" href="https://terrebonne.ca/wp-json/" /><link rel="alternate" title="JSON" type="application/json" href="https://terrebonne.ca/wp-json/wp/v2/council/249" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://terrebonne.ca/xmlrpc.php?rsd" />
 <meta name="generator" content="WordPress 6.8.2" />
 <link rel='shortlink' href='https://terrebonne.ca/?p=249' />
@@ -736,7 +736,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 													</div>
 													<p class="contact">
 								<span class="icon icon-email-outlined"></span>
-								<a href="/cdn-cgi/l/email-protection#e08d81899285a096898c8c85ce9485929285828f8e8e85ce9183ce8381"><span class="__cf_email__" data-cfemail="d6bbb7bfa4b396a0bfbabab3f8a2b3a4a4b3b4b9b8b8b3f8a7b5f8b5b7">[email&#160;protected]</span></a>
+								<a href="/cdn-cgi/l/email-protection#bad7dbd3c8dffaccd3d6d6df94cedfc8c8dfd8d5d4d4df94cbd994d9db"><span class="__cf_email__" data-cfemail="d4b9b5bda6b194a2bdb8b8b1faa0b1a6a6b1b6bbbabab1faa5b7fab7b5">[email&#160;protected]</span></a>
 							</p>
 												<div class="gutenberg description">
 							
@@ -946,7 +946,7 @@ var eio_lazy_vars = {"exactdn_domain":"","skip_autoscale":0,"threshold":0,"use_d
 /* ]]> */
 </script>
 <script type="text/javascript" src="https://terrebonne.ca/wp-content/plugins/ewww-image-optimizer/includes/lazysizes.min.js?ver=820" id="eio-lazy-load-js" async="async" data-wp-strategy="async" data-cookieconsent="ignore"></script>
-<script type="text/javascript" src="https://terrebonne.ca/wp-content/themes/ville-de-terrebonne/dist/scripts/app.js?ver=1754702694" id="site-main-js" data-cookieconsent="ignore"></script>
+<script type="text/javascript" src="https://terrebonne.ca/wp-content/themes/ville-de-terrebonne/dist/scripts/app.js?ver=1754717055" id="site-main-js" data-cookieconsent="ignore"></script>
         <script type="text/javascript">
             /* <![CDATA[ */
            document.querySelectorAll("ul.nav-menu").forEach(
@@ -961,5 +961,5 @@ var eio_lazy_vars = {"exactdn_domain":"","skip_autoscale":0,"threshold":0,"use_d
         </script>
         
 
-	<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'96c39ad13cd3ab63',t:'MTc1NDcwNDI0OC4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+	<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'96c4f1bdb817aba2',t:'MTc1NDcxODI5NC4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
 </html>

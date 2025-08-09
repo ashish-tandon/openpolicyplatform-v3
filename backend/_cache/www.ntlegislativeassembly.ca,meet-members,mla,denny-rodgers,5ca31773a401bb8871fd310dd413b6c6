@@ -13,14 +13,14 @@ X-Drupal-Cache: HIT
 X-Drupal-Dynamic-Cache: MISS
 X-Frame-Options: SAMEORIGIN
 X-Generator: Drupal 10 (https://www.drupal.org)
-X-Pantheon-Styx-Hostname: styx-fe1fe2-g-665fc5f84f-7v2s5
-X-Styx-Req-Id: 3a54b25a-74c3-11f0-bea0-2e646c8708a4
+X-Pantheon-Styx-Hostname: styx-fe1fe2-h-75998989c4-hqkhk
+X-Styx-Req-Id: f12b6edf-74e3-11f0-a04c-f217964d4a3e
 X-Xss-Protection: 0
-Date: Sat, 09 Aug 2025 01:50:29 GMT
+Date: Sat, 09 Aug 2025 05:44:40 GMT
 X-Served-By: cache-yyz4566-YYZ
 X-Cache: MISS
 X-Cache-Hits: 0
-X-Timer: S1754704229.447186,VS0,VE39
+X-Timer: S1754718280.098187,VS0,VE45
 Vary: Accept-Encoding, Cookie
 Age: 0
 Accept-Ranges: bytes
@@ -1340,7 +1340,7 @@ transfer-encoding: chunked
 <div class="views-element-container block block-views block-views-block--hansard-speech-list-by-member-block" id="block-nc-theme-views-block-hansard-speech-list-by-member-block">
   
     
-      <div region="content"><div class="view view-hansard-speech view-id-hansard_speech view-display-id-list_by_member_block js-view-dom-id-0f02fca36a8e53191caac54d6192b5f766d529328122d768ff7ffa86a13b6791">
+      <div region="content"><div class="view view-hansard-speech view-id-hansard_speech view-display-id-list_by_member_block js-view-dom-id-fe15a57b62d45cbbb6148893ce39c5ff38ee7b582bebabddecb452946bdfc4f6">
   
     
       <div class="view-header">
@@ -1349,6 +1349,22 @@ transfer-encoding: chunked
       
       <div class="view-content">
           <div class="views-row"><div class="views-field views-field-field-topic"><div class="field-content"><a href='/node/5001?keyword=Question%20760-20%281%29%3A%20Development%20of%20Indigenous%20Procurement%20Policy'>Question 760-20(1): Development of Indigenous Procurement Policy</a></div></div><div class="views-field views-field-title"><span class="field-content">Debates of <time datetime="2025-05-29T12:00:00Z" class="datetime">May 29, 2025</time>
+, 20th Assembly, 1st Session (day 62)</span></div><div class="views-field views-field-field-body"><div class="field-content">  <p>Thank you, Mr. Speaker. Mr. Speaker, my questions are for the Minister of Finance. I know the Indigenous Procurement Policy is in in the consultation stage. I know they've been in Inuvik. I talked to some business owners up there who have reached out to me with some questions around how that's going. I wonder can the Minister of Finance give an update on how those -- how the consultation process has been going and where they are in the procurement policy? Thank you.</p>
+
+</div></div></div>
+    <div class="views-row"><div class="views-field views-field-field-topic"><div class="field-content"><a href='/node/5001?keyword=Question%20752-20%281%29%3A%20Northwest%20Territories%20Building%20Code'>Question 752-20(1): Northwest Territories Building Code</a></div></div><div class="views-field views-field-title"><span class="field-content">Debates of <time datetime="2025-05-29T12:00:00Z" class="datetime">May 29, 2025</time>
+, 20th Assembly, 1st Session (day 62)</span></div><div class="views-field views-field-field-body"><div class="field-content">  <p>Thank you, Mr. Speaker. Yes, and I appreciate that, and I recognize that we still have guidelines that we do offer through the department; however, what we don't have is enforcement. Can the Minister commit to -- and I know the previous Minister had a plan to have a plan. Can the Minister commit to sharing that plan, workplan, once developed by the working group with the House, please. Thank you.</p>
+
+</div></div></div>
+    <div class="views-row"><div class="views-field views-field-field-topic"><div class="field-content"></div></div><div class="views-field views-field-title"><span class="field-content">Debates of <time datetime="2025-05-29T12:00:00Z" class="datetime">May 29, 2025</time>
+, 20th Assembly, 1st Session (day 62)</span></div><div class="views-field views-field-field-body"><div class="field-content">  <p>Thank you, Mr. Speaker. Mr. Speaker, I'm happy today to recognize Inuvik Boot Lake constituency assistant, Ms. Sheila Nasogaluak here today. Her advocacy and certainly her passion and hard work for our constituents is invaluable for the work that we do up there, and I would not be able to do my job without her. Thank you.</p>
+
+</div></div></div>
+    <div class="views-row"><div class="views-field views-field-field-topic"><div class="field-content"><a href='/node/5001?keyword=Bill%2029%3A%20First%20Responders%20Workers%26amp%3B%23039%3B%20Compensation%20Amendment%20Act.%20Carried'>Bill 29: First Responders Workers&amp;#039; Compensation Amendment Act. Carried</a></div></div><div class="views-field views-field-title"><span class="field-content">Debates of <time datetime="2025-05-29T12:00:00Z" class="datetime">May 29, 2025</time>
+, 20th Assembly, 1st Session (day 62)</span></div><div class="views-field views-field-field-body"><div class="field-content">  <p>Thank you, Mr. Speaker. I'd like to thank my colleague from Range Lake for bringing this bill forward. Recently, Mr. Speaker, in Inuvik, we had a community feast held by the town of Inuvik for its first responders, the first of its kind in Inuvik, and it was a wonderful event and obviously the firefighters were there as well, and I was honoured to be able to speak and thank them on behalf of the residents of Inuvik Boot Lake and certainly the community of Inuvik as well.</p><p>Mr. Speaker, unfortunately, I'm a bit of a poster child for first responders in the last three or four years having had -- in...</p>
+
+</div></div></div>
+    <div class="views-row"><div class="views-field views-field-field-topic"><div class="field-content"><a href='/node/5001?keyword=Question%20760-20%281%29%3A%20Development%20of%20Indigenous%20Procurement%20Policy'>Question 760-20(1): Development of Indigenous Procurement Policy</a></div></div><div class="views-field views-field-title"><span class="field-content">Debates of <time datetime="2025-05-29T12:00:00Z" class="datetime">May 29, 2025</time>
 , 20th Assembly, 1st Session (day 62)</span></div><div class="views-field views-field-field-body"><div class="field-content">  <p>Thank you, Mr. Speaker. And I thank the Minister. And certainly I support this important work. I live in a riding with two Indigenous governments, well established, both with well-established development corporations. So my next question is there going to be -- is there any consideration -- I had originally had thought to potentially, for example, Mr. Speaker, if there was $2 million worth of government contracting work to be done in my region, is there any appetite to, say, carve out 10, 20, 30, 50, whatever the percentage would be, of that work and then have that work then with qualified...</p>
 
 </div></div></div>
@@ -1368,24 +1384,8 @@ transfer-encoding: chunked
 , 20th Assembly, 1st Session (day 62)</span></div><div class="views-field views-field-field-body"><div class="field-content">  <p>Thank you, Mr. Speaker. Thank you to the Minister. I know there are -- I mean, the whole purpose of this is to increase capacity in Indigenous employment in the regions, you know, give opportunities for Indigenous businesses to grow. I'm wondering -- and it's a question I've been asked -- there's also some non-Indigenous ran businesses that employ many Indigenous employees in the region as well. They've asked is there going to be any kind of a -- is there going to be any opportunity in the new policy to account for that as well, account for that to have -- if you, you know, and again, it's all...</p>
 
 </div></div></div>
-    <div class="views-row"><div class="views-field views-field-field-topic"><div class="field-content"><a href='/node/5001?keyword=Question%20760-20%281%29%3A%20Development%20of%20Indigenous%20Procurement%20Policy'>Question 760-20(1): Development of Indigenous Procurement Policy</a></div></div><div class="views-field views-field-title"><span class="field-content">Debates of <time datetime="2025-05-29T12:00:00Z" class="datetime">May 29, 2025</time>
-, 20th Assembly, 1st Session (day 62)</span></div><div class="views-field views-field-field-body"><div class="field-content">  <p>Thank you, Mr. Speaker. Mr. Speaker, my questions are for the Minister of Finance. I know the Indigenous Procurement Policy is in in the consultation stage. I know they've been in Inuvik. I talked to some business owners up there who have reached out to me with some questions around how that's going. I wonder can the Minister of Finance give an update on how those -- how the consultation process has been going and where they are in the procurement policy? Thank you.</p>
-
-</div></div></div>
-    <div class="views-row"><div class="views-field views-field-field-topic"><div class="field-content"><a href='/node/5001?keyword=Question%20752-20%281%29%3A%20Northwest%20Territories%20Building%20Code'>Question 752-20(1): Northwest Territories Building Code</a></div></div><div class="views-field views-field-title"><span class="field-content">Debates of <time datetime="2025-05-29T12:00:00Z" class="datetime">May 29, 2025</time>
-, 20th Assembly, 1st Session (day 62)</span></div><div class="views-field views-field-field-body"><div class="field-content">  <p>Thank you, Mr. Speaker. Yes, and I appreciate that, and I recognize that we still have guidelines that we do offer through the department; however, what we don't have is enforcement. Can the Minister commit to -- and I know the previous Minister had a plan to have a plan. Can the Minister commit to sharing that plan, workplan, once developed by the working group with the House, please. Thank you.</p>
-
-</div></div></div>
-    <div class="views-row"><div class="views-field views-field-field-topic"><div class="field-content"></div></div><div class="views-field views-field-title"><span class="field-content">Debates of <time datetime="2025-05-29T12:00:00Z" class="datetime">May 29, 2025</time>
-, 20th Assembly, 1st Session (day 62)</span></div><div class="views-field views-field-field-body"><div class="field-content">  <p>Thank you, Mr. Speaker. Mr. Speaker, I'm happy today to recognize Inuvik Boot Lake constituency assistant, Ms. Sheila Nasogaluak here today. Her advocacy and certainly her passion and hard work for our constituents is invaluable for the work that we do up there, and I would not be able to do my job without her. Thank you.</p>
-
-</div></div></div>
-    <div class="views-row"><div class="views-field views-field-field-topic"><div class="field-content"><a href='/node/5001?keyword=Bill%2029%3A%20First%20Responders%20Workers%26amp%3B%23039%3B%20Compensation%20Amendment%20Act.%20Carried'>Bill 29: First Responders Workers&amp;#039; Compensation Amendment Act. Carried</a></div></div><div class="views-field views-field-title"><span class="field-content">Debates of <time datetime="2025-05-29T12:00:00Z" class="datetime">May 29, 2025</time>
-, 20th Assembly, 1st Session (day 62)</span></div><div class="views-field views-field-field-body"><div class="field-content">  <p>Thank you, Mr. Speaker. I'd like to thank my colleague from Range Lake for bringing this bill forward. Recently, Mr. Speaker, in Inuvik, we had a community feast held by the town of Inuvik for its first responders, the first of its kind in Inuvik, and it was a wonderful event and obviously the firefighters were there as well, and I was honoured to be able to speak and thank them on behalf of the residents of Inuvik Boot Lake and certainly the community of Inuvik as well.</p><p>Mr. Speaker, unfortunately, I'm a bit of a poster child for first responders in the last three or four years having had -- in...</p>
-
-</div></div></div>
     <div class="views-row"><div class="views-field views-field-field-topic"><div class="field-content"><a href='/node/5000?keyword=Committee%20Motion%2078-20%281%29%3A%20Concurrence%20Motion%20%E2%80%93%20Tabled%20Document%20340-20%281%29%3A%20Supplementary%20Estimates%20%28Infrastructure%20Expenditures%29%2C%20No.%201%2C%202025-2026%2C%20Carried'>Committee Motion 78-20(1): Concurrence Motion – Tabled Document 340-20(1): Supplementary Estimates (Infrastructure Expenditures), No. 1, 2025-2026, Carried</a></div></div><div class="views-field views-field-title"><span class="field-content">Debates of <time datetime="2025-05-28T12:00:00Z" class="datetime">May 28, 2025</time>
-, 20th Assembly, 1st Session (day 61)</span></div><div class="views-field views-field-field-body"><div class="field-content">  <p>Thank you, Mr. Chair. Mr. Chair, I move that consideration of Tabled Document 340-20(1), Supplementary Estimates (Infrastructure Expenditures) No. 1, 2025-2026, be now concluded and that Tabled Document 340-20(1) be reported and recommended as ready for further consideration in formal session through the form of an appropriation bill. Thank you, Mr. Chair.</p>
+, 20th Assembly, 1st Session (day 61)</span></div><div class="views-field views-field-field-body"><div class="field-content">  <p>Thank you, Mr. Chair. Mr. Chair, I move that the chair rise and report progress.</p>
 
 </div></div></div>
 
@@ -1509,7 +1509,7 @@ transfer-encoding: chunked
   
       <h2>Members</h2>
     
-      <div region="sidebar_first"><div class="view view-member view-id-member view-display-id-menu_block js-view-dom-id-6f8e8ef8abce9e17161a81ec2f04c35b2df2de6c4049b9bc480fe68844b45826">
+      <div region="sidebar_first"><div class="view view-member view-id-member view-display-id-menu_block js-view-dom-id-4d38989db9cdc78aa4fcda03ca0999b1093817a4f63a4d14bc07ec479e6db087">
   
     
       
@@ -1943,7 +1943,7 @@ transfer-encoding: chunked
           </div>
 </fieldset>
 </div>
-<div data-twig-suggestion="views-exposed-form-search-page-1" data-drupal-selector="edit-actions" class="form-actions views-exposed-form__item views-exposed-form__item--actions js-form-wrapper form-wrapper" id="edit-actions--2"><input data-twig-suggestion="views-exposed-form-search-page-1" data-drupal-selector="edit-submit-search" type="submit" id="edit-submit-search" value="Apply" class="button js-form-submit form-submit" />
+<div data-twig-suggestion="views-exposed-form-search-page-1" data-drupal-selector="edit-actions" class="form-actions views-exposed-form__item views-exposed-form__item--actions js-form-wrapper form-wrapper" id="edit-actions"><input data-twig-suggestion="views-exposed-form-search-page-1" data-drupal-selector="edit-submit-search" type="submit" id="edit-submit-search" value="Apply" class="button js-form-submit form-submit" />
 </div>
 
 </div>

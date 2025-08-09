@@ -1,18 +1,15 @@
 status: 200
 encoding: utf-8
-Cache-Control: no-cache, no-store, must-revalidate
+Cache-Control: no-cache, must-revalidate
 Pragma: no-cache
 Content-Type: text/html; charset=utf-8
 Content-Encoding: deflate
 Expires: -1
 Server: Microsoft-IIS/10.0
-Set-Cookie: ASP.NET_SessionId=mkz5aumovuqnxokn5yvsecbi; path=/; HttpOnly; SameSite=Lax, ASP.NET_SessionId=mkz5aumovuqnxokn5yvsecbi; path=/; HttpOnly; SameSite=Lax, CMSCurrentTheme=SSM2019; expires=Sun, 10-Aug-2025 01:50:53 GMT; path=/; HttpOnly
-X-UA-Compatible: IE=9
-X-AspNet-Version: 4.0.30319
 X-Frame-Options: SAMEORIGIN
 X-Powered-By: ASP.NET
-Date: Sat, 09 Aug 2025 01:50:53 GMT
-Content-Length: 5070
+Date: Sat, 09 Aug 2025 05:44:57 GMT
+Content-Length: 5026
 
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en-CA" >

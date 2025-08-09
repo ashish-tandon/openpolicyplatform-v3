@@ -3,14 +3,13 @@ encoding: utf-8
 Cache-Control: no-cache, must-revalidate
 Pragma: no-cache
 Content-Type: text/html; charset=utf-8
-Content-Encoding: gzip
+Content-Encoding: deflate
 Expires: -1
-Vary: Accept-Encoding
 Server: Microsoft-IIS/10.0
 X-Frame-Options: SAMEORIGIN
 X-Powered-By: ASP.NET
-Date: Sat, 09 Aug 2025 01:50:55 GMT
-Content-Length: 6041
+Date: Sat, 09 Aug 2025 05:44:59 GMT
+Content-Length: 5034
 
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en-CA" >

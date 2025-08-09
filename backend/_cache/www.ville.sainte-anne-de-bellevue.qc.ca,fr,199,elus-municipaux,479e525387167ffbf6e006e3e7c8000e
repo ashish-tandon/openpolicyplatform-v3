@@ -1,11 +1,11 @@
 status: 200
 encoding: utf-8
-Date: Sat, 09 Aug 2025 01:51:12 GMT
+Date: Sat, 09 Aug 2025 05:45:14 GMT
 Server: Apache
 Expires: Thu, 19 Nov 1981 08:52:00 GMT
 Cache-Control: no-store, no-cache, must-revalidate
 Pragma: no-cache
-Set-Cookie: villesainteanned=5388b493db0a4fd66285c87199cb7dcf; path=/, villesainteanned_GI2_lang=FR; expires=Mon, 08-Sep-2025 01:51:12 GMT; Max-Age=2592000; path=/, lalangue=FR; expires=Mon, 08-Sep-2025 01:51:12 GMT; Max-Age=2592000; path=/, villesainteannedMemberLangue=FR; expires=Sat, 09-Aug-2025 01:51:11 GMT; Max-Age=0; path=/, villesainteannedRappel=2025-08-08; expires=Sun, 10-Aug-2025 01:51:12 GMT; Max-Age=86400, display_alert_8=1; expires=Sat, 09-Aug-2025 13:51:12 GMT; Max-Age=43200; path=/, display_popup_8=1; expires=Sat, 09-Aug-2025 13:51:12 GMT; Max-Age=43200; path=/
+Set-Cookie: villesainteanned=57400ecfcc3b88f2bd5445d7e234f04b; path=/, villesainteanned_GI2_lang=FR; expires=Mon, 08-Sep-2025 05:45:14 GMT; Max-Age=2592000; path=/, lalangue=FR; expires=Mon, 08-Sep-2025 05:45:14 GMT; Max-Age=2592000; path=/, villesainteannedMemberLangue=FR; expires=Sat, 09-Aug-2025 05:45:13 GMT; Max-Age=0; path=/, villesainteannedRappel=2025-08-09; expires=Sun, 10-Aug-2025 05:45:14 GMT; Max-Age=86400, display_alert_8=1; expires=Sat, 09-Aug-2025 17:45:14 GMT; Max-Age=43200; path=/, display_popup_8=1; expires=Sat, 09-Aug-2025 17:45:14 GMT; Max-Age=43200; path=/
 Keep-Alive: timeout=5, max=49
 Connection: Keep-Alive
 Transfer-Encoding: chunked
@@ -37,7 +37,7 @@ Content-Type: text/html; charset=utf-8
     <meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
     <meta http-equiv="pragma" content="no-cache">
         <meta http-equiv="Content-Security-Policy" content="
-        script-src  'nonce-f36RsJNohr'        https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css
+        script-src  'nonce-cbq1ExnIxp'        https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css
         https://www.googleapi.com
         https://www.google.com/recaptcha/api.js
         https://www.googletagmanager.com
@@ -62,36 +62,36 @@ Content-Type: text/html; charset=utf-8
     <meta property="og:url" content="https://www.ville.sainte-anne-de-bellevue.qc.ca/citoyens/vie-democratique/elus-municipaux" />
     <meta property="og:site_name" content="Ville de Sainte-Anne-de-Bellevue" />
     <meta property="og:updated_time" content="2025-06-04T15:19:04-" /><!-- jquiery ui -->
-<link rel="stylesheet" href="/client_file/themes/biztrox/plugins/jQuery/jquery-ui.css" nonce="f36RsJNohr" />
-<link rel="stylesheet" href="/client_file/themes/biztrox/plugins/jQuery/jquery.mcustomscrollbar.min.css" nonce="f36RsJNohr" />
+<link rel="stylesheet" href="/client_file/themes/biztrox/plugins/jQuery/jquery-ui.css" nonce="cbq1ExnIxp" />
+<link rel="stylesheet" href="/client_file/themes/biztrox/plugins/jQuery/jquery.mcustomscrollbar.min.css" nonce="cbq1ExnIxp" />
 
 <!-- Bootstrap-->
-<link rel="stylesheet" href="/client_file/themes/biztrox/plugins/bootstrap/bootstrap.min.css" nonce="f36RsJNohr">
-<!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" nonce="f36RsJNohr">-->
+<link rel="stylesheet" href="/client_file/themes/biztrox/plugins/bootstrap/bootstrap.min.css" nonce="cbq1ExnIxp">
+<!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" nonce="cbq1ExnIxp">-->
 <!-- magnific popup -->
-<link rel="stylesheet" href="/client_file/themes/biztrox/plugins/magnific-popup/magnific-popup.css" nonce="f36RsJNohr">
+<link rel="stylesheet" href="/client_file/themes/biztrox/plugins/magnific-popup/magnific-popup.css" nonce="cbq1ExnIxp">
 <!-- Slick Carousel -->
-<link rel="stylesheet" href="/client_file/themes/biztrox/plugins/slick/slick.css" nonce="f36RsJNohr">
-<link rel="stylesheet" href="/client_file/themes/biztrox/plugins/slick/slick-theme.css" nonce="f36RsJNohr">
+<link rel="stylesheet" href="/client_file/themes/biztrox/plugins/slick/slick.css" nonce="cbq1ExnIxp">
+<link rel="stylesheet" href="/client_file/themes/biztrox/plugins/slick/slick-theme.css" nonce="cbq1ExnIxp">
 <!-- themify icon -->
-<link rel="stylesheet" href="/client_file/themes/biztrox/plugins/themify-icons/themify-icons.css" nonce="f36RsJNohr">
+<link rel="stylesheet" href="/client_file/themes/biztrox/plugins/themify-icons/themify-icons.css" nonce="cbq1ExnIxp">
 <!-- animate -->
-<link rel="stylesheet" href="/client_file/themes/biztrox/plugins/animate/animate.css" nonce="f36RsJNohr">
+<link rel="stylesheet" href="/client_file/themes/biztrox/plugins/animate/animate.css" nonce="cbq1ExnIxp">
 <!-- Aos -->
-<link rel="stylesheet" href="/client_file/themes/biztrox/plugins/aos/aos.css" nonce="f36RsJNohr">
+<link rel="stylesheet" href="/client_file/themes/biztrox/plugins/aos/aos.css" nonce="cbq1ExnIxp">
 
-<link rel="stylesheet" href="/client_file/themes/biztrox/plugins/font-awesome/all.min.css" nonce="f36RsJNohr">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" nonce="f36RsJNohr">
-<!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" nonce="f36RsJNohr">
+<link rel="stylesheet" href="/client_file/themes/biztrox/plugins/font-awesome/all.min.css" nonce="cbq1ExnIxp">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" nonce="cbq1ExnIxp">
+<!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" nonce="cbq1ExnIxp">
  swiper
 <link rel="stylesheet" href="/client_file/themes/biztrox/plugins/swiper/swiper.min.css">-->
-<link href="/client_file/themes/default/css/owl.v2.css?rand=300" rel="stylesheet" type="text/css" nonce="f36RsJNohr" />
+<link href="/client_file/themes/default/css/owl.v2.css?rand=756" rel="stylesheet" type="text/css" nonce="cbq1ExnIxp" />
 <!-- Stylesheets -->
-<link href="/client_file/themes/biztrox/css/style.css?rand=300" rel="stylesheet" nonce="f36RsJNohr">
-<link href="/client_file/themes/biztrox/css/module.css?rand=300" rel="stylesheet" nonce="f36RsJNohr">
+<link href="/client_file/themes/biztrox/css/style.css?rand=756" rel="stylesheet" nonce="cbq1ExnIxp">
+<link href="/client_file/themes/biztrox/css/module.css?rand=756" rel="stylesheet" nonce="cbq1ExnIxp">
 <!-- Stylesheets -->
-<link href="/client_file/themes/biztrox/css/custom_theme.css?rand=300" rel="stylesheet" nonce="f36RsJNohr">
-<link href="/client_file/formulaire/captcha/slidercaptcha.min.css" rel="stylesheet" nonce="f36RsJNohr" />
+<link href="/client_file/themes/biztrox/css/custom_theme.css?rand=756" rel="stylesheet" nonce="cbq1ExnIxp">
+<link href="/client_file/formulaire/captcha/slidercaptcha.min.css" rel="stylesheet" nonce="cbq1ExnIxp" />
 
 <style>
     :root {
@@ -99,8 +99,8 @@ Content-Type: text/html; charset=utf-8
         --viglob_nav_menu_dropdown_hover_background-color: #FFFFFF00;--viglob_nav_menu_dropdown_hover_text-color: #29ABE3;--viglob_nav_menu_dropdown_menu_background-color: #FAF8F8;--viglob_nav_menu_dropdown_menu_color: #000000;--viglob_nav_nav-item_background-color: #FFFFFF00;--viglob_nav_nav-item_hover_background-color: #FFFFFF00;--viglob_nav_nav-item_padding_horizontal: 15px;--viglob_nav_nav-item_padding_vertical: 10px;    }
 </style>
 
-    <link href="/client_file/themes/biztrox/css/custom.css?rand=624342" rel="stylesheet" nonce="f36RsJNohr" type="text/css" />
-<style nonce="f36RsJNohr"> 
+    <link href="/client_file/themes/biztrox/css/custom.css?rand=242858" rel="stylesheet" nonce="cbq1ExnIxp" type="text/css" />
+<style nonce="cbq1ExnIxp"> 
 .tuile{
     background:#96FFF8;
 }
@@ -398,7 +398,7 @@ h4{text-decoration:  ;border:   ;width: ;font-weight: 500;
             .text_slider { padding: 0 !important;top: 10% !important;   }
             .text_slider h3 { font-size: 25px; }
             .owl-theme .owl-controls .owl-buttons div { font-size: 35px; }
-        }</style><!--<link rel="stylesheet" href="/client_file/themes/biztrox/css/global_css.css?rand=1754704272" nonce="f36RsJNohr" > -->
+        }</style><!--<link rel="stylesheet" href="/client_file/themes/biztrox/css/global_css.css?rand=1754718314" nonce="cbq1ExnIxp" > -->
     <!--Favicon-->
     <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon">
     <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
@@ -423,7 +423,7 @@ h4{text-decoration:  ;border:   ;width: ;font-weight: 500;
                 <div class="signup">
                     <div class="row">
                         <div class="col-md-5 signup-greeting overlay" id="bg_login_modal" style="">
-                            <img src="/client_file/themes/logos/logo_tag.png?rand=729243" id="logo_signup" alt="logo">
+                            <img src="/client_file/themes/logos/logo_tag.png?rand=641991" id="logo_signup" alt="logo">
                             <h4>Authentification</h4><p></p>
                         </div>
                         <div class="col-md-7">
@@ -476,7 +476,7 @@ h4{text-decoration:  ;border:   ;width: ;font-weight: 500;
                     				    </div>
                                     </div>
                                     <input type="hidden" name="form_login_modal" value="1" />
-                                                                        <input type="hidden" name="csrf_token" value="srRZdxxaGNVcIRr0aLDxLewyXb0w4GwvIjae68w3">
+                                                                        <input type="hidden" name="csrf_token" value="f2Z0HvZr2km9jD57Ll7XixygXQW15RcPI2OXuLyv">
                                 </form>
                             </div>
                         </div>
@@ -513,7 +513,7 @@ h4{text-decoration:  ;border:   ;width: ;font-weight: 500;
                 <li class="list-inline-item " ><a href="https://www.facebook.com/steannedebellevue" target="_blank" class="face social-icon-outline"><i class="fab fa-facebook-square bleu-fonce"></i></a></li><li class="list-inline-item " ><a class="insta social-icon-outline" id="" href="https://www.instagram.com/sainteannedebellevue/" target="_blank"><i class="fab fa-instagram bleu-fonce"></i></a></li><li class="list-inline-item " ><a class="social-icon-outline yt" id="" href="https://www.youtube.com/@villedesainte-anne-de-bell7371" target="_blank"><i class="fab fa-youtube bleu-fonce"></i></a></li><li class="list-inline-item " ><a class="social-icon-outline linkedIn" id="" href="https://www.linkedin.com/company/ville-de-sainte-anne-de-bellevue/" target="_blank"><i class="fab fa-linkedin bleu-fonce"></i></a></li>            </div>
             <div class="col-md-4 text-center">
                 <a class="navbar-brand border-0" href="/" id="logo_sticky_nav">
-                            <img src="/client_file/themes/logos/logo_tag.png?rand=528297" class="w-50 thisimg">
+                            <img src="/client_file/themes/logos/logo_tag.png?rand=169471" class="w-50 thisimg">
                 </a>            </div>
             <div class="col-md-4 pt-5 text-right">
                 <li class="list-inline-item mr-4">
@@ -544,7 +544,7 @@ h4{text-decoration:  ;border:   ;width: ;font-weight: 500;
         <div class="container">
             <nav class="navbar navbar-expand-lg navbar-light bg-light row">
                 <a class="navbar-brand" href="/" id='logo_sticky_nav'>
-                    <img src="/client_file/themes/logos/logo_tag.png?rand=596058" alt="logo" class="wow fadeIn" data-wow-delay="0.3s">
+                    <img src="/client_file/themes/logos/logo_tag.png?rand=165852" alt="logo" class="wow fadeIn" data-wow-delay="0.3s">
                 </a>
                 <li class="list-inline-item  show_mobile col-2" data-wow-delay="12s">
                     <a href="#" id="searchOpen">
@@ -556,7 +556,7 @@ h4{text-decoration:  ;border:   ;width: ;font-weight: 500;
                 
                 <li class="list-inline-item col-4 show_mobile ">
                 <a class=" border-0 logo_mobile text-center" href="/" >
-                            <img src="/client_file/themes/logos/logo_tag.png?rand=357093" class="w-50 thisimg" style="width:80px !important;">
+                            <img src="/client_file/themes/logos/logo_tag.png?rand=993208" class="w-50 thisimg" style="width:80px !important;">
                  </a>
                 </li>
                 <button class="navbar-toggler col-2" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -592,7 +592,7 @@ https://ville.sainte-anne-de-bellevue.qc.ca/ville/administration/coordonnees' cl
 
     <!-- /* vg-69467 */ -->
     <!-- <link rel="stylesheet" type="text/css" href="../../inc/contactUs.css?rand='.rand(100000,999999)"> -->
-<link rel="stylesheet" type="text/css" href="/inc/components/contactUs/client/inc/contactUs.css?rand=479685">
+<link rel="stylesheet" type="text/css" href="/inc/components/contactUs/client/inc/contactUs.css?rand=910990">
 
 
 
@@ -971,12 +971,12 @@ Sainte-Anne-de-Bellevue (Québec) H9X 1M2</p>
 
 
         <!-- jQuery -->
-<script src="/client_file/themes/biztrox/plugins/jQuery/jquery.min.js" type="text/javascript" nonce="f36RsJNohr"></script>
-<script src="/client_file/themes/biztrox/plugins/jQuery/jquery-ui.min.js" nonce="f36RsJNohr"></script>
-<script src="/client_file/themes/biztrox/plugins/jQuery/jquery.mcustomscrollbar.concat.min.js" nonce="f36RsJNohr"></script>
-<script type="text/javascript" src="/js/jquery.inputmask.bundle.js" nonce="f36RsJNohr"></script>
-<script src="/admin/js/jquery.dataTables.min.js" nonce="f36RsJNohr"></script>
-<script src="/admin/js/datatable.js" nonce="f36RsJNohr"></script>
+<script src="/client_file/themes/biztrox/plugins/jQuery/jquery.min.js" type="text/javascript" nonce="cbq1ExnIxp"></script>
+<script src="/client_file/themes/biztrox/plugins/jQuery/jquery-ui.min.js" nonce="cbq1ExnIxp"></script>
+<script src="/client_file/themes/biztrox/plugins/jQuery/jquery.mcustomscrollbar.concat.min.js" nonce="cbq1ExnIxp"></script>
+<script type="text/javascript" src="/js/jquery.inputmask.bundle.js" nonce="cbq1ExnIxp"></script>
+<script src="/admin/js/jquery.dataTables.min.js" nonce="cbq1ExnIxp"></script>
+<script src="/admin/js/datatable.js" nonce="cbq1ExnIxp"></script>
 <!-- <script src="https://cdn.datatables.net/buttons/2.2.2/js/dataTables.buttons.min.js"></script>-->
 <!--<script src="https://raw.githubusercontent.com/DataTables/Plugins/master/api/sum().js"></script> -->
 <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.3/jszip.min.js"></script>
@@ -985,54 +985,54 @@ Sainte-Anne-de-Bellevue (Québec) H9X 1M2</p>
 <!--<script src="https://cdn.datatables.net/buttons/2.2.2/js/buttons.html5.min.js"></script>-->
 <!--<script src="https://cdn.datatables.net/buttons/2.2.2/js/buttons.print.min.js"></script>-->
 <!-- datatables 1/2 -->
-<script src="/client_file/themes/biztrox/plugins/datatables/dataTables.buttons.min.js" nonce="f36RsJNohr"></script>
-<script src="/client_file/themes/biztrox/plugins/datatables/sum().js" nonce="f36RsJNohr"></script>
+<script src="/client_file/themes/biztrox/plugins/datatables/dataTables.buttons.min.js" nonce="cbq1ExnIxp"></script>
+<script src="/client_file/themes/biztrox/plugins/datatables/sum().js" nonce="cbq1ExnIxp"></script>
 <!-- jszip
-<script src="/client_file/themes/biztrox/plugins/ajax/jszip.min.js"  nonce="f36RsJNohr"></script>-->
+<script src="/client_file/themes/biztrox/plugins/ajax/jszip.min.js"  nonce="cbq1ExnIxp"></script>-->
 <!--<script src="/client_file/themes/biztrox/plugins/ajax/pdfmake.js"></script>-->
 <!-- vfs_fonts
-<script src="/client_file/themes/biztrox/plugins/ajax/vfs_fonts.js"  nonce="f36RsJNohr"></script>-->
+<script src="/client_file/themes/biztrox/plugins/ajax/vfs_fonts.js"  nonce="cbq1ExnIxp"></script>-->
 <!-- datatables 2/2-->
-<script src="/client_file/themes/biztrox/plugins/datatables/buttons.html5.min.js" nonce="f36RsJNohr"></script>
-<script src="/client_file/themes/biztrox/plugins/datatables/buttons.print.min.js" nonce="f36RsJNohr"></script>
+<script src="/client_file/themes/biztrox/plugins/datatables/buttons.html5.min.js" nonce="cbq1ExnIxp"></script>
+<script src="/client_file/themes/biztrox/plugins/datatables/buttons.print.min.js" nonce="cbq1ExnIxp"></script>
 <!-- Bootstrap JS -->
-<script src="/client_file/themes/biztrox/plugins/bootstrap/bootstrap.min.js" nonce="f36RsJNohr"></script>
-<script src="/client_file/themes/biztrox/plugins/bootstrap/easy-responsive-tabs.js" nonce="f36RsJNohr"></script>
+<script src="/client_file/themes/biztrox/plugins/bootstrap/bootstrap.min.js" nonce="cbq1ExnIxp"></script>
+<script src="/client_file/themes/biztrox/plugins/bootstrap/easy-responsive-tabs.js" nonce="cbq1ExnIxp"></script>
 <!-- magnific popup
-<script src="/client_file/themes/biztrox/plugins/magnific-popup/jquery.magnific.popup.min.js" nonce="f36RsJNohr"></script>-->
+<script src="/client_file/themes/biztrox/plugins/magnific-popup/jquery.magnific.popup.min.js" nonce="cbq1ExnIxp"></script>-->
 <!-- slick slider
-<script src="/client_file/themes/biztrox/plugins/slick/slick.min.js" nonce="f36RsJNohr"></script> -->
+<script src="/client_file/themes/biztrox/plugins/slick/slick.min.js" nonce="cbq1ExnIxp"></script> -->
 <!-- filter
-<script src="/client_file/themes/biztrox/plugins/filterizr/jquery.filterizr.min.js" nonce="f36RsJNohr"></script>-->
+<script src="/client_file/themes/biztrox/plugins/filterizr/jquery.filterizr.min.js" nonce="cbq1ExnIxp"></script>-->
 <!-- Google Map -->
 
 <!--<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu5nZKbeK-WHQ70oqOWo-_4VmwOwKP9YQ"></script>
 <script  src="/client_file/themes/biztrox/plugins/google-map/gmap.js"></script>-->
 <!--<script src="/client_file/themes/biztrox/plugins/googleapi/googleapi.js"></script>-->
 <!-- Syo Timer
-<script src="/client_file/themes/biztrox/plugins/syotimer/jquery.syotimer.js" nonce="f36RsJNohr"></script>-->
+<script src="/client_file/themes/biztrox/plugins/syotimer/jquery.syotimer.js" nonce="cbq1ExnIxp"></script>-->
 <!-- aos
-<script src="/client_file/themes/biztrox/plugins/aos/aos.js" nonce="f36RsJNohr"></script>-->
+<script src="/client_file/themes/biztrox/plugins/aos/aos.js" nonce="cbq1ExnIxp"></script>-->
 
-<script src="/client_file/themes/biztrox/js/wow.js" nonce="f36RsJNohr"></script>
+<script src="/client_file/themes/biztrox/js/wow.js" nonce="cbq1ExnIxp"></script>
 
 <!-- swiper
 <script src="/client_file/themes/biztrox/plugins/swiper/swiper.min.js"></script>-->
 <!-- owl slider -->
-<script type="text/javascript" src="/client_file/themes/default/javascript/owl.v2.js" nonce="f36RsJNohr"></script>
+<script type="text/javascript" src="/client_file/themes/default/javascript/owl.v2.js" nonce="cbq1ExnIxp"></script>
 <!-- Main Script -->
-<script src="/client_file/themes/biztrox/js/theme.js?rand=1754704272" nonce="f36RsJNohr"></script>
+<script src="/client_file/themes/biztrox/js/theme.js?rand=1754718315" nonce="cbq1ExnIxp"></script>
 
 <!-- Custom Script -->
 
-    <script nonce="f36RsJNohr" async src="https://www.googletagmanager.com/gtag/js?id=G-354JYQ4DN2"></script><script nonce="f36RsJNohr" type="text/javascript" src="/inc/components/contactUs/client/inc/contactUs.js?rand=864475"></script><script src="/client_file/themes/biztrox/js/module.js?rand=1754704272" nonce="f36RsJNohr"></script>
-<script src="/client_file/themes/biztrox/js/custom.js?rand=1754704272" nonce="f36RsJNohr"></script>
+    <script nonce="cbq1ExnIxp" async src="https://www.googletagmanager.com/gtag/js?id=G-354JYQ4DN2"></script><script nonce="cbq1ExnIxp" type="text/javascript" src="/inc/components/contactUs/client/inc/contactUs.js?rand=634921"></script><script src="/client_file/themes/biztrox/js/module.js?rand=1754718315" nonce="cbq1ExnIxp"></script>
+<script src="/client_file/themes/biztrox/js/custom.js?rand=1754718315" nonce="cbq1ExnIxp"></script>
 
 
-<script src="/client_file/formulaire/captcha/longbow.slidercaptcha.js" nonce="f36RsJNohr"></script>
-    <script src="https://www.google.com/recaptcha/api.js" async defer nonce="f36RsJNohr"></script>
+<script src="/client_file/formulaire/captcha/longbow.slidercaptcha.js" nonce="cbq1ExnIxp"></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer nonce="cbq1ExnIxp"></script>
 <!--<script src="/client_file/themes/biztrox/plugins/googlecaptcha/captcha.js"></script> -->
-<script nonce="f36RsJNohr">$(document).ready(function(){
+<script nonce="cbq1ExnIxp">$(document).ready(function(){
                     $('#AnnonceGeneral').modal('show');
 
                     $.ajax({
@@ -1638,9 +1638,9 @@ if (typeof(element_embed_cyberimpact) != "undefined" && element_embed_cyberimpac
 $(".btn-infolettre").click(function(){
     document.getElementById("form_home_infolettre").submit();
     return false;
-})</script><script nonce="f36RsJNohr"  src="https://ami.activis.ai/static/chatbot/js/chatbubble.js" data-id="7252c33f-ebd4-4054-bd26-e6b7e9e60003" data-domain="https://ami.activis.ai" data-position="right" ></script>
-<!--<script type="text/javascript" src="/client_file/themes/biztrox/js/global_js_docready.js?rand=1754704272"></script>
-<script type="text/javascript" src="/client_file/themes/biztrox/js/global_js.js?rand=1754704272"></script>
+})</script><script nonce="cbq1ExnIxp"  src="https://ami.activis.ai/static/chatbot/js/chatbubble.js" data-id="7252c33f-ebd4-4054-bd26-e6b7e9e60003" data-domain="https://ami.activis.ai" data-position="right" ></script>
+<!--<script type="text/javascript" src="/client_file/themes/biztrox/js/global_js_docready.js?rand=1754718315"></script>
+<script type="text/javascript" src="/client_file/themes/biztrox/js/global_js.js?rand=1754718315"></script>
 -->
 </body>
 </html>

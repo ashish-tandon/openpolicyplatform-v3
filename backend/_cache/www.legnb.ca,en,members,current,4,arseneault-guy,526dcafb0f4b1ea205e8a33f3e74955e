@@ -1,6 +1,6 @@
 status: 200
 encoding: utf-8
-Date: Sat, 09 Aug 2025 01:50:27 GMT
+Date: Sat, 09 Aug 2025 05:44:38 GMT
 Content-Type: text/html; charset=utf-8
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -16,7 +16,7 @@ cross-origin-resource-policy: cross-origin
 permissions-policy: accelerometer=(), autoplay=(), camera=(), encrypted-media=(), fullscreen=*, geolocation=(), gyroscope=(), magnetometer=(), microphone=(), midi=(), payment=(), picture-in-picture=(), sync-xhr=(), usb=()
 cf-cache-status: DYNAMIC
 Server: cloudflare
-CF-RAY: 96c39a4d8e81ab3a-YYZ
+CF-RAY: 96c4f1561ac3ebbc-YYZ
 
 <!DOCTYPE html>
 <html translate="no" lang="en" dir="ltr">
@@ -297,7 +297,7 @@ CF-RAY: 96c39a4d8e81ab3a-YYZ
                         <img src="/content\members\portraits\61-1\Guy_Arseneault_lg.jpg" />
                 </div>
                     <div class="member-details-contacts">
-                            <span><a href="/cdn-cgi/l/email-protection#a7e0d2de89e6d5d4c2c9c2c6d2cbd3e7c0c9c589c4c6"><span class="__cf_email__" data-cfemail="6621131f4827141503080307130a1226010804480507">[email&#160;protected]</span></a></span>
+                            <span><a href="/cdn-cgi/l/email-protection#e3a4969acda29190868d8682968f97a3848d81cd8082"><span class="__cf_email__" data-cfemail="612614184f201312040f0400140d1521060f034f0200">[email&#160;protected]</span></a></span>
                     </div>
                 <aside class="p-2">
                     <span class="aside-header">

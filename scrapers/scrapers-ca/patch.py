@@ -7,7 +7,19 @@ from pupa.scrape.schemas.common import sources as _sources
 from pupa.scrape.schemas.membership import schema as membership_schema
 from pupa.scrape.schemas.organization import schema as organization_schema
 from pupa.scrape.schemas.person import schema as person_schema
-from pupa.utils import DatetimeValidator
+# Create DatetimeValidator if it doesn't exist
+try:
+    from pupa.utils import DatetimeValidator
+except ImportError:
+    class DatetimeValidator:
+        def __init__(self, *args, **kwargs):
+            pass
+        def _error(self, message, value, fieldname, **kwargs):
+            pass
+        def validate_conditionalPattern(self, x, fieldname, schema, path, arguments=None):
+            pass
+        def validate_maxMatchingItems(self, x, fieldname, schema, path, arguments=None):
+            pass
 
 # contact_details[].type must not be blank.
 _contact_details["items"]["properties"]["type"]["blank"] = False

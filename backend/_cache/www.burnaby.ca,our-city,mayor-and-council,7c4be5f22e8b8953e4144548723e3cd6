@@ -1,6 +1,6 @@
 status: 200
 encoding: UTF-8
-Date: Sat, 09 Aug 2025 01:51:02 GMT
+Date: Sat, 09 Aug 2025 05:45:06 GMT
 Content-Type: text/html; charset=UTF-8
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -16,14 +16,14 @@ x-xss-protection: 1
 strict-transport-security: max-age=31536000
 x-drupal-cache: UNCACHEABLE (response policy)
 vary: Accept-Encoding
-x-request-id: v-4d4698d6-74c3-11f0-b15b-6b5877a720b6
+x-request-id: v-0058238e-74e4-11f0-a5ce-abf107b63406
 x-ah-environment: prod
 Age: 0
 via: varnish
 x-cache: MISS
 cf-cache-status: DYNAMIC
 Server: cloudflare
-CF-RAY: 96c39b204f7faaad-YYZ
+CF-RAY: 96c4f2016a2d39c5-YYZ
 
 <!DOCTYPE html>
 <html lang="en" dir="ltr" prefix="content: http://purl.org/rss/1.0/modules/content/  dc: http://purl.org/dc/terms/  foaf: http://xmlns.com/foaf/0.1/  og: http://ogp.me/ns#  rdfs: http://www.w3.org/2000/01/rdf-schema#  schema: http://schema.org/  sioc: http://rdfs.org/sioc/ns#  sioct: http://rdfs.org/sioc/types#  skos: http://www.w3.org/2004/02/skos/core#  xsd: http://www.w3.org/2001/XMLSchema# ">
@@ -1503,12 +1503,12 @@ CF-RAY: 96c39b204f7faaad-YYZ
     
   <div class="accordion__item-header">
     <h4 class="accordion__item-title">
-      <button class="accordion__item-toggle accordion__expand-option" role="tab" id="accordion-tab-1838404269" aria-controls="accordion-tabpanel-1838404269"  aria-expanded="false" aria-selected="false">
+      <button class="accordion__item-toggle accordion__expand-option" role="tab" id="accordion-tab-1351542662" aria-controls="accordion-tabpanel-1351542662"  aria-expanded="false" aria-selected="false">
         Mayor’s role
       </button>
     </h4>
   </div>
-  <div class="accordion__item-content wysiwyg" role="tabpanel" id="accordion-tabpanel-1838404269" aria-labeledby="accordion-tab-1838404269">
+  <div class="accordion__item-content wysiwyg" role="tabpanel" id="accordion-tabpanel-1351542662" aria-labeledby="accordion-tab-1351542662">
     <p>The mayor is the City’s head and chief executive officer. The mayor performs the duties of a councillor and carries out additional functions, such as:</p>
 
 <ul>
@@ -1528,12 +1528,12 @@ CF-RAY: 96c39b204f7faaad-YYZ
     
   <div class="accordion__item-header">
     <h4 class="accordion__item-title">
-      <button class="accordion__item-toggle accordion__expand-option" role="tab" id="accordion-tab-986066823" aria-controls="accordion-tabpanel-986066823"  aria-expanded="false" aria-selected="false">
+      <button class="accordion__item-toggle accordion__expand-option" role="tab" id="accordion-tab-483769089" aria-controls="accordion-tabpanel-483769089"  aria-expanded="false" aria-selected="false">
         Acting mayor&#039;s role
       </button>
     </h4>
   </div>
-  <div class="accordion__item-content wysiwyg" role="tabpanel" id="accordion-tabpanel-986066823" aria-labeledby="accordion-tab-986066823">
+  <div class="accordion__item-content wysiwyg" role="tabpanel" id="accordion-tabpanel-483769089" aria-labeledby="accordion-tab-483769089">
     <p>The council member who is responsible for acting in place of the mayor when the mayor is absent, unable to act or if the office of the mayor is vacant.&nbsp;</p>
 
 <p><strong>2025 schedule</strong></p>
@@ -1563,12 +1563,12 @@ CF-RAY: 96c39b204f7faaad-YYZ
     
   <div class="accordion__item-header">
     <h4 class="accordion__item-title">
-      <button class="accordion__item-toggle accordion__expand-option" role="tab" id="accordion-tab-573726109" aria-controls="accordion-tabpanel-573726109"  aria-expanded="false" aria-selected="false">
+      <button class="accordion__item-toggle accordion__expand-option" role="tab" id="accordion-tab-1009570081" aria-controls="accordion-tabpanel-1009570081"  aria-expanded="false" aria-selected="false">
         Councillor’s role
       </button>
     </h4>
   </div>
-  <div class="accordion__item-content wysiwyg" role="tabpanel" id="accordion-tabpanel-573726109" aria-labeledby="accordion-tab-573726109">
+  <div class="accordion__item-content wysiwyg" role="tabpanel" id="accordion-tabpanel-1009570081" aria-labeledby="accordion-tab-1009570081">
     <p>Every council member has the following responsibilities:</p>
 
 <ul>
@@ -1587,12 +1587,12 @@ CF-RAY: 96c39b204f7faaad-YYZ
     
   <div class="accordion__item-header">
     <h4 class="accordion__item-title">
-      <button class="accordion__item-toggle accordion__expand-option" role="tab" id="accordion-tab-1576447674" aria-controls="accordion-tabpanel-1576447674"  aria-expanded="false" aria-selected="false">
+      <button class="accordion__item-toggle accordion__expand-option" role="tab" id="accordion-tab-498801919" aria-controls="accordion-tabpanel-498801919"  aria-expanded="false" aria-selected="false">
         How we make decisions
       </button>
     </h4>
   </div>
-  <div class="accordion__item-content wysiwyg" role="tabpanel" id="accordion-tabpanel-1576447674" aria-labeledby="accordion-tab-1576447674">
+  <div class="accordion__item-content wysiwyg" role="tabpanel" id="accordion-tabpanel-498801919" aria-labeledby="accordion-tab-498801919">
     <p>Council decides what the City and you, its citizens, need and make policies that meet those needs. Issues that concern you, such as budget allocation, bylaws, land zoning, infrastructure and others, are debated and discussed at council meetings. After considering an issue or item, a member of the council makes a motion. If a second council member agrees with it, the item moves forward. All the members then vote on it. Once a decision is made, the City staff get to work.</p>
 
 <p>You're an important part of the City's decision-making process and can engage with us by:</p>
@@ -1829,8 +1829,8 @@ CF-RAY: 96c39b204f7faaad-YYZ
 <input data-drupal-selector="edit-title" type="hidden" name="title" value="Mayor and Council" />
 <input data-drupal-selector="edit-path" type="hidden" name="path" value="/node/1111" />
 <input data-drupal-selector="edit-alias" type="hidden" name="alias" value="/our-city/mayor-and-council" />
-<input data-drupal-selector="edit-honeypot-time" type="hidden" name="honeypot_time" value="GR8O2cf3gOW-kXP8zxNbGos8irXlM9CbqmTDj1_-vro" />
-<input autocomplete="off" data-drupal-selector="form-tetyt2r-t0iw3igwpqzkfeuskd1f-bll-cla8hbbebk" type="hidden" name="form_build_id" value="form-teTyT2R-T0iW3igwPqZkfEUSkD1F_Bll-cLA8hbbEbk" />
+<input data-drupal-selector="edit-honeypot-time" type="hidden" name="honeypot_time" value="t1bFDQMKHQ0WOV5K8c-xvYcXz64qQoNUaXzdGqwwr8E" />
+<input autocomplete="off" data-drupal-selector="form-x-zcmqvgxmihwblepzblptk7ij2or7nxhkgm342-kk" type="hidden" name="form_build_id" value="form-X__ZCmqvgXmIhwblEpzBlPtK7Ij2OR7NxHkgM342-kk" />
 <input data-drupal-selector="edit-was-this-useful-form" type="hidden" name="form_id" value="was_this_useful_form" />
 <input data-drupal-selector="edit-antibot-key" type="hidden" name="antibot_key" value="" />
 <div class="url_homepage-textfield js-form-wrapper form-wrapper" style="display: none !important;"><div class="js-form-item form-item js-form-type-textfield form-type-textfield js-form-item-url-homepage form-item-url-homepage">

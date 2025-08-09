@@ -6,18 +6,19 @@ Connection: keep-alive
 Cache-Control: max-age=600
 Content-Encoding: gzip
 Content-Language: fr
-Date: Sat, 09 Aug 2025 01:50:53 GMT
-Expires: Sat, 09 Aug 2025 02:00:53 GMT
+Date: Sat, 09 Aug 2025 05:37:09 GMT
+Expires: Sat, 09 Aug 2025 05:47:09 GMT
 Pragma: public
 Server: Apache
 X-Content-Type-Options: nosniff
 X-Ua-Compatible: IE=edge
 Vary: Accept-Encoding
-X-Cache: Miss from cloudfront
-Via: 1.1 5a2f8eb373b5a17b769c0fee9b0725a6.cloudfront.net (CloudFront)
+X-Cache: Hit from cloudfront
+Via: 1.1 0e761f7a5b2481acd893422a702c9fa8.cloudfront.net (CloudFront)
 X-Amz-Cf-Pop: YTO50-P2
 Alt-Svc: h3=":443"; ma=86400
-X-Amz-Cf-Id: GqS8pvRK4SlI1PRCAxvKo9nvJum-j4ygIZuyAN0J0itP_H4G6tFwsg==
+X-Amz-Cf-Id: 5WIseNsaTXfRr8rdVUyn0xzrkwKzvtiZFnca-Eu5X49pxawTFgOjUQ==
+Age: 465
 X-XSS-Protection: 1; mode=block
 X-Frame-Options: SAMEORIGIN
 Referrer-Policy: strict-origin-when-cross-origin

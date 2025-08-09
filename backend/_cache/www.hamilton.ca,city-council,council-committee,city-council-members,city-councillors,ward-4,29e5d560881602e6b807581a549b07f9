@@ -1,6 +1,6 @@
 status: 200
 encoding: UTF-8
-Date: Sat, 09 Aug 2025 01:51:01 GMT
+Date: Sat, 09 Aug 2025 05:45:05 GMT
 Content-Type: text/html; charset=UTF-8
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -20,16 +20,16 @@ x-generator: Drupal 10 (https://www.drupal.org)
 x-pantheon-styx-hostname: styx-fe3fe4-g-74df85cdf8-7q7g7
 x-styx-req-id: b3cdf0ba-7497-11f0-bf69-8a178ebea4c7
 x-xss-protection: 1
-x-served-by: cache-yyz4531-YYZ
+x-served-by: cache-yyz4535-YYZ
 x-cache: HIT
 x-cache-hits: 0
-x-timer: S1754704261.290492,VS0,VE34
+x-timer: S1754718305.423626,VS0,VE4
 vary: Accept-Encoding, Cookie, Cookie
-Age: 18725
+Age: 32769
 via: 1.1 varnish
 cf-cache-status: DYNAMIC
 Server: cloudflare
-CF-RAY: 96c39b20ac00aeb6-YYZ
+CF-RAY: 96c4f200c8777118-YYZ
 
 
 <!DOCTYPE html>
@@ -13215,7 +13215,7 @@ CF-RAY: 96c39b20ac00aeb6-YYZ
             Tammy Hwang
           </h2>
                           <div class="card-content">
-            <p>Email: <a href="/cdn-cgi/l/email-protection#255244574111654d44484c49514a4b0b4644"><span class="__cf_email__" data-cfemail="1c6b7d6e78285c747d717570687372327f7d">[email&#160;protected]</span></a><br>
+            <p>Email: <a href="/cdn-cgi/l/email-protection#83f4e2f1e7b7c3ebe2eeeaeff7ecedade0e2"><span class="__cf_email__" data-cfemail="bacddbc8de8efad2dbd7d3d6ced5d494d9db">[email&#160;protected]</span></a><br>
 Phone: <a href="tel:9055462113">905-546-</a><a href="tel:9055462113">2113</a><br>
 Website: <a href="http://www.ward4hamont.ca">www.ward4hamont.ca</a></p>
 
@@ -13257,14 +13257,14 @@ Hamilton, Ontario&nbsp;L8P 4Y5</p>
 <p><strong>Jac Hypolite (she/her)</strong><br>
 Administrative Assistant<br>
 Phone:&nbsp;<a href="tel:905-546-2113" title="Call 905-546-2113">905-546-2113</a><br>
-Email: <a href="/cdn-cgi/l/email-protection#1b6c7a697f2f5b737a7672776f747535787a" title="Email link"><span class="__cf_email__" data-cfemail="c6b1a7b4a2f286aea7abafaab2a9a8e8a5a7">[email&#160;protected]</span></a></p>
+Email: <a href="/cdn-cgi/l/email-protection#b4c3d5c6d080f4dcd5d9ddd8c0dbda9ad7d5" title="Email link"><span class="__cf_email__" data-cfemail="552234273161153d34383c39213a3b7b3634">[email&#160;protected]</span></a></p>
 </div>
 
 <div class="col-md-auto">
 <p><strong>Pascale Marchand&nbsp;(she/her/elle)</strong><br>
 Constituency Assistant<br>
 Phone: <a href="tel:9055462424p4895">905-546-2424 ext.4895</a><br>
-Email: <a href="/cdn-cgi/l/email-protection#abdbcad8c8cac7ce85c6cad9c8c3cac5cfebc3cac6c2c7dfc4c585c8ca"><span class="__cf_email__" data-cfemail="2f5f4e5c4c4e434a01424e5d4c474e414b6f474e4246435b4041014c4e">[email&#160;protected]</span></a></p>
+Email: <a href="/cdn-cgi/l/email-protection#3242534151535e571c5f5340515a535c56725a535f5b5e465d5c1c5153"><span class="__cf_email__" data-cfemail="e090819383818c85ce8d81928388818e84a088818d898c948f8ece8381">[email&#160;protected]</span></a></p>
 </div>
 </div>
 </div>

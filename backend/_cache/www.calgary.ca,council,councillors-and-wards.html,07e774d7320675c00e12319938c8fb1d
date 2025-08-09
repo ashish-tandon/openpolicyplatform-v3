@@ -1,23 +1,23 @@
 status: 200
 encoding: utf-8
-Date: Sat, 09 Aug 2025 01:50:50 GMT
+Date: Sat, 09 Aug 2025 05:44:54 GMT
 Content-Type: text/html;charset=utf-8
 Transfer-Encoding: chunked
 Connection: keep-alive
 Vary: Accept-Encoding, Host
-Dispatcher-ID: 6 t=1754704240524994+D=138006
+Dispatcher-ID: 6 t=1754718286873755+D=2693
 Cache-Control: max-age=60, stale-if-error=604800, stale-while-revalidate=60
 Referrer-Policy: same-origin
 Expect-CT: enforce, max-age=300, report-uri="https://www.calgary.ca/"
 X-Content-Type-Options: nosniff, nosniff
 X-Frame-Options: SAMEORIGIN
-Age: 0
-Last-Modified: Sat, 09 Aug 2025 01:50:40 GMT
-ETag: W/"1df29-63be4eaf35329"
+Age: 97
+Last-Modified: Sat, 09 Aug 2025 05:43:09 GMT
+ETag: W/"1df46-63be82a5dbf8f"
 Content-Security-Policy: object-src *.calgary.ca:*; frame-ancestors *.calgary.ca:* *.coc.ca *.arcgis.com
 X-XSS-Protection: 1; mode=block
 Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
-x-azure-ref: 20250809T015050Z-185659d9b78sxwd9hC1YTOdg0n0000000b3g000000003kb0
+x-azure-ref: 20250809T054454Z-185659d9b784ckvdhC1YTOs1t8000000031g000000009ntg
 x-fd-int-roxy-purgeid: 78528727
 X-Cache: TCP_HIT
 X-Cache-Info: L1_T2
@@ -29,7 +29,7 @@ Content-Encoding: gzip
     <head>
   <title>Councillors and Wards</title>
   
-    <!--BREACH prevention padding: _N\e!aLK5= -->
+    <!--BREACH prevention padding: #Vm;C].6_gEkufqv&gt;W~5Q`%H&#34;]Y0&lt; -->
   
   
   

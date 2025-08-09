@@ -1,6 +1,6 @@
 status: 200
 encoding: utf-8
-Date: Sat, 09 Aug 2025 01:50:27 GMT
+Date: Sat, 09 Aug 2025 05:44:38 GMT
 Expires: Sun, 19 Nov 1978 05:00:00 GMT
 Cache-Control: no-cache, must-revalidate
 Content-Language: en
@@ -14,7 +14,7 @@ Referrer-Policy: strict-origin
 Keep-Alive: timeout=5, max=98
 Connection: Keep-Alive
 Content-Type: text/html; charset=utf-8
-Set-Cookie: TS0163bbb3=012df0be5f3d74f30d1b4a28193cf35c8a80ebdb32c142c3930ceeb3859ee6ead622e5e72a5cd6be2e299ee8044318fe8cbc6cd2f3; Path=/; Domain=.nslegislature.ca; Secure; HTTPOnly
+Set-Cookie: TS0163bbb3=012df0be5f2e5f95e4cfe90aa680d1768a9c57de34854b5ebe4b7d8684c9fd1e4a2a681a554bbddbc1837d24771abe5f9c48d94351; Path=/; Domain=.nslegislature.ca; Secure; HTTPOnly
 Transfer-Encoding: chunked
 
 <!DOCTYPE html>
@@ -100,7 +100,7 @@ Transfer-Encoding: chunked
 <script src="https://nslegislature.ca/sites/all/themes/ns_leg/ns_leg_colorbox/ns_leg_colorbox_style.js?szk52e"></script>
 <script src="https://nslegislature.ca/sites/all/themes/ns_leg/js/meanmenu/jquery.meanmenu.js?szk52e"></script>
 <script src="https://nslegislature.ca/sites/all/themes/ns_leg/js/script.js?szk52e"></script>
-<script>jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","setHasJsCookie":0,"ajaxPageState":{"theme":"ns_leg","theme_token":"tVYIBQOYP0jEv2z8XdNqE6xoMrI4FX_0Cv7INFmaKCo","js":{"sites\/all\/modules\/jquery_update\/replace\/jquery\/1.10\/jquery.min.js":1,"misc\/jquery-extend-3.4.0.js":1,"misc\/jquery-html-prefilter-3.5.0-backport.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"https:\/\/www.googletagmanager.com\/gtag\/js?id=G-QBZGNH1RJX":1,"0":1,"sites\/all\/libraries\/colorbox\/jquery.colorbox-min.js":1,"sites\/all\/modules\/colorbox\/js\/colorbox.js":1,"sites\/all\/modules\/colorbox\/js\/colorbox_inline.js":1,"sites\/all\/modules\/compact_forms\/compact_forms.js":1,"sites\/all\/themes\/ns_leg\/js\/superfish\/hoverIntent.js":1,"sites\/all\/themes\/ns_leg\/js\/superfish\/superfish.min.js":1,"sites\/all\/themes\/ns_leg\/ns_leg_colorbox\/ns_leg_colorbox_style.js":1,"sites\/all\/themes\/ns_leg\/js\/meanmenu\/jquery.meanmenu.js":1,"sites\/all\/themes\/ns_leg\/js\/script.js":1},"css":{"modules\/system\/system.base.css":1,"modules\/system\/system.menus.css":1,"modules\/system\/system.messages.css":1,"modules\/system\/system.theme.css":1,"sites\/all\/modules\/calendar\/css\/calendar_multiday.css":1,"sites\/all\/modules\/date\/date_api\/date.css":1,"sites\/all\/modules\/date\/date_popup\/themes\/datepicker.1.7.css":1,"sites\/all\/modules\/date\/date_repeat_field\/date_repeat_field.css":1,"modules\/field\/theme\/field.css":1,"modules\/node\/node.css":1,"modules\/search\/search.css":1,"modules\/user\/user.css":1,"sites\/all\/modules\/ctools\/css\/ctools.css":1,"sites\/all\/modules\/panels\/css\/panels.css":1,"sites\/all\/modules\/panels\/plugins\/layouts\/flexible\/flexible.css":1,"public:\/\/ctools\/css\/9e64d96dd15a6997dfacf50d209d9684.css":1,"sites\/all\/modules\/panels\/plugins\/layouts\/twocol_stacked\/twocol_stacked.css":1,"modules\/locale\/locale.css":1,"sites\/all\/modules\/compact_forms\/compact_forms.css":1,"sites\/all\/modules\/panels\/plugins\/layouts\/onecol\/onecol.css":1,"sites\/all\/themes\/ns_leg\/system.base.css":1,"sites\/all\/themes\/ns_leg\/system.menus.css":1,"sites\/all\/themes\/ns_leg\/system.messages.css":1,"sites\/all\/themes\/ns_leg\/system.theme.css":1,"sites\/all\/themes\/ns_leg\/comment.css":1,"sites\/all\/themes\/ns_leg\/node.css":1,"sites\/all\/themes\/ns_leg\/ns_leg_colorbox\/ns_leg_colorbox_style.css":1,"sites\/all\/themes\/ns_leg\/js\/meanmenu\/meanmenu.css":1,"sites\/all\/themes\/ns_leg\/css\/styles.css":1}},"colorbox":{"opacity":"0.85","current":"{current} of {total}","previous":"\u00ab Prev","next":"Next \u00bb","close":"Close","maxWidth":"98%","maxHeight":"98%","fixed":true,"mobiledetect":true,"mobiledevicewidth":"480px","file_public_path":"\/sites\/default\/files","specificPagesDefaultValue":"admin*\nimagebrowser*\nimg_assist*\nimce*\nnode\/add\/*\nnode\/*\/edit\nprint\/*\nprintpdf\/*\nsystem\/ajax\nsystem\/ajax\/*"},"better_exposed_filters":{"views":{"mla_profile_page_helper":{"displays":{"mla_title_block":{"filters":[]},"mla_sidebox_block":{"filters":[]},"term_info_table_block":{"filters":[]}}},"cabinet":{"displays":{"block_per_mla":{"filters":[]}}},"committee_listings":{"displays":{"block_per_mla":{"filters":[]}}},"bills_listings":{"displays":{"block_mla_recent":{"filters":[]},"page_mla_bills_current_session":{"filters":[]},"page_mla_bills_all_time":{"filters":[]}}}}},"compactForms":{"forms":["views-exposed-form-search-search-panel-pane","views-exposed-form-mla-search-search-panel-pane","views-exposed-form-mla-profile-search-mla-profile-search-pane","global-search"],"stars":2},"urlIsAjaxTrusted":{"":true}});</script>
+<script>jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","setHasJsCookie":0,"ajaxPageState":{"theme":"ns_leg","theme_token":"sgSMSBxszHbLx0cMkQQKqLpcdmXpwEiHI0cjz8NFnW4","js":{"sites\/all\/modules\/jquery_update\/replace\/jquery\/1.10\/jquery.min.js":1,"misc\/jquery-extend-3.4.0.js":1,"misc\/jquery-html-prefilter-3.5.0-backport.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"https:\/\/www.googletagmanager.com\/gtag\/js?id=G-QBZGNH1RJX":1,"0":1,"sites\/all\/libraries\/colorbox\/jquery.colorbox-min.js":1,"sites\/all\/modules\/colorbox\/js\/colorbox.js":1,"sites\/all\/modules\/colorbox\/js\/colorbox_inline.js":1,"sites\/all\/modules\/compact_forms\/compact_forms.js":1,"sites\/all\/themes\/ns_leg\/js\/superfish\/hoverIntent.js":1,"sites\/all\/themes\/ns_leg\/js\/superfish\/superfish.min.js":1,"sites\/all\/themes\/ns_leg\/ns_leg_colorbox\/ns_leg_colorbox_style.js":1,"sites\/all\/themes\/ns_leg\/js\/meanmenu\/jquery.meanmenu.js":1,"sites\/all\/themes\/ns_leg\/js\/script.js":1},"css":{"modules\/system\/system.base.css":1,"modules\/system\/system.menus.css":1,"modules\/system\/system.messages.css":1,"modules\/system\/system.theme.css":1,"sites\/all\/modules\/calendar\/css\/calendar_multiday.css":1,"sites\/all\/modules\/date\/date_api\/date.css":1,"sites\/all\/modules\/date\/date_popup\/themes\/datepicker.1.7.css":1,"sites\/all\/modules\/date\/date_repeat_field\/date_repeat_field.css":1,"modules\/field\/theme\/field.css":1,"modules\/node\/node.css":1,"modules\/search\/search.css":1,"modules\/user\/user.css":1,"sites\/all\/modules\/ctools\/css\/ctools.css":1,"sites\/all\/modules\/panels\/css\/panels.css":1,"sites\/all\/modules\/panels\/plugins\/layouts\/flexible\/flexible.css":1,"public:\/\/ctools\/css\/9e64d96dd15a6997dfacf50d209d9684.css":1,"sites\/all\/modules\/panels\/plugins\/layouts\/twocol_stacked\/twocol_stacked.css":1,"modules\/locale\/locale.css":1,"sites\/all\/modules\/compact_forms\/compact_forms.css":1,"sites\/all\/modules\/panels\/plugins\/layouts\/onecol\/onecol.css":1,"sites\/all\/themes\/ns_leg\/system.base.css":1,"sites\/all\/themes\/ns_leg\/system.menus.css":1,"sites\/all\/themes\/ns_leg\/system.messages.css":1,"sites\/all\/themes\/ns_leg\/system.theme.css":1,"sites\/all\/themes\/ns_leg\/comment.css":1,"sites\/all\/themes\/ns_leg\/node.css":1,"sites\/all\/themes\/ns_leg\/ns_leg_colorbox\/ns_leg_colorbox_style.css":1,"sites\/all\/themes\/ns_leg\/js\/meanmenu\/meanmenu.css":1,"sites\/all\/themes\/ns_leg\/css\/styles.css":1}},"colorbox":{"opacity":"0.85","current":"{current} of {total}","previous":"\u00ab Prev","next":"Next \u00bb","close":"Close","maxWidth":"98%","maxHeight":"98%","fixed":true,"mobiledetect":true,"mobiledevicewidth":"480px","file_public_path":"\/sites\/default\/files","specificPagesDefaultValue":"admin*\nimagebrowser*\nimg_assist*\nimce*\nnode\/add\/*\nnode\/*\/edit\nprint\/*\nprintpdf\/*\nsystem\/ajax\nsystem\/ajax\/*"},"better_exposed_filters":{"views":{"mla_profile_page_helper":{"displays":{"mla_title_block":{"filters":[]},"mla_sidebox_block":{"filters":[]},"term_info_table_block":{"filters":[]}}},"cabinet":{"displays":{"block_per_mla":{"filters":[]}}},"committee_listings":{"displays":{"block_per_mla":{"filters":[]}}},"bills_listings":{"displays":{"block_mla_recent":{"filters":[]},"page_mla_bills_current_session":{"filters":[]},"page_mla_bills_all_time":{"filters":[]}}}}},"compactForms":{"forms":["views-exposed-form-search-search-panel-pane","views-exposed-form-mla-search-search-panel-pane","views-exposed-form-mla-profile-search-mla-profile-search-pane","global-search"],"stars":2},"urlIsAjaxTrusted":{"":true}});</script>
       <!--[if lt IE 9]>
     <script src="/sites/all/themes/zen/js/html5shiv.min.js"></script>
     <![endif]-->
@@ -146,7 +146,7 @@ Transfer-Encoding: chunked
   
       
   
-  <form onsubmit="event.preventDefault();" id="global-search" class="global-search" action="" method="" accept-charset="UTF-8"><div><input type="hidden" name="form_build_id" value="form-cM-GOtciBlc0O_5VqOAicVRBA8Ei0ZtxBfmz_JbgpxI" />
+  <form onsubmit="event.preventDefault();" id="global-search" class="global-search" action="" method="" accept-charset="UTF-8"><div><input type="hidden" name="form_build_id" value="form-lqiCD8HFEVaOji_uIZK0gAF-cO3WrpBJ5hd95LdMajc" />
 <input type="hidden" name="form_id" value="global_search" />
 <div class="search-keywords-wrapper form-wrapper" id="edit-keywords-wrapper"><div class="form-item form-type-textfield form-item-q">
   <label for="edit-keywords">Search </label>
@@ -197,7 +197,7 @@ Transfer-Encoding: chunked
   
       
   
-  <div class="view view-mla-profile-page-helper view-id-mla_profile_page_helper view-display-id-mla_title_block view-dom-id-d08552893ebf848bf8d370565f69b69f">
+  <div class="view view-mla-profile-page-helper view-id-mla_profile_page_helper view-display-id-mla_title_block view-dom-id-61e28e3d66e035c9c4ca4a1d04fff0cd">
         
   
   
@@ -219,7 +219,7 @@ Transfer-Encoding: chunked
   
       
   
-  <div class="view view-mla-profile-page-helper view-id-mla_profile_page_helper view-display-id-mla_sidebox_block view-dom-id-dcd3d1c72afb9ec1906c83f6e5a4b4a3">
+  <div class="view view-mla-profile-page-helper view-id-mla_profile_page_helper view-display-id-mla_sidebox_block view-dom-id-7b366807e605ea97f52b07cc22a938d0">
         
   
   
@@ -258,7 +258,7 @@ Transfer-Encoding: chunked
   
       
   
-  <div class="view view-mla-profile-page-helper view-id-mla_profile_page_helper view-display-id-term_info_table_block view-dom-id-4c3fdd6275ba7aea5d318ffae73776e8">
+  <div class="view view-mla-profile-page-helper view-id-mla_profile_page_helper view-display-id-term_info_table_block view-dom-id-af9c4fba55e5c6a3705e3268108926fe">
         
   
   
@@ -301,7 +301,7 @@ Transfer-Encoding: chunked
       Current cabinet responsibilities    </h2>
     
   
-  <div class="view view-cabinet view-id-cabinet view-display-id-block_per_mla view-dom-id-92097ec78b34795c31c4ae2978cc9fda">
+  <div class="view view-cabinet view-id-cabinet view-display-id-block_per_mla view-dom-id-ae100664548e42746824182f926100c3">
         
   
   
@@ -332,7 +332,7 @@ Transfer-Encoding: chunked
       Standing Committees    </h4>
     
   
-  <div class="view view-committee-listings view-id-committee_listings view-display-id-block_per_mla view-dom-id-025d3a8da9baf69a24425ae3a8ec5d70">
+  <div class="view view-committee-listings view-id-committee_listings view-display-id-block_per_mla view-dom-id-e401ffeb54b3ebbee3bc3750881994d5">
         
   
   

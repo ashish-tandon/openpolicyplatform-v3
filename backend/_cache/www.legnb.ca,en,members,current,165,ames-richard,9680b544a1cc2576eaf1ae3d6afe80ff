@@ -1,6 +1,6 @@
 status: 200
 encoding: utf-8
-Date: Sat, 09 Aug 2025 01:50:26 GMT
+Date: Sat, 09 Aug 2025 05:44:37 GMT
 Content-Type: text/html; charset=utf-8
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -16,7 +16,7 @@ cross-origin-resource-policy: cross-origin
 permissions-policy: accelerometer=(), autoplay=(), camera=(), encrypted-media=(), fullscreen=*, geolocation=(), gyroscope=(), magnetometer=(), microphone=(), midi=(), payment=(), picture-in-picture=(), sync-xhr=(), usb=()
 cf-cache-status: DYNAMIC
 Server: cloudflare
-CF-RAY: 96c39a473ec5ab3a-YYZ
+CF-RAY: 96c4f14fcc2eebbc-YYZ
 
 <!DOCTYPE html>
 <html translate="no" lang="en" dir="ltr">
@@ -294,7 +294,7 @@ CF-RAY: 96c39a473ec5ab3a-YYZ
                         <img src="/content\members\portraits\61-1\Richard_Ames_lg.jpg" />
                 </div>
                     <div class="member-details-contacts">
-                            <span><a href="/cdn-cgi/l/email-protection#10427973787162743e517d756350777e723e7371"><span class="__cf_email__" data-cfemail="7f2d161c171e0d1b513e121a0c3f18111d511c1e">[email&#160;protected]</span></a></span>
+                            <span><a href="/cdn-cgi/l/email-protection#eebc878d868f9c8ac0af838b9dae89808cc08d8f"><span class="__cf_email__" data-cfemail="4c1e252f242d3e28620d21293f0c2b222e622f2d">[email&#160;protected]</span></a></span>
                     </div>
                 <aside class="p-2">
                     <span class="aside-header">

@@ -1,6 +1,6 @@
 status: 200
 encoding: utf-8
-Date: Sat, 09 Aug 2025 01:51:04 GMT
+Date: Sat, 09 Aug 2025 05:45:09 GMT
 Content-Type: text/html; charset=utf-8
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -14,7 +14,7 @@ Content-Encoding: gzip
 Vary: Accept-Encoding
 X-Frame-Options: SAMEORIGIN
 Referrer-Policy: unsafe-url
-Last-Modified: Sat, 09 Aug 2025 01:51:02 GMT
+Last-Modified: Sat, 09 Aug 2025 05:45:06 GMT
 X-Content-Type-Options: nosniff
 X-XSS-Protection: 1; mode=block
 Server: Sucuri/Cloudproxy
@@ -229,13 +229,13 @@ ga('send', 'pageview');
 
 <h3><img title="District 2" class="image_right_border" alt="District 2" src="/images/Election_2020/Council/District%202%20-%20Earlene%20MacMullin.jpg" />Earlene MacMullin</h3>
 <p>320 Esplanade<br />Sydney, NS&nbsp; B1P 7B9</p>
-<p><span id="cloaka214d87bbe197d64c9e41af68c75af44">This email address is being protected from spambots. You need JavaScript enabled to view it.</span><script type='text/javascript'>
-				document.getElementById('cloaka214d87bbe197d64c9e41af68c75af44').innerHTML = '';
+<p><span id="cloakd751699b7b778f01ec01b5de55859536">This email address is being protected from spambots. You need JavaScript enabled to view it.</span><script type='text/javascript'>
+				document.getElementById('cloakd751699b7b778f01ec01b5de55859536').innerHTML = '';
 				var prefix = '&#109;a' + 'i&#108;' + '&#116;o';
 				var path = 'hr' + 'ef' + '=';
-				var addya214d87bbe197d64c9e41af68c75af44 = '&#101;dm&#97;cm&#117;ll&#105;n' + '&#64;';
-				addya214d87bbe197d64c9e41af68c75af44 = addya214d87bbe197d64c9e41af68c75af44 + 'cbrm' + '&#46;' + 'ns' + '&#46;' + 'c&#97;';
-				var addy_texta214d87bbe197d64c9e41af68c75af44 = '&#101;dm&#97;cm&#117;ll&#105;n' + '&#64;' + 'cbrm' + '&#46;' + 'ns' + '&#46;' + 'c&#97;';document.getElementById('cloaka214d87bbe197d64c9e41af68c75af44').innerHTML += '<a ' + path + '\'' + prefix + ':' + addya214d87bbe197d64c9e41af68c75af44 + '\'>'+addy_texta214d87bbe197d64c9e41af68c75af44+'<\/a>';
+				var addyd751699b7b778f01ec01b5de55859536 = '&#101;dm&#97;cm&#117;ll&#105;n' + '&#64;';
+				addyd751699b7b778f01ec01b5de55859536 = addyd751699b7b778f01ec01b5de55859536 + 'cbrm' + '&#46;' + 'ns' + '&#46;' + 'c&#97;';
+				var addy_textd751699b7b778f01ec01b5de55859536 = '&#101;dm&#97;cm&#117;ll&#105;n' + '&#64;' + 'cbrm' + '&#46;' + 'ns' + '&#46;' + 'c&#97;';document.getElementById('cloakd751699b7b778f01ec01b5de55859536').innerHTML += '<a ' + path + '\'' + prefix + ':' + addyd751699b7b778f01ec01b5de55859536 + '\'>'+addy_textd751699b7b778f01ec01b5de55859536+'<\/a>';
 		</script></p>
 <p>Phone (902) 574-1822</p>
 <p>The populations referenced in this description is based on the 2011 census.</p>

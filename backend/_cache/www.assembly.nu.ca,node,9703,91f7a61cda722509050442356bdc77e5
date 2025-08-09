@@ -1,6 +1,6 @@
 status: 200
 encoding: UTF-8
-Date: Fri, 08 Aug 2025 11:49:08 GMT
+Date: Sat, 09 Aug 2025 04:12:23 GMT
 Server: Apache
 Cache-Control: must-revalidate, no-cache, private
 X-Drupal-Dynamic-Cache: MISS
@@ -16,7 +16,7 @@ Strict-Transport-Security: max-age=63073000; includeSubDomains; preload
 Vary: Accept-Encoding
 Content-Encoding: gzip
 X-XSS-Protection: 1; mode=block
-Content-Length: 6398
+Content-Length: 6399
 Keep-Alive: timeout=5, max=98
 Connection: Keep-Alive
 Content-Type: text/html; charset=UTF-8
@@ -264,7 +264,7 @@ Content-Type: text/html; charset=UTF-8
   
     
       <div class="content">
-      <div><div class="view view-calendars view-id-calendars view-display-id-block_month js-view-dom-id-5594e25f5f0f0cd5157fbe5c02e7db5b10b69bf0721ad326a1c20bfb21433f33">
+      <div><div class="view view-calendars view-id-calendars view-display-id-block_month js-view-dom-id-08410f4079fa848c57db9833c67fc8994306f69724e5cae983f25bfb0c3d9c07">
   
     
       <div class="view-header">
@@ -621,7 +621,7 @@ Content-Type: text/html; charset=UTF-8
   date-date="2025-08-08"
   data-day-of-month="8"
   headers="Friday"
-  class="date-box today no-entry"
+  class="date-box past no-entry"
   colspan="1"
   rowspan="1">
   <div class="inner">
@@ -637,7 +637,7 @@ Content-Type: text/html; charset=UTF-8
   date-date="2025-08-09"
   data-day-of-month="9"
   headers="Saturday"
-  class="date-box future no-entry"
+  class="date-box today no-entry"
   colspan="1"
   rowspan="1">
   <div class="inner">
@@ -721,7 +721,7 @@ Content-Type: text/html; charset=UTF-8
   date-date="2025-08-08"
   data-day-of-month="8"
   headers="Friday"
-  class="single-day no-entry today"
+  class="single-day no-entry past"
   colspan="1"
   rowspan="1">
   <div class="inner">
@@ -734,7 +734,7 @@ Content-Type: text/html; charset=UTF-8
   date-date="2025-08-09"
   data-day-of-month="9"
   headers="Saturday"
-  class="single-day no-entry future"
+  class="single-day no-entry today"
   colspan="1"
   rowspan="1">
   <div class="inner">
@@ -1635,7 +1635,7 @@ try {
   </div>
 
     
-    <script type="application/json" data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/","scriptPath":null,"pathPrefix":"","currentPath":"node\/9703","currentPathIsAdmin":false,"isFront":false,"currentLanguage":"en"},"pluralDelimiter":"\u0003","suppressDeprecationErrors":true,"ajaxPageState":{"libraries":"assembly\/member,assembly\/views,bartik\/classy.base,bartik\/classy.messages,bartik\/classy.node,bartik\/global-styling,calendar\/calendar.theme,core\/normalize,system\/base,views\/views.ajax,views\/views.module","theme":"assembly","theme_token":null},"ajaxTrustedUrl":{"\/search\/node":true},"views":{"ajax_path":"\/views\/ajax","ajaxViews":{"views_dom_id:5594e25f5f0f0cd5157fbe5c02e7db5b10b69bf0721ad326a1c20bfb21433f33":{"view_name":"calendars","view_display_id":"block_month","view_args":"202508","view_path":"\/node\/9703","view_base_path":"calendar-field_date\/day","view_dom_id":"5594e25f5f0f0cd5157fbe5c02e7db5b10b69bf0721ad326a1c20bfb21433f33","pager_element":0}}},"user":{"uid":0,"permissionsHash":"98a695773fa4e143742bc4f46f511955a96a8442cc7f95604afbbebdf6e38151"}}</script>
+    <script type="application/json" data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/","scriptPath":null,"pathPrefix":"","currentPath":"node\/9703","currentPathIsAdmin":false,"isFront":false,"currentLanguage":"en"},"pluralDelimiter":"\u0003","suppressDeprecationErrors":true,"ajaxPageState":{"libraries":"assembly\/member,assembly\/views,bartik\/classy.base,bartik\/classy.messages,bartik\/classy.node,bartik\/global-styling,calendar\/calendar.theme,core\/normalize,system\/base,views\/views.ajax,views\/views.module","theme":"assembly","theme_token":null},"ajaxTrustedUrl":{"\/search\/node":true},"views":{"ajax_path":"\/views\/ajax","ajaxViews":{"views_dom_id:08410f4079fa848c57db9833c67fc8994306f69724e5cae983f25bfb0c3d9c07":{"view_name":"calendars","view_display_id":"block_month","view_args":"202508","view_path":"\/node\/9703","view_base_path":"calendar-field_date\/day","view_dom_id":"08410f4079fa848c57db9833c67fc8994306f69724e5cae983f25bfb0c3d9c07","pager_element":0}}},"user":{"uid":0,"permissionsHash":"98a695773fa4e143742bc4f46f511955a96a8442cc7f95604afbbebdf6e38151"}}</script>
 <script src="/sites/default/files/js/js_t1YPBhQS2PCGtI37CAoO9r0-pDsFoOVhqP_hIfuebd8.js"></script>
 
   </body>

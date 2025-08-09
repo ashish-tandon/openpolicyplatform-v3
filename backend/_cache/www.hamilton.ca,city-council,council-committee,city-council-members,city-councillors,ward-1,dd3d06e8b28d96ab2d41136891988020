@@ -1,6 +1,6 @@
 status: 200
 encoding: UTF-8
-Date: Sat, 09 Aug 2025 01:50:58 GMT
+Date: Sat, 09 Aug 2025 05:45:02 GMT
 Content-Type: text/html; charset=UTF-8
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -20,16 +20,16 @@ x-generator: Drupal 10 (https://www.drupal.org)
 x-pantheon-styx-hostname: styx-fe3fe4-h-6b9c85b684-sjmqj
 x-styx-req-id: 75c8ab6a-7493-11f0-ba13-261c68c694cb
 x-xss-protection: 1
-x-served-by: cache-yyz4531-YYZ
+x-served-by: cache-yyz4535-YYZ
 x-cache: HIT
 x-cache-hits: 0
-x-timer: S1754704258.238090,VS0,VE4
+x-timer: S1754718302.412932,VS0,VE4
 vary: Accept-Encoding, Cookie, Cookie
-Age: 20531
+Age: 34575
 via: 1.1 varnish
 cf-cache-status: DYNAMIC
 Server: cloudflare
-CF-RAY: 96c39b0dc831aeb6-YYZ
+CF-RAY: 96c4f1edfd5e7118-YYZ
 
 
 <!DOCTYPE html>
@@ -13205,7 +13205,7 @@ CF-RAY: 96c39b0dc831aeb6-YYZ
             Maureen Wilson
           </h2>
                           <div class="card-content">
-            <p class="regular-body-text">Email:&nbsp;<a href="/cdn-cgi/l/email-protection#6017011204512008010d090c140f0e4e0301"><span class="__cf_email__" data-cfemail="3d4a5c4f590c7d555c505451495253135e5c">[email&#160;protected]</span></a><br>
+            <p class="regular-body-text">Email:&nbsp;<a href="/cdn-cgi/l/email-protection#d6a1b7a4b2e796beb7bbbfbaa2b9b8f8b5b7"><span class="__cf_email__" data-cfemail="e790869583d6a78f868a8e8b938889c98486">[email&#160;protected]</span></a><br>
 Phone: <a href="tel:9055462416">905-546-2416</a><br>
 Website:&nbsp;<a href="http://www.maureenwilson.ca/" title="External link to Maureenwilson.ca">www.maureenwilson.ca</a><br>
 Newsletter:&nbsp;<a href="http://www.maureenwilson.ca/join" title="External link to maureenwilson.ca">www.maureenwilson.ca/join</a></p>
@@ -13248,14 +13248,14 @@ Hamilton, Ontario&nbsp;L8P 4Y5</p>
 <p><strong>Stephanie Hilson</strong><br>
 Strategic Initiatives &amp; Engagement Advisor<br>
 Phone: <a href="tel:9055464528">905-546-4528</a><br>
-Email: <a href="/cdn-cgi/l/email-protection#f98a8d9c89919897909cd79190958a9697b991989490958d9697d79a981b7972"><span class="__cf_email__" data-cfemail="7e0d0a1b0e161f10171b501617120d11103e161f1317120a1110501d1f">[email&#160;protected]</span>​</a></p>
+Email: <a href="/cdn-cgi/l/email-protection#fb888f9e8b939a95929ed5939297889495bb939a9692978f9495d5989a197b70"><span class="__cf_email__" data-cfemail="96e5e2f3e6fef7f8fff3b8fefffae5f9f8d6fef7fbfffae2f9f8b8f5f7">[email&#160;protected]</span>​</a></p>
 </div>
 
 <div class="col-md-auto">
 <p><strong>Mary Louise Pigott</strong><br>
 Constituent Navigator<br>
 Phone: <a href="tel:9055462416">905-546-2416</a><br>
-Email: <a href="/cdn-cgi/l/email-protection#1875796a6174776d716b7d3668717f776c6c5870797571746c7776367b79"><span class="__cf_email__" data-cfemail="cda0acbfb4a1a2b8a4bea8e3bda4aaa2b9b98da5aca0a4a1b9a2a3e3aeac">[email&#160;protected]</span></a></p>
+Email: <a href="/cdn-cgi/l/email-protection#335e52414a5f5c465a40561d435a545c4747735b525e5a5f475c5d1d5052"><span class="__cf_email__" data-cfemail="93fef2e1eafffce6fae0f6bde3faf4fce7e7d3fbf2fefaffe7fcfdbdf0f2">[email&#160;protected]</span></a></p>
 </div>
 </div>
 </div>

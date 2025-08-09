@@ -1,6 +1,6 @@
 status: 200
 encoding: UTF-8
-Date: Sat, 09 Aug 2025 01:51:00 GMT
+Date: Sat, 09 Aug 2025 05:45:04 GMT
 Content-Type: text/html; charset=UTF-8
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -20,16 +20,16 @@ x-generator: Drupal 10 (https://www.drupal.org)
 x-pantheon-styx-hostname: styx-fe3fe4-h-6b9c85b684-sjmqj
 x-styx-req-id: 028cbf34-7495-11f0-ba13-261c68c694cb
 x-xss-protection: 1
-x-served-by: cache-yyz4531-YYZ
+x-served-by: cache-yyz4535-YYZ
 x-cache: HIT
 x-cache-hits: 0
-x-timer: S1754704260.248477,VS0,VE5
+x-timer: S1754718304.414584,VS0,VE3
 vary: Accept-Encoding, Cookie, Cookie
-Age: 19881
+Age: 33925
 via: 1.1 varnish
 cf-cache-status: DYNAMIC
 Server: cloudflare
-CF-RAY: 96c39b1a593baeb6-YYZ
+CF-RAY: 96c4f1fa7cce7118-YYZ
 
 
 <!DOCTYPE html>
@@ -13215,7 +13215,7 @@ CF-RAY: 96c39b1a593baeb6-YYZ
             Nrinder Nann
           </h2>
                           <div class="card-content">
-            <p>Email:&nbsp;<a href="/cdn-cgi/l/email-protection#691e081b0d5a2901080400051d0607470a08"><span class="__cf_email__" data-cfemail="a4d3c5d6c097e4ccc5c9cdc8d0cbca8ac7c5">[email&#160;protected]</span></a><br>
+            <p>Email:&nbsp;<a href="/cdn-cgi/l/email-protection#d7a0b6a5b3e497bfb6babebba3b8b9f9b4b6"><span class="__cf_email__" data-cfemail="1d6a7c6f792e5d757c707471697273337e7c">[email&#160;protected]</span></a><br>
 Phone: <a href="tel:9055462702">905-546-2702</a></p>
 
 <p>Hamilton City Hall<br>
@@ -13255,7 +13255,7 @@ Hamilton, Ontario&nbsp;L8P 4Y5</p>
 <div class="col-md">
 <p><strong>Alexandra Weinberger*</strong><br>
 Executive Assistant<br>
-Email:&nbsp;<a href="/cdn-cgi/l/email-protection#11507d7469707f7563703f4674787f7374637674635179707c787d657e7f3f7270"><span class="__cf_email__" data-cfemail="fb9a979e839a959f899ad58c9e9295999e899c9e89bb939a9692978f9495d5989a">[email&#160;protected]</span></a><br>
+Email:&nbsp;<a href="/cdn-cgi/l/email-protection#e3a28f869b828d879182cdb4868a8d818691848691a38b828e8a8f978c8dcd8082"><span class="__cf_email__" data-cfemail="8beae7eef3eae5eff9eaa5fceee2e5e9eef9eceef9cbe3eae6e2e7ffe4e5a5e8ea">[email&#160;protected]</span></a><br>
 Phone: <a href="tel:9055462107">905-546-2107</a></p>
 
 <p>*On parental leave until Spring 2024.<br>
@@ -13264,7 +13264,7 @@ Soraya Gallant covering.</p>
 <p><strong>Soraya Gallant</strong><br>
 ​​​​​​(they/them, she/her; iel, elle)<br>
 Administrative Assistant to Nrinder Nann Ward 3<br>
-Email: <a href="/cdn-cgi/l/email-protection#03706c71627a622d64626f6f626d77436b626e6a6f776c6d2d6062" title="Email link"><span class="__cf_email__" data-cfemail="40332f322139216e27212c2c212e340028212d292c342f2e6e2321">[email&#160;protected]</span></a><br>
+Email: <a href="/cdn-cgi/l/email-protection#47342835263e266920262b2b262933072f262a2e2b332829692426" title="Email link"><span class="__cf_email__" data-cfemail="d3a0bca1b2aab2fdb4b2bfbfb2bda793bbb2bebabfa7bcbdfdb0b2">[email&#160;protected]</span></a><br>
 Phone: <a href="tel:905-546-4550" title="Call 905-546-4550">905-546-4550</a></p>
 </div>
 
@@ -13272,7 +13272,7 @@ Phone: <a href="tel:905-546-4550" title="Call 905-546-4550">905-546-4550</a></p>
 <p><strong>Alex McGillivray</strong><br>
 (she/her)<br>
 Resident Liaison to Councillor Nrinder Nann ​​​​​Ward 3<br>
-Email:&nbsp;<a href="/cdn-cgi/l/email-protection#3859545d404b59565c4a5916555b5f515454514e4a59417850595551544c5756165b59"><span class="__cf_email__" data-cfemail="0869646d707b69666c7a6926656b6f616464617e7a69714860696561647c6766266b69">[email&#160;protected]</span></a><br>
+Email:&nbsp;<a href="/cdn-cgi/l/email-protection#3d5c5158454e5c53594f5c13505e5a545151544b4f5c447d555c505451495253135e5c"><span class="__cf_email__" data-cfemail="bbdad7dec3c8dad5dfc9da95d6d8dcd2d7d7d2cdc9dac2fbd3dad6d2d7cfd4d595d8da">[email&#160;protected]</span></a><br>
 Phone:&nbsp;<a href="tel:905-546-2702" title="Call 905-546-2702">905-546-2702</a></p>
 </div>
 
@@ -13280,7 +13280,7 @@ Phone:&nbsp;<a href="tel:905-546-2702" title="Call 905-546-2702">905-546-2702</a
 <p><strong>Kerry Le Clair</strong><br>
 (she/her/elle)<br>
 Ward 3 Climate Action Community Coordinator<br>
-Email: <a href="/cdn-cgi/l/email-protection#741f1106060d5a18111718151d06341c15191d18001b1a5a1715" title="Email link"><span class="__cf_email__" data-cfemail="deb5bbacaca7f0b2bbbdb2bfb7ac9eb6bfb3b7b2aab1b0f0bdbf">[email&#160;protected]</span></a><br>
+Email: <a href="/cdn-cgi/l/email-protection#0e656b7c7c7720626b6d626f677c4e666f6367627a6160206d6f" title="Email link"><span class="__cf_email__" data-cfemail="147f7166666d3a78717778757d66547c75797d78607b7a3a7775">[email&#160;protected]</span></a><br>
 Phone: <a href="tel:905-546-2116" title="Call 905-546-2116">905-546-2116</a></p>
 </div>
 </div>

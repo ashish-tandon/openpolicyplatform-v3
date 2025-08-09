@@ -1,6 +1,6 @@
 status: 200
 encoding: UTF-8
-Date: Sat, 09 Aug 2025 01:51:07 GMT
+Date: Sat, 09 Aug 2025 05:45:11 GMT
 Content-Type: text/html; charset=UTF-8
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -16,14 +16,14 @@ x-xss-protection: 1
 strict-transport-security: max-age=31536000
 x-drupal-cache: UNCACHEABLE (response policy)
 vary: Accept-Encoding
-x-request-id: v-5057aeca-74c3-11f0-8efc-833582f652e5
+x-request-id: v-0357613a-74e4-11f0-a937-ef65748622fd
 x-ah-environment: prod
 Age: 0
 via: varnish
 x-cache: MISS
 cf-cache-status: DYNAMIC
 Server: cloudflare
-CF-RAY: 96c39b40b9baaaad-YYZ
+CF-RAY: 96c4f22118c739c5-YYZ
 
 <!DOCTYPE html>
 <html lang="en" dir="ltr" prefix="content: http://purl.org/rss/1.0/modules/content/  dc: http://purl.org/dc/terms/  foaf: http://xmlns.com/foaf/0.1/  og: http://ogp.me/ns#  rdfs: http://www.w3.org/2000/01/rdf-schema#  schema: http://schema.org/  sioc: http://rdfs.org/sioc/ns#  sioct: http://rdfs.org/sioc/types#  skos: http://www.w3.org/2004/02/skos/core#  xsd: http://www.w3.org/2001/XMLSchema# ">
@@ -1022,7 +1022,7 @@ CF-RAY: 96c39b40b9baaaad-YYZ
       </div>
   <div class="contact__details">
           <div class="contact__detail contact__detail--email">
-        <a href="/cdn-cgi/l/email-protection#7913161c57121c100d11151c00391b0c0b17181b00571a18" rel="noopener" target="_blank"><span class="__cf_email__" data-cfemail="6802070d46030d011c00040d11280a1d1a06090a11460b09">[email&#160;protected]</span></a>
+        <a href="/cdn-cgi/l/email-protection#1e74717b30757b776a76727b675e7c6b6c707f7c67307d7f" rel="noopener" target="_blank"><span class="__cf_email__" data-cfemail="cea4a1abe0a5aba7baa6a2abb78eacbbbca0afacb7e0adaf">[email&#160;protected]</span></a>
       </div>
               <div class="contact__detail contact__detail--phone">
           <div class="paragraph paragraph--type--phone-number-and-description paragraph--view-mode--default">
@@ -1246,8 +1246,8 @@ CF-RAY: 96c39b40b9baaaad-YYZ
 <input data-drupal-selector="edit-title" type="hidden" name="title" value="Councillor Joe Keithley" />
 <input data-drupal-selector="edit-path" type="hidden" name="path" value="/node/1141" />
 <input data-drupal-selector="edit-alias" type="hidden" name="alias" value="/our-city/mayor-and-council/councillor-joe-keithley" />
-<input data-drupal-selector="edit-honeypot-time" type="hidden" name="honeypot_time" value="kew0AFRARvTPez1MXNP4rnQko7WOGauh5obxzolN7qw" />
-<input autocomplete="off" data-drupal-selector="form-z8rgiwthk86f632u8bqobqlrxdu4eqri47kmyhidmse" type="hidden" name="form_build_id" value="form-Z8rGiWthK86F632U8BQObQlRxDu4eqri47kmyhIDmsE" />
+<input data-drupal-selector="edit-honeypot-time" type="hidden" name="honeypot_time" value="Ds-o3R2IAiI9d4CI46YfDfHlu3AjhjoOPNF9p8qSjE8" />
+<input autocomplete="off" data-drupal-selector="form-sitr8ymqm5pe3n5rsnfjduukdzelmxccyrlf4v23idm" type="hidden" name="form_build_id" value="form-SITR8Ymqm5pe3n5rsnFjDUukDzeLMXCcyrlF4v23iDM" />
 <input data-drupal-selector="edit-was-this-useful-form" type="hidden" name="form_id" value="was_this_useful_form" />
 <input data-drupal-selector="edit-antibot-key" type="hidden" name="antibot_key" value="" />
 <div class="url_homepage-textfield js-form-wrapper form-wrapper" style="display: none !important;"><div class="js-form-item form-item js-form-type-textfield form-type-textfield js-form-item-url-homepage form-item-url-homepage">

@@ -1,6 +1,6 @@
 status: 200
 encoding: UTF-8
-Date: Sat, 09 Aug 2025 00:48:53 GMT
+Date: Sat, 09 Aug 2025 05:44:52 GMT
 Server: Apache
 X-Drupal-Dynamic-Cache: UNCACHEABLE (poor cacheability)
 Content-language: en
@@ -13,10 +13,10 @@ X-Frame-Options: SAMEORIGIN
 X-XSS-Protection: 1; mode=block
 Strict-Transport-Security: max-age=31536000; includeSubDomains
 Referrer-Policy: no-referrer-when-downgrade
-Last-Modified: Sat, 09 Aug 2025 00:48:51 GMT
-ETag: "1754700531-gzip"
+Last-Modified: Sat, 09 Aug 2025 05:44:50 GMT
+ETag: "1754718290-gzip"
 Content-Encoding: gzip
-Content-Length: 11665
+Content-Length: 11664
 Content-Type: text/html; charset=UTF-8
 Via: 1.1 google
 Cache-Control: max-age=600,public
@@ -294,7 +294,7 @@ Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
         </div>
       </div>
     </div>
-          <div class="views-element-container"><div class="view view-emergency-alerts view-id-emergency_alerts view-display-id-block_1 js-view-dom-id-557a4b204f6fe709731b9482aef2831636bec77113af7772b8a29170f480c4d2">
+          <div class="views-element-container"><div class="view view-emergency-alerts view-id-emergency_alerts view-display-id-block_1 js-view-dom-id-68cf3f885e7480b5a68b1c26f3e325905592b5ab205bd4a4b52f713f1e5eaae1">
   
     
       
@@ -568,7 +568,7 @@ Edmonton, Alberta T5J 2R7</p>
 
 
 
-      <div class="views-element-container"><div class="view view-footer-notices view-id-footer_notices view-display-id-block_1 js-view-dom-id-6b974eeb248dd9be7e4e6bf8796ddfdb73c343b867c96d8097cbffa0018ebaf6">
+      <div class="views-element-container"><div class="view view-footer-notices view-id-footer_notices view-display-id-block_1 js-view-dom-id-72cfdf3dffd3fe555441fa7827b0656192ab2fae0627bc3bc8b8775edc8a8cae">
   
     
       

@@ -20,6 +20,14 @@ from requests.packages.urllib3.exceptions import InsecureRequestWarning
 
 import patch  # patch patches validictory # noqa: F401
 
+# SSL Certificate Fix
+import ssl
+import urllib3
+urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
+ssl._create_default_https_context = ssl._create_unverified_context
+
+
+
 requests.packages.urllib3.disable_warnings(InsecureRequestWarning)
 
 CUSTOM_USER_AGENT = "Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.1; Trident/6.0)"

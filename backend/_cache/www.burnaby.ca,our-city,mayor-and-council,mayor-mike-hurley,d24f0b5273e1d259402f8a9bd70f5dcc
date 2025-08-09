@@ -1,6 +1,6 @@
 status: 200
 encoding: UTF-8
-Date: Sat, 09 Aug 2025 01:51:02 GMT
+Date: Sat, 09 Aug 2025 05:45:07 GMT
 Content-Type: text/html; charset=UTF-8
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -16,14 +16,14 @@ x-xss-protection: 1
 strict-transport-security: max-age=31536000
 x-drupal-cache: UNCACHEABLE (response policy)
 vary: Accept-Encoding
-x-request-id: v-4de97e2a-74c3-11f0-9037-bbb995991322
+x-request-id: v-00e8a58a-74e4-11f0-8b30-6fe26d8254ae
 x-ah-environment: prod
 Age: 0
 via: varnish
 x-cache: MISS
 cf-cache-status: DYNAMIC
 Server: cloudflare
-CF-RAY: 96c39b2738d7aaad-YYZ
+CF-RAY: 96c4f2079eb139c5-YYZ
 
 <!DOCTYPE html>
 <html lang="en" dir="ltr" prefix="content: http://purl.org/rss/1.0/modules/content/  dc: http://purl.org/dc/terms/  foaf: http://xmlns.com/foaf/0.1/  og: http://ogp.me/ns#  rdfs: http://www.w3.org/2000/01/rdf-schema#  schema: http://schema.org/  sioc: http://rdfs.org/sioc/ns#  sioct: http://rdfs.org/sioc/types#  skos: http://www.w3.org/2004/02/skos/core#  xsd: http://www.w3.org/2001/XMLSchema# ">
@@ -1022,7 +1022,7 @@ CF-RAY: 96c39b2738d7aaad-YYZ
       </div>
   <div class="contact__details">
           <div class="contact__detail contact__detail--email">
-        <a href="/cdn-cgi/l/email-protection#95f8f4ecfae7d5f7e0e7fbf4f7ecbbf6f4" rel="noopener" target="_blank"><span class="__cf_email__" data-cfemail="ec818d95839eac8e999e828d8e95c28f8d">[email&#160;protected]</span></a>
+        <a href="/cdn-cgi/l/email-protection#cba6aab2a4b98ba9beb9a5aaa9b2e5a8aa" rel="noopener" target="_blank"><span class="__cf_email__" data-cfemail="234e425a4c51634156514d42415a0d4042">[email&#160;protected]</span></a>
       </div>
               <div class="contact__detail contact__detail--phone">
           <div class="paragraph paragraph--type--phone-number-and-description paragraph--view-mode--default">
@@ -1075,12 +1075,12 @@ CF-RAY: 96c39b2738d7aaad-YYZ
     
   <div class="accordion__item-header">
     <h4 class="accordion__item-title">
-      <button class="accordion__item-toggle accordion__expand-option" role="tab" id="accordion-tab-147877339" aria-controls="accordion-tabpanel-147877339"  aria-expanded="false" aria-selected="false">
+      <button class="accordion__item-toggle accordion__expand-option" role="tab" id="accordion-tab-1109497168" aria-controls="accordion-tabpanel-1109497168"  aria-expanded="false" aria-selected="false">
         Biography
       </button>
     </h4>
   </div>
-  <div class="accordion__item-content wysiwyg" role="tabpanel" id="accordion-tabpanel-147877339" aria-labeledby="accordion-tab-147877339">
+  <div class="accordion__item-content wysiwyg" role="tabpanel" id="accordion-tabpanel-1109497168" aria-labeledby="accordion-tab-1109497168">
     <p>I was born in Magherafelt, Northern Ireland, in 1958 and came to Canada in 1983 at the young age of 25. Music and Gaelic football dominated my youth as did soccer which advanced me to a semi-professional league.</p>
 
 <p>I first settled in Vancouver and moved to Burnaby in 1988. My wife, Jennifer, and I met in 1998 and we have three boys who are in elementary school. And, I have a daughter, who is attending Simon Fraser University.</p>
@@ -1105,12 +1105,12 @@ CF-RAY: 96c39b2738d7aaad-YYZ
     
   <div class="accordion__item-header">
     <h4 class="accordion__item-title">
-      <button class="accordion__item-toggle accordion__expand-option" role="tab" id="accordion-tab-904468617" aria-controls="accordion-tabpanel-904468617"  aria-expanded="false" aria-selected="false">
+      <button class="accordion__item-toggle accordion__expand-option" role="tab" id="accordion-tab-431862932" aria-controls="accordion-tabpanel-431862932"  aria-expanded="false" aria-selected="false">
         Memberships and committee appointments 
       </button>
     </h4>
   </div>
-  <div class="accordion__item-content wysiwyg" role="tabpanel" id="accordion-tabpanel-904468617" aria-labeledby="accordion-tab-904468617">
+  <div class="accordion__item-content wysiwyg" role="tabpanel" id="accordion-tabpanel-431862932" aria-labeledby="accordion-tab-431862932">
     <ul>
 	<li>Director, Metro Vancouver Regional District Board</li>
 	<li>Member, <a data-entity-substitution="canonical" data-entity-type="node" data-entity-uuid="54e7dadb-b52b-4338-816a-15d086847f5e" href="/our-city/meetings-and-public-hearings/advisory-bodies-and-boards/audit-committee" title="Audit Committee">Audit Committee</a></li>
@@ -1287,8 +1287,8 @@ CF-RAY: 96c39b2738d7aaad-YYZ
 <input data-drupal-selector="edit-title" type="hidden" name="title" value="Mayor Mike Hurley" />
 <input data-drupal-selector="edit-path" type="hidden" name="path" value="/node/1116" />
 <input data-drupal-selector="edit-alias" type="hidden" name="alias" value="/our-city/mayor-and-council/mayor-mike-hurley" />
-<input data-drupal-selector="edit-honeypot-time" type="hidden" name="honeypot_time" value="l2VF21z9LB62-8QtB99wwA-bB7zboWGUs50BGsUSDIo" />
-<input autocomplete="off" data-drupal-selector="form-hjgubbrr-18ibigvpndrsfwj-xtpesak7n71paap0zk" type="hidden" name="form_build_id" value="form-HJgUbBRr-18ibIgvPNdRSfwJ_XTPEsaK7n71PaaP0zk" />
+<input data-drupal-selector="edit-honeypot-time" type="hidden" name="honeypot_time" value="mvt_nRaIj37yJn_J9c5LVy0qV6vqO5Z9DFbVdVDVkMA" />
+<input autocomplete="off" data-drupal-selector="form-ofh6lpa8lowqwqwhhsesgmi2tcgoy62ll8imrynri2q" type="hidden" name="form_build_id" value="form-ofh6lPa8lOWQWqWHHsEsgMI2tcGoy62LL8IMrynri2Q" />
 <input data-drupal-selector="edit-was-this-useful-form" type="hidden" name="form_id" value="was_this_useful_form" />
 <input data-drupal-selector="edit-antibot-key" type="hidden" name="antibot_key" value="" />
 <div class="url_homepage-textfield js-form-wrapper form-wrapper" style="display: none !important;"><div class="js-form-item form-item js-form-type-textfield form-type-textfield js-form-item-url-homepage form-item-url-homepage">

@@ -1,12 +1,12 @@
 status: 200
 encoding: UTF-8
 Server: nginx
-Date: Sat, 09 Aug 2025 01:51:14 GMT
+Date: Sat, 09 Aug 2025 05:45:16 GMT
 Content-Type: text/html; charset=UTF-8
 Transfer-Encoding: chunked
 Connection: keep-alive
 Vary: Accept-Encoding, Accept-Encoding,User-Agent
-Last-Modified: Fri, 08 Aug 2025 16:35:57 GMT
+Last-Modified: Sat, 09 Aug 2025 04:04:01 GMT
 X-Nginx-Cache-Status: HIT
 x-cache-enabled: true
 Content-Encoding: gzip
@@ -166,7 +166,7 @@ jQuery(document).ready(function ($) {
                     type: 'POST',
                     data: {
                         action: 'load_quick_search_items',
-                        nonce: 'fbfb42b51a'
+                        nonce: '0e2ca69162'
                     },
                     success: function (response) {
                         // Insérer la réponse et retirer le loader
@@ -792,7 +792,7 @@ Comité dossier événementiel – Destination Saint-Jean</p>
 	<div class="fl-module-content fl-node-content">
 		<div class="fl-rich-text">
 	<p>
-                <div class='gf_browser_chrome gform_wrapper gform_legacy_markup_wrapper gform-theme--no-framework' data-form-theme='legacy' data-form-index='0' id='gform_wrapper_87' ><form method='post' enctype='multipart/form-data'  id='gform_87'  action='/conseil-municipal/melanie-dufresne/' data-formid='87' novalidate>
+                <div class='gf_browser_unknown gform_wrapper gform_legacy_markup_wrapper gform-theme--no-framework' data-form-theme='legacy' data-form-index='0' id='gform_wrapper_87' ><form method='post' enctype='multipart/form-data'  id='gform_87'  action='/conseil-municipal/melanie-dufresne/' data-formid='87' novalidate>
                         <div class='gform-body gform_body'><ul id='gform_fields_87' class='gform_fields top_label form_sublabel_below description_above validation_below'><li id="field_87_16" class="gfield gfield--type-radio gfield--type-choice gfield_contains_required field_sublabel_below gfield--no-description field_description_above field_validation_below gfield_visibility_visible"  ><label class='gfield_label gform-field-label' >Je souhaite envoyer un message à Mélanie Dufresne :<span class="gfield_required"><span class="gfield_required gfield_required_asterisk">*</span></span></label><div class='ginput_container ginput_container_radio'><ul class='gfield_radio' id='input_87_16'>
 			<li class='gchoice gchoice_87_16_0'>
 				<input name='input_16' type='radio' value='Commentaire'  id='choice_87_16_0'    />
@@ -836,7 +836,7 @@ Comité dossier événementiel – Destination Saint-Jean</p>
             <input type='hidden' name='gform_field_values' value='' />
             <input type='hidden' name='gform_uploaded_files' id='gform_uploaded_files_87' value='' />
         </div>
-                        <p style="display: none !important;" class="akismet-fields-container" data-prefix="ak_"><label>&#916;<textarea name="ak_hp_textarea" cols="45" rows="8" maxlength="100"></textarea></label><input type="hidden" id="ak_js_1" name="ak_js" value="135"/><script>document.getElementById( "ak_js_1" ).setAttribute( "value", ( new Date() ).getTime() );</script></p></form>
+                        <p style="display: none !important;" class="akismet-fields-container" data-prefix="ak_"><label>&#916;<textarea name="ak_hp_textarea" cols="45" rows="8" maxlength="100"></textarea></label><input type="hidden" id="ak_js_1" name="ak_js" value="156"/><script>document.getElementById( "ak_js_1" ).setAttribute( "value", ( new Date() ).getTime() );</script></p></form>
                         </div><script>
 gform.initializeOnLoaded( function() {gformInitSpinner( 87, 'https://sjsr.ca/wp-content/plugins/gravityforms/images/spinner.svg', true );jQuery('#gform_ajax_frame_87').on('load',function(){var contents = jQuery(this).contents().find('*').html();var is_postback = contents.indexOf('GF_AJAX_POSTBACK') >= 0;if(!is_postback){return;}var form_content = jQuery(this).contents().find('#gform_wrapper_87');var is_confirmation = jQuery(this).contents().find('#gform_confirmation_wrapper_87').length > 0;var is_redirect = contents.indexOf('gformRedirect(){') >= 0;var is_form = form_content.length > 0 && ! is_redirect && ! is_confirmation;var mt = parseInt(jQuery('html').css('margin-top'), 10) + parseInt(jQuery('body').css('margin-top'), 10) + 100;if(is_form){jQuery('#gform_wrapper_87').html(form_content.html());if(form_content.hasClass('gform_validation_error')){jQuery('#gform_wrapper_87').addClass('gform_validation_error');} else {jQuery('#gform_wrapper_87').removeClass('gform_validation_error');}setTimeout( function() { /* delay the scroll by 50 milliseconds to fix a bug in chrome */  }, 50 );if(window['gformInitDatepicker']) {gformInitDatepicker();}if(window['gformInitPriceFields']) {gformInitPriceFields();}var current_page = jQuery('#gform_source_page_number_87').val();gformInitSpinner( 87, 'https://sjsr.ca/wp-content/plugins/gravityforms/images/spinner.svg', true );jQuery(document).trigger('gform_page_loaded', [87, current_page]);window['gf_submitting_87'] = false;}else if(!is_redirect){var confirmation_content = jQuery(this).contents().find('.GF_AJAX_POSTBACK').html();if(!confirmation_content){confirmation_content = contents;}jQuery('#gform_wrapper_87').replaceWith(confirmation_content);jQuery(document).trigger('gform_confirmation_loaded', [87]);window['gf_submitting_87'] = false;wp.a11y.speak(jQuery('#gform_confirmation_message_87').text());}else{jQuery('#gform_87').append(contents);if(window['gformRedirect']) {gformRedirect();}}jQuery(document).trigger("gform_pre_post_render", [{ formId: "87", currentPage: "current_page", abort: function() { this.preventDefault(); } }]);        if (event && event.defaultPrevented) {                return;        }        const gformWrapperDiv = document.getElementById( "gform_wrapper_87" );        if ( gformWrapperDiv ) {            const visibilitySpan = document.createElement( "span" );            visibilitySpan.id = "gform_visibility_test_87";            gformWrapperDiv.insertAdjacentElement( "afterend", visibilitySpan );        }        const visibilityTestDiv = document.getElementById( "gform_visibility_test_87" );        let postRenderFired = false;        function triggerPostRender() {            if ( postRenderFired ) {                return;            }            postRenderFired = true;            gform.core.triggerPostRenderEvents( 87, current_page );            if ( visibilityTestDiv ) {                visibilityTestDiv.parentNode.removeChild( visibilityTestDiv );            }        }        function debounce( func, wait, immediate ) {            var timeout;            return function() {                var context = this, args = arguments;                var later = function() {                    timeout = null;                    if ( !immediate ) func.apply( context, args );                };                var callNow = immediate && !timeout;                clearTimeout( timeout );                timeout = setTimeout( later, wait );                if ( callNow ) func.apply( context, args );            };        }        const debouncedTriggerPostRender = debounce( function() {            triggerPostRender();        }, 200 );        if ( visibilityTestDiv && visibilityTestDiv.offsetParent === null ) {            const observer = new MutationObserver( ( mutations ) => {                mutations.forEach( ( mutation ) => {                    if ( mutation.type === 'attributes' && visibilityTestDiv.offsetParent !== null ) {                        debouncedTriggerPostRender();                        observer.disconnect();                    }                });            });            observer.observe( document.body, {                attributes: true,                childList: false,                subtree: true,                attributeFilter: [ 'style', 'class' ],            });        } else {            triggerPostRender();        }    } );} );
 </script>
@@ -1000,7 +1000,7 @@ gform.initializeOnLoaded( function() {gformInitSpinner( 87, 'https://sjsr.ca/wp-
 <script data-minify="1" src="https://sjsr.ca/wp-content/cache/min/1/wp-content/plugins/matricule/js/matricule.js?ver=1754668304" id="matricule-js-js"></script>
 <script src="https://sjsr.ca/wp-content/plugins/wp-media-folder/assets/js/display-gallery/jquery.magnific-popup.min.js?ver=0.9.9" id="wpmf-gallery-popup-js"></script>
 <script id="ajax_searchwp_js-js-extra">
-var ajax_searchwp_object = {"ajax_url":"https:\/\/sjsr.ca\/wp-admin\/admin-ajax.php","no_results_text":"No results found","ajax_nonce":"a217c4409b"};
+var ajax_searchwp_object = {"ajax_url":"https:\/\/sjsr.ca\/wp-admin\/admin-ajax.php","no_results_text":"No results found","ajax_nonce":"6288937407"};
 </script>
 <script data-minify="1" src="https://sjsr.ca/wp-content/cache/min/1/wp-content/plugins/ajax-searchwp/assets/js/script.js?ver=1754668304" id="ajax_searchwp_js-js"></script>
 <script data-minify="1" src="https://sjsr.ca/wp-content/cache/min/1/wp-content/plugins/page-links-to/dist/new-tab.js?ver=1754668304" id="page-links-to-js"></script>
@@ -1012,7 +1012,7 @@ searchwp_live_search_params = {"ajaxurl":"https:\/\/sjsr.ca\/wp-admin\/admin-aja
 <script defer='defer' src="https://sjsr.ca/wp-content/plugins/gravityforms/js/jquery.maskedinput.min.js?ver=2.9.14" id="gform_masked_input-js"></script>
 <script defer='defer' src="https://sjsr.ca/wp-content/plugins/gravityforms/assets/js/dist/vendor-theme.min.js?ver=21e5a4db1670166692ac5745329bfc80" id="gform_gravityforms_theme_vendors-js"></script>
 <script id="gform_gravityforms_theme-js-extra">
-var gform_theme_config = {"common":{"form":{"honeypot":{"version_hash":"9aa8766439b42116c53b28914662b9f1"},"ajax":{"ajaxurl":"https:\/\/sjsr.ca\/wp-admin\/admin-ajax.php","ajax_submission_nonce":"010af9f58e","i18n":{"step_announcement":"\u00c9tape %1$s de %2$s, %3$s","unknown_error":"Une erreur inconnue s\u2018est produite lors du traitement de votre demande. Veuillez r\u00e9essayer."}}}},"hmr_dev":"","public_path":"https:\/\/sjsr.ca\/wp-content\/plugins\/gravityforms\/assets\/js\/dist\/","config_nonce":"f6837df62e"};
+var gform_theme_config = {"common":{"form":{"honeypot":{"version_hash":"9aa8766439b42116c53b28914662b9f1"},"ajax":{"ajaxurl":"https:\/\/sjsr.ca\/wp-admin\/admin-ajax.php","ajax_submission_nonce":"010af9f58e","i18n":{"step_announcement":"\u00c9tape %1$s de %2$s, %3$s","unknown_error":"Une erreur inconnue s\u2018est produite lors du traitement de votre demande. Veuillez r\u00e9essayer."}}}},"hmr_dev":"","public_path":"https:\/\/sjsr.ca\/wp-content\/plugins\/gravityforms\/assets\/js\/dist\/","config_nonce":"bbdf5a501c"};
 </script>
 <script defer='defer' src="https://sjsr.ca/wp-content/plugins/gravityforms/assets/js/dist/scripts-theme.min.js?ver=b436459e6f25ebcd9e95ea18e1a35e19" id="gform_gravityforms_theme-js"></script>
 <script src="//maps.googleapis.com/maps/api/js?" id="google-maps-js"></script>
@@ -1025,7 +1025,7 @@ var wpald = {"url":"https:\/\/sjsr.ca\/wp-json\/wp\/v2\/media","type":"jquery","
 </script>
 <script src="https://sjsr.ca/wp-content/plugins/wp-accessibility/js/longdesc.min.js?ver=1.7.0" id="wpa.longdesc-js" defer data-wp-strategy="defer"></script>
 <script id="wp-accessibility-js-extra">
-var wpa = {"skiplinks":{"enabled":true,"output":""},"target":"","tabindex":"1","underline":{"enabled":false,"target":"a"},"dir":"ltr","lang":"fr-FR","titles":"1","labels":"1","wpalabels":{"s":"Recherche","author":"Nom","email":"E-mail","url":"Site web","comment":"Commentaire"},"current":"","errors":"","tracking":"1","ajaxurl":"https:\/\/sjsr.ca\/wp-admin\/admin-ajax.php","security":"c652e9a14b","action":"wpa_stats_action","url":"https:\/\/sjsr.ca\/conseil-municipal\/melanie-dufresne\/","post_id":"9975","continue":""};
+var wpa = {"skiplinks":{"enabled":true,"output":""},"target":"","tabindex":"1","underline":{"enabled":false,"target":"a"},"dir":"ltr","lang":"fr-FR","titles":"1","labels":"1","wpalabels":{"s":"Recherche","author":"Nom","email":"E-mail","url":"Site web","comment":"Commentaire"},"current":"","errors":"","tracking":"1","ajaxurl":"https:\/\/sjsr.ca\/wp-admin\/admin-ajax.php","security":"c51bc71e3a","action":"wpa_stats_action","url":"https:\/\/sjsr.ca\/conseil-municipal\/melanie-dufresne\/","post_id":"9975","continue":""};
 </script>
 <script src="https://sjsr.ca/wp-content/plugins/wp-accessibility/js/wp-accessibility.min.js?ver=1.7.0" id="wp-accessibility-js" defer data-wp-strategy="defer"></script>
 <script src="https://sjsr.ca/wp-content/plugins/bb-plugin/js/jquery.ba-throttle-debounce.min.js?ver=2.9.2.1" id="jquery-throttle-js"></script>
@@ -1046,4 +1046,4 @@ gform.initializeOnLoaded( function() {jQuery(document).trigger("gform_pre_post_r
 <script></script></body>
 </html>
 
-<!-- This website is like a Rocket, isn't it? Performance optimized by WP Rocket. Learn more: https://wp-rocket.me - Debug: cached@1754670957 -->
+<!-- This website is like a Rocket, isn't it? Performance optimized by WP Rocket. Learn more: https://wp-rocket.me - Debug: cached@1754712241 -->

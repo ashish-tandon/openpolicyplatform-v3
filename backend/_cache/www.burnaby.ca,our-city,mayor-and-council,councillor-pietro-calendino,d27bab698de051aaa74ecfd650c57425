@@ -1,6 +1,6 @@
 status: 200
 encoding: UTF-8
-Date: Sat, 09 Aug 2025 01:51:04 GMT
+Date: Sat, 09 Aug 2025 05:45:08 GMT
 Content-Type: text/html; charset=UTF-8
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -16,14 +16,14 @@ x-xss-protection: 1
 strict-transport-security: max-age=31536000
 x-drupal-cache: UNCACHEABLE (response policy)
 vary: Accept-Encoding
-x-request-id: v-4e809d32-74c3-11f0-99f2-5398b535fdf1
+x-request-id: v-01877714-74e4-11f0-a3a6-8be590e4ce18
 x-ah-environment: prod
 Age: 0
 via: varnish
 x-cache: MISS
 cf-cache-status: DYNAMIC
 Server: cloudflare
-CF-RAY: 96c39b2d7851aaad-YYZ
+CF-RAY: 96c4f20e1b3d39c5-YYZ
 
 <!DOCTYPE html>
 <html lang="en" dir="ltr" prefix="content: http://purl.org/rss/1.0/modules/content/  dc: http://purl.org/dc/terms/  foaf: http://xmlns.com/foaf/0.1/  og: http://ogp.me/ns#  rdfs: http://www.w3.org/2000/01/rdf-schema#  schema: http://schema.org/  sioc: http://rdfs.org/sioc/ns#  sioct: http://rdfs.org/sioc/types#  skos: http://www.w3.org/2004/02/skos/core#  xsd: http://www.w3.org/2001/XMLSchema# ">
@@ -1022,7 +1022,7 @@ CF-RAY: 96c39b2d7851aaad-YYZ
       </div>
   <div class="contact__details">
           <div class="contact__detail contact__detail--email">
-        <a href="/cdn-cgi/l/email-protection#26564f435254490845474a4348424f4849664453544847445f084547" rel="noopener" target="_blank"><span class="__cf_email__" data-cfemail="5828313d2c2a37763b39343d363c313637183a2d2a36393a21763b39">[email&#160;protected]</span></a>
+        <a href="/cdn-cgi/l/email-protection#c4b4ada1b0b6abeaa7a5a8a1aaa0adaaab84a6b1b6aaa5a6bdeaa7a5" rel="noopener" target="_blank"><span class="__cf_email__" data-cfemail="9bebf2feefe9f4b5f8faf7fef5fff2f5f4dbf9eee9f5faf9e2b5f8fa">[email&#160;protected]</span></a>
       </div>
               <div class="contact__detail contact__detail--phone">
           <div class="paragraph paragraph--type--phone-number-and-description paragraph--view-mode--default">
@@ -1075,12 +1075,12 @@ CF-RAY: 96c39b2d7851aaad-YYZ
     
   <div class="accordion__item-header">
     <h4 class="accordion__item-title">
-      <button class="accordion__item-toggle accordion__expand-option" role="tab" id="accordion-tab-1409924687" aria-controls="accordion-tabpanel-1409924687"  aria-expanded="false" aria-selected="false">
+      <button class="accordion__item-toggle accordion__expand-option" role="tab" id="accordion-tab-1081913471" aria-controls="accordion-tabpanel-1081913471"  aria-expanded="false" aria-selected="false">
         Biography
       </button>
     </h4>
   </div>
-  <div class="accordion__item-content wysiwyg" role="tabpanel" id="accordion-tabpanel-1409924687" aria-labeledby="accordion-tab-1409924687">
+  <div class="accordion__item-content wysiwyg" role="tabpanel" id="accordion-tabpanel-1081913471" aria-labeledby="accordion-tab-1081913471">
     <p>After coming to Canada from Italy in 1959, I attended Britannia Secondary School in East Vancouver, where I finished my high school in three years and graduated in 1962. I then went to UBC, where I received Honours BA and MA in Modern Languages and was awarded a teaching assistantship. I followed up with post-graduate studies at the University of North Carolina, Chapel Hill, where I was also a teaching assistant. After 3 years and a young family’s obligations, I returned to Burnaby and completed a teaching certificate at SFU. With that, I taught modern languages, math, social studies and ESL at the secondary school level for 30 years.</p>
 
 <p>Along with my wife, Cedna, and our daughter, Victoria Milena–who now is an early childhood educator and school administrator in China–I have called north Burnaby home for 47 years. For most of those years, I’ve been engaged in the community and active in Burnaby politics.</p>
@@ -1103,12 +1103,12 @@ CF-RAY: 96c39b2d7851aaad-YYZ
     
   <div class="accordion__item-header">
     <h4 class="accordion__item-title">
-      <button class="accordion__item-toggle accordion__expand-option" role="tab" id="accordion-tab-730247466" aria-controls="accordion-tabpanel-730247466"  aria-expanded="false" aria-selected="false">
+      <button class="accordion__item-toggle accordion__expand-option" role="tab" id="accordion-tab-512751404" aria-controls="accordion-tabpanel-512751404"  aria-expanded="false" aria-selected="false">
         Current focus
       </button>
     </h4>
   </div>
-  <div class="accordion__item-content wysiwyg" role="tabpanel" id="accordion-tabpanel-730247466" aria-labeledby="accordion-tab-730247466">
+  <div class="accordion__item-content wysiwyg" role="tabpanel" id="accordion-tabpanel-512751404" aria-labeledby="accordion-tab-512751404">
     <p>My focus continues to be on advancing projects and policies that make Burnaby a livable, walkable, inclusive, and inviting community. We live in a growing city; therefore, having a role in concentrating urbanization around major transit nodes and major transit corridors while protecting single and dual-family neighbourhoods is a strongly desirable objective. According to Metro Vancouver population projections, Burnaby is expected to grow to 350,000 people by 2050 or earlier. This will put pressure on whichever council is in power to increase density beyond the four town centres, albeit much gentler, but it may be inevitable that some neighbourhoods will be impacted in the next decades.</p>
 
 <p>As chair of the Planning and Development Committee, I was honoured to chair the Mayor’s Task Force on Community Housing in 2019. The message from the Task Force and from more than 2,500 residents who participated in the consultation process and the ideas workshops, is to facilitate the construction of much more housing for all needs and abilities, market and non-market, from affordable to missing middle to supportive housing for seniors and people with disabilities. The Task Force’s conclusion is for gentler densification all over the city while concentrating a good deal of the growth into the four town centres and to a lesser extent in the urban villages. A Burnaby housing needs study indicates the need for over 15,000 new units of housing of all types in the next 10 years.</p>
@@ -1143,12 +1143,12 @@ CF-RAY: 96c39b2d7851aaad-YYZ
     
   <div class="accordion__item-header">
     <h4 class="accordion__item-title">
-      <button class="accordion__item-toggle accordion__expand-option" role="tab" id="accordion-tab-1008281560" aria-controls="accordion-tabpanel-1008281560"  aria-expanded="false" aria-selected="false">
+      <button class="accordion__item-toggle accordion__expand-option" role="tab" id="accordion-tab-1222411229" aria-controls="accordion-tabpanel-1222411229"  aria-expanded="false" aria-selected="false">
         Memberships and committee appointments
       </button>
     </h4>
   </div>
-  <div class="accordion__item-content wysiwyg" role="tabpanel" id="accordion-tabpanel-1008281560" aria-labeledby="accordion-tab-1008281560">
+  <div class="accordion__item-content wysiwyg" role="tabpanel" id="accordion-tabpanel-1222411229" aria-labeledby="accordion-tab-1222411229">
     <ul>
 	<li data-gc-list-depth="1" data-gc-list-style="bullet">Chair, <a data-entity-substitution="canonical" data-entity-type="node" data-entity-uuid="2a900df0-3c51-4247-a097-a0dcaf1cee36" href="/our-city/meetings-and-public-hearings/advisory-bodies-and-boards" title="Advisory Bodies and Boards">Financial Management Committee</a></li>
 	<li data-gc-list-depth="1" data-gc-list-style="bullet">Chair, <a data-entity-substitution="canonical" data-entity-type="node" data-entity-uuid="2a900df0-3c51-4247-a097-a0dcaf1cee36" href="/our-city/meetings-and-public-hearings/advisory-bodies-and-boards" title="Advisory Bodies and Boards">International Relations and Friendship Cities Committee</a></li>
@@ -1173,12 +1173,12 @@ CF-RAY: 96c39b2d7851aaad-YYZ
     
   <div class="accordion__item-header">
     <h4 class="accordion__item-title">
-      <button class="accordion__item-toggle accordion__expand-option" role="tab" id="accordion-tab-1168343223" aria-controls="accordion-tabpanel-1168343223"  aria-expanded="false" aria-selected="false">
+      <button class="accordion__item-toggle accordion__expand-option" role="tab" id="accordion-tab-170775322" aria-controls="accordion-tabpanel-170775322"  aria-expanded="false" aria-selected="false">
         Community involvement
       </button>
     </h4>
   </div>
-  <div class="accordion__item-content wysiwyg" role="tabpanel" id="accordion-tabpanel-1168343223" aria-labeledby="accordion-tab-1168343223">
+  <div class="accordion__item-content wysiwyg" role="tabpanel" id="accordion-tabpanel-170775322" aria-labeledby="accordion-tab-170775322">
     <ul>
 	<li data-gc-list-depth="1" data-gc-list-style="bullet">School Trustee, 1987-1996 - Chair for 2 years</li>
 	<li data-gc-list-depth="1" data-gc-list-style="bullet">MLA Burnaby North, 1996-2001</li>
@@ -1202,12 +1202,12 @@ CF-RAY: 96c39b2d7851aaad-YYZ
     
   <div class="accordion__item-header">
     <h4 class="accordion__item-title">
-      <button class="accordion__item-toggle accordion__expand-option" role="tab" id="accordion-tab-1142271617" aria-controls="accordion-tabpanel-1142271617"  aria-expanded="false" aria-selected="false">
+      <button class="accordion__item-toggle accordion__expand-option" role="tab" id="accordion-tab-781026789" aria-controls="accordion-tabpanel-781026789"  aria-expanded="false" aria-selected="false">
         Recognitions
       </button>
     </h4>
   </div>
-  <div class="accordion__item-content wysiwyg" role="tabpanel" id="accordion-tabpanel-1142271617" aria-labeledby="accordion-tab-1142271617">
+  <div class="accordion__item-content wysiwyg" role="tabpanel" id="accordion-tabpanel-781026789" aria-labeledby="accordion-tab-781026789">
     <ul>
 	<li>Recipient of Queen Elizabeth II <a href="https://www.gg.ca/en/honours/canadian-honours/directory-honours/commemorative-medals/queen-elizabeth-ii-diamond-jubilee-medal">Diamond Jubilee Medal</a></li>
 	<li>Recipient of <a href="https://www.gg.ca/en/honours/canadian-honours/directory-honours/commemorative-medals/125th-anniversary-confederation-canada-medal">Medal for 125th Anniversary of Confederation of Canada</a></li>
@@ -1322,8 +1322,8 @@ CF-RAY: 96c39b2d7851aaad-YYZ
 <input data-drupal-selector="edit-title" type="hidden" name="title" value=" Councillor Pietro Calendino" />
 <input data-drupal-selector="edit-path" type="hidden" name="path" value="/node/1121" />
 <input data-drupal-selector="edit-alias" type="hidden" name="alias" value="/our-city/mayor-and-council/councillor-pietro-calendino" />
-<input data-drupal-selector="edit-honeypot-time" type="hidden" name="honeypot_time" value="tp9mg_NRu9Kf9YmDqzHjefMbS2PdP0IzhIF493ZHH1g" />
-<input autocomplete="off" data-drupal-selector="form-ki9ludcvgxcszgx-mth1rytw3j20ts7l8wpybfcv990" type="hidden" name="form_build_id" value="form-ki9LuDCVGxcSZGX-MtH1RYTW3j20TS7L8wpybfCV990" />
+<input data-drupal-selector="edit-honeypot-time" type="hidden" name="honeypot_time" value="q8qupW31lPLsCkINMTIKLWAz5bXLHhGOkfqza392q5A" />
+<input autocomplete="off" data-drupal-selector="form-pnwfypnmf4pdrnmxwmo-n6qzzsrapw6yyqdriasnagi" type="hidden" name="form_build_id" value="form-PnwfYPnmF4pdrNmxWmo-N6QzZSRaPW6yyqdRIaSNAGI" />
 <input data-drupal-selector="edit-was-this-useful-form" type="hidden" name="form_id" value="was_this_useful_form" />
 <input data-drupal-selector="edit-antibot-key" type="hidden" name="antibot_key" value="" />
 <div class="url_homepage-textfield js-form-wrapper form-wrapper" style="display: none !important;"><div class="js-form-item form-item js-form-type-textfield form-type-textfield js-form-item-url-homepage form-item-url-homepage">

@@ -1,7 +1,7 @@
 status: 200
 encoding: UTF-8
 Server: nginx
-Date: Sat, 09 Aug 2025 01:50:59 GMT
+Date: Sat, 09 Aug 2025 05:45:04 GMT
 Content-Type: text/html; charset=UTF-8
 Content-Length: 13951
 Connection: keep-alive
@@ -23,10 +23,10 @@ ETag: "1754693740-gzip"
 Content-Encoding: gzip
 X-Request-ID: v-ce9062b4-74aa-11f0-ac6c-bfedbf2c6803
 X-AH-Environment: prod
-Age: 10517
+Age: 24562
 Via: varnish
 X-Cache: HIT
-X-Cache-Hits: 25
+X-Cache-Hits: 45
 Accept-Ranges: bytes
 
 <!DOCTYPE html>

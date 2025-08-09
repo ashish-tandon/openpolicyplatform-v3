@@ -1,6 +1,6 @@
 status: 200
 encoding: UTF-8
-Date: Fri, 08 Aug 2025 21:46:40 GMT
+Date: Sat, 09 Aug 2025 05:24:16 GMT
 Server: Apache
 Cache-Control: max-age=86400, public
 X-Drupal-Dynamic-Cache: MISS
@@ -10,13 +10,13 @@ X-Frame-Options: SAMEORIGIN
 Expires: Sun, 19 Nov 1978 05:00:00 GMT
 Vary: Cookie,Accept-Encoding
 X-Generator: Drupal 10 (https://www.drupal.org)
-X-Drupal-Cache: MISS
+X-Drupal-Cache: HIT
 Strict-Transport-Security: max-age=15768000; includeSubDomains
-Last-Modified: Fri, 08 Aug 2025 21:46:39 GMT
-ETag: "1754689599-gzip"
+Last-Modified: Sat, 09 Aug 2025 05:24:15 GMT
+ETag: "1754717055-gzip"
 Content-Encoding: gzip
 Content-Length: 14098
-Keep-Alive: timeout=5, max=93
+Keep-Alive: timeout=5, max=94
 Connection: Keep-Alive
 Content-Type: text/html; charset=UTF-8
 
