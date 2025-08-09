@@ -1,0 +1,750 @@
+/Users/ashishtandon/Github/Base Code/backend/OpenPolicyAshBack/scraper_testing_framework.py:472: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  start_time=datetime.utcnow()
+2025-08-08 21:17:50,687 - __main__ - INFO - 🚀 Testing Toronto, ON (Simple CSV)
+/Users/ashishtandon/Github/Base Code/backend/OpenPolicyAshBack/scraper_testing_framework.py:515: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  result.end_time = datetime.utcnow()
+2025-08-08 21:17:50,774 - __main__ - INFO - ✅ Toronto, ON: Collected 5 records in 0.00s
+2025-08-08 21:17:50,775 - __main__ - INFO - 🚀 Starting comprehensive scraper testing (OPTIMIZED PARALLEL)
+2025-08-08 21:17:50,775 - __main__ - INFO - Max sample records per scraper: 5
+2025-08-08 21:17:50,775 - __main__ - INFO - Worker range: 10-20 (dynamic)
+2025-08-08 21:17:50,775 - __main__ - INFO - System: 16 CPUs, 64.0GB RAM
+2025-08-08 21:17:50,775 - __main__ - INFO - 
+🔄 Starting PARLIAMENTARY scrapers...
+2025-08-08 21:17:50,775 - __main__ - INFO - 
+============================================================
+2025-08-08 21:17:50,775 - __main__ - INFO - Testing PARLIAMENTARY scrapers (OPTIMIZED PARALLEL)
+2025-08-08 21:17:50,775 - __main__ - INFO - ============================================================
+2025-08-08 21:17:50,775 - __main__ - INFO - Found 1 scrapers to test
+2025-08-08 21:17:50,775 - __main__ - INFO - 📊 Resource Analysis: CPU 0.0%, Memory 51.7%
+2025-08-08 21:17:50,775 - __main__ - INFO - 📊 Scraper Sizes: Small 0, Medium 0, Large 1
+2025-08-08 21:17:50,775 - __main__ - INFO - 📊 Optimal Workers: 1 (range: 10-20)
+/Users/ashishtandon/Github/Base Code/backend/OpenPolicyAshBack/scraper_testing_framework.py:354: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  start_time=datetime.utcnow()
+2025-08-08 21:17:50,775 - __main__ - INFO - 🚀 Testing Federal Parliament (parliamentary, large)
+/Users/ashishtandon/Github/Base Code/backend/OpenPolicyAshBack/scraper_testing_framework.py:365: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  result.end_time = datetime.utcnow()
+2025-08-08 21:17:50,775 - __main__ - INFO - Progress: 0/1 scrapers completed (large)
+2025-08-08 21:17:50,775 - __main__ - INFO - ✅ Completed testing 1 parliamentary scrapers with 1 workers
+2025-08-08 21:17:50,775 - __main__ - INFO - 📊 PARLIAMENTARY: 0 successful, 1 failed
+2025-08-08 21:17:50,775 - __main__ - INFO - 📊 Sizes: Small 0, Medium 0, Large 1
+2025-08-08 21:17:50,775 - __main__ - INFO - 
+🔄 Starting PROVINCIAL scrapers...
+2025-08-08 21:17:50,775 - __main__ - INFO - 
+============================================================
+2025-08-08 21:17:50,775 - __main__ - INFO - Testing PROVINCIAL scrapers (OPTIMIZED PARALLEL)
+2025-08-08 21:17:50,775 - __main__ - INFO - ============================================================
+2025-08-08 21:17:50,775 - __main__ - INFO - Found 14 scrapers to test
+2025-08-08 21:17:50,775 - __main__ - INFO - 📊 Resource Analysis: CPU 0.0%, Memory 51.7%
+2025-08-08 21:17:50,775 - __main__ - INFO - 📊 Scraper Sizes: Small 9, Medium 2, Large 3
+2025-08-08 21:17:50,775 - __main__ - INFO - 📊 Optimal Workers: 12 (range: 10-20)
+2025-08-08 21:17:50,776 - __main__ - INFO - 🚀 Testing Canada Federal (provincial, large)
+2025-08-08 21:17:50,776 - __main__ - INFO - 🚀 Testing Ontario (provincial, large)
+2025-08-08 21:17:50,776 - __main__ - INFO - 🚀 Testing Quebec (provincial, large)
+2025-08-08 21:17:50,776 - __main__ - INFO - 🚀 Testing British Columbia (provincial, medium)
+2025-08-08 21:17:50,776 - __main__ - INFO - 🚀 Testing Alberta (provincial, medium)
+2025-08-08 21:17:50,776 - __main__ - INFO - 🚀 Testing Saskatchewan (provincial, small)
+2025-08-08 21:17:50,776 - __main__ - INFO - 🚀 Testing Manitoba (provincial, small)
+2025-08-08 21:17:50,808 - __main__ - INFO - 🚀 Testing Nova Scotia (provincial, small)
+2025-08-08 21:17:50,809 - __main__ - INFO - 🚀 Testing New Brunswick (provincial, small)
+2025-08-08 21:17:50,809 - __main__ - INFO - 🚀 Testing Prince Edward Island (provincial, small)
+2025-08-08 21:17:50,809 - scrapelib - INFO - GET - 'http://www.assnat.qc.ca/fr/deputes/index.html'
+2025-08-08 21:17:50,809 - scrapelib - INFO - GET - 'https://www.ola.org/en/members/current/contact-information'
+2025-08-08 21:17:50,809 - __main__ - INFO - 🚀 Testing Newfoundland and Labrador (provincial, small)
+2025-08-08 21:17:50,809 - __main__ - INFO - 🚀 Testing Northwest Territories (provincial, small)
+2025-08-08 21:17:50,810 - scrapelib - INFO - GET - 'https://www.assembly.ab.ca/members/members-of-the-legislative-assembly'
+2025-08-08 21:17:50,810 - scrapelib - INFO - GET - 'https://nslegislature.ca/members/profiles'
+2025-08-08 21:17:50,810 - scrapelib - INFO - POST - 'https://lims.leg.bc.ca/graphql'
+2025-08-08 21:17:50,811 - scrapelib - INFO - GET - 'https://www.legnb.ca/en/members/current'
+2025-08-08 21:17:50,811 - scrapelib - INFO - GET - 'http://www.legassembly.sk.ca/mlas/'
+2025-08-08 21:17:50,812 - scrapelib - INFO - GET - 'https://www.assembly.pe.ca/members'
+2025-08-08 21:17:50,812 - scrapelib - INFO - GET - 'http://www.gov.mb.ca/legislature/members/mla_list_alphabetical.html'
+2025-08-08 21:17:50,813 - scrapelib - INFO - GET - 'https://www.ntlegislativeassembly.ca/members/members-legislative-assembly/members'
+2025-08-08 21:17:50,813 - scrapelib - INFO - GET - 'https://www.assembly.nl.ca/js/members-index.js'
+2025-08-08 21:17:50,815 - scrapelib - INFO - GET - 'https://www.ourcommons.ca/Members/en/search?caucusId=all&province=all&gender=M'
+2025-08-08 21:17:50,883 - scrapelib - INFO - GET - 'https://www.ola.org/en/members/all/tyler-allsopp'
+/Users/ashishtandon/Github/Base Code/backend/OpenPolicyAshBack/scraper_testing_framework.py:447: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  result.end_time = datetime.utcnow()
+2025-08-08 21:17:50,903 - __main__ - INFO - ✅ British Columbia: Collected 5 records in 0.09s
+2025-08-08 21:17:50,903 - __main__ - INFO - 🚀 Testing Nunavut (provincial, small)
+2025-08-08 21:17:50,903 - __main__ - ERROR - ❌ Quebec: Scraping error - HTTPSConnectionPool(host='www.assnat.qc.ca', port=443): Max retries exceeded with url: /fr/deputes/index.html (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1028)')))
+2025-08-08 21:17:50,913 - __main__ - ERROR - ❌ Quebec: Scraping failed - HTTPSConnectionPool(host='www.assnat.qc.ca', port=443): Max retries exceeded with url: /fr/deputes/index.html (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1028)')))
+/Users/ashishtandon/Github/Base Code/backend/OpenPolicyAshBack/scraper_testing_framework.py:459: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  result.end_time = datetime.utcnow()
+2025-08-08 21:17:50,913 - __main__ - ERROR - ❌ Quebec: Failed - HTTPSConnectionPool(host='www.assnat.qc.ca', port=443): Max retries exceeded with url: /fr/deputes/index.html (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1028)')))
+2025-08-08 21:17:50,914 - __main__ - INFO - 🚀 Testing Yukon (provincial, small)
+2025-08-08 21:17:50,914 - scrapelib - INFO - GET - 'https://www.ourcommons.ca/Members/en/ziad-aboultaif(89156)'
+2025-08-08 21:17:50,914 - scrapelib - INFO - GET - 'https://www.assembly.nu.ca/members/mla'
+2025-08-08 21:17:50,919 - scrapelib - INFO - GET - 'http://www.legassembly.sk.ca/mlas/member-details?first=Chris&last=Beaudry'
+2025-08-08 21:17:50,923 - scrapelib - INFO - GET - 'https://www.ntlegislativeassembly.ca/meet-members/mla/caitlin-cleveland'
+2025-08-08 21:17:50,928 - __main__ - ERROR - Database error for British Columbia: (psycopg2.errors.InsufficientPrivilege) permission denied for table jurisdictions
+
+[SQL: SELECT jurisdictions.id AS jurisdictions_id, jurisdictions.name AS jurisdictions_name, jurisdictions.jurisdiction_type AS jurisdictions_jurisdiction_type, jurisdictions.created_at AS jurisdictions_created_at, jurisdictions.updated_at AS jurisdictions_updated_at 
+FROM jurisdictions 
+WHERE jurisdictions.name = %(name_1)s 
+ LIMIT %(param_1)s]
+[parameters: {'name_1': 'British Columbia', 'param_1': 1}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-08-08 21:17:50,928 - __main__ - INFO - Progress: 0/14 scrapers completed (medium)
+2025-08-08 21:17:50,928 - __main__ - INFO - Progress: 1/14 scrapers completed (large)
+2025-08-08 21:17:50,940 - scrapelib - INFO - GET - 'https://www.assembly.pe.ca/members/gilles-arsenault'
+2025-08-08 21:17:50,988 - scrapelib - INFO - GET - 'https://www.assembly.nu.ca/node/2664'
+2025-08-08 21:17:50,988 - scrapelib - INFO - GET - 'https://www.legnb.ca/en/members/current/165/ames-richard'
+2025-08-08 21:17:51,082 - __main__ - INFO - ✅ Newfoundland and Labrador: Collected 5 records in 0.27s
+2025-08-08 21:17:51,083 - __main__ - ERROR - Database error for Newfoundland and Labrador: (psycopg2.errors.InsufficientPrivilege) permission denied for table jurisdictions
+
+[SQL: SELECT jurisdictions.id AS jurisdictions_id, jurisdictions.name AS jurisdictions_name, jurisdictions.jurisdiction_type AS jurisdictions_jurisdiction_type, jurisdictions.created_at AS jurisdictions_created_at, jurisdictions.updated_at AS jurisdictions_updated_at 
+FROM jurisdictions 
+WHERE jurisdictions.name = %(name_1)s 
+ LIMIT %(param_1)s]
+[parameters: {'name_1': 'Newfoundland and Labrador', 'param_1': 1}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-08-08 21:17:51,083 - __main__ - INFO - Progress: 2/14 scrapers completed (small)
+2025-08-08 21:17:51,084 - scrapelib - INFO - GET - 'http://www.gov.mb.ca/legislature/members/info/asagwara.html'
+2025-08-08 21:17:51,444 - scrapelib - INFO - GET - 'https://nslegislature.ca/members/profiles/barbara-adams'
+2025-08-08 21:17:51,509 - scrapelib - INFO - GET - 'https://www.assembly.ab.ca/txt/mla_home/contacts.csv'
+2025-08-08 21:17:51,850 - scrapelib - INFO - GET - 'http://www.legassembly.sk.ca/mlas/member-details?first=Carla&last=Beck'
+2025-08-08 21:17:51,851 - scrapelib - INFO - GET - 'https://www.ola.org/en/members/all/deepak-anand'
+2025-08-08 21:17:51,863 - scrapelib - INFO - GET - 'https://www.legnb.ca/en/members/current/4/arseneault-guy'
+2025-08-08 21:17:51,865 - scrapelib - INFO - GET - 'https://www.assembly.pe.ca/members/zack-bell'
+2025-08-08 21:17:51,883 - scrapelib - INFO - GET - 'https://www.ntlegislativeassembly.ca/meet-members/mla/caroline-wawzonek'
+2025-08-08 21:17:51,886 - scrapelib - INFO - GET - 'https://www.assembly.ab.ca/members/members-of-the-legislative-assembly/member-information?mid=0920&legl=31&from=mla_home'
+2025-08-08 21:17:51,944 - scrapelib - INFO - GET - 'https://www.assembly.nu.ca/node/9703'
+2025-08-08 21:17:52,006 - __main__ - INFO - ✅ Yukon: Collected 5 records in 1.09s
+2025-08-08 21:17:52,007 - __main__ - ERROR - Database error for Yukon: (psycopg2.errors.InsufficientPrivilege) permission denied for table jurisdictions
+
+[SQL: SELECT jurisdictions.id AS jurisdictions_id, jurisdictions.name AS jurisdictions_name, jurisdictions.jurisdiction_type AS jurisdictions_jurisdiction_type, jurisdictions.created_at AS jurisdictions_created_at, jurisdictions.updated_at AS jurisdictions_updated_at 
+FROM jurisdictions 
+WHERE jurisdictions.name = %(name_1)s 
+ LIMIT %(param_1)s]
+[parameters: {'name_1': 'Yukon', 'param_1': 1}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-08-08 21:17:52,007 - __main__ - INFO - Progress: 3/14 scrapers completed (small)
+2025-08-08 21:17:52,029 - scrapelib - INFO - GET - 'http://www.gov.mb.ca/legislature/members/info/balcaen.html'
+2025-08-08 21:17:52,063 - scrapelib - INFO - GET - 'https://www.ourcommons.ca/Content/Parliamentarians/Images/OfficialMPPhotos/45/AboultaifZiad_CPC.jpg'
+2025-08-08 21:17:52,113 - scrapelib - INFO - GET - 'https://nslegislature.ca/members/profiles/scott-armstrong'
+2025-08-08 21:17:52,855 - scrapelib - INFO - GET - 'http://www.legassembly.sk.ca/mlas/member-details?first=Brent&last=Blakley'
+2025-08-08 21:17:52,855 - scrapelib - INFO - GET - 'https://www.ourcommons.ca/Members/en/scott-aitchison(105340)'
+2025-08-08 21:17:52,856 - scrapelib - INFO - GET - 'https://www.ola.org/en/members/all/teresa-j-armstrong'
+2025-08-08 21:17:52,864 - scrapelib - INFO - GET - 'https://www.legnb.ca/en/members/current/16/austin-kris'
+2025-08-08 21:17:52,868 - scrapelib - INFO - GET - 'https://www.assembly.pe.ca/members/karla-bernard'
+2025-08-08 21:17:52,884 - scrapelib - INFO - GET - 'https://www.ntlegislativeassembly.ca/meet-members/mla/daniel-mcneely'
+2025-08-08 21:17:52,957 - scrapelib - INFO - GET - 'https://www.assembly.nu.ca/node/6492'
+2025-08-08 21:17:53,025 - scrapelib - INFO - GET - 'http://www.gov.mb.ca/legislature/members/info/bereza.html'
+2025-08-08 21:17:53,124 - scrapelib - INFO - GET - 'https://nslegislature.ca/members/profiles/jill-balser'
+2025-08-08 21:17:53,531 - scrapelib - INFO - GET - 'https://www.assembly.ab.ca/members/members-of-the-legislative-assembly/member-information?mid=0894&legl=31&from=mla_home'
+2025-08-08 21:17:53,859 - scrapelib - INFO - GET - 'http://www.legassembly.sk.ca/mlas/member-details?first=Bhajan&last=Brar'
+2025-08-08 21:17:53,860 - scrapelib - INFO - GET - 'https://www.ola.org/en/members/all/aris-babikian'
+2025-08-08 21:17:53,866 - scrapelib - INFO - GET - 'https://www.ourcommons.ca/Content/Parliamentarians/Images/OfficialMPPhotos/44/AitchisonScott_CPC.jpg'
+2025-08-08 21:17:53,873 - scrapelib - INFO - GET - 'https://www.assembly.pe.ca/members/peter-bevan-baker'
+2025-08-08 21:17:53,874 - scrapelib - INFO - GET - 'https://www.legnb.ca/en/members/current/162/bockus-kathy'
+2025-08-08 21:17:53,886 - scrapelib - INFO - GET - 'https://www.ntlegislativeassembly.ca/meet-members/mla/denny-rodgers'
+2025-08-08 21:17:53,950 - scrapelib - INFO - GET - 'https://www.assembly.nu.ca/node/9695'
+2025-08-08 21:17:54,031 - scrapelib - INFO - GET - 'http://www.gov.mb.ca/legislature/members/info/blashko.html'
+2025-08-08 21:17:54,100 - scrapelib - INFO - GET - 'https://nslegislature.ca/members/profiles/danielle-barkhouse'
+2025-08-08 21:17:54,498 - scrapelib - INFO - GET - 'https://www.assembly.ab.ca/members/members-of-the-legislative-assembly/member-information?mid=0898&legl=31&from=mla_home'
+2025-08-08 21:17:54,861 - scrapelib - INFO - GET - 'http://www.legassembly.sk.ca/mlas/member-details?first=Kim&last=Breckner'
+2025-08-08 21:17:54,862 - scrapelib - INFO - GET - 'https://www.ourcommons.ca/Members/en/fares-al-soud(123033)'
+2025-08-08 21:17:54,862 - scrapelib - INFO - GET - 'https://www.ola.org/en/members/all/robert-bailey'
+2025-08-08 21:17:54,867 - scrapelib - INFO - GET - 'https://www.legnb.ca/en/members/current/208/boudreau-lyne-chantal'
+2025-08-08 21:17:54,876 - scrapelib - INFO - GET - 'https://www.assembly.pe.ca/members/jill-burridge'
+2025-08-08 21:17:54,887 - scrapelib - INFO - GET - 'https://www.ntlegislativeassembly.ca/meet-members/mla/george-nerysoo'
+2025-08-08 21:17:54,951 - scrapelib - INFO - GET - 'https://www.assembly.nu.ca/node/2669'
+2025-08-08 21:17:55,031 - scrapelib - INFO - GET - 'http://www.gov.mb.ca/legislature/members/info/brar.html'
+2025-08-08 21:17:55,119 - scrapelib - INFO - GET - 'https://nslegislature.ca/members/profiles/trevor-boudreau'
+2025-08-08 21:17:55,618 - scrapelib - INFO - GET - 'https://www.assembly.ab.ca/members/members-of-the-legislative-assembly/member-information?mid=0961&legl=31&from=mla_home'
+2025-08-08 21:17:55,860 - __main__ - INFO - ✅ Saskatchewan: Collected 5 records in 5.05s
+2025-08-08 21:17:55,862 - __main__ - ERROR - Database error for Saskatchewan: (psycopg2.errors.InsufficientPrivilege) permission denied for table jurisdictions
+
+[SQL: SELECT jurisdictions.id AS jurisdictions_id, jurisdictions.name AS jurisdictions_name, jurisdictions.jurisdiction_type AS jurisdictions_jurisdiction_type, jurisdictions.created_at AS jurisdictions_created_at, jurisdictions.updated_at AS jurisdictions_updated_at 
+FROM jurisdictions 
+WHERE jurisdictions.name = %(name_1)s 
+ LIMIT %(param_1)s]
+[parameters: {'name_1': 'Saskatchewan', 'param_1': 1}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-08-08 21:17:55,862 - __main__ - INFO - Progress: 4/14 scrapers completed (small)
+2025-08-08 21:17:55,868 - __main__ - INFO - ✅ Ontario: Collected 5 records in 5.06s
+2025-08-08 21:17:55,869 - __main__ - ERROR - Database error for Ontario: (psycopg2.errors.InsufficientPrivilege) permission denied for table jurisdictions
+
+[SQL: SELECT jurisdictions.id AS jurisdictions_id, jurisdictions.name AS jurisdictions_name, jurisdictions.jurisdiction_type AS jurisdictions_jurisdiction_type, jurisdictions.created_at AS jurisdictions_created_at, jurisdictions.updated_at AS jurisdictions_updated_at 
+FROM jurisdictions 
+WHERE jurisdictions.name = %(name_1)s 
+ LIMIT %(param_1)s]
+[parameters: {'name_1': 'Ontario', 'param_1': 1}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-08-08 21:17:55,869 - __main__ - INFO - Progress: 5/14 scrapers completed (large)
+2025-08-08 21:17:55,871 - scrapelib - INFO - GET - 'https://www.ourcommons.ca/Content/Parliamentarians/Images/OfficialMPPhotos/45/AlSoudFares_Lib.jpg'
+2025-08-08 21:17:55,871 - __main__ - INFO - ✅ New Brunswick: Collected 5 records in 5.06s
+2025-08-08 21:17:55,872 - __main__ - ERROR - Database error for New Brunswick: (psycopg2.errors.InsufficientPrivilege) permission denied for table jurisdictions
+
+[SQL: SELECT jurisdictions.id AS jurisdictions_id, jurisdictions.name AS jurisdictions_name, jurisdictions.jurisdiction_type AS jurisdictions_jurisdiction_type, jurisdictions.created_at AS jurisdictions_created_at, jurisdictions.updated_at AS jurisdictions_updated_at 
+FROM jurisdictions 
+WHERE jurisdictions.name = %(name_1)s 
+ LIMIT %(param_1)s]
+[parameters: {'name_1': 'New Brunswick', 'param_1': 1}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-08-08 21:17:55,872 - __main__ - INFO - Progress: 6/14 scrapers completed (small)
+2025-08-08 21:17:55,892 - __main__ - INFO - ✅ Prince Edward Island: Collected 5 records in 5.08s
+2025-08-08 21:17:55,893 - __main__ - ERROR - Database error for Prince Edward Island: (psycopg2.errors.InsufficientPrivilege) permission denied for table jurisdictions
+
+[SQL: SELECT jurisdictions.id AS jurisdictions_id, jurisdictions.name AS jurisdictions_name, jurisdictions.jurisdiction_type AS jurisdictions_jurisdiction_type, jurisdictions.created_at AS jurisdictions_created_at, jurisdictions.updated_at AS jurisdictions_updated_at 
+FROM jurisdictions 
+WHERE jurisdictions.name = %(name_1)s 
+ LIMIT %(param_1)s]
+[parameters: {'name_1': 'Prince Edward Island', 'param_1': 1}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-08-08 21:17:55,893 - __main__ - INFO - Progress: 7/14 scrapers completed (small)
+2025-08-08 21:17:55,894 - __main__ - INFO - ✅ Northwest Territories: Collected 5 records in 5.08s
+2025-08-08 21:17:55,895 - __main__ - ERROR - Database error for Northwest Territories: (psycopg2.errors.InsufficientPrivilege) permission denied for table jurisdictions
+
+[SQL: SELECT jurisdictions.id AS jurisdictions_id, jurisdictions.name AS jurisdictions_name, jurisdictions.jurisdiction_type AS jurisdictions_jurisdiction_type, jurisdictions.created_at AS jurisdictions_created_at, jurisdictions.updated_at AS jurisdictions_updated_at 
+FROM jurisdictions 
+WHERE jurisdictions.name = %(name_1)s 
+ LIMIT %(param_1)s]
+[parameters: {'name_1': 'Northwest Territories', 'param_1': 1}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-08-08 21:17:55,895 - __main__ - INFO - Progress: 8/14 scrapers completed (small)
+2025-08-08 21:17:55,964 - __main__ - INFO - ✅ Nunavut: Collected 5 records in 5.05s
+2025-08-08 21:17:55,964 - __main__ - ERROR - Database error for Nunavut: (psycopg2.errors.InsufficientPrivilege) permission denied for table jurisdictions
+
+[SQL: SELECT jurisdictions.id AS jurisdictions_id, jurisdictions.name AS jurisdictions_name, jurisdictions.jurisdiction_type AS jurisdictions_jurisdiction_type, jurisdictions.created_at AS jurisdictions_created_at, jurisdictions.updated_at AS jurisdictions_updated_at 
+FROM jurisdictions 
+WHERE jurisdictions.name = %(name_1)s 
+ LIMIT %(param_1)s]
+[parameters: {'name_1': 'Nunavut', 'param_1': 1}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-08-08 21:17:55,965 - __main__ - INFO - Progress: 9/14 scrapers completed (small)
+2025-08-08 21:17:56,038 - __main__ - INFO - ✅ Manitoba: Collected 5 records in 5.23s
+2025-08-08 21:17:56,039 - __main__ - ERROR - Database error for Manitoba: (psycopg2.errors.InsufficientPrivilege) permission denied for table jurisdictions
+
+[SQL: SELECT jurisdictions.id AS jurisdictions_id, jurisdictions.name AS jurisdictions_name, jurisdictions.jurisdiction_type AS jurisdictions_jurisdiction_type, jurisdictions.created_at AS jurisdictions_created_at, jurisdictions.updated_at AS jurisdictions_updated_at 
+FROM jurisdictions 
+WHERE jurisdictions.name = %(name_1)s 
+ LIMIT %(param_1)s]
+[parameters: {'name_1': 'Manitoba', 'param_1': 1}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-08-08 21:17:56,039 - __main__ - INFO - Progress: 10/14 scrapers completed (small)
+2025-08-08 21:17:56,113 - __main__ - INFO - ✅ Nova Scotia: Collected 5 records in 5.30s
+2025-08-08 21:17:56,114 - __main__ - ERROR - Database error for Nova Scotia: (psycopg2.errors.InsufficientPrivilege) permission denied for table jurisdictions
+
+[SQL: SELECT jurisdictions.id AS jurisdictions_id, jurisdictions.name AS jurisdictions_name, jurisdictions.jurisdiction_type AS jurisdictions_jurisdiction_type, jurisdictions.created_at AS jurisdictions_created_at, jurisdictions.updated_at AS jurisdictions_updated_at 
+FROM jurisdictions 
+WHERE jurisdictions.name = %(name_1)s 
+ LIMIT %(param_1)s]
+[parameters: {'name_1': 'Nova Scotia', 'param_1': 1}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-08-08 21:17:56,115 - __main__ - INFO - Progress: 11/14 scrapers completed (small)
+2025-08-08 21:17:56,466 - scrapelib - INFO - GET - 'https://www.assembly.ab.ca/members/members-of-the-legislative-assembly/member-information?mid=0886&legl=31&from=mla_home'
+2025-08-08 21:17:56,898 - scrapelib - INFO - GET - 'https://www.ourcommons.ca/Members/en/dan-albas(72029)'
+2025-08-08 21:17:57,695 - __main__ - INFO - ✅ Alberta: Collected 5 records in 6.89s
+2025-08-08 21:17:57,696 - __main__ - ERROR - Database error for Alberta: (psycopg2.errors.InsufficientPrivilege) permission denied for table jurisdictions
+
+[SQL: SELECT jurisdictions.id AS jurisdictions_id, jurisdictions.name AS jurisdictions_name, jurisdictions.jurisdiction_type AS jurisdictions_jurisdiction_type, jurisdictions.created_at AS jurisdictions_created_at, jurisdictions.updated_at AS jurisdictions_updated_at 
+FROM jurisdictions 
+WHERE jurisdictions.name = %(name_1)s 
+ LIMIT %(param_1)s]
+[parameters: {'name_1': 'Alberta', 'param_1': 1}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-08-08 21:17:57,696 - __main__ - INFO - Progress: 12/14 scrapers completed (medium)
+2025-08-08 21:17:58,954 - scrapelib - INFO - GET - 'https://www.ourcommons.ca/Content/Parliamentarians/Images/OfficialMPPhotos/44/AlbasDan_CPC.jpg'
+2025-08-08 21:17:59,418 - scrapelib - INFO - GET - 'https://www.ourcommons.ca/Members/en/shafqat-ali(110339)'
+2025-08-08 21:17:59,986 - scrapelib - INFO - GET - 'https://www.ourcommons.ca/Content/Parliamentarians/Images/OfficialMPPhotos/45/AliShafqat_Lib.jpg'
+2025-08-08 21:18:00,991 - __main__ - INFO - ✅ Canada Federal: Collected 5 records in 10.21s
+2025-08-08 21:18:00,992 - __main__ - ERROR - Database error for Canada Federal: (psycopg2.errors.InsufficientPrivilege) permission denied for table jurisdictions
+
+[SQL: SELECT jurisdictions.id AS jurisdictions_id, jurisdictions.name AS jurisdictions_name, jurisdictions.jurisdiction_type AS jurisdictions_jurisdiction_type, jurisdictions.created_at AS jurisdictions_created_at, jurisdictions.updated_at AS jurisdictions_updated_at 
+FROM jurisdictions 
+WHERE jurisdictions.name = %(name_1)s 
+ LIMIT %(param_1)s]
+[parameters: {'name_1': 'Canada Federal', 'param_1': 1}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-08-08 21:18:00,992 - __main__ - INFO - Progress: 13/14 scrapers completed (large)
+2025-08-08 21:18:00,992 - __main__ - INFO - ✅ Completed testing 14 provincial scrapers with 12 workers
+2025-08-08 21:18:00,992 - __main__ - INFO - 📊 PROVINCIAL: 13 successful, 1 failed
+2025-08-08 21:18:00,992 - __main__ - INFO - 📊 Sizes: Small 9, Medium 2, Large 3
+2025-08-08 21:18:00,992 - __main__ - INFO - 
+🔄 Starting MUNICIPAL scrapers...
+2025-08-08 21:18:00,992 - __main__ - INFO - 
+============================================================
+2025-08-08 21:18:00,992 - __main__ - INFO - Testing MUNICIPAL scrapers (OPTIMIZED PARALLEL)
+2025-08-08 21:18:00,992 - __main__ - INFO - ============================================================
+2025-08-08 21:18:00,992 - __main__ - WARNING - scrapers-ca directory not found
+2025-08-08 21:18:00,992 - __main__ - INFO - Found 33 scrapers to test
+2025-08-08 21:18:00,992 - __main__ - INFO - 📊 Resource Analysis: CPU 22.4%, Memory 52.7%
+2025-08-08 21:18:00,992 - __main__ - INFO - 📊 Scraper Sizes: Small 21, Medium 10, Large 2
+2025-08-08 21:18:00,992 - __main__ - INFO - 📊 Optimal Workers: 12 (range: 10-20)
+2025-08-08 21:18:00,992 - __main__ - INFO - 🚀 Testing Toronto, ON (municipal, large)
+2025-08-08 21:18:00,993 - __main__ - INFO - 🚀 Testing Montreal, QC (municipal, large)
+2025-08-08 21:18:00,993 - __main__ - INFO - 🚀 Testing Vancouver, BC (municipal, medium)
+2025-08-08 21:18:00,993 - __main__ - INFO - 🚀 Testing Calgary, AB (municipal, medium)
+2025-08-08 21:18:00,993 - __main__ - INFO - 🚀 Testing Edmonton, AB (municipal, medium)
+2025-08-08 21:18:00,993 - __main__ - INFO - 🚀 Testing Ottawa, ON (municipal, medium)
+2025-08-08 21:18:00,993 - __main__ - INFO - 🚀 Testing Mississauga, ON (municipal, medium)
+2025-08-08 21:18:00,993 - __main__ - INFO - 🚀 Testing Brampton, ON (municipal, medium)
+2025-08-08 21:18:00,993 - __main__ - INFO - 🚀 Testing Hamilton, ON (municipal, medium)
+2025-08-08 21:18:00,993 - __main__ - INFO - 🚀 Testing Kitchener, ON (municipal, small)
+2025-08-08 21:18:00,993 - __main__ - INFO - 🚀 Testing London, ON (municipal, small)
+2025-08-08 21:18:00,993 - __main__ - INFO - 🚀 Testing Windsor, ON (municipal, small)
+2025-08-08 21:18:00,994 - scrapelib - INFO - GET - 'https://donnees.montreal.ca/dataset/381d74ca-dadd-459f-95c9-db255b5f4480/resource/ce1315a3-50ee-48d0-a0f0-9bcc15f65643/download/liste_elus_montreal.csv'
+2025-08-08 21:18:00,994 - scrapelib - INFO - GET - 'https://opendata.vancouver.ca/explore/dataset/elected-officials-contact-information/download/?format=csv&timezone=America/New_York&use_labels_for_header=true&csv_separator=%3B'
+2025-08-08 21:18:00,994 - scrapelib - INFO - GET - 'https://www.calgary.ca/council/councillors-and-wards.html'
+2025-08-08 21:18:00,994 - scrapelib - INFO - GET - 'https://ckan0.cf.opendata.inter.prod-toronto.ca/dataset/27aa4651-4548-4e57-bf00-53a346931251/resource/dea217a2-f7c1-4e62-aec1-48fffaad1170/download/2022-2026%20Elected%20Officials%20Contact%20Info.csv'
+2025-08-08 21:18:00,994 - scrapelib - INFO - GET - 'https://www.edmonton.ca/city_government/city_organization/the-mayor'
+2025-08-08 21:18:00,994 - scrapelib - INFO - GET - 'http://www.mississauga.ca/portal/cityhall/mayorandcouncil'
+2025-08-08 21:18:00,995 - scrapelib - INFO - GET - 'https://www.arcgis.com/sharing/rest/content/items/a5e9dc2425274bb796d3ded47b0d7b00/data'
+2025-08-08 21:18:00,995 - scrapelib - INFO - GET - 'https://opendata.arcgis.com/datasets/c6ba9407f9ec4771b575a3c5ee3f89d3_0.csv'
+2025-08-08 21:18:00,995 - scrapelib - INFO - GET - 'https://www.arcgis.com/sharing/rest/content/items/6345aeda8fa74917a2500e66a3bb432e/data'
+2025-08-08 21:18:00,996 - scrapelib - INFO - GET - 'https://www.hamilton.ca/city-council/council-committee/city-council-members/city-councillors'
+2025-08-08 21:18:00,996 - scrapelib - INFO - GET - 'https://app2.kitchener.ca/appdocs/opendata/staticdatasets/Elected_Officials.csv'
+2025-08-08 21:18:00,998 - scrapelib - INFO - POST - 'https://www.citywindsor.ca/v1/Search/portal?searchText='
+2025-08-08 21:18:01,041 - __main__ - INFO - ✅ Calgary, AB: Collected 5 records in 0.05s
+2025-08-08 21:18:01,041 - __main__ - INFO - 🚀 Testing Quebec City, QC (municipal, medium)
+2025-08-08 21:18:01,042 - __main__ - ERROR - Database error for Calgary, AB: (psycopg2.errors.InsufficientPrivilege) permission denied for table jurisdictions
+
+[SQL: SELECT jurisdictions.id AS jurisdictions_id, jurisdictions.name AS jurisdictions_name, jurisdictions.jurisdiction_type AS jurisdictions_jurisdiction_type, jurisdictions.created_at AS jurisdictions_created_at, jurisdictions.updated_at AS jurisdictions_updated_at 
+FROM jurisdictions 
+WHERE jurisdictions.name = %(name_1)s 
+ LIMIT %(param_1)s]
+[parameters: {'name_1': 'Calgary, AB', 'param_1': 1}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-08-08 21:18:01,042 - __main__ - INFO - Progress: 0/33 scrapers completed (medium)
+2025-08-08 21:18:01,055 - scrapelib - INFO - GET - 'https://www.ville.quebec.qc.ca/apropos/gouvernance/conseil-municipal/membres.aspx'
+2025-08-08 21:18:01,057 - scrapelib - WARNING - sleeping for 10 seconds before retry
+2025-08-08 21:18:01,059 - scrapelib - INFO - GET - 'https://www.mississauga.ca/council/city-council-members/ward-1-councillor-stephen-dasko/'
+2025-08-08 21:18:01,066 - scrapelib - INFO - GET - 'https://www.citywindsor.ca/directory/mayor-drew-dilkens'
+2025-08-08 21:18:01,090 - scrapelib - INFO - GET - 'https://www.edmonton.ca/city_government/city_organization/mayor/contact-the-mayor'
+2025-08-08 21:18:01,106 - __main__ - ERROR - ❌ London, ON: Scraping error - 'str' object has no attribute 'classification'
+2025-08-08 21:18:01,106 - __main__ - ERROR - ❌ London, ON: Scraping failed - 'str' object has no attribute 'classification'
+2025-08-08 21:18:01,106 - __main__ - ERROR - ❌ London, ON: Failed - 'str' object has no attribute 'classification'
+2025-08-08 21:18:01,106 - __main__ - INFO - 🚀 Testing Laval, QC (municipal, small)
+2025-08-08 21:18:01,106 - __main__ - INFO - Progress: 1/33 scrapers completed (small)
+2025-08-08 21:18:01,106 - scrapelib - INFO - GET - 'https://www.donneesquebec.ca/recherche/fr/dataset/8fe69713-fade-4751-a0b4-7e57a81886b1/resource/bb38e19e-26ab-495c-a0f7-ed6b3268b6e6/download/liste-elus.csv'
+2025-08-08 21:18:01,123 - __main__ - ERROR - ❌ Vancouver, BC: Scraping error - 'str' object has no attribute 'division_name'
+2025-08-08 21:18:01,123 - __main__ - ERROR - ❌ Vancouver, BC: Scraping failed - 'str' object has no attribute 'division_name'
+2025-08-08 21:18:01,123 - __main__ - ERROR - ❌ Vancouver, BC: Failed - 'str' object has no attribute 'division_name'
+2025-08-08 21:18:01,123 - __main__ - INFO - 🚀 Testing Gatineau, QC (municipal, small)
+2025-08-08 21:18:01,123 - __main__ - INFO - Progress: 2/33 scrapers completed (medium)
+2025-08-08 21:18:01,124 - scrapelib - INFO - GET - 'http://www.gatineau.ca/portail/default.aspx?p=guichet_municipal%2fconseil_municipal'
+2025-08-08 21:18:01,172 - scrapelib - INFO - GET - 'https://www.hamilton.ca/city-council/council-committee/city-council-members/mayors-office'
+2025-08-08 21:18:01,177 - __main__ - ERROR - ❌ Toronto, ON: Scraping error - 'str' object has no attribute 'classification'
+2025-08-08 21:18:01,177 - __main__ - INFO - ✅ Quebec City, QC: Collected 5 records in 0.12s
+2025-08-08 21:18:01,177 - __main__ - ERROR - ❌ Toronto, ON: Scraping failed - 'str' object has no attribute 'classification'
+2025-08-08 21:18:01,177 - __main__ - ERROR - ❌ Toronto, ON: Failed - 'str' object has no attribute 'classification'
+2025-08-08 21:18:01,177 - __main__ - INFO - 🚀 Testing Surrey, BC (municipal, medium)
+2025-08-08 21:18:01,178 - __main__ - INFO - 🚀 Testing Burnaby, BC (municipal, small)
+2025-08-08 21:18:01,178 - scrapelib - INFO - GET - 'https://www.surrey.ca/city-government/mayor-council/city-councillors'
+2025-08-08 21:18:01,178 - scrapelib - INFO - GET - 'https://www.burnaby.ca/our-city/mayor-and-council'
+2025-08-08 21:18:01,178 - __main__ - ERROR - Database error for Quebec City, QC: (psycopg2.errors.InsufficientPrivilege) permission denied for table jurisdictions
+
+[SQL: SELECT jurisdictions.id AS jurisdictions_id, jurisdictions.name AS jurisdictions_name, jurisdictions.jurisdiction_type AS jurisdictions_jurisdiction_type, jurisdictions.created_at AS jurisdictions_created_at, jurisdictions.updated_at AS jurisdictions_updated_at 
+FROM jurisdictions 
+WHERE jurisdictions.name = %(name_1)s 
+ LIMIT %(param_1)s]
+[parameters: {'name_1': 'Quebec City, QC', 'param_1': 1}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-08-08 21:18:01,178 - __main__ - INFO - Progress: 3/33 scrapers completed (medium)
+2025-08-08 21:18:01,178 - __main__ - INFO - Progress: 4/33 scrapers completed (large)
+2025-08-08 21:18:01,200 - __main__ - ERROR - ❌ Laval, QC: Scraping error - 'str' object has no attribute 'classification'
+2025-08-08 21:18:01,202 - __main__ - ERROR - ❌ Kitchener, ON: Scraping error - 'str' object has no attribute 'division_name'
+2025-08-08 21:18:01,202 - __main__ - ERROR - ❌ Laval, QC: Scraping failed - 'str' object has no attribute 'classification'
+2025-08-08 21:18:01,202 - __main__ - ERROR - ❌ Kitchener, ON: Scraping failed - 'str' object has no attribute 'division_name'
+2025-08-08 21:18:01,202 - __main__ - ERROR - ❌ Laval, QC: Failed - 'str' object has no attribute 'classification'
+2025-08-08 21:18:01,202 - __main__ - ERROR - ❌ Kitchener, ON: Failed - 'str' object has no attribute 'division_name'
+2025-08-08 21:18:01,202 - __main__ - INFO - 🚀 Testing Richmond, BC (municipal, small)
+2025-08-08 21:18:01,202 - __main__ - INFO - Progress: 5/33 scrapers completed (small)
+2025-08-08 21:18:01,203 - __main__ - INFO - 🚀 Testing Abbotsford, BC (municipal, small)
+2025-08-08 21:18:01,203 - __main__ - INFO - Progress: 6/33 scrapers completed (small)
+2025-08-08 21:18:01,203 - scrapelib - INFO - GET - 'https://www.richmond.ca/city-hall/city-council.htm'
+2025-08-08 21:18:01,203 - scrapelib - INFO - GET - 'https://www.abbotsford.ca/council/city-council'
+2025-08-08 21:18:01,225 - scrapelib - INFO - GET - 'https://www.surrey.ca/city-government/mayor-council/city-councillors/councillor-doug-elford'
+2025-08-08 21:18:01,347 - scrapelib - INFO - GET - 'https://www.abbotsford.ca/city-hall/contact-us'
+2025-08-08 21:18:01,522 - scrapelib - INFO - GET - 'https://www.richmond.ca/city-hall/city-council/members/brodie.htm?PageMode=HTML'
+2025-08-08 21:18:01,534 - scrapelib - INFO - GET - 'http://www.gatineau.ca/portail/default.aspx?p=guichet_municipal%2fconseil_municipal/maire'
+2025-08-08 21:18:01,952 - scrapelib - INFO - GET - 'https://www.burnaby.ca/our-city/mayor-and-council/mayor-mike-hurley'
+2025-08-08 21:18:02,015 - scrapelib - INFO - GET - 'https://www.mississauga.ca/council/city-council-members/ward-2-councillor-alvin-tedjo/'
+2025-08-08 21:18:02,036 - scrapelib - INFO - GET - 'https://www.citywindsor.ca/directory/councillor-fred-francis'
+2025-08-08 21:18:02,093 - scrapelib - INFO - GET - 'https://www.hamilton.ca/city-council/council-committee/city-council-members/city-councillors/ward-1'
+2025-08-08 21:18:02,214 - scrapelib - INFO - GET - 'https://www.surrey.ca/city-government/mayor-council/city-councillors/councillor-gordon-hepner'
+2025-08-08 21:18:02,285 - scrapelib - INFO - GET - 'https://www.richmond.ca/city-hall/city-council/members/loo.htm?PageMode=HTML'
+2025-08-08 21:18:02,309 - __main__ - ERROR - ❌ Montreal, QC: Scraping error - 'str' object has no attribute 'classification'
+2025-08-08 21:18:02,309 - __main__ - ERROR - ❌ Montreal, QC: Scraping failed - 'str' object has no attribute 'classification'
+2025-08-08 21:18:02,310 - __main__ - ERROR - ❌ Montreal, QC: Failed - 'str' object has no attribute 'classification'
+2025-08-08 21:18:02,310 - __main__ - INFO - 🚀 Testing Kelowna, BC (municipal, small)
+2025-08-08 21:18:02,310 - __main__ - INFO - Progress: 7/33 scrapers completed (large)
+2025-08-08 21:18:02,310 - scrapelib - INFO - GET - 'https://www.arcgis.com/sharing/rest/content/items/9333b66380424479816685a9fe44f06f/data'
+2025-08-08 21:18:02,312 - __main__ - INFO - ✅ Abbotsford, BC: Collected 5 records in 1.11s
+2025-08-08 21:18:02,312 - __main__ - INFO - 🚀 Testing Victoria, BC (municipal, small)
+2025-08-08 21:18:02,313 - scrapelib - INFO - GET - 'https://www.victoria.ca/city-government/mayor-council/members-council'
+2025-08-08 21:18:02,314 - __main__ - ERROR - Database error for Abbotsford, BC: (psycopg2.errors.InsufficientPrivilege) permission denied for table jurisdictions
+
+[SQL: SELECT jurisdictions.id AS jurisdictions_id, jurisdictions.name AS jurisdictions_name, jurisdictions.jurisdiction_type AS jurisdictions_jurisdiction_type, jurisdictions.created_at AS jurisdictions_created_at, jurisdictions.updated_at AS jurisdictions_updated_at 
+FROM jurisdictions 
+WHERE jurisdictions.name = %(name_1)s 
+ LIMIT %(param_1)s]
+[parameters: {'name_1': 'Abbotsford, BC', 'param_1': 1}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-08-08 21:18:02,314 - __main__ - INFO - Progress: 8/33 scrapers completed (small)
+2025-08-08 21:18:02,393 - scrapelib - INFO - GET - 'http://www.gatineau.ca/portail/default.aspx?p=guichet_municipal%2fconseil_municipal/district_1'
+2025-08-08 21:18:02,409 - __main__ - INFO - ✅ Victoria, BC: Collected 5 records in 0.10s
+2025-08-08 21:18:02,409 - __main__ - INFO - 🚀 Testing Red Deer, AB (municipal, small)
+2025-08-08 21:18:02,410 - __main__ - INFO - 🚀 Testing Lethbridge, AB (municipal, small)
+2025-08-08 21:18:02,410 - scrapelib - INFO - GET - 'https://www.lethbridge.ca/council-administration-governance/mayor-and-councillors/mayors-office'
+2025-08-08 21:18:02,411 - __main__ - ERROR - Database error for Victoria, BC: (psycopg2.errors.InsufficientPrivilege) permission denied for table jurisdictions
+
+[SQL: SELECT jurisdictions.id AS jurisdictions_id, jurisdictions.name AS jurisdictions_name, jurisdictions.jurisdiction_type AS jurisdictions_jurisdiction_type, jurisdictions.created_at AS jurisdictions_created_at, jurisdictions.updated_at AS jurisdictions_updated_at 
+FROM jurisdictions 
+WHERE jurisdictions.name = %(name_1)s 
+ LIMIT %(param_1)s]
+[parameters: {'name_1': 'Victoria, BC', 'param_1': 1}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-08-08 21:18:02,411 - __main__ - INFO - Progress: 9/33 scrapers completed (small)
+2025-08-08 21:18:02,411 - __main__ - INFO - Progress: 10/33 scrapers completed (small)
+2025-08-08 21:18:02,452 - __main__ - ERROR - ❌ Kelowna, BC: Scraping error - 'str' object has no attribute 'classification'
+2025-08-08 21:18:02,452 - __main__ - ERROR - ❌ Kelowna, BC: Scraping failed - 'str' object has no attribute 'classification'
+2025-08-08 21:18:02,452 - __main__ - ERROR - ❌ Kelowna, BC: Failed - 'str' object has no attribute 'classification'
+2025-08-08 21:18:02,453 - __main__ - INFO - 🚀 Testing Medicine Hat, AB (municipal, small)
+2025-08-08 21:18:02,453 - __main__ - INFO - 🚀 Testing Saskatoon, SK (municipal, small)
+2025-08-08 21:18:02,453 - __main__ - INFO - Progress: 11/33 scrapers completed (small)
+2025-08-08 21:18:02,453 - __main__ - INFO - Progress: 12/33 scrapers completed (small)
+2025-08-08 21:18:02,453 - scrapelib - INFO - GET - 'https://www.saskatoon.ca/city-hall/mayor-city-councillors/city-councillors-wards'
+2025-08-08 21:18:02,480 - scrapelib - INFO - GET - 'https://www.lethbridge.ca/council-administration-governance/mayor-and-councillors/councillors-office'
+2025-08-08 21:18:02,544 - scrapelib - INFO - GET - 'https://www.saskatoon.ca/city-hall/mayor-city-councillors/city-councillors-wards/ward-1'
+2025-08-08 21:18:03,019 - scrapelib - INFO - GET - 'https://www.mississauga.ca/council/city-council-members/ward-3-councillor-chris-fonseca/'
+2025-08-08 21:18:03,039 - scrapelib - INFO - GET - 'https://www.citywindsor.ca/directory/councillor-renaldo-agostino'
+2025-08-08 21:18:03,119 - scrapelib - INFO - GET - 'https://www.hamilton.ca/city-council/council-committee/city-council-members/city-councillors/ward-2'
+2025-08-08 21:18:03,121 - scrapelib - INFO - GET - 'https://www.burnaby.ca/our-city/mayor-and-council/councillor-pietro-calendino'
+2025-08-08 21:18:03,218 - scrapelib - INFO - GET - 'https://www.surrey.ca/city-government/mayor-council/city-councillors/councillor-harry-bains'
+2025-08-08 21:18:03,287 - scrapelib - INFO - GET - 'https://www.richmond.ca/city-hall/city-council/members/ChakKwongAu.htm?PageMode=HTML'
+2025-08-08 21:18:03,365 - __main__ - ERROR - ❌ Brampton, ON: Scraping error - 'str' object has no attribute 'classification'
+2025-08-08 21:18:03,365 - __main__ - ERROR - ❌ Brampton, ON: Scraping failed - 'str' object has no attribute 'classification'
+2025-08-08 21:18:03,365 - __main__ - ERROR - ❌ Brampton, ON: Failed - 'str' object has no attribute 'classification'
+2025-08-08 21:18:03,365 - __main__ - INFO - 🚀 Testing Regina, SK (municipal, small)
+2025-08-08 21:18:03,365 - __main__ - INFO - Progress: 13/33 scrapers completed (medium)
+2025-08-08 21:18:03,366 - scrapelib - INFO - GET - 'https://www.regina.ca/city-government/city-council'
+2025-08-08 21:18:03,383 - scrapelib - INFO - GET - 'http://www.gatineau.ca/portail/default.aspx?p=guichet_municipal%2fconseil_municipal/district_2'
+2025-08-08 21:18:03,474 - scrapelib - INFO - GET - 'https://www.lethbridge.ca/council-administration-governance/mayor-and-councillors/councillors-office/belinda-crowson-councillor/'
+2025-08-08 21:18:03,630 - __main__ - INFO - ✅ Regina, SK: Collected 5 records in 0.26s
+2025-08-08 21:18:03,630 - __main__ - INFO - 🚀 Testing Winnipeg, MB (municipal, medium)
+2025-08-08 21:18:03,631 - scrapelib - INFO - GET - 'https://data.winnipeg.ca/resource/r4tk-7dip.json'
+2025-08-08 21:18:03,631 - __main__ - ERROR - Database error for Regina, SK: (psycopg2.errors.InsufficientPrivilege) permission denied for table jurisdictions
+
+[SQL: SELECT jurisdictions.id AS jurisdictions_id, jurisdictions.name AS jurisdictions_name, jurisdictions.jurisdiction_type AS jurisdictions_jurisdiction_type, jurisdictions.created_at AS jurisdictions_created_at, jurisdictions.updated_at AS jurisdictions_updated_at 
+FROM jurisdictions 
+WHERE jurisdictions.name = %(name_1)s 
+ LIMIT %(param_1)s]
+[parameters: {'name_1': 'Regina, SK', 'param_1': 1}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-08-08 21:18:03,631 - __main__ - INFO - Progress: 14/33 scrapers completed (small)
+2025-08-08 21:18:03,943 - scrapelib - INFO - GET - 'http://winnipeg.ca/council/'
+2025-08-08 21:18:04,007 - scrapelib - INFO - GET - 'https://www.saskatoon.ca/city-hall/mayor-city-councillors/city-councillors-wards/ward-2'
+2025-08-08 21:18:04,025 - scrapelib - INFO - GET - 'https://www.mississauga.ca/council/city-council-members/ward-4-councillor-john-kovac/'
+2025-08-08 21:18:04,037 - scrapelib - INFO - GET - 'https://www.citywindsor.ca/directory/councillor-mark-mckenzie'
+2025-08-08 21:18:04,112 - scrapelib - INFO - GET - 'https://www.hamilton.ca/city-council/council-committee/city-council-members/city-councillors/ward-3'
+2025-08-08 21:18:04,197 - scrapelib - INFO - GET - 'https://www.burnaby.ca/our-city/mayor-and-council/councillor-sav-dhaliwal'
+2025-08-08 21:18:04,223 - scrapelib - INFO - GET - 'https://www.surrey.ca/city-government/mayor-council/city-councillors/councillor-linda-annis'
+2025-08-08 21:18:04,242 - scrapelib - INFO - GET - 'https://www.edmonton.ca/city_government/city_organization/city-councillors'
+2025-08-08 21:18:04,287 - scrapelib - INFO - GET - 'https://www.richmond.ca/city-hall/city-council/members/day.htm?PageMode=HTML'
+2025-08-08 21:18:04,312 - scrapelib - INFO - GET - 'https://www.edmonton.ca/city_government/city_organization/ward-anirniq'
+2025-08-08 21:18:04,385 - scrapelib - INFO - GET - 'http://www.gatineau.ca/portail/default.aspx?p=guichet_municipal%2fconseil_municipal/district_3'
+2025-08-08 21:18:04,458 - scrapelib - INFO - GET - 'https://www.lethbridge.ca/council-administration-governance/mayor-and-councillors/councillors-office/jeff-carlson-councillor/'
+2025-08-08 21:18:04,856 - scrapelib - INFO - GET - 'https://www.burnaby.ca/our-city/mayor-and-council/councillor-alison-gu'
+2025-08-08 21:18:04,922 - scrapelib - INFO - GET - 'https://www.saskatoon.ca/city-hall/mayor-city-councillors/city-councillors-wards/ward-3'
+2025-08-08 21:18:04,994 - __main__ - INFO - ✅ Winnipeg, MB: Collected 5 records in 1.36s
+2025-08-08 21:18:04,994 - __main__ - INFO - 🚀 Testing Halifax, NS (municipal, small)
+2025-08-08 21:18:04,995 - scrapelib - INFO - GET - 'https://www.halifax.ca/city-hall/districts-councillors'
+2025-08-08 21:18:04,996 - __main__ - ERROR - Database error for Winnipeg, MB: (psycopg2.errors.InsufficientPrivilege) permission denied for table jurisdictions
+
+[SQL: SELECT jurisdictions.id AS jurisdictions_id, jurisdictions.name AS jurisdictions_name, jurisdictions.jurisdiction_type AS jurisdictions_jurisdiction_type, jurisdictions.created_at AS jurisdictions_created_at, jurisdictions.updated_at AS jurisdictions_updated_at 
+FROM jurisdictions 
+WHERE jurisdictions.name = %(name_1)s 
+ LIMIT %(param_1)s]
+[parameters: {'name_1': 'Winnipeg, MB', 'param_1': 1}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-08-08 21:18:04,996 - __main__ - INFO - Progress: 15/33 scrapers completed (medium)
+2025-08-08 21:18:05,026 - scrapelib - INFO - GET - 'https://www.mississauga.ca/council/city-council-members/ward-5-councillor-natalie-hart/'
+2025-08-08 21:18:05,040 - scrapelib - INFO - GET - 'https://www.citywindsor.ca/directory/councillor-ed-sleiman'
+2025-08-08 21:18:05,102 - scrapelib - INFO - GET - 'https://www.halifax.ca/city-hall/mayor'
+2025-08-08 21:18:05,122 - scrapelib - INFO - GET - 'https://www.hamilton.ca/city-council/council-committee/city-council-members/city-councillors/ward-4'
+2025-08-08 21:18:05,229 - scrapelib - INFO - GET - 'https://www.surrey.ca/city-government/mayor-council/city-councillors/councillor-mandeep-nagra'
+2025-08-08 21:18:05,288 - scrapelib - INFO - GET - 'https://www.richmond.ca/city-hall/city-council/members/lgillanders.htm?PageMode=HTML'
+2025-08-08 21:18:05,309 - scrapelib - INFO - GET - 'https://www.edmonton.ca/city_government/city_organization/ward-dene'
+2025-08-08 21:18:05,394 - scrapelib - INFO - GET - 'http://www.gatineau.ca/portail/default.aspx?p=guichet_municipal%2fconseil_municipal/district_4'
+2025-08-08 21:18:05,473 - scrapelib - INFO - GET - 'https://www.lethbridge.ca/council-administration-governance/mayor-and-councillors/councillors-office/jenn-schmidt-rempel-councillor/'
+2025-08-08 21:18:05,966 - scrapelib - INFO - GET - 'https://www.burnaby.ca/our-city/mayor-and-council/councillor-joe-keithley'
+2025-08-08 21:18:06,028 - scrapelib - INFO - GET - 'https://www.saskatoon.ca/city-hall/mayor-city-councillors/city-councillors-wards/ward-4'
+2025-08-08 21:18:06,039 - __main__ - INFO - ✅ Mississauga, ON: Collected 5 records in 5.04s
+2025-08-08 21:18:06,039 - __main__ - INFO - 🚀 Testing Saint John, NB (municipal, small)
+2025-08-08 21:18:06,039 - scrapelib - INFO - GET - 'https://opendata.arcgis.com/datasets/256aed00cd13455cac721eb56769c4d4_0.csv'
+2025-08-08 21:18:06,040 - __main__ - ERROR - Database error for Mississauga, ON: (psycopg2.errors.InsufficientPrivilege) permission denied for table jurisdictions
+
+[SQL: SELECT jurisdictions.id AS jurisdictions_id, jurisdictions.name AS jurisdictions_name, jurisdictions.jurisdiction_type AS jurisdictions_jurisdiction_type, jurisdictions.created_at AS jurisdictions_created_at, jurisdictions.updated_at AS jurisdictions_updated_at 
+FROM jurisdictions 
+WHERE jurisdictions.name = %(name_1)s 
+ LIMIT %(param_1)s]
+[parameters: {'name_1': 'Mississauga, ON', 'param_1': 1}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-08-08 21:18:06,040 - __main__ - INFO - Progress: 16/33 scrapers completed (medium)
+2025-08-08 21:18:06,049 - __main__ - INFO - ✅ Windsor, ON: Collected 5 records in 5.05s
+2025-08-08 21:18:06,049 - __main__ - INFO - 🚀 Testing Moncton, NB (municipal, small)
+2025-08-08 21:18:06,050 - scrapelib - INFO - GET - 'https://services1.arcgis.com/E26PuSoie2Y7bbyI/arcgis/rest/services/Elected_Officials/FeatureServer/0/query?outFields=*&where=1%3D1&f=geojson'
+2025-08-08 21:18:06,050 - __main__ - ERROR - Database error for Windsor, ON: (psycopg2.errors.InsufficientPrivilege) permission denied for table jurisdictions
+
+[SQL: SELECT jurisdictions.id AS jurisdictions_id, jurisdictions.name AS jurisdictions_name, jurisdictions.jurisdiction_type AS jurisdictions_jurisdiction_type, jurisdictions.created_at AS jurisdictions_created_at, jurisdictions.updated_at AS jurisdictions_updated_at 
+FROM jurisdictions 
+WHERE jurisdictions.name = %(name_1)s 
+ LIMIT %(param_1)s]
+[parameters: {'name_1': 'Windsor, ON', 'param_1': 1}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-08-08 21:18:06,050 - __main__ - INFO - Progress: 17/33 scrapers completed (small)
+2025-08-08 21:18:06,072 - __main__ - INFO - ✅ Moncton, NB: Collected 5 records in 0.02s
+2025-08-08 21:18:06,072 - __main__ - INFO - 🚀 Testing Fredericton, NB (municipal, small)
+2025-08-08 21:18:06,073 - scrapelib - INFO - GET - 'https://www.fredericton.ca/en/your-government/mayor-council'
+2025-08-08 21:18:06,073 - __main__ - ERROR - Database error for Moncton, NB: (psycopg2.errors.InsufficientPrivilege) permission denied for table jurisdictions
+
+[SQL: SELECT jurisdictions.id AS jurisdictions_id, jurisdictions.name AS jurisdictions_name, jurisdictions.jurisdiction_type AS jurisdictions_jurisdiction_type, jurisdictions.created_at AS jurisdictions_created_at, jurisdictions.updated_at AS jurisdictions_updated_at 
+FROM jurisdictions 
+WHERE jurisdictions.name = %(name_1)s 
+ LIMIT %(param_1)s]
+[parameters: {'name_1': 'Moncton, NB', 'param_1': 1}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-08-08 21:18:06,073 - __main__ - INFO - Progress: 18/33 scrapers completed (small)
+2025-08-08 21:18:06,124 - __main__ - INFO - ✅ Hamilton, ON: Collected 5 records in 5.13s
+2025-08-08 21:18:06,124 - __main__ - INFO - 🚀 Testing Charlottetown, PE (municipal, small)
+2025-08-08 21:18:06,124 - scrapelib - INFO - GET - 'https://www.charlottetown.ca/mayor___council/city_council/meet_my_councillor'
+2025-08-08 21:18:06,125 - __main__ - ERROR - Database error for Hamilton, ON: (psycopg2.errors.InsufficientPrivilege) permission denied for table jurisdictions
+
+[SQL: SELECT jurisdictions.id AS jurisdictions_id, jurisdictions.name AS jurisdictions_name, jurisdictions.jurisdiction_type AS jurisdictions_jurisdiction_type, jurisdictions.created_at AS jurisdictions_created_at, jurisdictions.updated_at AS jurisdictions_updated_at 
+FROM jurisdictions 
+WHERE jurisdictions.name = %(name_1)s 
+ LIMIT %(param_1)s]
+[parameters: {'name_1': 'Hamilton, ON', 'param_1': 1}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-08-08 21:18:06,125 - __main__ - INFO - Progress: 19/33 scrapers completed (medium)
+2025-08-08 21:18:06,204 - scrapelib - INFO - GET - 'https://www.halifax.ca/city-hall/districts-councillors/district-1'
+2025-08-08 21:18:06,225 - scrapelib - INFO - GET - 'https://www.fredericton.ca/your-government/mayor-council/kate-rogers'
+2025-08-08 21:18:06,233 - __main__ - INFO - ✅ Surrey, BC: Collected 5 records in 5.05s
+2025-08-08 21:18:06,233 - __main__ - INFO - 🚀 Testing St. John's, NL (municipal, small)
+2025-08-08 21:18:06,233 - scrapelib - INFO - GET - 'https://www.stjohns.ca/en/city-hall/mayor-and-council.aspx'
+2025-08-08 21:18:06,234 - __main__ - ERROR - Database error for Surrey, BC: (psycopg2.errors.InsufficientPrivilege) permission denied for table jurisdictions
+
+[SQL: SELECT jurisdictions.id AS jurisdictions_id, jurisdictions.name AS jurisdictions_name, jurisdictions.jurisdiction_type AS jurisdictions_jurisdiction_type, jurisdictions.created_at AS jurisdictions_created_at, jurisdictions.updated_at AS jurisdictions_updated_at 
+FROM jurisdictions 
+WHERE jurisdictions.name = %(name_1)s 
+ LIMIT %(param_1)s]
+[parameters: {'name_1': 'Surrey, BC', 'param_1': 1}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-08-08 21:18:06,234 - __main__ - INFO - Progress: 20/33 scrapers completed (medium)
+2025-08-08 21:18:06,294 - __main__ - INFO - ✅ Richmond, BC: Collected 5 records in 5.09s
+2025-08-08 21:18:06,295 - __main__ - ERROR - Database error for Richmond, BC: (psycopg2.errors.InsufficientPrivilege) permission denied for table jurisdictions
+
+[SQL: SELECT jurisdictions.id AS jurisdictions_id, jurisdictions.name AS jurisdictions_name, jurisdictions.jurisdiction_type AS jurisdictions_jurisdiction_type, jurisdictions.created_at AS jurisdictions_created_at, jurisdictions.updated_at AS jurisdictions_updated_at 
+FROM jurisdictions 
+WHERE jurisdictions.name = %(name_1)s 
+ LIMIT %(param_1)s]
+[parameters: {'name_1': 'Richmond, BC', 'param_1': 1}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-08-08 21:18:06,295 - __main__ - INFO - Progress: 21/33 scrapers completed (small)
+2025-08-08 21:18:06,347 - scrapelib - INFO - GET - 'https://www.stjohns.ca/en/city-hall/mayor-danny-breen.aspx'
+2025-08-08 21:18:06,418 - __main__ - INFO - ✅ Gatineau, QC: Collected 5 records in 5.29s
+2025-08-08 21:18:06,420 - __main__ - ERROR - Database error for Gatineau, QC: (psycopg2.errors.InsufficientPrivilege) permission denied for table jurisdictions
+
+[SQL: SELECT jurisdictions.id AS jurisdictions_id, jurisdictions.name AS jurisdictions_name, jurisdictions.jurisdiction_type AS jurisdictions_jurisdiction_type, jurisdictions.created_at AS jurisdictions_created_at, jurisdictions.updated_at AS jurisdictions_updated_at 
+FROM jurisdictions 
+WHERE jurisdictions.name = %(name_1)s 
+ LIMIT %(param_1)s]
+[parameters: {'name_1': 'Gatineau, QC', 'param_1': 1}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-08-08 21:18:06,420 - __main__ - INFO - Progress: 22/33 scrapers completed (small)
+2025-08-08 21:18:06,421 - scrapelib - INFO - GET - 'https://www.edmonton.ca/city_government/city_organization/ward-ipiihkoohkanipiaohtsi'
+2025-08-08 21:18:06,463 - scrapelib - INFO - GET - 'https://www.lethbridge.ca/council-administration-governance/mayor-and-councillors/councillors-office/john-middleton-hope-councillor/'
+2025-08-08 21:18:06,866 - __main__ - INFO - ✅ Saskatoon, SK: Collected 5 records in 4.41s
+2025-08-08 21:18:06,867 - __main__ - ERROR - Database error for Saskatoon, SK: (psycopg2.errors.InsufficientPrivilege) permission denied for table jurisdictions
+
+[SQL: SELECT jurisdictions.id AS jurisdictions_id, jurisdictions.name AS jurisdictions_name, jurisdictions.jurisdiction_type AS jurisdictions_jurisdiction_type, jurisdictions.created_at AS jurisdictions_created_at, jurisdictions.updated_at AS jurisdictions_updated_at 
+FROM jurisdictions 
+WHERE jurisdictions.name = %(name_1)s 
+ LIMIT %(param_1)s]
+[parameters: {'name_1': 'Saskatoon, SK', 'param_1': 1}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-08-08 21:18:06,867 - __main__ - INFO - Progress: 23/33 scrapers completed (small)
+2025-08-08 21:18:06,879 - __main__ - ERROR - ❌ Saint John, NB: Scraping error - 'str' object has no attribute 'classification'
+2025-08-08 21:18:06,879 - __main__ - ERROR - ❌ Saint John, NB: Scraping failed - 'str' object has no attribute 'classification'
+2025-08-08 21:18:06,879 - __main__ - ERROR - ❌ Saint John, NB: Failed - 'str' object has no attribute 'classification'
+2025-08-08 21:18:06,879 - __main__ - INFO - Progress: 24/33 scrapers completed (small)
+2025-08-08 21:18:06,893 - __main__ - INFO - ✅ Burnaby, BC: Collected 5 records in 5.72s
+2025-08-08 21:18:06,894 - __main__ - ERROR - Database error for Burnaby, BC: (psycopg2.errors.InsufficientPrivilege) permission denied for table jurisdictions
+
+[SQL: SELECT jurisdictions.id AS jurisdictions_id, jurisdictions.name AS jurisdictions_name, jurisdictions.jurisdiction_type AS jurisdictions_jurisdiction_type, jurisdictions.created_at AS jurisdictions_created_at, jurisdictions.updated_at AS jurisdictions_updated_at 
+FROM jurisdictions 
+WHERE jurisdictions.name = %(name_1)s 
+ LIMIT %(param_1)s]
+[parameters: {'name_1': 'Burnaby, BC', 'param_1': 1}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-08-08 21:18:06,894 - __main__ - INFO - Progress: 25/33 scrapers completed (small)
+2025-08-08 21:18:07,115 - scrapelib - INFO - GET - 'https://www.halifax.ca/city-hall/districts-councillors/district-2'
+2025-08-08 21:18:07,160 - scrapelib - INFO - GET - 'https://www.fredericton.ca/your-government/mayor-council/jocelyn-pike'
+2025-08-08 21:18:07,332 - scrapelib - INFO - GET - 'https://www.edmonton.ca/city_government/city_organization/ward-karhiio'
+2025-08-08 21:18:07,332 - scrapelib - INFO - GET - 'https://www.stjohns.ca/en/city-hall/deputy-mayor-sheilagh-o_leary.aspx'
+2025-08-08 21:18:07,460 - __main__ - INFO - ✅ Charlottetown, PE: Collected 5 records in 1.34s
+2025-08-08 21:18:07,461 - __main__ - ERROR - Database error for Charlottetown, PE: (psycopg2.errors.InsufficientPrivilege) permission denied for table jurisdictions
+
+[SQL: SELECT jurisdictions.id AS jurisdictions_id, jurisdictions.name AS jurisdictions_name, jurisdictions.jurisdiction_type AS jurisdictions_jurisdiction_type, jurisdictions.created_at AS jurisdictions_created_at, jurisdictions.updated_at AS jurisdictions_updated_at 
+FROM jurisdictions 
+WHERE jurisdictions.name = %(name_1)s 
+ LIMIT %(param_1)s]
+[parameters: {'name_1': 'Charlottetown, PE', 'param_1': 1}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-08-08 21:18:07,461 - __main__ - INFO - Progress: 26/33 scrapers completed (small)
+2025-08-08 21:18:07,470 - __main__ - INFO - ✅ Lethbridge, AB: Collected 5 records in 5.06s
+2025-08-08 21:18:07,471 - __main__ - ERROR - Database error for Lethbridge, AB: (psycopg2.errors.InsufficientPrivilege) permission denied for table jurisdictions
+
+[SQL: SELECT jurisdictions.id AS jurisdictions_id, jurisdictions.name AS jurisdictions_name, jurisdictions.jurisdiction_type AS jurisdictions_jurisdiction_type, jurisdictions.created_at AS jurisdictions_created_at, jurisdictions.updated_at AS jurisdictions_updated_at 
+FROM jurisdictions 
+WHERE jurisdictions.name = %(name_1)s 
+ LIMIT %(param_1)s]
+[parameters: {'name_1': 'Lethbridge, AB', 'param_1': 1}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-08-08 21:18:07,471 - __main__ - INFO - Progress: 27/33 scrapers completed (small)
+2025-08-08 21:18:08,110 - scrapelib - INFO - GET - 'https://www.halifax.ca/city-hall/districts-councillors/district-3'
+2025-08-08 21:18:08,165 - scrapelib - INFO - GET - 'https://www.fredericton.ca/your-government/mayor-council/ruth-breen'
+2025-08-08 21:18:08,325 - __main__ - INFO - ✅ Edmonton, AB: Collected 5 records in 7.33s
+2025-08-08 21:18:08,326 - scrapelib - INFO - GET - 'https://www.stjohns.ca/en/city-hall/councillor-jill-bruce.aspx'
+2025-08-08 21:18:08,327 - __main__ - ERROR - Database error for Edmonton, AB: (psycopg2.errors.InsufficientPrivilege) permission denied for table jurisdictions
+
+[SQL: SELECT jurisdictions.id AS jurisdictions_id, jurisdictions.name AS jurisdictions_name, jurisdictions.jurisdiction_type AS jurisdictions_jurisdiction_type, jurisdictions.created_at AS jurisdictions_created_at, jurisdictions.updated_at AS jurisdictions_updated_at 
+FROM jurisdictions 
+WHERE jurisdictions.name = %(name_1)s 
+ LIMIT %(param_1)s]
+[parameters: {'name_1': 'Edmonton, AB', 'param_1': 1}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-08-08 21:18:08,327 - __main__ - INFO - Progress: 28/33 scrapers completed (medium)
+2025-08-08 21:18:09,114 - scrapelib - INFO - GET - 'https://www.halifax.ca/city-hall/districts-councillors/district-4'
+2025-08-08 21:18:09,173 - scrapelib - INFO - GET - 'https://www.fredericton.ca/your-government/mayor-council/kevin-darrah'
+2025-08-08 21:18:09,329 - scrapelib - INFO - GET - 'https://www.stjohns.ca/en/city-hall/councillor-ophelia-ravencroft.aspx'
+2025-08-08 21:18:10,148 - __main__ - INFO - ✅ Halifax, NS: Collected 5 records in 5.15s
+2025-08-08 21:18:10,149 - __main__ - ERROR - Database error for Halifax, NS: (psycopg2.errors.InsufficientPrivilege) permission denied for table jurisdictions
+
+[SQL: SELECT jurisdictions.id AS jurisdictions_id, jurisdictions.name AS jurisdictions_name, jurisdictions.jurisdiction_type AS jurisdictions_jurisdiction_type, jurisdictions.created_at AS jurisdictions_created_at, jurisdictions.updated_at AS jurisdictions_updated_at 
+FROM jurisdictions 
+WHERE jurisdictions.name = %(name_1)s 
+ LIMIT %(param_1)s]
+[parameters: {'name_1': 'Halifax, NS', 'param_1': 1}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-08-08 21:18:10,149 - __main__ - INFO - Progress: 29/33 scrapers completed (small)
+2025-08-08 21:18:10,176 - scrapelib - INFO - GET - 'https://www.fredericton.ca/your-government/mayor-council/greg-ericson'
+2025-08-08 21:18:10,339 - scrapelib - INFO - GET - 'https://www.stjohns.ca/en/city-hall/councillor-greg-noseworthy.aspx'
+2025-08-08 21:18:11,095 - scrapelib - WARNING - sleeping for 20 seconds before retry
+2025-08-08 21:18:11,186 - __main__ - INFO - ✅ Fredericton, NB: Collected 5 records in 5.11s
+2025-08-08 21:18:11,187 - __main__ - ERROR - Database error for Fredericton, NB: (psycopg2.errors.InsufficientPrivilege) permission denied for table jurisdictions
+
+[SQL: SELECT jurisdictions.id AS jurisdictions_id, jurisdictions.name AS jurisdictions_name, jurisdictions.jurisdiction_type AS jurisdictions_jurisdiction_type, jurisdictions.created_at AS jurisdictions_created_at, jurisdictions.updated_at AS jurisdictions_updated_at 
+FROM jurisdictions 
+WHERE jurisdictions.name = %(name_1)s 
+ LIMIT %(param_1)s]
+[parameters: {'name_1': 'Fredericton, NB', 'param_1': 1}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-08-08 21:18:11,187 - __main__ - INFO - Progress: 30/33 scrapers completed (small)
+2025-08-08 21:18:11,346 - __main__ - INFO - ✅ St. John's, NL: Collected 5 records in 5.11s
+2025-08-08 21:18:11,348 - __main__ - ERROR - Database error for St. John's, NL: (psycopg2.errors.InsufficientPrivilege) permission denied for table jurisdictions
+
+[SQL: SELECT jurisdictions.id AS jurisdictions_id, jurisdictions.name AS jurisdictions_name, jurisdictions.jurisdiction_type AS jurisdictions_jurisdiction_type, jurisdictions.created_at AS jurisdictions_created_at, jurisdictions.updated_at AS jurisdictions_updated_at 
+FROM jurisdictions 
+WHERE jurisdictions.name = %(name_1)s 
+ LIMIT %(param_1)s]
+[parameters: {'name_1': "St. John's, NL", 'param_1': 1}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-08-08 21:18:11,348 - __main__ - INFO - Progress: 31/33 scrapers completed (small)
+2025-08-08 21:18:31,139 - scrapelib - WARNING - sleeping for 40 seconds before retry
+2025-08-08 21:19:11,185 - __main__ - ERROR - ❌ Ottawa, ON: Scraping error - 400 while retrieving https://www.arcgis.com/sharing/rest/content/items/a5e9dc2425274bb796d3ded47b0d7b00/data
+2025-08-08 21:19:11,185 - __main__ - ERROR - ❌ Ottawa, ON: Scraping failed - 400 while retrieving https://www.arcgis.com/sharing/rest/content/items/a5e9dc2425274bb796d3ded47b0d7b00/data
+2025-08-08 21:19:11,185 - __main__ - ERROR - ❌ Ottawa, ON: Failed - 400 while retrieving https://www.arcgis.com/sharing/rest/content/items/a5e9dc2425274bb796d3ded47b0d7b00/data
+2025-08-08 21:19:11,186 - __main__ - INFO - Progress: 32/33 scrapers completed (medium)
+2025-08-08 21:19:11,187 - __main__ - INFO - ✅ Completed testing 33 municipal scrapers with 12 workers
+2025-08-08 21:19:11,187 - __main__ - INFO - 📊 MUNICIPAL: 21 successful, 12 failed
+2025-08-08 21:19:11,188 - __main__ - INFO - 📊 Sizes: Small 21, Medium 10, Large 2
+2025-08-08 21:19:11,188 - __main__ - INFO - 
+🔄 Starting CIVIC scrapers...
+2025-08-08 21:19:11,188 - __main__ - INFO - 
+============================================================
+2025-08-08 21:19:11,188 - __main__ - INFO - Testing CIVIC scrapers (OPTIMIZED PARALLEL)
+2025-08-08 21:19:11,188 - __main__ - INFO - ============================================================
+2025-08-08 21:19:11,188 - __main__ - INFO - Found 1 scrapers to test
+2025-08-08 21:19:11,188 - __main__ - INFO - 📊 Resource Analysis: CPU 13.0%, Memory 51.1%
+2025-08-08 21:19:11,188 - __main__ - INFO - 📊 Scraper Sizes: Small 0, Medium 1, Large 0
+2025-08-08 21:19:11,188 - __main__ - INFO - 📊 Optimal Workers: 1 (range: 10-20)
+2025-08-08 21:19:11,188 - __main__ - INFO - 🚀 Testing Civic Data (civic, medium)
+2025-08-08 21:19:11,189 - __main__ - INFO - Progress: 0/1 scrapers completed (medium)
+2025-08-08 21:19:11,189 - __main__ - INFO - ✅ Completed testing 1 civic scrapers with 1 workers
+2025-08-08 21:19:11,189 - __main__ - INFO - 📊 CIVIC: 0 successful, 1 failed
+2025-08-08 21:19:11,189 - __main__ - INFO - 📊 Sizes: Small 0, Medium 1, Large 0
+2025-08-08 21:19:11,189 - __main__ - INFO - 
+🔄 Starting UPDATE scrapers...
+2025-08-08 21:19:11,189 - __main__ - INFO - 
+============================================================
+2025-08-08 21:19:11,189 - __main__ - INFO - Testing UPDATE scrapers (OPTIMIZED PARALLEL)
+2025-08-08 21:19:11,189 - __main__ - INFO - ============================================================
+2025-08-08 21:19:11,189 - __main__ - INFO - Found 1 scrapers to test
+2025-08-08 21:19:11,189 - __main__ - INFO - 📊 Resource Analysis: CPU 0.0%, Memory 51.1%
+2025-08-08 21:19:11,189 - __main__ - INFO - 📊 Scraper Sizes: Small 1, Medium 0, Large 0
+2025-08-08 21:19:11,189 - __main__ - INFO - 📊 Optimal Workers: 1 (range: 10-20)
+2025-08-08 21:19:11,189 - __main__ - INFO - 🚀 Testing Update Scripts (update, small)
+2025-08-08 21:19:11,190 - __main__ - INFO - Progress: 0/1 scrapers completed (small)
+2025-08-08 21:19:11,190 - __main__ - INFO - ✅ Completed testing 1 update scrapers with 1 workers
+2025-08-08 21:19:11,190 - __main__ - INFO - 📊 UPDATE: 0 successful, 1 failed
+2025-08-08 21:19:11,190 - __main__ - INFO - 📊 Sizes: Small 1, Medium 0, Large 0
+/Users/ashishtandon/Github/Base Code/backend/OpenPolicyAshBack/scraper_testing_framework.py:808: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  'timestamp': datetime.utcnow().isoformat(),
+/Users/ashishtandon/Github/Base Code/backend/OpenPolicyAshBack/scraper_testing_framework.py:847: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  timestamp = datetime.utcnow().strftime('%Y%m%d_%H%M%S')
+2025-08-08 21:19:11,192 - __main__ - INFO - 📄 Test report saved to scraper_test_report_20250809_011911.json
+✅ Applied DatetimeValidator fix
+✅ Utils module imported successfully
+🧪 Testing Working Scrapers...
+✅ Toronto scraper test completed: 5 records collected
+
+================================================================================
+📊 SCRAPER TESTING SUMMARY (OPTIMIZED PARALLEL EXECUTION)
+================================================================================
+System: 16 CPUs, 64.0GB RAM
+Total Scrapers Tested: 51
+Successful: 35 (68.6%)
+Failed: 16
+Skipped: 0
+Total Records Collected: 175
+Total Records Inserted: 0
+
+📈 SIZE BREAKDOWN:
+  Small: 31 scrapers
+  Medium: 14 scrapers
+  Large: 6 scrapers
+
+📈 CATEGORY BREAKDOWN:
+  PARLIAMENTARY: 0/1 (0.0%) - 0 records
+    Sizes: Small 0, Medium 0, Large 1
+  PROVINCIAL: 13/14 (92.9%) - 65 records
+    Sizes: Small 9, Medium 2, Large 3
+  MUNICIPAL: 22/34 (64.7%) - 110 records
+    Sizes: Small 21, Medium 11, Large 2
+  CIVIC: 0/1 (0.0%) - 0 records
+    Sizes: Small 0, Medium 1, Large 0
+  UPDATE: 0/1 (0.0%) - 0 records
+    Sizes: Small 1, Medium 0, Large 0
+
+❌ FAILED SCRAPERS:
+  - Federal Parliament (parliamentary, large): No people.py file found in ../../scrapers/openparliament
+  - Quebec (provincial, large): HTTPSConnectionPool(host='www.assnat.qc.ca', port=443): Max retries exceeded with url: /fr/deputes/index.html (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1028)')))
+  - London, ON (municipal, small): 'str' object has no attribute 'classification'
+  - Vancouver, BC (municipal, medium): 'str' object has no attribute 'division_name'
+  - Toronto, ON (municipal, large): 'str' object has no attribute 'classification'
+  - Laval, QC (municipal, small): 'str' object has no attribute 'classification'
+  - Kitchener, ON (municipal, small): 'str' object has no attribute 'division_name'
+  - Montreal, QC (municipal, large): 'str' object has no attribute 'classification'
+  - Red Deer, AB (municipal, small): No people.py file found in ../../scrapers/scrapers-ca/ca_ab_red_deer
+  - Kelowna, BC (municipal, small): 'str' object has no attribute 'classification'
+  - Medicine Hat, AB (municipal, small): No people.py file found in ../../scrapers/scrapers-ca/ca_ab_medicine_hat
+  - Brampton, ON (municipal, medium): 'str' object has no attribute 'classification'
+  - Saint John, NB (municipal, small): 'str' object has no attribute 'classification'
+  - Ottawa, ON (municipal, medium): 400 while retrieving https://www.arcgis.com/sharing/rest/content/items/a5e9dc2425274bb796d3ded47b0d7b00/data
+  - Civic Data (civic, medium): No people.py file found in ../../scrapers/civic-scraper
+  - Update Scripts (update, small): No people.py file found in ../../scripts
+
+⚠️  Testing completed with warnings (68.6% success rate)

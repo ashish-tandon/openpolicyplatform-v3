@@ -1,0 +1,22 @@
+{
+  "coverage_history": [
+    {
+      "date": "2024-01-15",
+      "coverage_percentage": 70,
+      "lines_covered": 70,
+      "lines_total": 100,
+      "tests_passed": 4,
+      "tests_total": 5
+    },
+    {
+      "date": "2024-01-14",
+      "coverage_percentage": 65,
+      "lines_covered": 65,
+      "lines_total": 100,
+      "tests_passed": 3,
+      "tests_total": 5
+    }
+  ],
+  "trend": "improving",
+  "last_updated": "2024-01-15T22:30:00Z"
+}

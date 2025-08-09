@@ -4,7 +4,7 @@ Database Configuration for Unified Open Policy Platform
 
 import os
 from typing import Optional
-from pydantic import BaseSettings
+from pydantic_settings import BaseSettings
 from sqlalchemy import create_engine, Engine
 from sqlalchemy.orm import sessionmaker, Session
 from sqlalchemy.pool import StaticPool
@@ -16,7 +16,7 @@ class DatabaseConfig(BaseSettings):
     host: str = "localhost"
     port: int = 5432
     database: str = "openpolicy"
-    username: str = os.getenv("DB_USERNAME", "postgres")
+    username: str = os.getenv("DB_USERNAME", "ashishtandon")
     password: str = os.getenv("DB_PASSWORD", "")
     
     # Connection pool settings

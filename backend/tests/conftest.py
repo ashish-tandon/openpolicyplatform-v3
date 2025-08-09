@@ -13,14 +13,13 @@ from sqlalchemy.pool import StaticPool
 from api.main import app
 from config.database import get_database_session
 
-# Test database URL
-TEST_DATABASE_URL = "postgresql://postgres@localhost:5432/openpolicy_test"
+# Test database URL - Using main database for testing
+TEST_DATABASE_URL = "postgresql://openpolicy:openpolicy123@localhost:5432/openpolicy"
 
 # Create test engine
 test_engine = create_engine(
     TEST_DATABASE_URL,
-    poolclass=StaticPool,
-    connect_args={"check_same_thread": False}
+    poolclass=StaticPool
 )
 
 # Create test session factory

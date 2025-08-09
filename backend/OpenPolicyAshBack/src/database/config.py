@@ -16,7 +16,7 @@ class DatabaseConfig:
     """Database configuration settings"""
     host: str = "localhost"
     port: int = 5432
-    database: str = "opencivicdata"
+    database: str = "openpolicy"
     username: str = "openpolicy"
     password: Optional[str] = None
     
@@ -33,7 +33,7 @@ def get_database_config() -> DatabaseConfig:
     return DatabaseConfig(
         host=os.getenv("DB_HOST", "localhost"),
         port=int(os.getenv("DB_PORT", "5432")),
-        database=os.getenv("DB_NAME", "opencivicdata"),
+        database=os.getenv("DB_NAME", "openpolicy"),
         username=os.getenv("DB_USER", "openpolicy"),
         password=os.getenv("DB_PASSWORD", "openpolicy123")
     )
@@ -54,6 +54,21 @@ def get_database_url() -> str:
 # Create engine and session factory
 engine = create_engine(get_database_url(), echo=False)
 SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
+
+
+def create_engine_from_config(config_or_url) -> 'Engine':
+    """Create SQLAlchemy engine from config or URL string"""
+    if isinstance(config_or_url, str):
+        return create_engine(config_or_url, echo=False)
+    else:
+        return create_engine(config_or_url.get_url(), echo=False)
+
+
+def get_session_factory(engine=None):
+    """Get session factory"""
+    if engine:
+        return sessionmaker(autocommit=False, autoflush=False, bind=engine)
+    return SessionLocal
 
 
 def get_db():

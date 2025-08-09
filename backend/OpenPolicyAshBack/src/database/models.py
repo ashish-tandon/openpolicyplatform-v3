@@ -72,8 +72,8 @@ class Jurisdiction(Base):
     id = Column(UUID(as_uuid=True), primary_key=True, default=uuid.uuid4)
     name = Column(String(255), nullable=False)
     jurisdiction_type = Column(Enum(JurisdictionType), nullable=False)
-    code = Column(String(50), unique=True, nullable=False)
-    website = Column(String(500))
+    # code = Column(String(50), unique=True, nullable=True)  # Temporarily commented out due to missing column in DB
+    # website = Column(String(500))  # Temporarily commented out due to missing column in DB
     created_at = Column(DateTime, default=datetime.utcnow)
     updated_at = Column(DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
     

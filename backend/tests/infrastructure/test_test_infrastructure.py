@@ -28,18 +28,14 @@ class TestTestInfrastructure:
         
         # Check if test directories exist
         test_dirs = [
-            "backend/tests",
-            "backend/tests/database",
-            "backend/tests/api",
-            "backend/tests/security",
-            "backend/tests/performance",
-            "backend/tests/scripts",
-            "backend/tests/integration",
-            "backend/tests/infrastructure",
-            "web/tests",
-            "web/tests/components",
-            "web/tests/accessibility",
-            "web/tests/e2e"
+            "tests",
+            "tests/database",
+            "tests/api",
+            "tests/security",
+            "tests/performance",
+            "tests/scripts",
+            "tests/integration",
+            "tests/infrastructure"
         ]
         
         for test_dir in test_dirs:
@@ -48,8 +44,7 @@ class TestTestInfrastructure:
         # Check if test configuration files exist
         config_files = [
             "pytest.ini",
-            "backend/conftest.py",
-            "web/conftest.py"
+            "conftest.py"
         ]
         
         for config_file in config_files:

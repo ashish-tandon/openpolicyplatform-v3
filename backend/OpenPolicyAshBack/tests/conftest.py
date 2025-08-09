@@ -32,7 +32,7 @@ from database import (
 from api.main import app
 
 # Test database configuration
-TEST_DB_URL = "postgresql://openpolicy:openpolicy123@localhost:5432/opencivicdata_test"
+TEST_DB_URL = "postgresql://openpolicy:openpolicy123@localhost:5432/openpolicy_test"
 TEST_REDIS_URL = "redis://localhost:6379/1"  # Use different DB for tests
 
 @pytest.fixture(scope="session")
@@ -59,8 +59,8 @@ def test_database():
         cursor = conn.cursor()
         
         # Drop and recreate test database
-        cursor.execute("DROP DATABASE IF EXISTS opencivicdata_test")
-        cursor.execute("CREATE DATABASE opencivicdata_test")
+        cursor.execute("DROP DATABASE IF EXISTS openpolicy_test")
+cursor.execute("CREATE DATABASE openpolicy_test")
         
         conn.close()
         
@@ -83,7 +83,7 @@ def test_database():
         )
         conn.autocommit = True
         cursor = conn.cursor()
-        cursor.execute("DROP DATABASE IF EXISTS opencivicdata_test")
+        cursor.execute("DROP DATABASE IF EXISTS openpolicy_test")
         conn.close()
         
     except Exception as e:
@@ -220,7 +220,7 @@ def services_running():
         conn = psycopg2.connect(
             host="localhost",
             port="5432",
-            database="opencivicdata",
+            database="openpolicy",
             user="openpolicy",
             password="openpolicy123"
         )

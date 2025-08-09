@@ -77,7 +77,7 @@ class ComprehensiveTestRunner:
             conn = psycopg2.connect(
                 host="localhost",
                 port="5432",
-                database="opencivicdata",
+                database="openpolicy",
                 user="openpolicy",
                 password="openpolicy123"
             )

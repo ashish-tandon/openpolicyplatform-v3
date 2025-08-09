@@ -1,0 +1,31 @@
+2025-08-08 19:46:05,141 - __main__ - INFO - Created default configuration: scraper_jobs.json
+2025-08-08 19:46:05,141 - __main__ - INFO - 🚀 Starting Scraper Monitoring System
+2025-08-08 19:46:05,141 - __main__ - ERROR - Monitoring system error: Invalid time format for a daily job (valid format is HH:MM(:SS)?)
+2025-08-08 19:46:11,092 - __main__ - INFO - 🚀 Starting Scraper Monitoring System
+2025-08-08 19:46:11,092 - __main__ - ERROR - Monitoring system error: Invalid time format for a daily job (valid format is HH:MM(:SS)?)
+2025-08-08 19:47:02,098 - __main__ - INFO - 🚀 Starting Scraper Monitoring System
+2025-08-08 19:47:02,098 - __main__ - ERROR - Monitoring system error: Invalid time format for a daily job (valid format is HH:MM(:SS)?)
+2025-08-08 19:47:18,819 - __main__ - INFO - 🚀 Starting Scraper Monitoring System
+2025-08-08 19:47:18,819 - __main__ - INFO - Scheduled federal_parliament to run at 02:00
+2025-08-08 19:47:18,819 - __main__ - INFO - Scheduled ontario_legislature to run at 03:00
+2025-08-08 19:47:18,819 - __main__ - INFO - Scheduled quebec_legislature to run at 04:00
+2025-08-08 19:47:18,819 - __main__ - INFO - Scheduled british_columbia_legislature to run at 05:00
+2025-08-08 19:47:18,819 - __main__ - INFO - Scheduled toronto_city_council to run at 06:00
+2025-08-08 19:47:18,819 - __main__ - INFO - Scheduled montreal_city_council to run at 07:00
+2025-08-08 19:47:18,819 - __main__ - INFO - Scheduled vancouver_city_council to run at 08:00
+2025-08-08 19:47:18,819 - __main__ - INFO - Scheduled civic_data to run at 09:00
+2025-08-08 19:47:18,819 - __main__ - INFO - 🕐 Starting job scheduler
+2025-08-08 20:05:56,866 - __main__ - INFO - Received signal 2, shutting down...
+2025-08-08 20:05:56,866 - __main__ - INFO - 🛑 Stopping Scraper Monitoring System
+2025-08-08 20:05:56,866 - __main__ - INFO - 📄 Status report saved to scraper_status_report_20250809_000556.json
+2025-08-08 20:05:56,866 - __main__ - INFO - ✅ Scraper Monitoring System stopped
+2025-08-08 20:48:31,275 - __main__ - INFO - 🚀 Starting Scraper Monitoring System
+2025-08-08 20:48:31,275 - __main__ - INFO - Scheduled federal_parliament to run at 02:00
+2025-08-08 20:48:31,275 - __main__ - INFO - Scheduled ontario_legislature to run at 03:00
+2025-08-08 20:48:31,275 - __main__ - INFO - Scheduled quebec_legislature to run at 04:00
+2025-08-08 20:48:31,275 - __main__ - INFO - Scheduled british_columbia_legislature to run at 05:00
+2025-08-08 20:48:31,275 - __main__ - INFO - Scheduled toronto_city_council to run at 06:00
+2025-08-08 20:48:31,275 - __main__ - INFO - Scheduled montreal_city_council to run at 07:00
+2025-08-08 20:48:31,275 - __main__ - INFO - Scheduled vancouver_city_council to run at 08:00
+2025-08-08 20:48:31,275 - __main__ - INFO - Scheduled civic_data to run at 09:00
+2025-08-08 20:48:31,275 - __main__ - INFO - 🕐 Starting job scheduler

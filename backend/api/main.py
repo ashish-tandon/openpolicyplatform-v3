@@ -9,7 +9,9 @@ from contextlib import asynccontextmanager
 import uvicorn
 from typing import List
 
+# Temporarily use basic imports to get server running
 from .routers import policies, scrapers, admin, auth, health
+# from .routers import scraper_monitoring, data_management, dashboard
 from .dependencies import get_current_user
 from .config import settings
 
@@ -57,6 +59,9 @@ def create_app() -> FastAPI:
     app.include_router(auth.router, prefix="/api/v1/auth", tags=["Authentication"])
     app.include_router(policies.router, prefix="/api/v1/policies", tags=["Policies"])
     app.include_router(scrapers.router, prefix="/api/v1/scrapers", tags=["Scrapers"])
+    # app.include_router(scraper_monitoring.router, tags=["Scraper Monitoring"])
+    # app.include_router(data_management.router, tags=["Data Management"])
+    # app.include_router(dashboard.router, tags=["Dashboard"])
     app.include_router(admin.router, prefix="/api/v1/admin", tags=["Admin"])
     
     @app.get("/")
