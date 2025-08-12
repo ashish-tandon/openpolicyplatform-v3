@@ -29,6 +29,19 @@ REQUIRED_ENVS = [
     ("SECRET_KEY", lambda: bool(settings.secret_key) and settings.secret_key != "your-secret-key-change-in-production"),
 ]
 
+# Additional production-only policy checks
+def _prod_policy_issues() -> list[str]:
+    issues: list[str] = []
+    if settings.environment.lower() == "production":
+        # ALLOWED_HOSTS must not be ["*"] and not empty
+        if not settings.allowed_hosts or settings.allowed_hosts == ["*"]:
+            issues.append("ALLOWED_HOSTS")
+        # ALLOWED_ORIGINS must be set and must not contain localhost/127.0.0.1
+        bad = any(("localhost" in o or "127.0.0.1" in o or o == "*") for o in (settings.allowed_origins or []))
+        if not settings.allowed_origins or bad:
+            issues.append("ALLOWED_ORIGINS")
+    return issues
+
 @asynccontextmanager
 async def lifespan(app: FastAPI):
     """Application lifespan manager"""
@@ -40,13 +53,16 @@ async def lifespan(app: FastAPI):
                 missing.append(name)
         except Exception:
             missing.append(name)
-    if missing:
-        logger.error("Startup guard failed. Missing/invalid required environment variables: %s", ", ".join(missing))
-        # Log details but do not crash in development; crash in production
+    prod_issues = _prod_policy_issues()
+    if missing or prod_issues:
+        if missing:
+            logger.error("Startup guard failed. Missing/invalid required environment variables: %s", ", ".join(missing))
+        if prod_issues:
+            logger.error("Startup guard policy violations (production): %s", ", ".join(prod_issues))
         if settings.environment.lower() == "production":
-            raise RuntimeError(f"Startup guard failed: {missing}")
+            raise RuntimeError(f"Startup guard failed: missing={missing} policy={prod_issues}")
         else:
-            logger.warning("Proceeding in %s with missing vars: %s", settings.environment, ", ".join(missing))
+            logger.warning("Proceeding in %s with issues: missing=%s policy=%s", settings.environment, missing, prod_issues)
 
     logger.info("🚀 Starting Open Policy Platform API…")
     logger.info("📊 Database: %s", settings.database_url)
