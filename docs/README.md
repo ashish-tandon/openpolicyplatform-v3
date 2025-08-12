@@ -21,6 +21,7 @@ Welcome to the Open Policy Platform documentation. This comprehensive guide will
 
 ### **⚙️ Operations**
 - [Environment Variables](operations/environment-variables.md)
+- [Dependencies and Requirements](operations/dependencies.md)
 - [Scripts Inventory](operations/scripts.md)
 - [Health Checks](operations/health-checks.md)
 - [Services Overview](operations/services-overview.md)
