@@ -10,6 +10,7 @@ Welcome to the Open Policy Platform documentation. This comprehensive guide will
 - [Merge Documentation](architecture/merge-documentation.md) - Repository merge details
 - [Final Merge Report](architecture/final-merge-report.md) - Complete merge summary
 - [Documentation Consolidation Plan](architecture/documentation-consolidation-plan.md) - Single source of truth rules
+- [Master Execution Plan](architecture/master-execution-plan.md) - Coordinated plan across services
 
 ### **🔌 API Documentation**
 - [Overview](api/overview.md) - API architecture, networking, versioning
@@ -17,6 +18,12 @@ Welcome to the Open Policy Platform documentation. This comprehensive guide will
 - [Endpoints](api/endpoints.md) - Canonical endpoint reference
 - [Schemas](api/schemas.md) - Request/response examples for key routes
 - [Quick Reference](api/quick-reference.md) - Fast lookup for common calls
+
+### **⚙️ Operations**
+- [Environment Variables](operations/environment-variables.md)
+- [Scripts Inventory](operations/scripts.md)
+- [Health Checks](operations/health-checks.md)
+- [Services Overview](operations/services-overview.md)
 
 ### **🚀 Deployment**
 - [Production Deployment](deployment/production.md) - Production deployment guide
