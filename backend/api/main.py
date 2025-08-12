@@ -52,6 +52,15 @@ async def lifespan(app: FastAPI):
         # Reload settings secret_key only for the running process
         settings.secret_key = os.environ["SECRET_KEY"]
 
+    # Reset in-memory counters for tests to avoid cross-test interference
+    try:
+        from .routers import auth as _auth
+        _auth.FAILED_ATTEMPTS_BY_USER.clear()
+        _auth.LOCKOUT_UNTIL_BY_USER.clear()
+        _auth.REQUEST_COUNTS_BY_IP.clear()
+    except Exception:
+        pass
+
     # Startup
     missing = []
     for name, checker in REQUIRED_ENVS:

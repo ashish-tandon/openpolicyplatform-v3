@@ -11,7 +11,7 @@ from .config import settings
 from config.database import get_database_session
 
 # Security scheme
-security = HTTPBearer()
+security = HTTPBearer(auto_error=False)
 
 # Expose DB session via FastAPI dependency injection so tests can override it
 
@@ -24,12 +24,14 @@ def get_db(db: Session = Depends(get_database_session)):
 
 
 def get_current_user(
-    credentials: HTTPAuthorizationCredentials = Depends(security),
+    credentials: Optional[HTTPAuthorizationCredentials] = Depends(security),
     db: Session = Depends(get_db)
 ):
     """Get current authenticated user"""
-    # TODO: Implement JWT token validation
-    # For now, return a mock user
+    if credentials is None:
+        raise HTTPException(status_code=status.HTTP_401_UNAUTHORIZED, detail="Not authenticated")
+    # TODO: Implement JWT token validation properly
+    # For tests, return a mock user
     return {
         "id": 1,
         "username": "admin",
