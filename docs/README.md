@@ -8,9 +8,10 @@ Welcome to the Open Policy Platform documentation. This comprehensive guide will
 - [Reorganization Plan](architecture/reorganization-plan.md) - Complete reorganization strategy
 - [Platform Summary](architecture/platform-summary.md) - Unified platform overview
 - [Merge Documentation](architecture/merge-documentation.md) - Repository merge details
-- [Final Merge Report](architecture/final-merge-report.md) - Complete merge summary
+- [Final Merge Report](architecture/final-reorganization-plan.md) - Final reorg plan
 - [Documentation Consolidation Plan](architecture/documentation-consolidation-plan.md) - Single source of truth rules
 - [Master Execution Plan](architecture/master-execution-plan.md) - Coordinated plan across services
+- [Diagram](architecture/diagram.md)
 
 ### **🔌 API Documentation**
 - [Overview](api/overview.md) - API architecture, networking, versioning
@@ -25,10 +26,15 @@ Welcome to the Open Policy Platform documentation. This comprehensive guide will
 - [Scripts Inventory](operations/scripts.md)
 - [Health Checks](operations/health-checks.md)
 - [Services Overview](operations/services-overview.md)
+- [Runbooks](operations/runbooks.md)
+- [Checklists](operations/checklists.md)
+- [SLOs](operations/slo.md)
 
 ### **🚀 Deployment**
 - [Production Deployment](deployment/production.md) - Production deployment guide
+- [Production Runbook](deployment/production-runbook.md)
 - [Docker Setup](deployment/docker.md) - Containerized deployment
+- [Docker Compose](deployment/docker-compose.md)
 - [Environment Configuration](deployment/environment.md) - Environment setup
 - [Monitoring](deployment/monitoring.md) - System monitoring
 
@@ -42,37 +48,6 @@ Welcome to the Open Policy Platform documentation. This comprehensive guide will
 - [User Guide](user-guides/user-guide.md) - End user documentation
 - [Admin Guide](user-guides/admin-guide.md) - Administrator documentation
 - [API Usage](user-guides/api-usage.md) - API usage examples
-
-## 🎯 **Quick Start**
-
-1. **Setup**: Run `../scripts/setup-unified.sh`
-2. **Start**: Run `../scripts/start-all.sh`
-3. **Access**: 
-   - Web Interface: http://localhost:5173
-   - Admin Interface: http://localhost:5173/admin
-   - API Documentation: http://localhost:8000/docs
-
-## 📋 **Platform Overview**
-
-The Open Policy Platform is a unified system for:
-- **Policy Analysis**: Comprehensive policy data analysis
-- **Data Collection**: Automated data scraping and collection
-- **User Interface**: Web-based policy browsing and search
-- **Administration**: Complete system management interface
-
-## 🔧 **Technology Stack**
-
-- **Backend**: FastAPI + PostgreSQL + Redis
-- **Frontend**: React + TypeScript + Tailwind CSS
-- **Database**: PostgreSQL with 6.5GB parliamentary data
-- **Infrastructure**: Docker + Nginx + Monitoring
-
-## 📞 **Support**
-
-For questions or issues:
-1. Check the relevant documentation section
-2. Review the [Development Guide](development/setup.md)
-3. Check the [API Documentation](api/overview.md)
 
 ---
 
