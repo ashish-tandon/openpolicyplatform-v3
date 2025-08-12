@@ -49,6 +49,9 @@ class Settings(BaseSettings):
     # Scraping
     scraper_timeout: int = 30
     max_concurrent_scrapers: int = 5
+    # Optional directories to locate scraper artifacts (defaults to current working directory)
+    scraper_reports_dir: str = ""
+    scraper_logs_dir: str = ""
     
     # File upload
     max_file_size: int = 10 * 1024 * 1024  # 10MB

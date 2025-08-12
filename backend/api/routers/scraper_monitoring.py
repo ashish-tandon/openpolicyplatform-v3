@@ -3,15 +3,17 @@ Scraper Monitoring API Endpoints
 Provides comprehensive monitoring and control for scraper operations
 """
 
-from fastapi import APIRouter, HTTPException, BackgroundTasks
+from fastapi import APIRouter, HTTPException, BackgroundTasks, Request
 from typing import List, Dict, Any, Optional
 import psutil
 import json
 import os
 from datetime import datetime, timedelta
 from pydantic import BaseModel
+import logging
 
 router = APIRouter(prefix="/api/v1/scrapers", tags=["scraper-monitoring"])
+logger = logging.getLogger("openpolicy.api.scrapers")
 
 # Data models
 class ScraperStatus(BaseModel):
@@ -43,34 +45,38 @@ class ScraperRunRequest(BaseModel):
     force_run: bool = False
 
 @router.get("/status", response_model=List[ScraperStatus])
-async def get_scraper_status():
+async def get_scraper_status(request: Request):
     """Get comprehensive status of all scrapers"""
     try:
-        # Read scraper test reports
-        scraper_status = []
-        
-        # Look for recent test reports
-        report_files = [f for f in os.listdir('.') if f.startswith('scraper_test_report_')]
+        reports_dir = getattr(request.app.state, "scraper_reports_dir", os.getcwd())
+        scraper_status: List[ScraperStatus] = []
+        report_files = [
+            os.path.join(reports_dir, f) for f in os.listdir(reports_dir)
+            if f.startswith('scraper_test_report_')
+        ]
         if report_files:
             latest_report = max(report_files)
             with open(latest_report, 'r') as f:
                 report_data = json.load(f)
-            
-            # Process detailed results
             for scraper_info in report_data.get('detailed_results', []):
-                status = ScraperStatus(
-                    name=scraper_info.get('name', 'Unknown'),
-                    category=scraper_info.get('category', 'Unknown'),
-                    status=scraper_info.get('status', 'Unknown'),
-                    last_run=scraper_info.get('timestamp'),
-                    success_rate=scraper_info.get('success_rate', 0.0),
-                    records_collected=scraper_info.get('records_collected', 0),
-                    error_count=scraper_info.get('error_count', 0)
-                )
-                scraper_status.append(status)
-        
+                try:
+                    status = ScraperStatus(
+                        name=scraper_info.get('name', 'Unknown'),
+                        category=scraper_info.get('category', 'Unknown'),
+                        status=scraper_info.get('status', 'Unknown'),
+                        last_run=scraper_info.get('timestamp'),
+                        success_rate=scraper_info.get('success_rate', 0.0),
+                        records_collected=scraper_info.get('records_collected', 0),
+                        error_count=scraper_info.get('error_count', 0)
+                    )
+                    scraper_status.append(status)
+                except Exception as e:
+                    logger.warning("Skipping malformed scraper result: %s", e)
+        else:
+            logger.warning("No scraper reports found in %s", reports_dir)
         return scraper_status
     except Exception as e:
+        logger.error("Error getting scraper status: %s", e)
         raise HTTPException(status_code=500, detail=f"Error getting scraper status: {str(e)}")
 
 @router.get("/health", response_model=SystemHealth)
@@ -86,45 +92,47 @@ async def get_system_health():
         )
         return health
     except Exception as e:
+        logger.error("Error getting system health: %s", e)
         raise HTTPException(status_code=500, detail=f"Error getting system health: {str(e)}")
 
 @router.get("/stats", response_model=DataCollectionStats)
-async def get_data_collection_stats():
+async def get_data_collection_stats(request: Request):
     """Get data collection statistics"""
     try:
-        # Calculate stats from database
         import subprocess
-        
         result = subprocess.run([
             "psql", "-h", "localhost", "-U", "ashishtandon", "-d", "openpolicy",
             "-c", "SELECT COUNT(*) FROM core_politician;",
             "-t", "-A"
         ], capture_output=True, text=True)
-        
         total_records = 0
         if result.returncode == 0 and result.stdout.strip():
             total_records = int(result.stdout.strip())
-        
-        # Read collection reports for today's stats
+        else:
+            logger.warning("DB count query failed: rc=%s err=%s", result.returncode, result.stderr)
+
+        reports_dir = getattr(request.app.state, "scraper_reports_dir", os.getcwd())
         today = datetime.now().strftime("%Y%m%d")
-        collection_reports = [f for f in os.listdir('.') if f.startswith(f'collection_report_{today}')]
-        
+        collection_reports = [
+            os.path.join(reports_dir, f) for f in os.listdir(reports_dir)
+            if f.startswith(f'collection_report_{today}')
+        ]
         records_today = 0
         success_rate = 0.0
         active_scrapers = 0
         failed_scrapers = 0
-        
         if collection_reports:
             latest_report = max(collection_reports)
             with open(latest_report, 'r') as f:
                 report_data = json.load(f)
-            
             summary = report_data.get('summary', {})
             records_today = summary.get('total_successes', 0)
             success_rate = summary.get('success_rate', 0.0)
             active_scrapers = summary.get('total_successes', 0)
             failed_scrapers = summary.get('total_failures', 0)
-        
+        else:
+            logger.info("No collection reports for today in %s", reports_dir)
+
         stats = DataCollectionStats(
             total_records=total_records,
             records_today=records_today,
@@ -132,13 +140,13 @@ async def get_data_collection_stats():
             active_scrapers=active_scrapers,
             failed_scrapers=failed_scrapers
         )
-        
         return stats
     except Exception as e:
+        logger.error("Error getting data collection stats: %s", e)
         raise HTTPException(status_code=500, detail=f"Error getting data collection stats: {str(e)}")
 
 @router.post("/run")
-async def run_scrapers(request: ScraperRunRequest, background_tasks: BackgroundTasks):
+async def run_scrapers(request: Request, background_tasks: BackgroundTasks):
     """Run scrapers manually"""
     try:
         # Add scraper run to background tasks
@@ -154,35 +162,32 @@ async def run_scrapers(request: ScraperRunRequest, background_tasks: BackgroundT
         raise HTTPException(status_code=500, detail=f"Error initiating scraper run: {str(e)}")
 
 @router.get("/logs")
-async def get_scraper_logs(limit: int = 50):
+async def get_scraper_logs(request: Request, limit: int = 50):
     """Get recent scraper logs"""
     try:
-        logs = []
-        
-        # Read recent log files
+        logs: list[dict] = []
+        logs_dir = getattr(request.app.state, "scraper_logs_dir", os.getcwd())
         log_files = [
-            f for f in os.listdir('.') 
+            os.path.join(logs_dir, f)
+            for f in os.listdir(logs_dir)
             if f.endswith('.log') and ('scraper' in f or 'collection' in f)
         ]
-        
-        for log_file in sorted(log_files, reverse=True)[:5]:  # Last 5 log files
+        for log_file in sorted(log_files, reverse=True)[:5]:
             try:
                 with open(log_file, 'r') as f:
                     lines = f.readlines()
-                    recent_lines = lines[-limit:]
-                    
-                    for line in recent_lines:
-                        if line.strip():
-                            logs.append({
-                                "file": log_file,
-                                "line": line.strip(),
-                                "timestamp": datetime.now().isoformat()
-                            })
+                for line in lines[-limit:]:
+                    if line.strip():
+                        logs.append({
+                            "file": os.path.basename(log_file),
+                            "line": line.strip(),
+                            "timestamp": datetime.now().isoformat()
+                        })
             except Exception as e:
-                continue
-        
+                logger.warning("Skipping log file %s: %s", log_file, e)
         return {"logs": logs[-limit:]}
     except Exception as e:
+        logger.error("Error reading scraper logs: %s", e)
         raise HTTPException(status_code=500, detail=f"Error getting scraper logs: {str(e)}")
 
 @router.get("/failures")

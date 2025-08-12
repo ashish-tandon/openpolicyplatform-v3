@@ -5,7 +5,7 @@ Provides comprehensive health checks, system diagnostics, and monitoring functio
 
 from fastapi import APIRouter, Depends, HTTPException
 from sqlalchemy.orm import Session
-from typing import Dict, Any, List
+from typing import Dict, Any, List, Optional
 import subprocess
 import psutil
 import json
@@ -46,7 +46,48 @@ class SystemDiagnostics(BaseModel):
     load_average: List[float]
     uptime: str
 
-@router.get("/health")
+class DatabaseHealth(BaseModel):
+    status: str
+    connectivity: Optional[str] = None
+    database_size: Optional[str] = None
+    table_count: Optional[int] = None
+    politician_records: Optional[int] = None
+    timestamp: Optional[str] = None
+    error: Optional[str] = None
+
+class ScraperHealth(BaseModel):
+    status: str
+    total_scrapers: int
+    active_scrapers: int
+    success_rate: float
+    last_run: Optional[str] = None
+    report_file: Optional[str] = None
+    timestamp: str
+    message: Optional[str] = None
+
+class ApiHealth(BaseModel):
+    status: str
+    service: str
+    version: str
+    environment: str
+    uptime: str
+    endpoints: Dict[str, str]
+    timestamp: str
+
+class ComprehensiveHealth(BaseModel):
+    status: str
+    components: Dict[str, Any]
+    summary: Dict[str, int]
+    timestamp: str
+
+class Metrics(BaseModel):
+    system: Dict[str, Any]
+    database: Dict[str, Any]
+    scrapers: Dict[str, Any]
+    network: Dict[str, Any]
+    timestamp: str
+
+@router.get("/health", response_model=HealthStatus)
 async def health_check() -> Dict[str, Any]:
     """Basic health check"""
     try:
@@ -69,10 +110,10 @@ async def health_check() -> Dict[str, Any]:
             "version": settings.version,
             "environment": settings.environment,
             "timestamp": datetime.now().isoformat(),
-            "error": str(e)
+            "uptime": "0:00:00"
         }
 
-@router.get("/health/detailed")
+@router.get("/health/detailed", response_model=DetailedHealthStatus)
 async def detailed_health_check(db: Session = Depends(get_db)) -> Dict[str, Any]:
     """Detailed health check with database connectivity and system metrics"""
     try:
@@ -127,10 +168,11 @@ async def detailed_health_check(db: Session = Depends(get_db)) -> Dict[str, Any]
             "environment": settings.environment,
             "database": f"unhealthy: {str(e)}",
             "timestamp": datetime.now().isoformat(),
-            "error": str(e)
+            "uptime": "0:00:00",
+            "system_metrics": {}
         }
 
-@router.get("/health/database")
+@router.get("/health/database", response_model=DatabaseHealth)
 async def database_health_check(db: Session = Depends(get_db)) -> Dict[str, Any]:
     """Database-specific health check"""
     try:
@@ -201,7 +243,7 @@ async def database_health_check(db: Session = Depends(get_db)) -> Dict[str, Any]
             "timestamp": datetime.now().isoformat()
         }
 
-@router.get("/health/scrapers")
+@router.get("/health/scrapers", response_model=ScraperHealth)
 async def scraper_health_check(db: Session = Depends(get_db)) -> Dict[str, Any]:
     """Scraper-specific health check"""
     try:
@@ -252,16 +294,22 @@ async def scraper_health_check(db: Session = Depends(get_db)) -> Dict[str, Any]:
                 "status": "warning",
                 "message": f"Error reading scraper report: {str(e)}",
                 "report_file": latest_report,
+                "total_scrapers": 0,
+                "active_scrapers": 0,
+                "success_rate": 0.0,
+                "last_run": None,
                 "timestamp": datetime.now().isoformat()
             }
     except Exception as e:
         return {
             "status": "unhealthy",
-            "error": str(e),
+            "total_scrapers": 0,
+            "active_scrapers": 0,
+            "success_rate": 0.0,
             "timestamp": datetime.now().isoformat()
         }
 
-@router.get("/health/system")
+@router.get("/health/system", response_model=SystemDiagnostics)
 async def system_health_check(db: Session = Depends(get_db)) -> Dict[str, Any]:
     """System-specific health check"""
     try:
@@ -314,17 +362,21 @@ async def system_health_check(db: Session = Depends(get_db)) -> Dict[str, Any]:
             },
             "active_processes": active_processes,
             "load_average": load_average,
-            "uptime": uptime,
-            "timestamp": datetime.now().isoformat()
+            "uptime": uptime
         }
     except Exception as e:
         return {
             "status": "unhealthy",
-            "error": str(e),
-            "timestamp": datetime.now().isoformat()
+            "cpu_usage": 0,
+            "memory_usage": 0,
+            "disk_usage": 0,
+            "network_io": {},
+            "active_processes": 0,
+            "load_average": [0, 0, 0],
+            "uptime": "0:00:00"
         }
 
-@router.get("/health/api")
+@router.get("/health/api", response_model=ApiHealth)
 async def api_health_check(db: Session = Depends(get_db)) -> Dict[str, Any]:
     """API-specific health check"""
     try:
@@ -359,11 +411,15 @@ async def api_health_check(db: Session = Depends(get_db)) -> Dict[str, Any]:
     except Exception as e:
         return {
             "status": "unhealthy",
-            "error": str(e),
+            "service": "Open Policy Platform API",
+            "version": settings.version,
+            "environment": settings.environment,
+            "uptime": "0:00:00",
+            "endpoints": {},
             "timestamp": datetime.now().isoformat()
         }
 
-@router.get("/health/comprehensive")
+@router.get("/health/comprehensive", response_model=ComprehensiveHealth)
 async def comprehensive_health_check(db: Session = Depends(get_db)) -> Dict[str, Any]:
     """Comprehensive health check covering all components"""
     try:
@@ -409,11 +465,12 @@ async def comprehensive_health_check(db: Session = Depends(get_db)) -> Dict[str,
     except Exception as e:
         return {
             "status": "unhealthy",
-            "error": str(e),
+            "components": {},
+            "summary": {"total_components": 0, "healthy_components": 0, "warning_components": 0, "unhealthy_components": 0},
             "timestamp": datetime.now().isoformat()
         }
 
-@router.get("/health/metrics")
+@router.get("/health/metrics", response_model=Metrics)
 async def health_metrics(db: Session = Depends(get_db)) -> Dict[str, Any]:
     """Get health metrics for monitoring"""
     try:
@@ -479,6 +536,9 @@ async def health_metrics(db: Session = Depends(get_db)) -> Dict[str, Any]:
         return metrics
     except Exception as e:
         return {
-            "error": str(e),
+            "system": {},
+            "database": {},
+            "scrapers": {},
+            "network": {},
             "timestamp": datetime.now().isoformat()
         }

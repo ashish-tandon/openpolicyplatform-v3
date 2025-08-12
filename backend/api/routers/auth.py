@@ -21,7 +21,7 @@ router = APIRouter()
 # Security
 oauth2_scheme = OAuth2PasswordBearer(tokenUrl="api/v1/auth/login")
 
-# Data models
+# Data models (input)
 class UserCreate(BaseModel):
     username: str
     email: EmailStr
@@ -53,6 +53,38 @@ class Token(BaseModel):
     token_type: str
     expires_in: int
     refresh_token: Optional[str] = None
+
+# Data models (output)
+class UserPublic(BaseModel):
+    id: int
+    username: str
+    email: EmailStr
+    full_name: Optional[str] = None
+    role: str
+    permissions: List[str] = []
+    is_active: Optional[bool] = True
+    created_at: Optional[str] = None
+    last_login: Optional[str] = None
+
+class LoginResponse(BaseModel):
+    access_token: str
+    refresh_token: str
+    token_type: str
+    expires_in: int
+    user: UserPublic
+
+class MessageResponse(BaseModel):
+    message: str
+    timestamp: Optional[str] = None
+
+class UsersListResponse(BaseModel):
+    users: List[UserPublic]
+    total_users: int
+    active_users: int
+
+class PermissionsResponse(BaseModel):
+    permissions: List[str]
+    role: str
 
 # Mock user database - in real implementation, this would be a database table
 MOCK_USERS = {
@@ -125,7 +157,7 @@ def authenticate_user(username: str, password: str):
         return False
     return user
 
-@router.post("/login")
+@router.post("/login", response_model=LoginResponse)
 async def login(
     form_data: OAuth2PasswordRequestForm = Depends(),
     db: Session = Depends(get_db)
@@ -181,7 +213,7 @@ async def login(
             detail=f"Login error: {str(e)}"
         )
 
-@router.post("/register")
+@router.post("/register", response_model=Dict[str, UserPublic])
 async def register(
     user_data: UserCreate,
     db: Session = Depends(get_db)
@@ -236,7 +268,7 @@ async def register(
             detail=f"Registration error: {str(e)}"
         )
 
-@router.post("/refresh")
+@router.post("/refresh", response_model=Token)
 async def refresh_token(
     refresh_token: str,
     db: Session = Depends(get_db)
@@ -284,7 +316,7 @@ async def refresh_token(
             detail="Invalid refresh token"
         )
 
-@router.get("/me")
+@router.get("/me", response_model=UserPublic)
 async def get_current_user_info(current_user = Depends(get_current_user)):
     """Get current user information"""
     try:
@@ -312,7 +344,7 @@ async def get_current_user_info(current_user = Depends(get_current_user)):
             detail=f"Error retrieving user info: {str(e)}"
         )
 
-@router.put("/me")
+@router.put("/me", response_model=Dict[str, UserPublic])
 async def update_current_user(
     user_update: UserUpdate,
     current_user = Depends(get_current_user),
@@ -364,7 +396,7 @@ async def update_current_user(
             detail=f"Error updating user: {str(e)}"
         )
 
-@router.post("/change-password")
+@router.post("/change-password", response_model=MessageResponse)
 async def change_password(
     password_change: PasswordChange,
     current_user = Depends(get_current_user),
@@ -398,7 +430,7 @@ async def change_password(
             detail=f"Error changing password: {str(e)}"
         )
 
-@router.post("/logout")
+@router.post("/logout", response_model=MessageResponse)
 async def logout(current_user = Depends(get_current_user)):
     """User logout"""
     try:
@@ -414,7 +446,7 @@ async def logout(current_user = Depends(get_current_user)):
             detail=f"Logout error: {str(e)}"
         )
 
-@router.post("/forgot-password")
+@router.post("/forgot-password", response_model=MessageResponse)
 async def forgot_password(
     password_reset: PasswordReset,
     background_tasks: BackgroundTasks,
@@ -453,7 +485,7 @@ async def forgot_password(
             detail=f"Error processing password reset: {str(e)}"
         )
 
-@router.get("/users")
+@router.get("/users", response_model=UsersListResponse)
 async def get_all_users(
     current_user = Depends(get_current_user),
     db: Session = Depends(get_db)
@@ -491,7 +523,7 @@ async def get_all_users(
             detail=f"Error retrieving users: {str(e)}"
         )
 
-@router.get("/permissions")
+@router.get("/permissions", response_model=PermissionsResponse)
 async def get_user_permissions(current_user = Depends(get_current_user)):
     """Get current user permissions"""
     try:

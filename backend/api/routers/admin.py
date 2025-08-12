@@ -3,7 +3,7 @@ Enhanced Admin Router
 Provides comprehensive administrative functionality for system management
 """
 
-from fastapi import APIRouter, Depends, HTTPException, BackgroundTasks
+from fastapi import APIRouter, Depends, HTTPException, BackgroundTasks, Request
 from sqlalchemy.orm import Session
 from typing import Dict, Any, List, Optional
 import subprocess
@@ -12,11 +12,13 @@ import os
 import psutil
 from datetime import datetime, timedelta
 from pydantic import BaseModel
+import logging
 
 from ..dependencies import get_db, require_admin
 from ..config import settings
 
 router = APIRouter()
+logger = logging.getLogger("openpolicy.api.admin")
 
 # Data models
 class SystemRestartRequest(BaseModel):
@@ -44,41 +46,45 @@ async def get_dashboard_stats(
     """Get comprehensive dashboard statistics"""
     try:
         # Database statistics
-        db_stats = {}
+        db_stats: Dict[str, Any] = {}
         try:
             result = subprocess.run([
                 "psql", "-h", "localhost", "-U", "ashishtandon", "-d", "openpolicy",
                 "-c", "SELECT COUNT(*) FROM core_politician;",
                 "-t", "-A"
             ], capture_output=True, text=True, timeout=10)
-            
             if result.returncode == 0 and result.stdout.strip():
                 db_stats["total_politicians"] = int(result.stdout.strip())
-        except:
+            else:
+                logger.warning("DB stats query failed: rc=%s err=%s", result.returncode, result.stderr)
+        except Exception as e:
+            logger.warning("DB stats error: %s", e)
             db_stats["total_politicians"] = 0
         
-        # Scraper statistics
+        # Scraper statistics from latest report (optional)
         scraper_stats = {
             "total_scrapers": 0,
             "active_scrapers": 0,
             "success_rate": 0.0
         }
-        
-        scraper_files = [f for f in os.listdir('.') if f.startswith('scraper_test_report_')]
-        if scraper_files:
-            latest_report = max(scraper_files)
-            try:
+        try:
+            reports_dir = getattr(router, 'scraper_reports_dir', '') or getattr(settings, 'scraper_reports_dir', '') or os.getcwd()
+            report_files = [
+                os.path.join(reports_dir, f) for f in os.listdir(reports_dir)
+                if f.startswith('scraper_test_report_')
+            ]
+            if report_files:
+                latest_report = max(report_files)
                 with open(latest_report, 'r') as f:
                     report_data = json.load(f)
-                
                 summary = report_data.get('summary', {})
                 scraper_stats.update({
                     "total_scrapers": summary.get('total_scrapers', 0),
                     "active_scrapers": summary.get('successful', 0),
                     "success_rate": summary.get('success_rate', 0.0)
                 })
-            except:
-                pass
+        except Exception as e:
+            logger.info("No scraper report available or parse error: %s", e)
         
         # System statistics
         system_stats = {
@@ -88,7 +94,6 @@ async def get_dashboard_stats(
             "uptime": str(datetime.now() - datetime.fromtimestamp(psutil.boot_time())).split('.')[0]
         }
         
-        # API statistics
         api_stats = {
             "status": "healthy",
             "version": settings.version,
@@ -103,6 +108,7 @@ async def get_dashboard_stats(
             "last_update": datetime.now().isoformat()
         }
     except Exception as e:
+        logger.error("Error retrieving dashboard stats: %s", e)
         raise HTTPException(status_code=500, detail=f"Error retrieving dashboard stats: {str(e)}")
 
 @router.get("/system/status")
@@ -236,6 +242,7 @@ async def create_user(
 
 @router.get("/logs")
 async def get_system_logs(
+    request: Request,
     log_type: str = "all",
     limit: int = 100,
     db: Session = Depends(get_db),
@@ -243,29 +250,31 @@ async def get_system_logs(
 ):
     """Get system logs"""
     try:
-        logs = []
-        
+        logs: List[Dict[str, Any]] = []
+        logs_dir = getattr(request.app.state, "scraper_logs_dir", os.getcwd())
         # Get log files based on type
-        if log_type == "all":
-            log_files = [f for f in os.listdir('.') if f.endswith('.log')]
-        else:
-            log_files = [f for f in os.listdir('.') if f.endswith('.log') and log_type in f]
+        try:
+            if log_type == "all":
+                log_files = [os.path.join(logs_dir, f) for f in os.listdir(logs_dir) if f.endswith('.log')]
+            else:
+                log_files = [os.path.join(logs_dir, f) for f in os.listdir(logs_dir) if f.endswith('.log') and log_type in f]
+        except Exception as e:
+            logger.warning("Log directory read failed (%s): %s", logs_dir, e)
+            log_files = []
         
         for log_file in sorted(log_files, reverse=True)[:10]:
             try:
                 with open(log_file, 'r') as f:
                     lines = f.readlines()
-                    recent_lines = lines[-limit:]
-                    
-                    for line in recent_lines:
-                        if line.strip():
-                            logs.append({
-                                "file": log_file,
-                                "line": line.strip(),
-                                "timestamp": datetime.now().isoformat()
-                            })
-            except:
-                continue
+                for line in lines[-limit:]:
+                    if line.strip():
+                        logs.append({
+                            "file": os.path.basename(log_file),
+                            "line": line.strip(),
+                            "timestamp": datetime.now().isoformat()
+                        })
+            except Exception as e:
+                logger.warning("Skipping log file %s: %s", log_file, e)
         
         return {
             "logs": logs[:limit],
@@ -273,6 +282,7 @@ async def get_system_logs(
             "log_type": log_type
         }
     except Exception as e:
+        logger.error("Error retrieving logs: %s", e)
         raise HTTPException(status_code=500, detail=f"Error retrieving logs: {str(e)}")
 
 @router.post("/backup")
