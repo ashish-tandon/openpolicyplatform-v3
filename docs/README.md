@@ -9,12 +9,14 @@ Welcome to the Open Policy Platform documentation. This comprehensive guide will
 - [Platform Summary](architecture/platform-summary.md) - Unified platform overview
 - [Merge Documentation](architecture/merge-documentation.md) - Repository merge details
 - [Final Merge Report](architecture/final-merge-report.md) - Complete merge summary
+- [Documentation Consolidation Plan](architecture/documentation-consolidation-plan.md) - Single source of truth rules
 
 ### **🔌 API Documentation**
-- [API Overview](api/overview.md) - API architecture and design
-- [Authentication](api/authentication.md) - Authentication and authorization
-- [Endpoints](api/endpoints.md) - Complete API endpoint reference
-- [Integration Guide](api/integration.md) - How to integrate with the API
+- [Overview](api/overview.md) - API architecture, networking, versioning
+- [Authentication](api/authentication.md) - JWT flow and endpoints
+- [Endpoints](api/endpoints.md) - Canonical endpoint reference
+- [Schemas](api/schemas.md) - Request/response examples for key routes
+- [Quick Reference](api/quick-reference.md) - Fast lookup for common calls
 
 ### **🚀 Deployment**
 - [Production Deployment](deployment/production.md) - Production deployment guide
