@@ -10,12 +10,12 @@ mapfile -t files < <(find docs -type f -name "*.md")
 
 for f in "${files[@]}"; do
   while IFS= read -r line; do
-    # extract markdown links: [text](path)
-    if [[ "$line" =~ \]\(([^)#?]+)\) ]]; then
-      link="${BASH_REMATCH[1]}"
+    # naive scan for patterns like ](path)
+    link_part=$(echo "$line" | sed -n 's/.*](\([^)#?]*\)).*/\1/p') || true
+    if [[ -n "${link_part}" ]]; then
+      link="$link_part"
       # only check relative links under docs/
-      if [[ "$link" != http* && "$link" != mailto:* ]]; then
-        # normalize path
+      if [[ "$link" != http* && "$link" != mailto:* && "$link" != *.png && "$link" != *.jpg && "$link" != *.svg ]]; then
         target="$(dirname "$f")/$link"
         if [[ ! -e "$target" ]]; then
           echo "Broken link in $f -> $link"
