@@ -8,6 +8,8 @@ from fastapi.middleware.trustedhost import TrustedHostMiddleware
 from contextlib import asynccontextmanager
 import uvicorn
 from typing import List
+import logging
+import os
 
 # Import all routers
 from .routers import policies, scrapers, admin, auth, health, scraper_monitoring, data_management, dashboard
@@ -19,20 +21,50 @@ from .middleware.security import SecurityMiddleware, InputValidationMiddleware, 
 from .dependencies import get_current_user
 from .config import settings
 
+logger = logging.getLogger("openpolicy.api")
+logging.basicConfig(level=getattr(logging, settings.log_level.upper(), logging.INFO))
+
+REQUIRED_ENVS = [
+    ("DATABASE_URL", lambda: bool(settings.database_url)),
+    ("SECRET_KEY", lambda: bool(settings.secret_key) and settings.secret_key != "your-secret-key-change-in-production"),
+]
+
 @asynccontextmanager
 async def lifespan(app: FastAPI):
     """Application lifespan manager"""
     # Startup
-    print("🚀 Starting Open Policy Platform API...")
-    print(f"📊 Database: {settings.database_url}")
-    print(f"🔧 Environment: {settings.environment}")
-    print("🛡️ Security middleware enabled")
-    print("⚡ Performance middleware enabled")
+    missing = []
+    for name, checker in REQUIRED_ENVS:
+        try:
+            if not checker():
+                missing.append(name)
+        except Exception:
+            missing.append(name)
+    if missing:
+        logger.error("Startup guard failed. Missing/invalid required environment variables: %s", ", ".join(missing))
+        # Log details but do not crash in development; crash in production
+        if settings.environment.lower() == "production":
+            raise RuntimeError(f"Startup guard failed: {missing}")
+        else:
+            logger.warning("Proceeding in %s with missing vars: %s", settings.environment, ", ".join(missing))
+
+    logger.info("🚀 Starting Open Policy Platform API…")
+    logger.info("📊 Database: %s", settings.database_url)
+    logger.info("🔧 Environment: %s", settings.environment)
+    logger.info("🛡️ Security middleware enabled")
+    logger.info("⚡ Performance middleware enabled")
+    # Scraper dirs info
+    reports_dir = settings.scraper_reports_dir or os.getcwd()
+    logs_dir = settings.scraper_logs_dir or os.getcwd()
+    app.state.scraper_reports_dir = reports_dir
+    app.state.scraper_logs_dir = logs_dir
+    logger.info("📁 Scraper reports dir: %s", reports_dir)
+    logger.info("📁 Scraper logs dir: %s", logs_dir)
     
     yield
     
     # Shutdown
-    print("🛑 Shutting down Open Policy Platform API...")
+    logger.info("🛑 Shutting down Open Policy Platform API…")
 
 def create_app() -> FastAPI:
     """Create FastAPI application"""
