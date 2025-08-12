@@ -16,13 +16,13 @@ services:
     build:
       context: ./backend
     environment:
-      - DATABASE_URL=postgresql://openpolicy:openpolicy123@postgres:5432/openpolicy_app
-      - APP_DATABASE_URL=postgresql://openpolicy:openpolicy123@postgres:5432/openpolicy_app
-      - SCRAPERS_DATABASE_URL=postgresql://openpolicy:openpolicy123@postgres:5432/openpolicy_scrapers
-      - AUTH_DATABASE_URL=postgresql://openpolicy:openpolicy123@postgres:5432/openpolicy_auth
+      - DATABASE_URL=postgresql://openpolicy:openpolicy123@postgres:5432/openpolicy
+      - APP_DATABASE_URL=postgresql://openpolicy:openpolicy123@postgres:5432/openpolicy
+      - SCRAPERS_DATABASE_URL=postgresql://openpolicy:openpolicy123@postgres:5432/openpolicy
+      - AUTH_DATABASE_URL=postgresql://openpolicy:openpolicy123@postgres:5432/openpolicy
       - DB_HOST=postgres
       - DB_PORT=5432
-      - DB_NAME=openpolicy_app
+      - DB_NAME=openpolicy
       - DB_USER=openpolicy
       - DB_PASSWORD=openpolicy123
     ports:

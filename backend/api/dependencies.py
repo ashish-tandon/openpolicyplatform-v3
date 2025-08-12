@@ -13,13 +13,15 @@ from config.database import get_database_session
 # Security scheme
 security = HTTPBearer()
 
-def get_db() -> Session:
-    """Get database session"""
-    db = get_database_session()
+# Expose DB session via FastAPI dependency injection so tests can override it
+
+def get_db(db: Session = Depends(get_database_session)):
+    """Yield a database session that can be overridden in tests."""
     try:
         yield db
     finally:
         db.close()
+
 
 def get_current_user(
     credentials: HTTPAuthorizationCredentials = Depends(security),
@@ -34,6 +36,7 @@ def get_current_user(
         "email": "admin@openpolicy.com",
         "role": "admin"
     }
+
 
 def require_admin(current_user = Depends(get_current_user)):
     """Require admin role"""
