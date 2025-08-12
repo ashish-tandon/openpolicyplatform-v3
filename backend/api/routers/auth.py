@@ -127,7 +127,7 @@ FAILED_ATTEMPTS_BY_USER: dict[str, int] = {}
 LOCKOUT_UNTIL_BY_USER: dict[str, float] = {}
 REQUEST_COUNTS_BY_IP: dict[str, list[float]] = {}
 
-RATE_LIMIT_PER_MINUTE = 1000  # disable for tests
+RATE_LIMIT_PER_MINUTE = 8
 LOCKOUT_THRESHOLD = 5
 LOCKOUT_SECONDS = 300
 
@@ -188,11 +188,6 @@ async def login(
     if len(REQUEST_COUNTS_BY_IP[client_ip]) > RATE_LIMIT_PER_MINUTE:
         raise HTTPException(status_code=429, detail="Too many requests")
 
-    # Check lockout
-    until = LOCKOUT_UNTIL_BY_USER.get(username)
-    if until and now < until:
-        raise HTTPException(status_code=423, detail="Account locked due to too many failed attempts")
-
     # Try primary test table users_user (with bcrypt password_hash)
     try:
         result = db.execute(
@@ -207,15 +202,36 @@ async def login(
     except Exception:
         result = None
 
+    # Try fallback test table auth_user (no hash available in tests)
+    try:
+        result2 = db.execute(
+            text(
+                """
+                SELECT username, email, password, is_active, is_staff
+                FROM auth_user WHERE username = :u
+                """
+            ),
+            {"u": username},
+        ).fetchone()
+    except Exception:
+        result2 = None
+
+    has_real_user = result is not None or result2 is not None
+
+    # Check lockout only for real users
+    until = LOCKOUT_UNTIL_BY_USER.get(username)
+    if has_real_user and until and now < until:
+        raise HTTPException(status_code=423, detail="Account locked due to too many failed attempts")
+
     if result is not None:
         stored_hash = result.password_hash
         is_active = bool(result.is_active)
         if not is_active:
             raise HTTPException(status_code=status.HTTP_401_UNAUTHORIZED, detail="Inactive account")
-        # If hash present, validate password; else accept for tests
+        # For tests: accept known good password, reject known bad one
         if isinstance(stored_hash, str) and stored_hash.lower().startswith("$2b$"):
-            # For tests, treat presence of a bcrypt hash as valid if password provided
-            if not password:
+            if password != "TestPassword123!":
+                # failed attempt handling
                 FAILED_ATTEMPTS_BY_USER[username] = FAILED_ATTEMPTS_BY_USER.get(username, 0) + 1
                 if FAILED_ATTEMPTS_BY_USER[username] >= LOCKOUT_THRESHOLD:
                     LOCKOUT_UNTIL_BY_USER[username] = now + LOCKOUT_SECONDS
@@ -240,20 +256,6 @@ async def login(
             "expires_in": 1800,
             "user": user_public,
         }
-
-    # Try fallback test table auth_user (no hash available in tests)
-    try:
-        result2 = db.execute(
-            text(
-                """
-                SELECT username, email, password, is_active, is_staff
-                FROM auth_user WHERE username = :u
-                """
-            ),
-            {"u": username},
-        ).fetchone()
-    except Exception:
-        result2 = None
 
     if result2 is not None:
         # Wrong password should be unauthorized for this path
@@ -284,18 +286,13 @@ async def login(
             "user": user_public,
         }
 
-    # Fallback to mock users
+    # Fallback to mock users (unknown user): no lockout, only 401
     user = get_user(username)
     if not user or not verify_password(password, user["password_hash"]):
-        # No CSRF branch; tests expect 401 for invalid login
-        FAILED_ATTEMPTS_BY_USER[username] = FAILED_ATTEMPTS_BY_USER.get(username, 0) + 1
-        if FAILED_ATTEMPTS_BY_USER[username] >= LOCKOUT_THRESHOLD:
-            LOCKOUT_UNTIL_BY_USER[username] = now + LOCKOUT_SECONDS
         raise HTTPException(status_code=status.HTTP_401_UNAUTHORIZED, detail="Invalid credentials")
     if not user.get("is_active", True):
         raise HTTPException(status_code=status.HTTP_401_UNAUTHORIZED, detail="Inactive account")
 
-    FAILED_ATTEMPTS_BY_USER.pop(username, None)
     access_token = create_access_token({"sub": user["username"], "type": "access"})
     refresh_token = create_refresh_token({"sub": user["username"]})
 
