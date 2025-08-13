@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import Toast from "../../components/shared/Toast";
 
 type Job = { id: string; enabled: boolean; last_run: string | null };
 
@@ -15,6 +16,7 @@ export default function AdminScrapers() {
   const [enabled, setEnabled] = useState<boolean | null>(null);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string>("");
+  const [toast, setToast] = useState<{msg:string,type:'success'|'error'|'info'}|null>(null);
   const [status, setStatus] = useState<ScraperStatus[]>([]);
   const [logs, setLogs] = useState<LogLine[]>([]);
   const [failures, setFailures] = useState<any>(null);
@@ -52,7 +54,7 @@ export default function AdminScrapers() {
     setLoading(true);
     try {
       await fetch("/api/v1/scrapers/run-now", { method:"POST", headers:{"Content-Type":"application/json"}, body: JSON.stringify({ scope, mode, since: since || undefined }) });
-      alert(`Queued: ${scope} (${mode}${since?`, since ${since}`:''})`);
+      setToast({msg:`Queued: ${scope} (${mode}${since?`, since ${since}`:''})`, type:'success'});
     } finally { setLoading(false); }
   };
 
@@ -108,7 +110,7 @@ export default function AdminScrapers() {
                   setLoading(true);
                   try {
                     await fetch("/api/v1/scrapers/run-now", { method:"POST", headers:{"Content-Type":"application/json"}, body: JSON.stringify({ scope: "*:*", mode: "daily" }) });
-                    alert("Queued all daily scrapers");
+                    setToast({msg:"Queued all daily scrapers", type:'success'});
                   } finally { setLoading(false); }
                 }}>Run All Daily</button>
               </div>
@@ -163,6 +165,7 @@ export default function AdminScrapers() {
       ) : (
         <div>Feature flag off. Enable SCRAPER_SERVICE_ENABLED to use.</div>
       )}
+      {toast && <Toast message={toast.msg} type={toast.type} onClose={()=>setToast(null)} />}
     </div>
   );
 }
