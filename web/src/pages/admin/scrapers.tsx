@@ -22,7 +22,7 @@ export default function AdminScrapers() {
   const refresh = async () => {
     setError("");
     try {
-      const s = await fetch("/api/v1/scrapers/status");
+      const s = await fetch("/api/v1/scrapers/service-status");
       const sv = await s.json();
       setEnabled(!!sv.enabled);
       if (sv.enabled) {

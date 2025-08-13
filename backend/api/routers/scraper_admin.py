@@ -52,7 +52,7 @@ class ToggleJobRequest(BaseModel):
     job_id: str
     enabled: bool
 
-@router.get("/status")
+@router.get("/service-status")
 def service_status():
     return {
         "enabled": bool(getattr(settings, "scraper_service_enabled", False)),

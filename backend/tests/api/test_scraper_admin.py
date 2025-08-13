@@ -11,11 +11,13 @@ from backend.api.main import app
 client = TestClient(app)
 
 def test_status_endpoint():
-    r = client.get("/api/v1/scrapers/status")
+    r = client.get("/api/v1/scrapers/service-status")
     assert r.status_code == 200
     assert isinstance(r.json().get("enabled"), bool)
 
 def test_jobs_list_and_toggle_and_run_now():
+    # enable flag first
+    client.post("/api/v1/admin/config/scraper/feature-flag", json={"enabled": True})
     # list
     r = client.get("/api/v1/scrapers/jobs")
     assert r.status_code == 200

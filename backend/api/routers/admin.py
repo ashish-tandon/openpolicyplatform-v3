@@ -21,7 +21,7 @@ from . import health as health_router
 from . import scraper_admin as scraper_admin_router
 from . import dashboard as dashboard_router
 
-router = APIRouter()
+router = APIRouter(prefix="/api/v1/admin", tags=["admin"])
 logger = logging.getLogger("openpolicy.api.admin")
 
 # Data models
