@@ -38,6 +38,12 @@ jobs:
           docker push ghcr.io/your-org/api:${{ github.ref_name }}
           docker push ghcr.io/your-org/web:${{ github.ref_name }} || true
           docker push ghcr.io/your-org/scraper:${{ github.ref_name }}
+      - name: Pre-deploy validation
+        env:
+          API_BASE: http://localhost:9001
+        run: |
+          pip install requests pyyaml
+          python scripts/pre_deploy_validate.py
       - name: Setup kubectl
         uses: azure/setup-kubectl@v4
         with:
