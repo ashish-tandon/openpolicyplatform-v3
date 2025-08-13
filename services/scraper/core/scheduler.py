@@ -8,3 +8,6 @@ def parse_scope(scope: str):
 
 def enabled():
     return os.getenv("SCHEDULER_ENABLED","true").lower()=="true"
+
+SCRAPER_HOST = os.getenv("SCRAPER_HOST", "0.0.0.0")
+SCRAPER_PORT = int(os.getenv("SCRAPER_PORT", "9003"))

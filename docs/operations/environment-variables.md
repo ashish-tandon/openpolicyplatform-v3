@@ -63,3 +63,14 @@ Validation
 - `SCRAPER_RETRIES` (int): Retry attempts.
 - `SCHEDULER_ENABLED` (bool): Enables internal scheduler for local/dev.
 - `SCHEDULER_DEFAULT_SCOPE` (string): Default scope selector for jobs.
+
+## Central Configuration
+- Central config file: `config/central-config.yaml`
+- Standard ports:
+  - API: 9001
+  - Web: 9002
+  - Scraper: 9003
+- Override via env per service:
+  - API_HOST, API_PORT
+  - SCRAPER_HOST, SCRAPER_PORT
+- Allowed IPs/hosts enforced at ingress and app layer (CORS/TrustedHost)

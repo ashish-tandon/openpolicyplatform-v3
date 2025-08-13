@@ -15,8 +15,8 @@ class Settings(BaseSettings):
     environment: str = "development"
     
     # Server
-    host: str = "0.0.0.0"
-    port: int = 8000
+    host: str = os.getenv("API_HOST", "0.0.0.0")
+    port: int = int(os.getenv("API_PORT", "9001"))
     
     # Database (canonical)
     database_url: str = "postgresql://postgres@localhost:5432/openpolicy"

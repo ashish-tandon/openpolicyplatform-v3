@@ -3,40 +3,36 @@
 Service: FastAPI backend (`backend/api`)
 
 ## Endpoints
-- `GET /api/v1/health`
-  - Returns basic status and uptime
-- `GET /api/v1/health/detailed`
-  - Adds DB connectivity and system metrics
-- `GET /api/v1/health/database`
-  - DB size, table count, key record counts
-- `GET /api/v1/health/scrapers`
-  - Scraper success rate, last run
-- `GET /api/v1/health/system`
-  - CPU, memory, disk, network counters, processes, load, uptime
-- `GET /api/v1/health/api`
-  - API version, environment, uptime
-- `GET /api/v1/health/comprehensive`
-  - Aggregates all of the above and summarizes status
-- `GET /api/v1/health/metrics`
-  - System, database, scraper, network metrics snapshot
+- `/api/v1/health` (liveness)
+- `/api/v1/health/detailed` (readiness)
+
+## Kubernetes Probes (API)
+```yaml
+livenessProbe:
+  httpGet: { path: /api/v1/health, port: 9001 }
+  initialDelaySeconds: 5
+  periodSeconds: 10
+readinessProbe:
+  httpGet: { path: /api/v1/health/detailed, port: 9001 }
+  initialDelaySeconds: 5
+  periodSeconds: 10
+```
+
+Service: Scraper CLI jobs (CronJobs)
+- Use job completion and exit codes; optional /metrics endpoint if long-running worker is added.
+
+Service: Web
+- `/` serves HTML; use HTTP 200 for liveness.
+```yaml
+livenessProbe:
+  httpGet: { path: /, port: 80 }
+  initialDelaySeconds: 5
+  periodSeconds: 10
+readinessProbe:
+  httpGet: { path: /, port: 80 }
+  initialDelaySeconds: 5
+  periodSeconds: 10
+```
 
 ## Parameters and interpretations
-- Status levels: `healthy`, `warning`, `unhealthy`
-- System thresholds (defaults from code):
-  - Warning when CPU/memory/disk > 80%
-  - Unhealthy when CPU/memory/disk > 90%
-- Database health:
-  - Connectivity via `SELECT 1` (success = healthy)
-  - Size via `pg_database_size`
-  - Table count from `information_schema.tables`
-- Scraper health:
-  - Derived from latest `scraper_test_report_*.json` or collection reports
-  - Success rate thresholds as in code: <50 critical, <70 warning
-
-## Usage
-- For probes: use `GET /api/v1/health` for liveness, `GET /api/v1/health/detailed` for readiness
-- For dashboards/alerts: consume `/api/v1/health/comprehensive` and `/api/v1/health/metrics`
-
-Notes:
-- In production, protect detailed endpoints if needed (auth, IP allow-list)
-- Paths and behavior documented in `docs/api/endpoints.md`
+- Status levels: `healthy`, `
