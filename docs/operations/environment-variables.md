@@ -74,3 +74,4 @@ Validation
   - API_HOST, API_PORT
   - SCRAPER_HOST, SCRAPER_PORT
 - Allowed IPs/hosts enforced at ingress and app layer (CORS/TrustedHost)
+- Allowed IPs applied via central config allowlist (API layer middleware)

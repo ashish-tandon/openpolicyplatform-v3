@@ -19,6 +19,7 @@ from backend.api.routers import scraper_admin as scraper_admin_router
 # Import middleware
 from .middleware.performance import PerformanceMiddleware
 from .middleware.security import SecurityMiddleware, InputValidationMiddleware, RateLimitMiddleware
+from .middleware.ip_allowlist import IPAllowlistMiddleware
 
 from .dependencies import get_current_user
 from .config import settings
@@ -123,6 +124,7 @@ def create_app() -> FastAPI:
     app.add_middleware(SecurityMiddleware)
     app.add_middleware(InputValidationMiddleware)
     app.add_middleware(RateLimitMiddleware, requests_per_minute=100)
+    app.add_middleware(IPAllowlistMiddleware, service_name="api")
     
     # Add performance middleware
     app.add_middleware(PerformanceMiddleware, cache_ttl=300, rate_limit_per_minute=100)
