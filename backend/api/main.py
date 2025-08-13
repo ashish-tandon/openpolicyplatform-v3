@@ -142,6 +142,7 @@ def create_app() -> FastAPI:
     app.include_router(data_management.router, tags=["Data Management"])
     app.include_router(dashboard.router, tags=["Dashboard"])
     app.include_router(metrics_router.router, tags=["Metrics"])  # /metrics
+    app.include_router(admin.router)  # /api/v1/admin/*
     app.include_router(scraper_admin_router.router)
     
     @app.get("/")

@@ -3,7 +3,7 @@ import importlib
 import pytest
 from fastapi.testclient import TestClient
 
-# Ensure settings pick up env flag
+# Ensure settings pick up env flag (set before app import)
 os.environ["SCRAPER_SERVICE_ENABLED"] = "true"
 
 from backend.api.main import app
