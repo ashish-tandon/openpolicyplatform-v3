@@ -14,6 +14,7 @@ from sqlalchemy.pool import StaticPool
 from api.main import app
 from config.database import get_database_session
 import jwt
+from datetime import datetime, timedelta, timezone
 
 TEST_JWT_SECRET = "test_secret_key"
 
@@ -115,7 +116,8 @@ def client(db_session) -> Generator:
 @pytest.fixture
 def auth_headers():
     """Get authentication headers for admin user."""
-    token = jwt.encode({"sub": "admin", "type": "access"}, TEST_JWT_SECRET, algorithm="HS256")
+    exp = datetime.now(timezone.utc) + timedelta(hours=1)
+    token = jwt.encode({"sub": "admin", "type": "access", "exp": exp}, TEST_JWT_SECRET, algorithm="HS256")
     return {"Authorization": f"Bearer {token}"}
 
 
