@@ -5,6 +5,8 @@ type Job = { id: string; enabled: boolean; last_run: string | null };
 export default function AdminScrapers() {
   const [jobs, setJobs] = useState<Job[]>([]);
   const [scope, setScope] = useState("");
+  const [mode, setMode] = useState("daily");
+  const [since, setSince] = useState("");
   const [enabled, setEnabled] = useState<boolean | null>(null);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string>("");
@@ -32,8 +34,8 @@ export default function AdminScrapers() {
   const runNow = async () => {
     setLoading(true);
     try {
-      await fetch("/api/v1/scrapers/run-now", { method:"POST", headers:{"Content-Type":"application/json"}, body: JSON.stringify({ scope }) });
-      alert("Queued: "+scope);
+      await fetch("/api/v1/scrapers/run-now", { method:"POST", headers:{"Content-Type":"application/json"}, body: JSON.stringify({ scope, mode, since: since || undefined }) });
+      alert(`Queued: ${scope} (${mode}${since?`, since ${since}`:''})`);
     } finally { setLoading(false); }
   };
 
@@ -63,9 +65,19 @@ export default function AdminScrapers() {
               </li>
             )}
           </ul>
-          <div style={{marginTop:16}}>
-            <input placeholder="scope (e.g., federal:*)" value={scope} onChange={e=>setScope(e.target.value)} />
-            <button disabled={loading || !scope} onClick={runNow}>Run Now</button>
+          <div style={{marginTop:16}} className="flex flex-col gap-2">
+            <div className="flex gap-2 items-center">
+              <select value={mode} onChange={e=>setMode(e.target.value)}>
+                <option value="daily">daily</option>
+                <option value="bootstrap">bootstrap</option>
+                <option value="special">special</option>
+              </select>
+              <input placeholder="scope (e.g., federal:*)" value={scope} onChange={e=>setScope(e.target.value)} />
+              {mode === 'bootstrap' && (
+                <input type="date" placeholder="since (YYYY-MM-DD)" value={since} onChange={e=>setSince(e.target.value)} />
+              )}
+              <button disabled={loading || !scope} onClick={runNow}>Run Now</button>
+            </div>
           </div>
         </>
       ) : (
