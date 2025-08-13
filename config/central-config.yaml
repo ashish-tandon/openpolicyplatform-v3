@@ -1,0 +1,13 @@
+services:
+  api:
+    host: 0.0.0.0
+    port: 9001
+    allowed_ips: ["0.0.0.0/0"]
+  web:
+    host: 0.0.0.0
+    port: 9002
+    allowed_ips: ["0.0.0.0/0"]
+  scraper:
+    host: 0.0.0.0
+    port: 9003
+    allowed_ips: ["0.0.0.0/0"]

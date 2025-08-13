@@ -14,13 +14,16 @@ import os
 # Import all routers
 from .routers import policies, scrapers, admin, auth, health, scraper_monitoring, data_management, dashboard
 from .routers import metrics as metrics_router
+from backend.api.routers import scraper_admin as scraper_admin_router
 
 # Import middleware
 from .middleware.performance import PerformanceMiddleware
 from .middleware.security import SecurityMiddleware, InputValidationMiddleware, RateLimitMiddleware
+from .middleware.ip_allowlist import IPAllowlistMiddleware
 
 from .dependencies import get_current_user
 from .config import settings
+from backend.config.central import validate_service_binding
 
 logger = logging.getLogger("openpolicy.api")
 logging.basicConfig(level=getattr(logging, settings.log_level.upper(), logging.INFO))
@@ -92,6 +95,13 @@ async def lifespan(app: FastAPI):
     app.state.scraper_logs_dir = logs_dir
     logger.info("📁 Scraper reports dir: %s", reports_dir)
     logger.info("📁 Scraper logs dir: %s", logs_dir)
+    # Central config validation
+    try:
+        validate_service_binding("api", settings.host, settings.port, settings.environment)
+    except Exception as e:
+        if settings.environment.lower() == "production":
+            raise
+        logger.warning("Central config validation: %s", e)
     
     yield
     
@@ -114,6 +124,7 @@ def create_app() -> FastAPI:
     app.add_middleware(SecurityMiddleware)
     app.add_middleware(InputValidationMiddleware)
     app.add_middleware(RateLimitMiddleware, requests_per_minute=100)
+    app.add_middleware(IPAllowlistMiddleware, service_name="api")
     
     # Add performance middleware
     app.add_middleware(PerformanceMiddleware, cache_ttl=300, rate_limit_per_minute=100)
@@ -141,6 +152,8 @@ def create_app() -> FastAPI:
     app.include_router(data_management.router, tags=["Data Management"])
     app.include_router(dashboard.router, tags=["Dashboard"])
     app.include_router(metrics_router.router, tags=["Metrics"])  # /metrics
+    app.include_router(admin.router)  # /api/v1/admin/*
+    app.include_router(scraper_admin_router.router)
     
     @app.get("/")
     async def root():

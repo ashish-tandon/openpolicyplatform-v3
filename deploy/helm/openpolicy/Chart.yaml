@@ -1,0 +1,6 @@
+apiVersion: v2
+name: openpolicy
+version: 0.1.0
+description: Open Policy Platform (API, Web, Scraper CronJobs)
+appVersion: "1.0.0"
+type: application

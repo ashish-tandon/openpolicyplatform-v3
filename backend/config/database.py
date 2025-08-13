@@ -55,15 +55,20 @@ class DatabaseConfig(BaseSettings):
 db_config = DatabaseConfig()
 
 def create_database_engine():
-    """Create database engine"""
-    engine = create_engine(
-        db_config.get_url(),
-        pool_size=db_config.pool_size,
-        max_overflow=db_config.max_overflow,
-        pool_timeout=db_config.pool_timeout,
-        pool_recycle=db_config.pool_recycle,
-        echo=False  # Set to True for SQL debugging
-    )
+    """Create database engine with dialect-aware pooling options"""
+    url = db_config.get_url()
+    kwargs = {
+        "echo": False,
+    }
+    # Apply pool args only for non-sqlite
+    if not url.startswith("sqlite"):
+        kwargs.update({
+            "pool_size": db_config.pool_size,
+            "max_overflow": db_config.max_overflow,
+            "pool_timeout": db_config.pool_timeout,
+            "pool_recycle": db_config.pool_recycle,
+        })
+    engine = create_engine(url, **kwargs)
     return engine
 
 

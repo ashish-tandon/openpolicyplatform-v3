@@ -5,14 +5,23 @@ Pytest configuration and fixtures for OpenPolicy Merge tests
 import pytest
 import asyncio
 import os
+import sys
+# Ensure SQLite for tests to avoid external DB
+os.environ.setdefault("DATABASE_URL", "sqlite+pysqlite:///:memory:")
 from typing import Generator, AsyncGenerator
 from fastapi.testclient import TestClient
 from sqlalchemy import create_engine, text
 from sqlalchemy.orm import sessionmaker
 from sqlalchemy.pool import StaticPool
 
-from api.main import app
-from config.database import get_database_session
+# Ensure 'backend' package is importable in tests
+REPO_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
+if REPO_ROOT not in sys.path:
+    sys.path.insert(0, REPO_ROOT)
+
+from backend.api.main import app
+from backend.config.database import get_database_session as cfg_get_db_sess
+from backend.api import dependencies as api_deps
 import jwt
 from datetime import datetime, timedelta, timezone
 
@@ -107,7 +116,9 @@ def client(db_session) -> Generator:
         finally:
             pass
     
-    app.dependency_overrides[get_database_session] = override_get_db
+    app.dependency_overrides[cfg_get_db_sess] = override_get_db
+    app.dependency_overrides[api_deps.get_database_session] = override_get_db
+    app.dependency_overrides[api_deps.get_db] = lambda: override_get_db()
     with TestClient(app) as test_client:
         yield test_client
     app.dependency_overrides.clear()

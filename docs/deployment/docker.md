@@ -18,3 +18,8 @@
 
 ## Next steps
 - Provide `docker-compose.yml` and `Dockerfile` samples
+
+## Scraper Service Image
+- Build: `docker build -t ghcr.io/your-org/scraper:dev -f services/scraper/Dockerfile .`
+- Run (daily): `docker run --rm ghcr.io/your-org/scraper:dev --mode daily --scope "federal:*"`
+- Run (bootstrap): `docker run --rm ghcr.io/your-org/scraper:dev --mode bootstrap --scope "city:toronto:bills" --since 2010-01-01`

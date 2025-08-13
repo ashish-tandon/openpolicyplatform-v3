@@ -1,0 +1,43 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: {{ include "openpolicy.fullname" . }}-api
+  annotations:
+    app.kubernetes.io/version: {{ .Values.imageTag.api | quote }}
+spec:
+  replicas: 2
+  selector:
+    matchLabels: { app: {{ include "openpolicy.fullname" . }}, tier: api }
+  template:
+    metadata:
+      labels: { app: {{ include "openpolicy.fullname" . }}, tier: api }
+      annotations:
+        app.kubernetes.io/version: {{ .Values.imageTag.api | quote }}
+    spec:
+      {{- if .Values.imagePullSecrets }}
+      imagePullSecrets:
+        {{- range .Values.imagePullSecrets }}
+        - name: {{ . | quote }}
+        {{- end }}
+      {{- end }}
+      containers:
+        - name: api
+          {{- if .Values.imageDigest.api }}
+          image: {{ .Values.image.api }}@{{ .Values.imageDigest.api }}
+          {{- else }}
+          image: {{ .Values.image.api }}:{{ .Values.imageTag.api }}
+          {{- end }}
+          imagePullPolicy: {{ .Values.imagePullPolicy }}
+          ports: [{ containerPort: 9001 }]
+          env:
+            - name: API_PORT
+              value: "9001"
+            - name: SCRAPER_SERVICE_ENABLED
+              value: {{ ternary """true""" """false""" .Values.scraper.enabled | quote }}
+          resources:
+            requests:
+              cpu: {{ .Values.resources.api.requests.cpu | quote }}
+              memory: {{ .Values.resources.api.requests.memory | quote }}
+            limits:
+              cpu: {{ .Values.resources.api.limits.cpu | quote }}
+              memory: {{ .Values.resources.api.limits.memory | quote }}

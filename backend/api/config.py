@@ -15,8 +15,8 @@ class Settings(BaseSettings):
     environment: str = "development"
     
     # Server
-    host: str = "0.0.0.0"
-    port: int = 8000
+    host: str = os.getenv("API_HOST", "0.0.0.0")
+    port: int = int(os.getenv("API_PORT", "9001"))
     
     # Database (canonical)
     database_url: str = "postgresql://postgres@localhost:5432/openpolicy"
@@ -54,6 +54,16 @@ class Settings(BaseSettings):
     # Scraping
     scraper_timeout: int = 30
     max_concurrent_scrapers: int = 5
+    scraper_service_enabled: bool = False
+    # New scraper service configuration (from env)
+    scrapers_database_url: str | None = None
+    scraper_concurrency: int = 4
+    scraper_rate_limit_per_domain: str = "10/min"
+    scraper_user_agent: str = "OpenPolicyBot/1.0 (+contact@your.org)"
+    scraper_timeouts: int = 20
+    scraper_retries: int = 3
+    scheduler_enabled: bool = True
+    scheduler_default_scope: str = "*:*:daily"
     # Optional directories to locate scraper artifacts (defaults to current working directory)
     scraper_reports_dir: str = ""
     scraper_logs_dir: str = ""

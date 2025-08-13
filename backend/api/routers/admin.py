@@ -13,11 +13,15 @@ import psutil
 from datetime import datetime, timedelta
 from pydantic import BaseModel
 import logging
+from pathlib import Path
 
 from ..dependencies import get_db, require_admin
 from ..config import settings
+from . import health as health_router
+from . import scraper_admin as scraper_admin_router
+from . import dashboard as dashboard_router
 
-router = APIRouter()
+router = APIRouter(prefix="/api/v1/admin", tags=["admin"])
 logger = logging.getLogger("openpolicy.api.admin")
 
 # Data models
@@ -37,6 +41,11 @@ class SystemBackupRequest(BaseModel):
     include_logs: bool = True
     include_reports: bool = True
     backup_name: Optional[str] = None
+
+class FeatureFlagToggle(BaseModel):
+    enabled: bool
+
+AUDIT_LOG_FILE = Path(__file__).resolve().parent.parent / "logs" / "admin_audit.log"
 
 @router.get("/dashboard")
 async def get_dashboard_stats(
@@ -470,6 +479,97 @@ async def get_system_alerts(
         }
     except Exception as e:
         raise HTTPException(status_code=500, detail=f"Error retrieving alerts: {str(e)}")
+
+@router.get("/status/unified")
+async def unified_status(
+    db: Session = Depends(get_db),
+    current_user = Depends(require_admin)
+):
+    try:
+        return {
+            "api": {"status": "ok", "version": settings.version, "env": settings.environment},
+            "scraper_service": scraper_admin_router.service_status(),
+            "links": {
+                "health": ["/api/v1/health", "/api/v1/health/detailed"],
+                "dashboard": [
+                    "/api/v1/dashboard/overview",
+                    "/api/v1/dashboard/system",
+                    "/api/v1/dashboard/scrapers",
+                    "/api/v1/dashboard/database",
+                ],
+                "scrapers": [
+                    "/api/v1/scrapers/status",
+                    "/api/v1/scrapers/jobs",
+                    "/api/v1/scrapers/run-now",
+                ],
+            },
+            "timestamp": datetime.now().isoformat(),
+        }
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"Error building unified status: {e}")
+
+@router.get("/config/scraper")
+async def get_scraper_config(
+    current_user = Depends(require_admin)
+):
+    return {
+        "scraper_service_enabled": getattr(settings, "scraper_service_enabled", False),
+        "scrapers_database_url": getattr(settings, "scrapers_database_url", None),
+        "scraper_concurrency": getattr(settings, "scraper_concurrency", None),
+        "scraper_rate_limit_per_domain": getattr(settings, "scraper_rate_limit_per_domain", None),
+        "scraper_user_agent": getattr(settings, "scraper_user_agent", None),
+        "scraper_timeouts": getattr(settings, "scraper_timeouts", None),
+        "scraper_retries": getattr(settings, "scraper_retries", None),
+        "scheduler_enabled": getattr(settings, "scheduler_enabled", None),
+        "scheduler_default_scope": getattr(settings, "scheduler_default_scope", None),
+    }
+
+@router.post("/config/scraper/feature-flag")
+async def set_scraper_feature_flag(
+    body: FeatureFlagToggle,
+    current_user = Depends(require_admin)
+):
+    try:
+        settings.scraper_service_enabled = bool(body.enabled)
+        return {"scraper_service_enabled": settings.scraper_service_enabled}
+    except Exception as e:
+        raise HTTPException(status_code=400, detail=str(e))
+
+@router.get("/config/effective")
+async def get_effective_config(current_user = Depends(require_admin)):
+    return {
+        "host": settings.host,
+        "port": settings.port,
+        "environment": settings.environment,
+        "allowed_hosts": settings.allowed_hosts,
+        "allowed_origins": settings.allowed_origins,
+        "scraper_service_enabled": getattr(settings, "scraper_service_enabled", False),
+    }
+
+@router.get("/audit")
+async def get_admin_audit(limit: int = 100, offset: int = 0, current_user = Depends(require_admin)):
+    try:
+        if not AUDIT_LOG_FILE.exists():
+            return {"events": [], "total": 0}
+        with open(AUDIT_LOG_FILE, "r") as f:
+            lines = f.readlines()
+        total = len(lines)
+        # Get the last N with offset from end
+        start = max(total - offset - limit, 0)
+        end = max(total - offset, 0)
+        window = lines[start:end]
+        events = []
+        for line in window:
+            line = line.strip()
+            if not line:
+                continue
+            try:
+                events.append(json.loads(line))
+            except Exception:
+                events.append({"raw": line})
+        return {"events": events, "total": total, "returned": len(events)}
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"Error reading audit log: {e}")
 
 async def restart_system_services(restart_request: SystemRestartRequest):
     """Background task to restart system services"""

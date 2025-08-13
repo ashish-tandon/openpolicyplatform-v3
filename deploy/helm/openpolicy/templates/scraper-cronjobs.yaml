@@ -1,0 +1,36 @@
+{{- if .Values.scraper.enabled }}
+{{- range .Values.scraper.schedules }}
+apiVersion: batch/v1
+kind: CronJob
+metadata:
+  name: {{ include "openpolicy.fullname" $ }}-scrapers-{{ .name }}
+  annotations:
+    app.kubernetes.io/version: {{ $.Values.imageTag.scraper | quote }}
+spec:
+  schedule: {{ .schedule | quote }}
+  concurrencyPolicy: Forbid
+  jobTemplate:
+    spec:
+      backoffLimit: 2
+      template:
+        spec:
+          restartPolicy: Never
+          containers:
+            - name: runner
+              {{- if $.Values.imageDigest.scraper }}
+              image: {{ $.Values.image.scraper }}@{{ $.Values.imageDigest.scraper }}
+              {{- else }}
+              image: {{ $.Values.image.scraper }}:{{ $.Values.imageTag.scraper }}
+              {{- end }}
+              imagePullPolicy: {{ $.Values.imagePullPolicy }}
+              args: ["python","-m","services.scraper.cli","--mode","{{ .mode }}","--scope","{{ .scope }}"]
+              resources:
+                requests:
+                  cpu: {{ $.Values.resources.scraper.requests.cpu | quote }}
+                  memory: {{ $.Values.resources.scraper.requests.memory | quote }}
+                limits:
+                  cpu: {{ $.Values.resources.scraper.limits.cpu | quote }}
+                  memory: {{ $.Values.resources.scraper.limits.memory | quote }}
+---
+{{- end }}
+{{- end }}

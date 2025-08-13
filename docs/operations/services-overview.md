@@ -32,3 +32,12 @@
 - Health/ops: `docs/operations/health-checks.md`
 - Scripts: `docs/operations/scripts.md`
 - Env: `docs/operations/environment-variables.md`
+
+## Compliance & Audit per Service
+- Audit variables: documented env and central-config keys
+- Compliance: ports must match assigned port; no privileged ports
+- Health endpoints: liveness/readiness implemented
+- Readme: each service has README and usage
+- Inputs/Outputs: documented in service README and API docs
+- Pre-deploy tests: unit tests passing; integration tests scheduled
+- Container standards: non-root user (recommended), pinned deps, healthchecks

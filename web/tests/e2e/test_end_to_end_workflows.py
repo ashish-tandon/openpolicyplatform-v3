@@ -320,4 +320,11 @@ class TestEndToEndWorkflows:
             page.click("[data-testid='admin-logout']")
             assert page.url == "http://localhost:5173/admin/login"
             
+            # Scrapers quick action (best-effort, only if UI route exists)
+            try:
+                page.goto("http://localhost:5173/admin/scrapers")
+                page.locator("text=Run All Daily").click()
+            except Exception:
+                pass
+            
             browser.close()
