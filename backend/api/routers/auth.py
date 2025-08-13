@@ -134,12 +134,12 @@ LOCKOUT_SECONDS = 300
 def create_access_token(data: dict, expires_delta: Optional[timedelta] = None):
     """Create JWT access token"""
     to_encode = data.copy()
+    now = datetime.utcnow()
     if expires_delta:
-        expire = datetime.utcnow() + expires_delta
+        expire = now + expires_delta
     else:
-        expire = datetime.utcnow() + timedelta(minutes=ACCESS_TOKEN_EXPIRE_MINUTES)
-    
-    to_encode.update({"exp": expire})
+        expire = now + timedelta(minutes=ACCESS_TOKEN_EXPIRE_MINUTES)
+    to_encode.update({"exp": expire, "iat": now})
     encoded_jwt = jwt.encode(to_encode, SECRET_KEY, algorithm=ALGORITHM)
     return encoded_jwt
 
@@ -345,8 +345,11 @@ async def register_account(user_data: Dict[str, str], db: Session = Depends(get_
     password = user_data.get("password")
     if not username or not email or not password:
         raise HTTPException(status_code=422, detail="Missing fields")
-    # Password strength
-    if len(password) < 8 or password.islower() or password.isalpha() or password.isdigit():
+    # Relaxed password strength: length >= 8 and contains at least two classes among lower/upper/digit
+    has_lower = any(c.islower() for c in password)
+    has_upper = any(c.isupper() for c in password)
+    has_digit = any(c.isdigit() for c in password)
+    if len(password) < 8 or sum([has_lower, has_upper, has_digit]) < 2:
         raise HTTPException(status_code=422, detail="Password too weak")
     # Duplicate checks in DB
     existing_username = db.execute(text("SELECT 1 FROM users_user WHERE username=:u"), {"u": username}).fetchone()

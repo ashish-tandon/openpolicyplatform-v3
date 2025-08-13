@@ -116,8 +116,9 @@ def client(db_session) -> Generator:
 @pytest.fixture
 def auth_headers():
     """Get authentication headers for admin user."""
-    exp = datetime.now(timezone.utc) + timedelta(hours=1)
-    token = jwt.encode({"sub": "admin", "type": "access", "exp": exp}, TEST_JWT_SECRET, algorithm="HS256")
+    now = datetime.now(timezone.utc)
+    exp = now + timedelta(hours=1)
+    token = jwt.encode({"sub": "admin", "type": "access", "exp": exp, "iat": now}, TEST_JWT_SECRET, algorithm="HS256")
     return {"Authorization": f"Bearer {token}"}
 
 
