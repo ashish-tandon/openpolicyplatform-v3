@@ -19,12 +19,14 @@ const AdminDashboard: React.FC = () => {
   const [unified, setUnified] = useState<any>(null);
   const [system, setSystem] = useState<any>(null);
   const [scrapers, setScrapers] = useState<any>(null);
+  const [database, setDatabase] = useState<any>(null);
 
   useEffect(() => {
     fetchDashboardStats();
     fetch('/api/v1/admin/status/unified').then(r=>r.json()).then(setUnified).catch(()=>{});
     fetch('/api/v1/dashboard/system').then(r=>r.json()).then(setSystem).catch(()=>{});
     fetch('/api/v1/dashboard/scrapers').then(r=>r.json()).then(setScrapers).catch(()=>{});
+    fetch('/api/v1/dashboard/database').then(r=>r.json()).then(setDatabase).catch(()=>{});
   }, []);
 
   const fetchDashboardStats = async () => {
@@ -197,6 +199,22 @@ const AdminDashboard: React.FC = () => {
                 </div>
               ) : (<div>Loading…</div>)}
             </div>
+          </div>
+
+          <div className="mt-4 grid grid-cols-1 lg:grid-cols-2 gap-4">
+            <div className="bg-white p-4 rounded shadow">
+              <h2 className="font-semibold mb-2">Database</h2>
+              {database ? (
+                <div className="grid grid-cols-2 gap-2 text-sm">
+                  <div>Size: {database.total_size}</div>
+                  <div>Tables: {database.total_tables}</div>
+                  <div>Records: {database.total_records}</div>
+                  <div>Largest: {database.largest_table}</div>
+                  <div>Last backup: {database.last_backup}</div>
+                </div>
+              ) : (<div>Loading…</div>)}
+            </div>
+            <div />
           </div>
 
           {/* Quick Actions */}
