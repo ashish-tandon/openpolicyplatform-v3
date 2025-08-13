@@ -39,23 +39,33 @@ async def health():
     return {"status": "ok", "time": datetime.utcnow().isoformat()}
 
 
-def schedule_federal_daily():
-    payload = {"scraper": "federal_parliament", "tasks": ["bills", "mps", "votes"], "enqueued_at": time.time()}
+def enqueue_federal(mode: str):
+    payload = {
+        "scraper": "federal_parliament",
+        "mode": mode,
+        "tasks": ["bills", "mps", "votes"],
+        "enqueued_at": time.time(),
+    }
     enqueue_job(payload)
     JOBS_ENQUEUED.labels(scraper="federal_parliament").inc()
     LAST_ENQUEUE_TS.labels(scraper="federal_parliament").set(time.time())
-    logger.info("Enqueued federal_parliament job")
+    logger.info("Enqueued federal_parliament job (mode=%s)", mode)
 
 
 @app.on_event("startup")
 def on_startup():
-    # Default schedule: every day at 02:00 UTC
-    cron = os.getenv("FEDERAL_SCHEDULE_CRON", "0 2 * * *")
+    # Default prod schedule: every day at 02:00 UTC
+    prod_cron = os.getenv("FEDERAL_PROD_SCHEDULE_CRON", "0 2 * * *")
+    test_cron = os.getenv("FEDERAL_TEST_SCHEDULE_CRON", "0 * * * *")  # default hourly for test
     # APScheduler cron: minute hour day month day_of_week
-    m, h, dom, mon, dow = cron.split()
-    scheduler.add_job(schedule_federal_daily, "cron", minute=m, hour=h, day=dom, month=mon, day_of_week=dow, id="federal_daily", replace_existing=True)
+    pm, ph, pdom, pmon, pdow = prod_cron.split()
+    tm, th, tdom, tmon, tdow = test_cron.split()
+
+    scheduler.add_job(lambda: enqueue_federal("prod"), "cron", minute=pm, hour=ph, day=pdom, month=pmon, day_of_week=pdow, id="federal_prod", replace_existing=True)
+    scheduler.add_job(lambda: enqueue_federal("test"), "cron", minute=tm, hour=th, day=tdom, month=tmon, day_of_week=tdow, id="federal_test", replace_existing=True)
+
     scheduler.start()
-    logger.info("Orchestrator started with schedule %s", cron)
+    logger.info("Orchestrator started with prod=%s, test=%s", prod_cron, test_cron)
 
 
 @app.on_event("shutdown")

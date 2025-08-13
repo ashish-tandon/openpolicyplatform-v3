@@ -20,7 +20,10 @@ QUEUE_KEY = os.getenv("SCRAPER_QUEUE_KEY", "scraper_jobs")
 POLL_INTERVAL = float(os.getenv("POLL_INTERVAL", "2.0"))
 BATCH_SIZE = int(os.getenv("BATCH_SIZE", "1"))
 API_BASE = os.getenv("API_BASE", "http://api:8000")
-DATABASE_URL = os.getenv("DATABASE_URL", "postgresql://openpolicy:openpolicy123@postgres:5432/openpolicy")
+DATABASE_URL_MAIN = os.getenv("DATABASE_URL_MAIN", os.getenv("DATABASE_URL", "postgresql://openpolicy:openpolicy123@postgres:5432/openpolicy"))
+DATABASE_URL_TEST = os.getenv("DATABASE_URL_TEST", "postgresql://openpolicy:openpolicy123@postgres:5432/openpolicy_test")
+MCP_ENABLED = os.getenv("MCP_ENABLED", "true").lower() == "true"
+MCP_ALLOW_INVALID = os.getenv("MCP_ALLOW_INVALID", "false").lower() == "true"
 
 JOBS_CONSUMED = Counter("scraper_jobs_consumed_total", "Jobs consumed", ["scraper"])
 TASKS_COMPLETED = Counter("scraper_tasks_completed_total", "Tasks completed", ["scraper", "task"])
@@ -29,7 +32,8 @@ RUN_DURATION = Histogram("scraper_run_seconds", "Duration of a job run in second
 LAST_RUN_TS = Gauge("scraper_last_run_timestamp", "Unix ts of last successful run", ["scraper"]) 
 
 app = FastAPI(title="Scrapers Worker")
-engine = create_engine(DATABASE_URL, pool_pre_ping=True, future=True)
+engine_main = create_engine(DATABASE_URL_MAIN, pool_pre_ping=True, future=True)
+engine_test = create_engine(DATABASE_URL_TEST, pool_pre_ping=True, future=True)
 
 @app.get("/metrics")
 async def metrics():
@@ -40,7 +44,13 @@ async def health():
     return {"status": "ok", "time": time.time()}
 
 
-def upsert_bills(bills: List[Dict[str, Any]]):
+def _select_engine(mode: str):
+    if (mode or "prod").lower() == "test":
+        return engine_test
+    return engine_main
+
+
+def upsert_bills(engine, bills: List[Dict[str, Any]]):
     if not bills:
         return
     with engine.begin() as conn:
@@ -75,7 +85,7 @@ def upsert_bills(bills: List[Dict[str, Any]]):
             ), b)
 
 
-def upsert_mps(mps: List[Dict[str, Any]]):
+def upsert_mps(engine, mps: List[Dict[str, Any]]):
     if not mps:
         return
     with engine.begin() as conn:
@@ -94,6 +104,7 @@ def upsert_mps(mps: List[Dict[str, Any]]):
             )
             """
         ))
+    
         for mp in mps:
             conn.execute(text(
                 """
@@ -108,7 +119,7 @@ def upsert_mps(mps: List[Dict[str, Any]]):
             ), mp)
 
 
-def upsert_votes(votes: List[Dict[str, Any]]):
+def upsert_votes(engine, votes: List[Dict[str, Any]]):
     if not votes:
         return
     with engine.begin() as conn:
@@ -145,12 +156,23 @@ def upsert_votes(votes: List[Dict[str, Any]]):
             ), v)
 
 
-def process_federal(tasks: List[str]):
+def process_federal(mode: str, tasks: List[str]):
     scraper = FederalParliamentScraper()
+    engine = _select_engine(mode)
+
+    def mcp_validate(data: Dict[str, List[Dict[str, Any]]]) -> bool:
+        if not MCP_ENABLED:
+            return True
+        is_valid = scraper.validate_data(data)
+        if not is_valid and not MCP_ALLOW_INVALID:
+            logger.warning("MCP validation failed (mode=%s)", mode)
+        return is_valid or MCP_ALLOW_INVALID
+
     if "bills" in tasks:
         try:
             bills = scraper.scrape_bills()
-            upsert_bills(bills)
+            if mcp_validate({"bills": bills, "mps": [], "votes": []}):
+                upsert_bills(engine, bills)
             TASKS_COMPLETED.labels(scraper="federal_parliament", task="bills").inc(len(bills))
         except Exception:
             logger.exception("bills task failed")
@@ -158,7 +180,8 @@ def process_federal(tasks: List[str]):
     if "mps" in tasks:
         try:
             mps = scraper.scrape_mps()
-            upsert_mps(mps)
+            if mcp_validate({"bills": [], "mps": mps, "votes": []}):
+                upsert_mps(engine, mps)
             TASKS_COMPLETED.labels(scraper="federal_parliament", task="mps").inc(len(mps))
         except Exception:
             logger.exception("mps task failed")
@@ -166,7 +189,8 @@ def process_federal(tasks: List[str]):
     if "votes" in tasks:
         try:
             votes = scraper.scrape_votes()
-            upsert_votes(votes)
+            if mcp_validate({"bills": [], "mps": [], "votes": votes}):
+                upsert_votes(engine, votes)
             TASKS_COMPLETED.labels(scraper="federal_parliament", task="votes").inc(len(votes))
         except Exception:
             logger.exception("votes task failed")
@@ -187,10 +211,11 @@ def run_loop():
             continue
         scraper = payload.get("scraper")
         tasks = payload.get("tasks", [])
+        mode = payload.get("mode", "prod")
         start = time.time()
         try:
             if scraper == "federal_parliament":
-                process_federal(tasks)
+                process_federal(mode, tasks)
                 JOBS_CONSUMED.labels(scraper="federal_parliament").inc()
                 LAST_RUN_TS.labels(scraper="federal_parliament").set(time.time())
         except Exception as e:
