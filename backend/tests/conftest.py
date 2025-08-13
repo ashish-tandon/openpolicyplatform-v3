@@ -5,14 +5,20 @@ Pytest configuration and fixtures for OpenPolicy Merge tests
 import pytest
 import asyncio
 import os
+import sys
 from typing import Generator, AsyncGenerator
 from fastapi.testclient import TestClient
 from sqlalchemy import create_engine, text
 from sqlalchemy.orm import sessionmaker
 from sqlalchemy.pool import StaticPool
 
+# Ensure 'backend' package is importable in tests
+REPO_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
+if REPO_ROOT not in sys.path:
+    sys.path.insert(0, REPO_ROOT)
+
 from backend.api.main import app
-from config.database import get_database_session
+from backend.config.database import get_database_session
 import jwt
 from datetime import datetime, timedelta, timezone
 
