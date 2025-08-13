@@ -1,45 +1,41 @@
-# Production Deployment Runbook
+# Production Runbook (Expanded)
 
-## Prereqs
-- PostgreSQL reachable with provisioned DB/user
-- Host/container runtime with ports open
-- `.env` populated (see `docs/operations/environment-variables.md`)
+## Deployment Plan
+- Environments: development, staging, production
+- Artifacts: backend API container, web frontend container, scraper service container
+- Steps:
+  1) Bump version, update CHANGELOG
+  2) CI builds and pushes images to registry
+  3) Apply database migrations
+  4) Deploy backend and web via Kubernetes manifests/Helm
+  5) Keep `SCRAPER_SERVICE_ENABLED=false` until scrapers verified
+  6) Gradually enable CronJobs per scope
 
-## Order of operations
-1. Prepare environment
-   - Copy `.env`; set `DATABASE_URL`, `SECRET_KEY`, `ALLOWED_ORIGINS`, `ALLOWED_HOSTS`, `LOG_LEVEL=INFO`
-2. Database
-   - Ensure DB up and reachable
-   - Run migrations/imports as needed
-3. Backend API
-   - Start FastAPI:
-     - With systemd or container: `uvicorn backend.api.main:app --host 0.0.0.0 --port 8000 --workers 2`
-   - Health check: `GET /api/v1/health` and `/api/v1/health/detailed`
-4. Frontend
-   - Build and serve (Vite build → served via nginx or static host)
-   - Set `VITE_API_URL` to API base
-5. Monitoring & logs
-   - Point probes to `/api/v1/health` (liveness) and `/api/v1/health/detailed` (readiness)
-   - Aggregate logs as per infra
+## CI/CD Plan
+- CI: lint, type-check, unit/contract/integration tests; export OpenAPI; upload artifacts
+- CD: on tag push, build and push Docker images; apply k8s manifests in staging; manual approval for production
 
-## Scripts
-- Setup (once): `./scripts/setup-unified.sh`
-- Start (dev): `./scripts/start-all.sh`
-- Deploy with DB migration: `./scripts/deploy-with-migration.sh` (review and adapt for prod)
+## Kubernetes Plan
+- Namespaces: staging, production
+- Components:
+  - API: Deployment + Service + Ingress
+  - Web: Deployment + Service + Ingress
+  - Scrapers: CronJobs per scope
+- Resource management: set requests/limits per workload; configure HPA for API
+- Secrets/Config: use ConfigMap for non-secret env, Secret for credentials
 
-## Configuration
-- See `docs/operations/environment-variables.md`
-- Security hardening:
-  - Strong `SECRET_KEY`
-  - Restrict `ALLOWED_ORIGINS`/`ALLOWED_HOSTS`
-  - Enforce HTTPS at edge (nginx/ALB)
+## Resource Management Plan
+- API: requests cpu=100m, mem=256Mi; limits cpu=500m, mem=512Mi; HPA: minReplicas=2, maxReplicas=10, targetCPUUtilization=70%
+- Web: requests cpu=50m, mem=128Mi; limits cpu=200m, mem=256Mi
+- Scraper CronJobs: requests cpu=200m, mem=256Mi; limits cpu=1000m, mem=1Gi; concurrencyPolicy: Forbid; backoffLimit: 2
 
-## Rollback
-- Keep previous image/build
-- DB backups before migration
+## Testing Strategy
+- Unit tests per service (API, Web utilities, Scraper modules)
+- Contract tests for source payloads (scraper)
+- Integration tests: API routes, scraper pipeline on fixtures
+- End-to-end: health endpoints and key UI flows
 
-## Validation checklist
-- [ ] Health endpoints healthy
-- [ ] Critical pages load (policies, dashboard)
-- [ ] Admin endpoints gated
-- [ ] Logs/alerts monitored
+## Rollback Plan
+- Keep previous image tags
+- `kubectl rollout undo deployment/api`
+- Disable problematic CronJobs quickly by scaling to 0 or deleting the CronJob

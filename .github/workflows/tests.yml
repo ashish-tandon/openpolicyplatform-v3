@@ -68,3 +68,13 @@ PY
       - name: Scraper unit tests (if present)
         run: |
           if [ -d services/scraper/tests ]; then pytest -q services/scraper/tests || true; fi
+
+      - name: Build Docker images (if Dockerfile present)
+        run: |
+          if [ -f backend/Dockerfile ]; then docker build -t local/api:ci -f backend/Dockerfile backend; fi
+          if [ -f web/Dockerfile ]; then docker build -t local/web:ci -f web/Dockerfile web || true; fi
+
+      - name: Validate K8s manifests (dry-run)
+        run: |
+          echo "Validating k8s manifests"
+          if command -v kubectl >/dev/null 2>&1; then kubectl apply --dry-run=client -f deploy/k8s/scrapers; fi

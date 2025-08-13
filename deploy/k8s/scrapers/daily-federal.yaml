@@ -4,6 +4,7 @@ metadata:
   name: scrapers-daily-federal
 spec:
   schedule: "0 4 * * *"
+  concurrencyPolicy: Forbid
   jobTemplate:
     spec:
       backoffLimit: 2
@@ -17,3 +18,10 @@ spec:
               envFrom:
                 - secretRef: { name: openpolicy-secrets }
                 - configMapRef: { name: openpolicy-config }
+              resources:
+                requests:
+                  cpu: "200m"
+                  memory: "256Mi"
+                limits:
+                  cpu: "1000m"
+                  memory: "1Gi"
