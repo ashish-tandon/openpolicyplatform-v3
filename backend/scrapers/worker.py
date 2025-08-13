@@ -12,6 +12,12 @@ from sqlalchemy import create_engine, text
 
 from .federal_parliament_scraper import FederalParliamentScraper
 from .registry import SCRAPER_REGISTRY
+from .adapters import (
+    fetch_represent_jurisdictions,
+    upsert_represent_jurisdictions,
+    fetch_represent_districts,
+    upsert_represent_districts,
+)
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger("scrapers.worker")
@@ -198,6 +204,26 @@ def process_federal(mode: str, tasks: List[str]):
             TASKS_FAILED.labels(scraper="federal_parliament", task="votes").inc()
 
 
+def process_represent(mode: str, tasks: List[str]):
+    engine = _select_engine(mode)
+    if "jurisdictions" in tasks:
+        try:
+            data = fetch_represent_jurisdictions()
+            upsert_represent_jurisdictions(engine, data)
+            TASKS_COMPLETED.labels(scraper="represent_opennorth_ref", task="jurisdictions").inc(len(data))
+        except Exception:
+            logger.exception("represent jurisdictions task failed")
+            TASKS_FAILED.labels(scraper="represent_opennorth_ref", task="jurisdictions").inc()
+    if "districts" in tasks:
+        try:
+            data = fetch_represent_districts()
+            upsert_represent_districts(engine, data)
+            TASKS_COMPLETED.labels(scraper="represent_opennorth_ref", task="districts").inc(len(data))
+        except Exception:
+            logger.exception("represent districts task failed")
+            TASKS_FAILED.labels(scraper="represent_opennorth_ref", task="districts").inc()
+
+
 def process_generic(name: str, mode: str, tasks: List[str]):
     # Placeholder for external adapters: no-op but count tasks
     for task in tasks:
@@ -227,6 +253,8 @@ def run_loop():
         try:
             if scraper == "federal_parliament":
                 process_federal(mode, tasks)
+            elif scraper == "represent_opennorth_ref":
+                process_represent(mode, tasks)
             elif scraper in SCRAPER_REGISTRY:
                 process_generic(scraper, mode, tasks)
             else:
