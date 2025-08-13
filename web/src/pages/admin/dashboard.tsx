@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { useAuth } from '../../context/AuthContext';
 import StatCard from '../../components/shared/StatCard';
+import Loader from '../../components/shared/Loader';
+import { useAnalytics } from '../../hooks/useAnalytics';
 
 interface DashboardStats {
   totalPolicies: number;
@@ -11,6 +13,7 @@ interface DashboardStats {
 
 const AdminDashboard: React.FC = () => {
   const { user, logout } = useAuth();
+  const { track } = useAnalytics();
   const [stats, setStats] = useState<DashboardStats>({
     totalPolicies: 0,
     totalScrapers: 3,
@@ -30,6 +33,7 @@ const AdminDashboard: React.FC = () => {
     fetch('/api/v1/dashboard/scrapers').then(r=>r.json()).then(setScrapers).catch(()=>{});
     fetch('/api/v1/dashboard/database').then(r=>r.json()).then(setDatabase).catch(()=>{});
     fetch('/api/v1/admin/config/scraper').then(r=>r.json()).then(setScraperConfig).catch(()=>{});
+    track({ name: 'admin_dashboard_view' });
   }, []);
 
   const fetchDashboardStats = async () => {
@@ -113,6 +117,7 @@ const AdminDashboard: React.FC = () => {
               <a className="px-3 py-1 bg-gray-100 rounded" href="/admin/scrapers">Manage Scrapers</a>
               <button className="px-3 py-1 bg-indigo-600 text-white rounded" onClick={async()=>{
                 await fetch('/api/v1/scrapers/run-now', {method:'POST', headers:{'Content-Type':'application/json'}, body: JSON.stringify({scope: '*:*', mode: 'daily'})});
+                track({ name: 'scrapers_run_all_daily' });
                 alert('Queued all daily scrapers');
               }}>Run All Daily</button>
             </div>
@@ -128,6 +133,7 @@ const AdminDashboard: React.FC = () => {
                 <div>Uptime: {system.uptime}</div>
               </div>
             ) : (<div>Loading…</div>)}
+            {!system && <Loader />}
           </div>
         </div>
 
