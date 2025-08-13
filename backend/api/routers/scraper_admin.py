@@ -3,7 +3,7 @@ from pydantic import BaseModel
 from typing import Dict, Optional
 from backend.api.config import settings
 import sys, subprocess
-from datetime import datetime
+from datetime import datetime, timezone
 import json as _json
 from pathlib import Path
 from collections import deque
@@ -37,7 +37,7 @@ def _rate_ok(bucket: deque) -> bool:
 
 def _audit(event: dict):
     try:
-        event_with_ts = {"ts": datetime.utcnow().isoformat(), **event}
+        event_with_ts = {"ts": datetime.now(timezone.utc).isoformat(), **event}
         with open(AUDIT_LOG_PATH, "a") as f:
             f.write(_json.dumps(event_with_ts) + "\n")
     except Exception:
@@ -95,6 +95,6 @@ def run_now(body: RunNowRequest, background_tasks: BackgroundTasks):
     # Record last_run best-effort
     key = f"{body.scope}:{body.mode}" if ":" not in body.scope.split(":")[-1] else body.scope
     JOB_REGISTRY.setdefault(key, {"enabled": True, "last_run": None})
-    JOB_REGISTRY[key]["last_run"] = datetime.utcnow().isoformat()
+    JOB_REGISTRY[key]["last_run"] = datetime.now(timezone.utc).isoformat()
     _audit({"action": "scraper.run_now", "mode": body.mode, "scope": body.scope, "since": body.since})
     return {"status": "queued", "scope": body.scope, "mode": body.mode, "since": body.since}
