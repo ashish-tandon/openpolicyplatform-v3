@@ -2,6 +2,8 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: {{ include "openpolicy.fullname" . }}-api
+  annotations:
+    app.kubernetes.io/version: {{ .Values.imageTag.api | quote }}
 spec:
   replicas: 2
   selector:
@@ -9,12 +11,20 @@ spec:
   template:
     metadata:
       labels: { app: {{ include "openpolicy.fullname" . }}, tier: api }
+      annotations:
+        app.kubernetes.io/version: {{ .Values.imageTag.api | quote }}
     spec:
       containers:
         - name: api
-          image: {{ .Values.image.api }}
-          ports: [{ containerPort: 8000 }]
+          {{- if .Values.imageDigest.api }}
+          image: {{ .Values.image.api }}@{{ .Values.imageDigest.api }}
+          {{- else }}
+          image: {{ .Values.image.api }}:{{ .Values.imageTag.api }}
+          {{- end }}
+          ports: [{ containerPort: 9001 }]
           env:
+            - name: API_PORT
+              value: "9001"
             - name: SCRAPER_SERVICE_ENABLED
               value: {{ ternary """true""" """false""" .Values.scraper.enabled | quote }}
           resources:

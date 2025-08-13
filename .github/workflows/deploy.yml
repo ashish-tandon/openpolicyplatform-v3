@@ -59,7 +59,10 @@ jobs:
       - name: Helm upgrade (atomic)
         run: |
           helm upgrade --install openpolicy deploy/helm/openpolicy \
-            --set image.api=ghcr.io/your-org/api:${{ github.ref_name }} \
-            --set image.web=ghcr.io/your-org/web:${{ github.ref_name }} \
-            --set image.scraper=ghcr.io/your-org/scraper:${{ github.ref_name }} \
+            --set image.api=ghcr.io/your-org/api \
+            --set image.web=ghcr.io/your-org/web \
+            --set image.scraper=ghcr.io/your-org/scraper \
+            --set imageTag.api=${{ github.ref_name }} \
+            --set imageTag.web=${{ github.ref_name }} \
+            --set imageTag.scraper=${{ github.ref_name }} \
             --wait --timeout 5m --atomic

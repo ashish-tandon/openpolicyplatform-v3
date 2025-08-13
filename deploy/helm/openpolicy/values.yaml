@@ -1,7 +1,15 @@
 image:
-  api: ghcr.io/your-org/api:latest
-  web: ghcr.io/your-org/web:latest
-  scraper: ghcr.io/your-org/scraper:dev
+  api: ghcr.io/your-org/api
+  web: ghcr.io/your-org/web
+  scraper: ghcr.io/your-org/scraper
+imageTag:
+  api: latest
+  web: latest
+  scraper: dev
+imageDigest:
+  api: ""
+  web: ""
+  scraper: ""
 
 resources:
   api:

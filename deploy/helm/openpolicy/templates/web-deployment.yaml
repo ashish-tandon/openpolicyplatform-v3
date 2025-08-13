@@ -2,6 +2,8 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: {{ include "openpolicy.fullname" . }}-web
+  annotations:
+    app.kubernetes.io/version: {{ .Values.imageTag.web | quote }}
 spec:
   replicas: 1
   selector:
@@ -9,10 +11,16 @@ spec:
   template:
     metadata:
       labels: { app: {{ include "openpolicy.fullname" . }}, tier: web }
+      annotations:
+        app.kubernetes.io/version: {{ .Values.imageTag.web | quote }}
     spec:
       containers:
         - name: web
-          image: {{ .Values.image.web }}
+          {{- if .Values.imageDigest.web }}
+          image: {{ .Values.image.web }}@{{ .Values.imageDigest.web }}
+          {{- else }}
+          image: {{ .Values.image.web }}:{{ .Values.imageTag.web }}
+          {{- end }}
           ports: [{ containerPort: 80 }]
           resources:
             requests:

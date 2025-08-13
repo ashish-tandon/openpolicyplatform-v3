@@ -4,6 +4,8 @@ apiVersion: batch/v1
 kind: CronJob
 metadata:
   name: {{ include "openpolicy.fullname" $ }}-scrapers-{{ .name }}
+  annotations:
+    app.kubernetes.io/version: {{ $.Values.imageTag.scraper | quote }}
 spec:
   schedule: {{ .schedule | quote }}
   concurrencyPolicy: Forbid
@@ -15,7 +17,11 @@ spec:
           restartPolicy: Never
           containers:
             - name: runner
-              image: {{ $.Values.image.scraper }}
+              {{- if $.Values.imageDigest.scraper }}
+              image: {{ $.Values.image.scraper }}@{{ $.Values.imageDigest.scraper }}
+              {{- else }}
+              image: {{ $.Values.image.scraper }}:{{ $.Values.imageTag.scraper }}
+              {{- end }}
               args: ["python","-m","services.scraper.cli","--mode","{{ .mode }}","--scope","{{ .scope }}"]
               resources:
                 requests:
