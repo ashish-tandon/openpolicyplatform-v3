@@ -32,3 +32,15 @@ def test_jobs_list_and_toggle_and_run_now():
     body = r.json()
     assert body["status"] == "queued"
     assert body["scope"] == "federal:*"
+
+def test_get_scraper_config_and_toggle_flag():
+    r = client.get("/api/v1/admin/config/scraper")
+    assert r.status_code == 200
+    cfg = r.json()
+    assert "scraper_service_enabled" in cfg
+    # toggle
+    prev = cfg["scraper_service_enabled"]
+    r = client.post("/api/v1/admin/config/scraper/feature-flag", json={"enabled": not prev})
+    assert r.status_code == 200
+    r2 = client.get("/api/v1/admin/config/scraper")
+    assert r2.json()["scraper_service_enabled"] == (not prev)

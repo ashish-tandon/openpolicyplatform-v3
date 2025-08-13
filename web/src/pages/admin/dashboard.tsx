@@ -20,6 +20,7 @@ const AdminDashboard: React.FC = () => {
   const [system, setSystem] = useState<any>(null);
   const [scrapers, setScrapers] = useState<any>(null);
   const [database, setDatabase] = useState<any>(null);
+  const [scraperConfig, setScraperConfig] = useState<any>(null);
 
   useEffect(() => {
     fetchDashboardStats();
@@ -27,6 +28,7 @@ const AdminDashboard: React.FC = () => {
     fetch('/api/v1/dashboard/system').then(r=>r.json()).then(setSystem).catch(()=>{});
     fetch('/api/v1/dashboard/scrapers').then(r=>r.json()).then(setScrapers).catch(()=>{});
     fetch('/api/v1/dashboard/database').then(r=>r.json()).then(setDatabase).catch(()=>{});
+    fetch('/api/v1/admin/config/scraper').then(r=>r.json()).then(setScraperConfig).catch(()=>{});
   }, []);
 
   const fetchDashboardStats = async () => {
@@ -184,6 +186,23 @@ const AdminDashboard: React.FC = () => {
                   <div>Active: {scrapers.active_scrapers}</div>
                   <div>Success rate: {scrapers.success_rate}</div>
                   <div>Last run: {scrapers.last_run}</div>
+                </div>
+              )}
+              {scraperConfig && (
+                <div className="mt-2 text-sm">
+                  <div>DB: {scraperConfig.scrapers_database_url || 'inherit'}</div>
+                  <div>Concurrency: {scraperConfig.scraper_concurrency}</div>
+                  <div>Rate limit: {scraperConfig.scraper_rate_limit_per_domain}</div>
+                  <div>User-Agent: {scraperConfig.scraper_user_agent}</div>
+                  <div>Timeouts: {scraperConfig.scraper_timeouts}s Retries: {scraperConfig.scraper_retries}</div>
+                  <div>Scheduler: {String(scraperConfig.scheduler_enabled)} default scope: {scraperConfig.scheduler_default_scope}</div>
+                  <button className="mt-2 px-2 py-1 bg-gray-200 rounded" onClick={async()=>{
+                    const next = !scraperConfig.scraper_service_enabled;
+                    await fetch('/api/v1/admin/config/scraper/feature-flag', {method:'POST', headers:{'Content-Type':'application/json'}, body: JSON.stringify({enabled: next})});
+                    const u = await (await fetch('/api/v1/admin/status/unified')).json();
+                    const c = await (await fetch('/api/v1/admin/config/scraper')).json();
+                    setUnified(u); setScraperConfig(c);
+                  }}>Toggle Feature Flag</button>
                 </div>
               )}
             </div>

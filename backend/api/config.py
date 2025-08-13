@@ -55,6 +55,15 @@ class Settings(BaseSettings):
     scraper_timeout: int = 30
     max_concurrent_scrapers: int = 5
     scraper_service_enabled: bool = False
+    # New scraper service configuration (from env)
+    scrapers_database_url: str | None = None
+    scraper_concurrency: int = 4
+    scraper_rate_limit_per_domain: str = "10/min"
+    scraper_user_agent: str = "OpenPolicyBot/1.0 (+contact@your.org)"
+    scraper_timeouts: int = 20
+    scraper_retries: int = 3
+    scheduler_enabled: bool = True
+    scheduler_default_scope: str = "*:*:daily"
     # Optional directories to locate scraper artifacts (defaults to current working directory)
     scraper_reports_dir: str = ""
     scraper_logs_dir: str = ""

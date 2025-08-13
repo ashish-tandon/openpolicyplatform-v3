@@ -41,6 +41,9 @@ class SystemBackupRequest(BaseModel):
     include_reports: bool = True
     backup_name: Optional[str] = None
 
+class FeatureFlagToggle(BaseModel):
+    enabled: bool
+
 @router.get("/dashboard")
 async def get_dashboard_stats(
     db: Session = Depends(get_db),
@@ -501,6 +504,33 @@ async def unified_status(
         }
     except Exception as e:
         raise HTTPException(status_code=500, detail=f"Error building unified status: {e}")
+
+@router.get("/config/scraper")
+async def get_scraper_config(
+    current_user = Depends(require_admin)
+):
+    return {
+        "scraper_service_enabled": getattr(settings, "scraper_service_enabled", False),
+        "scrapers_database_url": getattr(settings, "scrapers_database_url", None),
+        "scraper_concurrency": getattr(settings, "scraper_concurrency", None),
+        "scraper_rate_limit_per_domain": getattr(settings, "scraper_rate_limit_per_domain", None),
+        "scraper_user_agent": getattr(settings, "scraper_user_agent", None),
+        "scraper_timeouts": getattr(settings, "scraper_timeouts", None),
+        "scraper_retries": getattr(settings, "scraper_retries", None),
+        "scheduler_enabled": getattr(settings, "scheduler_enabled", None),
+        "scheduler_default_scope": getattr(settings, "scheduler_default_scope", None),
+    }
+
+@router.post("/config/scraper/feature-flag")
+async def set_scraper_feature_flag(
+    body: FeatureFlagToggle,
+    current_user = Depends(require_admin)
+):
+    try:
+        settings.scraper_service_enabled = bool(body.enabled)
+        return {"scraper_service_enabled": settings.scraper_service_enabled}
+    except Exception as e:
+        raise HTTPException(status_code=400, detail=str(e))
 
 async def restart_system_services(restart_request: SystemRestartRequest):
     """Background task to restart system services"""
