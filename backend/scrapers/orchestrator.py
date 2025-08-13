@@ -3,18 +3,24 @@ import json
 import time
 import logging
 from datetime import datetime
-from typing import Dict, Any
+from typing import Dict, Any, List
 
 from apscheduler.schedulers.background import BackgroundScheduler
 from fastapi import FastAPI
 from prometheus_client import Counter, Gauge, generate_latest, CONTENT_TYPE_LATEST
 import redis
 
+from .registry import SCRAPER_REGISTRY
+
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger("scrapers.orchestrator")
 
 REDIS_URL = os.getenv("REDIS_URL", "redis://redis:6379/0")
 QUEUE_KEY = os.getenv("SCRAPER_QUEUE_KEY", "scraper_jobs")
+
+# Comma-separated list of enabled scrapers per mode
+ENABLED_SCRAPERS_PROD = [s.strip() for s in os.getenv("ENABLED_SCRAPERS_PROD", "federal_parliament").split(",") if s.strip()]
+ENABLED_SCRAPERS_TEST = [s.strip() for s in os.getenv("ENABLED_SCRAPERS_TEST", "federal_parliament").split(",") if s.strip()]
 
 app = FastAPI(title="Scrapers Orchestrator")
 
@@ -39,33 +45,43 @@ async def health():
     return {"status": "ok", "time": datetime.utcnow().isoformat()}
 
 
-def enqueue_federal(mode: str):
+def enqueue_scraper(name: str, mode: str):
+    config = SCRAPER_REGISTRY.get(name)
+    if not config:
+        logger.warning("Unknown scraper %s", name)
+        return
     payload = {
-        "scraper": "federal_parliament",
+        "scraper": name,
         "mode": mode,
-        "tasks": ["bills", "mps", "votes"],
+        "tasks": config.get("tasks", []),
         "enqueued_at": time.time(),
     }
     enqueue_job(payload)
-    JOBS_ENQUEUED.labels(scraper="federal_parliament").inc()
-    LAST_ENQUEUE_TS.labels(scraper="federal_parliament").set(time.time())
-    logger.info("Enqueued federal_parliament job (mode=%s)", mode)
+    JOBS_ENQUEUED.labels(scraper=name).inc()
+    LAST_ENQUEUE_TS.labels(scraper=name).set(time.time())
+    logger.info("Enqueued %s (mode=%s)", name, mode)
+
+
+def _schedule_for(name: str, mode: str, cron: str):
+    m, h, dom, mon, dow = cron.split()
+    job_id = f"{name}_{mode}"
+    scheduler.add_job(lambda: enqueue_scraper(name, mode), "cron", minute=m, hour=h, day=dom, month=mon, day_of_week=dow, id=job_id, replace_existing=True)
 
 
 @app.on_event("startup")
 def on_startup():
-    # Default prod schedule: every day at 02:00 UTC
-    prod_cron = os.getenv("FEDERAL_PROD_SCHEDULE_CRON", "0 2 * * *")
-    test_cron = os.getenv("FEDERAL_TEST_SCHEDULE_CRON", "0 * * * *")  # default hourly for test
-    # APScheduler cron: minute hour day month day_of_week
-    pm, ph, pdom, pmon, pdow = prod_cron.split()
-    tm, th, tdom, tmon, tdow = test_cron.split()
-
-    scheduler.add_job(lambda: enqueue_federal("prod"), "cron", minute=pm, hour=ph, day=pdom, month=pmon, day_of_week=pdow, id="federal_prod", replace_existing=True)
-    scheduler.add_job(lambda: enqueue_federal("test"), "cron", minute=tm, hour=th, day=tdom, month=tmon, day_of_week=tdow, id="federal_test", replace_existing=True)
-
+    # Per-scraper overrides via env: {SCRAPER}_PROD_CRON / {SCRAPER}_TEST_CRON
+    for name, cfg in SCRAPER_REGISTRY.items():
+        if name in ENABLED_SCRAPERS_PROD:
+            env_key = f"{name.upper()}_PROD_CRON"
+            cron = os.getenv(env_key, cfg.get("prod_cron", "0 2 * * *"))
+            _schedule_for(name, "prod", cron)
+        if name in ENABLED_SCRAPERS_TEST:
+            env_key = f"{name.upper()}_TEST_CRON"
+            cron = os.getenv(env_key, cfg.get("test_cron", "0 * * * *"))
+            _schedule_for(name, "test", cron)
     scheduler.start()
-    logger.info("Orchestrator started with prod=%s, test=%s", prod_cron, test_cron)
+    logger.info("Orchestrator started. Enabled prod=%s test=%s", ENABLED_SCRAPERS_PROD, ENABLED_SCRAPERS_TEST)
 
 
 @app.on_event("shutdown")

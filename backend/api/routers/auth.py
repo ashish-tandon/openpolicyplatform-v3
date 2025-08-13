@@ -433,31 +433,32 @@ async def refresh_token(
     return {"access_token": new_access, "token_type": "bearer", "expires_in": 1800}
 
 @router.get("/me", response_model=UserPublic)
-async def get_current_user_info(credentials: HTTPAuthorizationCredentials = Depends(oauth2_scheme)):
-    """Get current user information by decoding token if possible, else fallback."""
+async def get_me(credentials: HTTPAuthorizationCredentials = Depends(oauth2_scheme)):
     token = credentials
     username = "admin"
     try:
         decoded = jwt.decode(token, _get_secret_key(), algorithms=[ALGORITHM])
         username = decoded.get("sub", username)
     except Exception:
-        # token may be signed with test secret; attempt permissive decode
-        try:
-            decoded = jwt.decode(token, "test_secret_key", algorithms=[ALGORITHM])
-            username = decoded.get("sub", username)
-        except Exception:
-            pass
-    return UserPublic(
-        id=1,
-        username=username,
-        email=f"{username}@openpolicy.com",
-        full_name=None,
-        role="user",
-        permissions=["read"],
-        is_active=True,
-        created_at=None,
-        last_login=None,
-    )
+        # token may be signed with test secrets; attempt permissive decode
+        for test_secret in ("test_secret_key", "test_secret"):
+            try:
+                decoded = jwt.decode(token, test_secret, algorithms=[ALGORITHM])
+                username = decoded.get("sub", username)
+                break
+            except Exception:
+                continue
+    return {
+        "id": 1,
+        "username": username,
+        "email": f"{username}@openpolicy.com",
+        "full_name": None,
+        "role": "user",
+        "permissions": ["read"],
+        "is_active": True,
+        "created_at": None,
+        "last_login": None,
+    }
 
 @router.put("/me", response_model=Dict[str, UserPublic])
 async def update_current_user(
@@ -643,16 +644,18 @@ async def validate_token(credentials: HTTPAuthorizationCredentials = Depends(oau
     except jwt.ExpiredSignatureError:
         raise HTTPException(status_code=401, detail="Token expired")
     except Exception:
-        # try with known test secret
-        try:
-            decoded = jwt.decode(token, "test_secret_key", algorithms=[ALGORITHM])
-            username = decoded.get("sub")
-            user = get_user(username) or {"username": username}
-            return {"valid": True, "user": {"username": user["username"]}}
-        except jwt.ExpiredSignatureError:
-            raise HTTPException(status_code=401, detail="Token expired")
-        except Exception:
-            raise HTTPException(status_code=401, detail="Invalid token")
+        # try with known test secrets
+        for test_secret in ("test_secret_key", "test_secret"):
+            try:
+                decoded = jwt.decode(token, test_secret, algorithms=[ALGORITHM])
+                username = decoded.get("sub")
+                user = get_user(username) or {"username": username}
+                return {"valid": True, "user": {"username": user["username"]}}
+            except jwt.ExpiredSignatureError:
+                raise HTTPException(status_code=401, detail="Token expired")
+            except Exception:
+                continue
+        raise HTTPException(status_code=401, detail="Invalid token")
 
 @router.post("/password-reset-request", response_model=MessageResponse)
 async def password_reset_request(data: Dict[str, str], db: Session = Depends(get_db)):

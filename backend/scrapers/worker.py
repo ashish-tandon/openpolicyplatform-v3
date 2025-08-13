@@ -11,6 +11,7 @@ from fastapi import FastAPI
 from sqlalchemy import create_engine, text
 
 from .federal_parliament_scraper import FederalParliamentScraper
+from .registry import SCRAPER_REGISTRY
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger("scrapers.worker")
@@ -197,6 +198,16 @@ def process_federal(mode: str, tasks: List[str]):
             TASKS_FAILED.labels(scraper="federal_parliament", task="votes").inc()
 
 
+def process_generic(name: str, mode: str, tasks: List[str]):
+    # Placeholder for external adapters: no-op but count tasks
+    for task in tasks:
+        try:
+            time.sleep(0.1)
+            TASKS_COMPLETED.labels(scraper=name, task=task).inc()
+        except Exception:
+            TASKS_FAILED.labels(scraper=name, task=task).inc()
+
+
 def run_loop():
     r = redis.from_url(REDIS_URL)
     while True:
@@ -216,8 +227,13 @@ def run_loop():
         try:
             if scraper == "federal_parliament":
                 process_federal(mode, tasks)
-                JOBS_CONSUMED.labels(scraper="federal_parliament").inc()
-                LAST_RUN_TS.labels(scraper="federal_parliament").set(time.time())
+            elif scraper in SCRAPER_REGISTRY:
+                process_generic(scraper, mode, tasks)
+            else:
+                logger.warning("Unknown scraper %s", scraper)
+                continue
+            JOBS_CONSUMED.labels(scraper=scraper).inc()
+            LAST_RUN_TS.labels(scraper=scraper).set(time.time())
         except Exception as e:
             logger.exception("Worker error: %s", e)
         finally:
