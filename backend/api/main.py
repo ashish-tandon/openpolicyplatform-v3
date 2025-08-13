@@ -22,6 +22,7 @@ from .middleware.security import SecurityMiddleware, InputValidationMiddleware, 
 
 from .dependencies import get_current_user
 from .config import settings
+from backend.config.central import validate_service_binding
 
 logger = logging.getLogger("openpolicy.api")
 logging.basicConfig(level=getattr(logging, settings.log_level.upper(), logging.INFO))
@@ -93,6 +94,13 @@ async def lifespan(app: FastAPI):
     app.state.scraper_logs_dir = logs_dir
     logger.info("📁 Scraper reports dir: %s", reports_dir)
     logger.info("📁 Scraper logs dir: %s", logs_dir)
+    # Central config validation
+    try:
+        validate_service_binding("api", settings.host, settings.port, settings.environment)
+    except Exception as e:
+        if settings.environment.lower() == "production":
+            raise
+        logger.warning("Central config validation: %s", e)
     
     yield
     
