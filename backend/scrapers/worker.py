@@ -20,8 +20,8 @@ QUEUE_KEY = os.getenv("SCRAPER_QUEUE_KEY", "scraper_jobs")
 POLL_INTERVAL = float(os.getenv("POLL_INTERVAL", "2.0"))
 BATCH_SIZE = int(os.getenv("BATCH_SIZE", "1"))
 API_BASE = os.getenv("API_BASE", "http://api:8000")
-DATABASE_URL_MAIN = os.getenv("DATABASE_URL_MAIN", os.getenv("DATABASE_URL", "postgresql://openpolicy:openpolicy123@postgres:5432/openpolicy"))
-DATABASE_URL_TEST = os.getenv("DATABASE_URL_TEST", "postgresql://openpolicy:openpolicy123@postgres:5432/openpolicy_test")
+DATABASE_URL_MAIN = os.getenv("DATABASE_URL_MAIN", os.getenv("DATABASE_URL", "postgresql+psycopg://openpolicy:openpolicy123@postgres:5432/openpolicy"))
+DATABASE_URL_TEST = os.getenv("DATABASE_URL_TEST", "postgresql+psycopg://openpolicy:openpolicy123@postgres:5432/openpolicy_test")
 MCP_ENABLED = os.getenv("MCP_ENABLED", "true").lower() == "true"
 MCP_ALLOW_INVALID = os.getenv("MCP_ALLOW_INVALID", "false").lower() == "true"
 

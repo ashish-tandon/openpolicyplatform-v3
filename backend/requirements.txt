@@ -3,7 +3,8 @@
 
 # Core dependencies
 sqlalchemy==2.0.30
-psycopg2-binary==2.9.9
+SQLAlchemy[asyncio]==2.0.30; python_version < '3.13'
+psycopg==3.1.18
 psutil==5.9.8
 requests==2.32.3
 flask==3.0.3
@@ -12,6 +13,7 @@ APScheduler==3.10.4
 
 # Database and ORM
 alembic==1.13.2
+greenlet==3.0.3; python_version < '3.13'
 sqlalchemy-utils==0.41.2
 
 # Monitoring and logging
@@ -25,7 +27,7 @@ flask-cors==4.0.1
 flask-restful==0.3.10
 
 # Data processing
-pandas==2.2.2
+# pandas pinned out for now due to py3.13 wheels unavailability
 numpy==1.26.4
 
 # Testing
@@ -57,3 +59,7 @@ pytz==2024.1
 
 # Headless browser for JS-heavy scraping
 playwright==1.47.0
+
+# HTML parsing and Redis client for scrapers
+beautifulsoup4==4.12.3
+redis==5.0.7
