@@ -10,6 +10,8 @@ imageDigest:
   api: ""
   web: ""
   scraper: ""
+imagePullPolicy: IfNotPresent
+imagePullSecrets: []
 
 resources:
   api:

@@ -22,3 +22,8 @@ helm upgrade --install openpolicy deploy/helm/openpolicy \
 ## Notes
 - Set `SCRAPER_SERVICE_ENABLED=true` via ConfigMap/Secret for API when ready
 - Apply scraper CronJobs by enabling `scraper.enabled=true` and configuring schedules
+
+## Images and Versions
+- Values support repo (`image.*`), tag (`imageTag.*`) and optional digest (`imageDigest.*`)
+- Deployments/CronJobs annotate `app.kubernetes.io/version` for observability
+- Use git tags to set `imageTag.*` in the deploy workflow
