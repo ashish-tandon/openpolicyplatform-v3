@@ -1,8 +1,27 @@
+{{- if .Values.ingress.enabled }}
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
   name: {{ include "openpolicy.fullname" . }}-ingress
 spec:
+  {{- if .Values.ingress.host }}
+  rules:
+    - host: {{ .Values.ingress.host | quote }}
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: {{ include "openpolicy.fullname" . }}-web
+                port: { number: 80 }
+          - path: {{ .Values.ingress.apiPath | default "/api" | quote }}
+            pathType: Prefix
+            backend:
+              service:
+                name: {{ include "openpolicy.fullname" . }}-api
+                port: { number: 8000 }
+  {{- else }}
   rules:
     - http:
         paths:
@@ -12,9 +31,11 @@ spec:
               service:
                 name: {{ include "openpolicy.fullname" . }}-web
                 port: { number: 80 }
-          - path: /api
+          - path: {{ .Values.ingress.apiPath | default "/api" | quote }}
             pathType: Prefix
             backend:
               service:
                 name: {{ include "openpolicy.fullname" . }}-api
                 port: { number: 8000 }
+  {{- end }}
+{{- end }}

@@ -25,3 +25,8 @@ scraper:
       schedule: "0 5 * * *"
       scope: "provincial:on:*"
       mode: daily
+
+ingress:
+  enabled: true
+  host: ""
+  apiPath: "/api"
