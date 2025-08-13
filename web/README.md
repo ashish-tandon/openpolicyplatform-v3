@@ -48,3 +48,28 @@ export default tseslint.config({
   },
 })
 ```
+
+# Web Frontend
+
+## Purpose
+React + Vite frontend consuming backend REST API and exposing admin UI.
+
+## Ports
+- Default: 5173 dev; production behind ingress on port 80 (container)
+
+## Inputs
+- Env: `VITE_API_URL`, analytics flags
+- Central config: ingress host (Helm values)
+
+## Outputs
+- HTML/CSS/JS
+- Admin UI actions calling backend
+
+## Tests
+- E2E (best effort) under `web/tests/e2e`
+
+## Run (dev)
+```bash
+npm install
+npm run dev
+```
