@@ -77,6 +77,13 @@ export default function AdminScrapers() {
                 <input type="date" placeholder="since (YYYY-MM-DD)" value={since} onChange={e=>setSince(e.target.value)} />
               )}
               <button disabled={loading || !scope} onClick={runNow}>Run Now</button>
+              <button disabled={loading} onClick={async()=>{
+                setLoading(true);
+                try {
+                  await fetch("/api/v1/scrapers/run-now", { method:"POST", headers:{"Content-Type":"application/json"}, body: JSON.stringify({ scope: "*:*", mode: "daily" }) });
+                  alert("Queued all daily scrapers");
+                } finally { setLoading(false); }
+              }}>Run All Daily</button>
             </div>
           </div>
         </>

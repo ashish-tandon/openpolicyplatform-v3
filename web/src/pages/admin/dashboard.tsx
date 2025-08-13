@@ -243,6 +243,10 @@ const AdminDashboard: React.FC = () => {
               <a className="bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700 text-center" href="/admin/scrapers">
                 Manage Scrapers
               </a>
+              <button className="bg-indigo-600 text-white px-4 py-2 rounded-md hover:bg-indigo-700" onClick={async()=>{
+                await fetch('/api/v1/scrapers/run-now', {method:'POST', headers:{'Content-Type':'application/json'}, body: JSON.stringify({scope: '*:*', mode: 'daily'})});
+                alert('Queued all daily scrapers');
+              }}>Run All Daily Scrapers</button>
               <a className="bg-green-600 text-white px-4 py-2 rounded-md hover:bg-green-700 text-center" href="/api/v1/dashboard/overview">
                 View API Dashboard JSON
               </a>

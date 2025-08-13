@@ -44,3 +44,15 @@ def test_get_scraper_config_and_toggle_flag():
     assert r.status_code == 200
     r2 = client.get("/api/v1/admin/config/scraper")
     assert r2.json()["scraper_service_enabled"] == (not prev)
+
+def test_run_all_daily_and_unified_status():
+    # Ensure feature flag on
+    client.post("/api/v1/admin/config/scraper/feature-flag", json={"enabled": True})
+    # Run all
+    r = client.post("/api/v1/scrapers/run-now", json={"scope": "*:*", "mode": "daily"})
+    assert r.status_code == 200
+    # Unified status
+    r2 = client.get("/api/v1/admin/status/unified")
+    assert r2.status_code == 200
+    body = r2.json()
+    assert "api" in body and "scraper_service" in body
