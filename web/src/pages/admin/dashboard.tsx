@@ -16,10 +16,15 @@ const AdminDashboard: React.FC = () => {
     activeScrapers: 2,
     lastUpdate: new Date().toISOString()
   });
+  const [unified, setUnified] = useState<any>(null);
+  const [system, setSystem] = useState<any>(null);
+  const [scrapers, setScrapers] = useState<any>(null);
 
   useEffect(() => {
-    // TODO: Fetch dashboard stats from API
     fetchDashboardStats();
+    fetch('/api/v1/admin/status/unified').then(r=>r.json()).then(setUnified).catch(()=>{});
+    fetch('/api/v1/dashboard/system').then(r=>r.json()).then(setSystem).catch(()=>{});
+    fetch('/api/v1/dashboard/scrapers').then(r=>r.json()).then(setScrapers).catch(()=>{});
   }, []);
 
   const fetchDashboardStats = async () => {
@@ -141,7 +146,7 @@ const AdminDashboard: React.FC = () => {
                   <div className="flex-shrink-0">
                     <div className="w-8 h-8 bg-purple-500 rounded-md flex items-center justify-center">
                       <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2z" />
                       </svg>
                     </div>
                   </div>
@@ -160,19 +165,53 @@ const AdminDashboard: React.FC = () => {
             </div>
           </div>
 
+          {/* Scraper Service and Links */}
+          <div className="mt-8 grid grid-cols-1 gap-4 lg:grid-cols-2">
+            <div className="bg-white p-4 rounded shadow">
+              <h2 className="font-semibold mb-2">Scraper Service</h2>
+              <div>Enabled: {unified?.scraper_service?.enabled ? 'true' : 'false'}</div>
+              <div className="mt-2">
+                <h3 className="font-medium">Endpoints</h3>
+                <ul className="list-disc list-inside text-sm text-blue-700">
+                  {unified?.links?.scrapers?.map((p:string)=>(<li key={p}><a href={p}>{p}</a></li>))}
+                </ul>
+              </div>
+              {scrapers && (
+                <div className="mt-2 text-sm">
+                  <div>Total scrapers: {scrapers.total_scrapers}</div>
+                  <div>Active: {scrapers.active_scrapers}</div>
+                  <div>Success rate: {scrapers.success_rate}</div>
+                  <div>Last run: {scrapers.last_run}</div>
+                </div>
+              )}
+            </div>
+            <div className="bg-white p-4 rounded shadow">
+              <h2 className="font-semibold mb-2">System</h2>
+              {system ? (
+                <div className="grid grid-cols-2 gap-2 text-sm">
+                  <div>CPU: {system.cpu_usage}%</div>
+                  <div>Memory: {system.memory_usage}%</div>
+                  <div>Disk: {system.disk_usage}%</div>
+                  <div>Processes: {system.active_processes}</div>
+                  <div>Uptime: {system.uptime}</div>
+                </div>
+              ) : (<div>Loading…</div>)}
+            </div>
+          </div>
+
           {/* Quick Actions */}
           <div className="mt-8">
             <h2 className="text-lg font-medium text-gray-900 mb-4">Quick Actions</h2>
             <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
-              <button className="bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700">
-                Run All Scrapers
-              </button>
-              <button className="bg-green-600 text-white px-4 py-2 rounded-md hover:bg-green-700">
-                View System Status
-              </button>
-              <button className="bg-purple-600 text-white px-4 py-2 rounded-md hover:bg-purple-700">
-                Manage Policies
-              </button>
+              <a className="bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700 text-center" href="/admin/scrapers">
+                Manage Scrapers
+              </a>
+              <a className="bg-green-600 text-white px-4 py-2 rounded-md hover:bg-green-700 text-center" href="/api/v1/dashboard/overview">
+                View API Dashboard JSON
+              </a>
+              <a className="bg-purple-600 text-white px-4 py-2 rounded-md hover:bg-purple-700 text-center" href="/metrics">
+                View Metrics
+              </a>
             </div>
           </div>
         </div>

@@ -16,6 +16,9 @@ import logging
 
 from ..dependencies import get_db, require_admin
 from ..config import settings
+from . import health as health_router
+from . import scraper_admin as scraper_admin_router
+from . import dashboard as dashboard_router
 
 router = APIRouter()
 logger = logging.getLogger("openpolicy.api.admin")
@@ -470,6 +473,34 @@ async def get_system_alerts(
         }
     except Exception as e:
         raise HTTPException(status_code=500, detail=f"Error retrieving alerts: {str(e)}")
+
+@router.get("/status/unified")
+async def unified_status(
+    db: Session = Depends(get_db),
+    current_user = Depends(require_admin)
+):
+    try:
+        return {
+            "api": {"status": "ok", "version": settings.version, "env": settings.environment},
+            "scraper_service": scraper_admin_router.service_status(),
+            "links": {
+                "health": ["/api/v1/health", "/api/v1/health/detailed"],
+                "dashboard": [
+                    "/api/v1/dashboard/overview",
+                    "/api/v1/dashboard/system",
+                    "/api/v1/dashboard/scrapers",
+                    "/api/v1/dashboard/database",
+                ],
+                "scrapers": [
+                    "/api/v1/scrapers/status",
+                    "/api/v1/scrapers/jobs",
+                    "/api/v1/scrapers/run-now",
+                ],
+            },
+            "timestamp": datetime.now().isoformat(),
+        }
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"Error building unified status: {e}")
 
 async def restart_system_services(restart_request: SystemRestartRequest):
     """Background task to restart system services"""
