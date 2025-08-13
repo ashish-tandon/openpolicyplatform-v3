@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: {{ include "openpolicy.fullname" . }}-api
+spec:
+  replicas: 2
+  selector:
+    matchLabels: { app: {{ include "openpolicy.fullname" . }}, tier: api }
+  template:
+    metadata:
+      labels: { app: {{ include "openpolicy.fullname" . }}, tier: api }
+    spec:
+      containers:
+        - name: api
+          image: {{ .Values.image.api }}
+          ports: [{ containerPort: 8000 }]
+          env:
+            - name: SCRAPER_SERVICE_ENABLED
+              value: {{ ternary """true""" """false""" .Values.scraper.enabled | quote }}
+          resources:
+            requests:
+              cpu: {{ .Values.resources.api.requests.cpu | quote }}
+              memory: {{ .Values.resources.api.requests.memory | quote }}
+            limits:
+              cpu: {{ .Values.resources.api.limits.cpu | quote }}
+              memory: {{ .Values.resources.api.limits.memory | quote }}

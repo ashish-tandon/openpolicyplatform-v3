@@ -13,6 +13,7 @@ import psutil
 from datetime import datetime, timedelta
 from pydantic import BaseModel
 import logging
+from pathlib import Path
 
 from ..dependencies import get_db, require_admin
 from ..config import settings
@@ -43,6 +44,8 @@ class SystemBackupRequest(BaseModel):
 
 class FeatureFlagToggle(BaseModel):
     enabled: bool
+
+AUDIT_LOG_FILE = Path(__file__).resolve().parent.parent / "logs" / "admin_audit.log"
 
 @router.get("/dashboard")
 async def get_dashboard_stats(
@@ -531,6 +534,31 @@ async def set_scraper_feature_flag(
         return {"scraper_service_enabled": settings.scraper_service_enabled}
     except Exception as e:
         raise HTTPException(status_code=400, detail=str(e))
+
+@router.get("/audit")
+async def get_admin_audit(limit: int = 100, offset: int = 0, current_user = Depends(require_admin)):
+    try:
+        if not AUDIT_LOG_FILE.exists():
+            return {"events": [], "total": 0}
+        with open(AUDIT_LOG_FILE, "r") as f:
+            lines = f.readlines()
+        total = len(lines)
+        # Get the last N with offset from end
+        start = max(total - offset - limit, 0)
+        end = max(total - offset, 0)
+        window = lines[start:end]
+        events = []
+        for line in window:
+            line = line.strip()
+            if not line:
+                continue
+            try:
+                events.append(json.loads(line))
+            except Exception:
+                events.append({"raw": line})
+        return {"events": events, "total": total, "returned": len(events)}
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"Error reading audit log: {e}")
 
 async def restart_system_services(restart_request: SystemRestartRequest):
     """Background task to restart system services"""

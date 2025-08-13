@@ -1,0 +1,27 @@
+image:
+  api: ghcr.io/your-org/api:latest
+  web: ghcr.io/your-org/web:latest
+  scraper: ghcr.io/your-org/scraper:dev
+
+resources:
+  api:
+    requests: { cpu: 100m, memory: 256Mi }
+    limits: { cpu: 500m, memory: 512Mi }
+  web:
+    requests: { cpu: 50m, memory: 128Mi }
+    limits: { cpu: 200m, memory: 256Mi }
+  scraper:
+    requests: { cpu: 200m, memory: 256Mi }
+    limits: { cpu: 1000m, memory: 1Gi }
+
+scraper:
+  enabled: false
+  schedules:
+    - name: daily-federal
+      schedule: "0 4 * * *"
+      scope: "federal:*"
+      mode: daily
+    - name: daily-prov-on
+      schedule: "0 5 * * *"
+      scope: "provincial:on:*"
+      mode: daily

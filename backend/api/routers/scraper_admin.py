@@ -6,6 +6,8 @@ import sys, subprocess
 from datetime import datetime
 import json as _json
 from pathlib import Path
+from collections import deque
+from time import time as _now
 
 router = APIRouter(prefix="/api/v1/scrapers", tags=["scrapers"])
 
@@ -17,6 +19,21 @@ JOB_REGISTRY: Dict[str, Dict] = {
 
 AUDIT_LOG_PATH = Path(__file__).resolve().parent.parent.parent / "logs" / "admin_audit.log"
 AUDIT_LOG_PATH.parent.mkdir(parents=True, exist_ok=True)
+
+_RATE_BUCKET_RUN: deque = deque()
+_RATE_BUCKET_TOGGLE: deque = deque()
+_RATE_LIMIT = 10  # events per minute
+
+def _rate_ok(bucket: deque) -> bool:
+    now = _now()
+    window = 60.0
+    # drop older than 60s
+    while bucket and now - bucket[0] > window:
+        bucket.popleft()
+    if len(bucket) >= _RATE_LIMIT:
+        return False
+    bucket.append(now)
+    return True
 
 def _audit(event: dict):
     try:
@@ -53,6 +70,8 @@ def list_jobs():
 def toggle_job(body: ToggleJobRequest):
     if not getattr(settings, "scraper_service_enabled", False):
         raise HTTPException(status_code=503, detail="Scraper service disabled")
+    if not _rate_ok(_RATE_BUCKET_TOGGLE):
+        raise HTTPException(status_code=429, detail="Too many toggle requests")
     if body.job_id not in JOB_REGISTRY:
         raise HTTPException(status_code=404, detail="Job not found")
     JOB_REGISTRY[body.job_id]["enabled"] = body.enabled
@@ -70,6 +89,8 @@ def _run_cli_async(mode: str, scope: str, since: Optional[str] = None):
 def run_now(body: RunNowRequest, background_tasks: BackgroundTasks):
     if not getattr(settings, "scraper_service_enabled", False):
         raise HTTPException(status_code=503, detail="Scraper service disabled")
+    if not _rate_ok(_RATE_BUCKET_RUN):
+        raise HTTPException(status_code=429, detail="Too many run requests")
     background_tasks.add_task(_run_cli_async, body.mode, body.scope, body.since)
     # Record last_run best-effort
     key = f"{body.scope}:{body.mode}" if ":" not in body.scope.split(":")[-1] else body.scope
