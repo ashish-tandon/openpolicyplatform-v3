@@ -11,7 +11,7 @@ from sqlalchemy import create_engine, text
 from sqlalchemy.orm import sessionmaker
 from sqlalchemy.pool import StaticPool
 
-from api.main import app
+from backend.api.main import app
 from config.database import get_database_session
 import jwt
 from datetime import datetime, timedelta, timezone
