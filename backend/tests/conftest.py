@@ -15,6 +15,8 @@ from api.main import app
 from config.database import get_database_session
 import jwt
 
+TEST_JWT_SECRET = "test_secret_key"
+
 # Determine test database URL with environment overrides and safe fallbacks
 TEST_DATABASE_URL = (
     os.getenv("TEST_DATABASE_URL")

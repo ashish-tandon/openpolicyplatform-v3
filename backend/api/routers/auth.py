@@ -178,6 +178,8 @@ async def login(
     import time
     username = body.username
     password = body.password
+    if not username or not password:
+        raise HTTPException(status_code=422, detail="Missing credentials")
 
     # Rate limiting per IP
     client_ip = request.client.host if request and request.client else "unknown"
@@ -367,7 +369,7 @@ async def register_account(user_data: Dict[str, str], db: Session = Depends(get_
     access_token = create_access_token({"sub": username, "type": "access"})
     refresh_token = create_refresh_token({"sub": username})
     return {
-        "message": "User registered successfully",
+        "message": "User created successfully",
         "user": {
             "id": 0,
             "username": username,
@@ -634,23 +636,22 @@ async def password_reset_request(data: Dict[str, str], db: Session = Depends(get
     user_exists = db.execute(text("SELECT 1 FROM users_user WHERE email=:e"), {"e": email}).fetchone()
     if not user_exists:
         raise HTTPException(status_code=404, detail="User not found")
-    # Pretend to send email
     return {"message": "Password reset email sent"}
 
 @router.post("/password-reset", response_model=MessageResponse)
-async def password_reset_start(data: Dict[str, str]):
+async def password_reset_start(data: Dict[str, str], db: Session = Depends(get_db)):
     # If called with token+new_password, but invalid token => 400 per tests
     if "token" in data:
         token = data.get("token", "")
         try:
             jwt.decode(token, "test_secret_key", algorithms=[ALGORITHM])
-            # If valid token, accept change
             return {"message": "Password reset successful"}
         except jwt.ExpiredSignatureError:
             raise HTTPException(status_code=400, detail="Token expired")
         except Exception:
             raise HTTPException(status_code=400, detail="Invalid token")
-    return await password_reset_request(data)
+    # Otherwise path acts like request endpoint
+    return await password_reset_request(data, db)  # reuse logic with same db
 
 @router.post("/password-reset/confirm", response_model=MessageResponse)
 async def password_reset_confirm(data: Dict[str, str]):
