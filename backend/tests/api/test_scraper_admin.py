@@ -61,3 +61,10 @@ def test_run_all_daily_and_unified_status(auth_headers):
     assert r2.status_code == 200
     body = r2.json()
     assert "api" in body and "scraper_service" in body
+
+
+def test_effective_config_endpoint(auth_headers):
+    r = client.get("/api/v1/admin/config/effective", headers=auth_headers)
+    assert r.status_code == 200
+    data = r.json()
+    assert "host" in data and "port" in data and "environment" in data

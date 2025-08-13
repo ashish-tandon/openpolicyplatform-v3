@@ -535,6 +535,17 @@ async def set_scraper_feature_flag(
     except Exception as e:
         raise HTTPException(status_code=400, detail=str(e))
 
+@router.get("/config/effective")
+async def get_effective_config(current_user = Depends(require_admin)):
+    return {
+        "host": settings.host,
+        "port": settings.port,
+        "environment": settings.environment,
+        "allowed_hosts": settings.allowed_hosts,
+        "allowed_origins": settings.allowed_origins,
+        "scraper_service_enabled": getattr(settings, "scraper_service_enabled", False),
+    }
+
 @router.get("/audit")
 async def get_admin_audit(limit: int = 100, offset: int = 0, current_user = Depends(require_admin)):
     try:
