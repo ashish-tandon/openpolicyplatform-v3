@@ -52,3 +52,14 @@ Notes:
 Validation
 - On deploy, verify all REQUIRED variables are set for target service
 - Consider adding a startup guard to fail fast if variables are missing (planned)
+
+### Scraper Service
+- `SCRAPER_SERVICE_ENABLED` (bool): Feature flag for the scraper subsystem.
+- `SCRAPERS_DATABASE_URL` (string): Postgres DSN for scraper DB.
+- `SCRAPER_CONCURRENCY` (int): Parallelism.
+- `SCRAPER_RATE_LIMIT_PER_DOMAIN` (rate): e.g., `10/min`.
+- `SCRAPER_USER_AGENT` (string): Identification header.
+- `SCRAPER_TIMEOUTS` (int): Seconds per request.
+- `SCRAPER_RETRIES` (int): Retry attempts.
+- `SCHEDULER_ENABLED` (bool): Enables internal scheduler for local/dev.
+- `SCHEDULER_DEFAULT_SCOPE` (string): Default scope selector for jobs.

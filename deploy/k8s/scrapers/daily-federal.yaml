@@ -1,0 +1,19 @@
+apiVersion: batch/v1
+kind: CronJob
+metadata:
+  name: scrapers-daily-federal
+spec:
+  schedule: "0 4 * * *"
+  jobTemplate:
+    spec:
+      backoffLimit: 2
+      template:
+        spec:
+          restartPolicy: Never
+          containers:
+            - name: runner
+              image: ghcr.io/your-org/scraper:dev
+              args: ["python","-m","services.scraper.cli","--mode","daily","--scope","federal:*"]
+              envFrom:
+                - secretRef: { name: openpolicy-secrets }
+                - configMapRef: { name: openpolicy-config }

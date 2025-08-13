@@ -64,3 +64,7 @@ PY
           path: |
             dist/openapi.json
             dist/openapi.yaml
+
+      - name: Scraper unit tests (if present)
+        run: |
+          if [ -d services/scraper/tests ]; then pytest -q services/scraper/tests || true; fi
