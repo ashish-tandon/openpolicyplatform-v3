@@ -6,6 +6,8 @@ import pytest
 import asyncio
 import os
 import sys
+# Ensure SQLite for tests to avoid external DB
+os.environ.setdefault("DATABASE_URL", "sqlite+pysqlite:///:memory:")
 from typing import Generator, AsyncGenerator
 from fastapi.testclient import TestClient
 from sqlalchemy import create_engine, text
