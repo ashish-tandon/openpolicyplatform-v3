@@ -1,0 +1,19 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: {{ include "openpolicy.fullname" . }}-api
+spec:
+  selector: { app: {{ include "openpolicy.fullname" . }}, tier: api }
+  ports:
+    - port: 8000
+      targetPort: 8000
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: {{ include "openpolicy.fullname" . }}-web
+spec:
+  selector: { app: {{ include "openpolicy.fullname" . }}, tier: web }
+  ports:
+    - port: 80
+      targetPort: 80

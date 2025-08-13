@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: {{ include "openpolicy.fullname" . }}-web
+spec:
+  replicas: 1
+  selector:
+    matchLabels: { app: {{ include "openpolicy.fullname" . }}, tier: web }
+  template:
+    metadata:
+      labels: { app: {{ include "openpolicy.fullname" . }}, tier: web }
+    spec:
+      containers:
+        - name: web
+          image: {{ .Values.image.web }}
+          ports: [{ containerPort: 80 }]
+          resources:
+            requests:
+              cpu: {{ .Values.resources.web.requests.cpu | quote }}
+              memory: {{ .Values.resources.web.requests.memory | quote }}
+            limits:
+              cpu: {{ .Values.resources.web.limits.cpu | quote }}
+              memory: {{ .Values.resources.web.limits.memory | quote }}
