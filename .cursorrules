@@ -38,3 +38,24 @@
 - OpenAPI export: `bash scripts/export-openapi.sh`
 - Docker build: `docker compose -f backend/docker-compose.yml up -d --build`
 - Local dev: `./scripts/start-all.sh`
+
+# Scraper Service Rules
+- Keep existing scrapers via adapters under `services/scraper/adapters/*`.
+- Do not rewrite upstream logic; normalize outputs and upsert.
+- Emit metrics and journal runs.
+- Respect rate limits and user agent string.
+
+# API Rules
+- Prefer FastAPI routers under `backend/api/routers/*`.
+- Add feature flags to config and gate endpoints as needed.
+- Log admin actions to audit log.
+
+# UI Rules
+- Use reusable components (e.g., StatCard) and tabs for admin sections.
+- Fetch from `/api/v1/dashboard/*`, `/api/v1/scrapers/*`, `/api/v1/admin/*`.
+- Accessibility: buttons/labels; show loading and error states.
+
+# Single Source of Truth
+- Service params: `docs/operations/environment-variables.md`, Helm values.
+- Data schemas: `services/scraper/core/types.py`, API response models.
+- Startup & deployment: `docs/deployment/production-runbook.md`, Helm chart.

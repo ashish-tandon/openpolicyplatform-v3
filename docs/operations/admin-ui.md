@@ -16,3 +16,11 @@
 - Scraper Config: shows DB, concurrency, rate limit, UA, timeouts, retries, scheduler
 - Toggle Feature Flag: flips `SCRAPER_SERVICE_ENABLED` via admin endpoint
 - Quick Actions: Manage Scrapers, Run All Daily, View API Dashboard JSON, View Metrics
+
+## Enhancements
+- Stat cards on dashboard for quick overview
+- Tabs on scrapers page: Jobs, Status, Logs, Failures
+- Run All Daily action and scope/mode/since controls
+- Admin Audit page with pagination
+- Navigation links to Admin pages
+- Analytics: add hooks at page mount (placeholder) and on actions (run-now, toggle)
