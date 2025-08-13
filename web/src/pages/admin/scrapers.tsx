@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Toast from "../../components/shared/Toast";
+import { useAnalytics } from "../../hooks/useAnalytics";
 
 type Job = { id: string; enabled: boolean; last_run: string | null };
 
@@ -20,6 +21,7 @@ export default function AdminScrapers() {
   const [status, setStatus] = useState<ScraperStatus[]>([]);
   const [logs, setLogs] = useState<LogLine[]>([]);
   const [failures, setFailures] = useState<any>(null);
+  const { track } = useAnalytics();
 
   const refresh = async () => {
     setError("");
@@ -45,16 +47,20 @@ export default function AdminScrapers() {
       }
     } catch (e: any) {
       setError(e?.message || "Failed to load");
+      setToast({ msg: e?.message || 'Failed to load', type: 'error' });
     }
   };
 
-  useEffect(() => { refresh(); }, []);
+  useEffect(() => { refresh(); track({ name: 'admin_scrapers_view' }); }, []);
 
   const runNow = async () => {
     setLoading(true);
     try {
       await fetch("/api/v1/scrapers/run-now", { method:"POST", headers:{"Content-Type":"application/json"}, body: JSON.stringify({ scope, mode, since: since || undefined }) });
       setToast({msg:`Queued: ${scope} (${mode}${since?`, since ${since}`:''})`, type:'success'});
+      track({ name: 'scrapers_run_now', props: { scope, mode, since: since || undefined } });
+    } catch (e: any) {
+      setToast({ msg: e?.message || 'Run failed', type: 'error' });
     } finally { setLoading(false); }
   };
 
@@ -63,6 +69,9 @@ export default function AdminScrapers() {
     try {
       await fetch("/api/v1/scrapers/jobs/toggle", { method:"POST", headers:{"Content-Type":"application/json"}, body: JSON.stringify({ job_id: job.id, enabled: next }) });
       await refresh();
+      track({ name: next ? 'scraper_job_enable' : 'scraper_job_disable', props: { job_id: job.id } });
+    } catch (e: any) {
+      setToast({ msg: e?.message || 'Toggle failed', type: 'error' });
     } finally { setLoading(false); }
   };
 
@@ -111,6 +120,9 @@ export default function AdminScrapers() {
                   try {
                     await fetch("/api/v1/scrapers/run-now", { method:"POST", headers:{"Content-Type":"application/json"}, body: JSON.stringify({ scope: "*:*", mode: "daily" }) });
                     setToast({msg:"Queued all daily scrapers", type:'success'});
+                    track({ name: 'scrapers_run_all_daily' });
+                  } catch (e: any) {
+                    setToast({ msg: e?.message || 'Run all failed', type: 'error' });
                   } finally { setLoading(false); }
                 }}>Run All Daily</button>
               </div>
