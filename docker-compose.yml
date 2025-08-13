@@ -11,18 +11,19 @@ services:
       - "5432:5432"
     volumes:
       - pgdata:/var/lib/postgresql/data
+      - ./docker/postgres-init:/docker-entrypoint-initdb.d:ro
 
   api:
     build:
       context: ./backend
     environment:
-      - DATABASE_URL=postgresql://openpolicy:openpolicy123@postgres:5432/openpolicy_app
-      - APP_DATABASE_URL=postgresql://openpolicy:openpolicy123@postgres:5432/openpolicy_app
-      - SCRAPERS_DATABASE_URL=postgresql://openpolicy:openpolicy123@postgres:5432/openpolicy_scrapers
-      - AUTH_DATABASE_URL=postgresql://openpolicy:openpolicy123@postgres:5432/openpolicy_auth
+      - DATABASE_URL=postgresql://openpolicy:openpolicy123@postgres:5432/openpolicy
+      - APP_DATABASE_URL=postgresql://openpolicy:openpolicy123@postgres:5432/openpolicy
+      - SCRAPERS_DATABASE_URL=postgresql://openpolicy:openpolicy123@postgres:5432/openpolicy
+      - AUTH_DATABASE_URL=postgresql://openpolicy:openpolicy123@postgres:5432/openpolicy
       - DB_HOST=postgres
       - DB_PORT=5432
-      - DB_NAME=openpolicy_app
+      - DB_NAME=openpolicy
       - DB_USER=openpolicy
       - DB_PASSWORD=openpolicy123
     ports:
@@ -46,6 +47,48 @@ services:
     image: redis:7-alpine
     ports:
       - "6379:6379"
+
+  # Scraper orchestrator (schedules and enqueues jobs)
+  scrapers-orchestrator:
+    build:
+      context: ./backend
+    command: ["uvicorn", "scrapers.orchestrator:app", "--host", "0.0.0.0", "--port", "8010"]
+    environment:
+      - REDIS_URL=redis://redis:6379/0
+      - SCRAPER_QUEUE_KEY=scraper_jobs
+      - ENABLED_SCRAPERS_PROD=federal_parliament
+      - ENABLED_SCRAPERS_TEST=federal_parliament,represent_opennorth_ref
+    ports:
+      - "8010:8010"
+    depends_on:
+      - redis
+
+  # Scraper worker (executes jobs)
+  scrapers-worker:
+    build:
+      context: ./backend
+    command: ["uvicorn", "scrapers.worker:app", "--host", "0.0.0.0", "--port", "8011"]
+    environment:
+      - REDIS_URL=redis://redis:6379/0
+      - SCRAPER_QUEUE_KEY=scraper_jobs
+      - DATABASE_URL_MAIN=postgresql://openpolicy:openpolicy123@postgres:5432/openpolicy
+      - DATABASE_URL_TEST=postgresql://openpolicy:openpolicy123@postgres:5432/openpolicy_test
+      - MCP_ENABLED=true
+      - MCP_ALLOW_INVALID=false
+    ports:
+      - "8011:8011"
+    depends_on:
+      - redis
+      - postgres
+
+  # Headless browser for JS-heavy scraping
+  headless-browser:
+    image: browserless/chrome:latest
+    environment:
+      - "MAX_CONCURRENT_SESSIONS=5"
+      - "CONNECTION_TIMEOUT=60000"
+    ports:
+      - "9222:3000"
 
   prometheus:
     image: prom/prometheus:latest

@@ -5,7 +5,7 @@ Database Configuration for Unified Open Policy Platform
 import os
 from typing import Optional
 from pydantic_settings import BaseSettings
-from sqlalchemy import create_engine, Engine
+from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker, Session
 from sqlalchemy.pool import StaticPool
 
@@ -54,7 +54,7 @@ class DatabaseConfig(BaseSettings):
 # Global database configuration
 db_config = DatabaseConfig()
 
-def create_database_engine() -> Engine:
+def create_database_engine():
     """Create database engine"""
     engine = create_engine(
         db_config.get_url(),
@@ -66,16 +66,17 @@ def create_database_engine() -> Engine:
     )
     return engine
 
+
 def get_session_factory():
     """Get session factory"""
     engine = create_database_engine()
     return sessionmaker(autocommit=False, autoflush=False, bind=engine)
+
 
 def get_database_session() -> Session:
     """Get database session"""
     SessionLocal = get_session_factory()
     return SessionLocal()
 
-# Global engine instance
-engine = create_database_engine()
-SessionLocal = get_session_factory()
+# Global engine instance is intentionally not created at import time to avoid side effects during testing.
+# Use create_database_engine() and get_session_factory() when needed at runtime.

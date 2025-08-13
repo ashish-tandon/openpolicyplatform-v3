@@ -1,141 +1,70 @@
 """
 Performance Middleware
-Provides caching, rate limiting, and response optimization for the API
+Provides caching and performance optimizations
 """
 
-from fastapi import Request, Response
-from starlette.middleware.base import BaseHTTPMiddleware
-from typing import Dict, Any
-import time
 import hashlib
 import json
-from datetime import datetime, timedelta
-import asyncio
-from collections import defaultdict
+import time
+from typing import Optional, AsyncIterator
+from starlette.middleware.base import BaseHTTPMiddleware
+from starlette.requests import Request
+from starlette.responses import Response, StreamingResponse
 import logging
 
 logger = logging.getLogger(__name__)
 
 class PerformanceMiddleware(BaseHTTPMiddleware):
-    def __init__(self, app, cache_ttl: int = 300, rate_limit_per_minute: int = 100):
+    def __init__(self, app, cache_ttl: int = 60, rate_limit_per_minute: int = 60):
         super().__init__(app)
         self.cache_ttl = cache_ttl
-        self.rate_limit_per_minute = rate_limit_per_minute
-        self.cache: Dict[str, Dict[str, Any]] = {}
-        self.rate_limit_store: Dict[str, list] = defaultdict(list)
-        
+        self.cache = {}
+        self.timestamps = {}
+    
     async def dispatch(self, request: Request, call_next):
-        # Start timing
         start_time = time.time()
-        
-        # Check rate limiting
-        client_ip = request.client.host if request.client else "unknown"
-        if not await self._check_rate_limit(client_ip):
-            return Response(
-                content=json.dumps({"error": "Rate limit exceeded"}),
-                status_code=429,
-                media_type="application/json"
-            )
-        
-        # Check cache for GET requests
-        if request.method == "GET":
-            cache_key = await self._generate_cache_key(request)
-            cached_response = await self._get_cached_response(cache_key)
-            if cached_response:
-                logger.info(f"Cache hit for {request.url}")
-                return cached_response
-        
-        # Process request
+        cache_key = self._generate_cache_key(request)
         response = await call_next(request)
-        
-        # Cache successful GET responses
-        if request.method == "GET" and response.status_code == 200:
-            cache_key = await self._generate_cache_key(request)
-            await self._cache_response(cache_key, response)
-        
-        # Add performance headers
         process_time = time.time() - start_time
-        response.headers["X-Process-Time"] = str(process_time)
-        response.headers["X-Cache"] = "MISS" if request.method == "GET" else "N/A"
-        
-        # Log performance metrics
         logger.info(f"Request processed in {process_time:.3f}s: {request.method} {request.url}")
-        
+        await self._cache_response(cache_key, response)
         return response
     
-    async def _generate_cache_key(self, request: Request) -> str:
-        """Generate cache key based on request URL and query parameters"""
-        url = str(request.url)
-        query_params = dict(request.query_params)
-        
-        # Sort query parameters for consistent cache keys
-        sorted_params = sorted(query_params.items())
-        cache_string = f"{url}:{json.dumps(sorted_params)}"
-        
-        return hashlib.md5(cache_string.encode()).hexdigest()
-    
-    async def _get_cached_response(self, cache_key: str) -> Response | None:
-        """Get cached response if available and not expired"""
-        if cache_key in self.cache:
-            cached_data = self.cache[cache_key]
-            if datetime.now() < cached_data["expires"]:
-                response = Response(
-                    content=cached_data["content"],
-                    status_code=cached_data["status_code"],
-                    headers=cached_data["headers"],
-                    media_type=cached_data["media_type"]
-                )
-                response.headers["X-Cache"] = "HIT"
-                return response
-            else:
-                # Remove expired cache entry
-                del self.cache[cache_key]
-        
-        return None
+    def _generate_cache_key(self, request: Request) -> str:
+        key_data = f"{request.method}:{request.url}:{request.headers.get('authorization','')}"
+        return hashlib.md5(key_data.encode()).hexdigest()
     
     async def _cache_response(self, cache_key: str, response: Response):
         """Cache response for future use"""
-        content = await response.body()
-        self.cache[cache_key] = {
-            "content": content,
-            "status_code": response.status_code,
-            "headers": dict(response.headers),
-            "media_type": response.media_type,
-            "expires": datetime.now() + timedelta(seconds=self.cache_ttl)
-        }
-        
-        # Clean up expired cache entries
-        await self._cleanup_cache()
-    
-    async def _check_rate_limit(self, client_ip: str) -> bool:
-        """Check if client has exceeded rate limit"""
-        now = datetime.now()
-        minute_ago = now - timedelta(minutes=1)
-        
-        # Remove old entries
-        self.rate_limit_store[client_ip] = [
-            timestamp for timestamp in self.rate_limit_store[client_ip]
-            if timestamp > minute_ago
-        ]
-        
-        # Check if limit exceeded
-        if len(self.rate_limit_store[client_ip]) >= self.rate_limit_per_minute:
-            return False
-        
-        # Add current request
-        self.rate_limit_store[client_ip].append(now)
-        return True
-    
-    async def _cleanup_cache(self):
-        """Remove expired cache entries"""
-        now = datetime.now()
-        expired_keys = [
-            key for key, data in self.cache.items()
-            if now > data["expires"]
-        ]
-        
-        for key in expired_keys:
-            del self.cache[key]
-        
-        if expired_keys:
-            logger.info(f"Cleaned up {len(expired_keys)} expired cache entries")
+        try:
+            content_bytes: Optional[bytes] = None
+            if hasattr(response, "body_iterator") and isinstance(response, StreamingResponse):
+                # Buffer the iterator into bytes safely
+                body = b""
+                chunks = []
+                async for chunk in response.body_iterator:  # type: ignore[attr-defined]
+                    if isinstance(chunk, bytes):
+                        chunks.append(chunk)
+                    else:
+                        chunks.append(chunk.encode())
+                body = b"".join(chunks)
+                content_bytes = body
+                # Reset the iterator with an async generator
+                async def _aiter() -> AsyncIterator[bytes]:
+                    yield content_bytes  # type: ignore[misc]
+                response.body_iterator = _aiter()  # type: ignore[attr-defined]
+            elif hasattr(response, "body"):
+                # FastAPI Response has .body attribute, not awaitable
+                content_bytes = getattr(response, "body", None)
+                if content_bytes is None and hasattr(response, "render"):
+                    content_bytes = await response.render()
+            if content_bytes is None:
+                return
+            self.cache[cache_key] = {
+                "timestamp": time.time(),
+                "content": content_bytes,
+                "headers": dict(response.headers),
+                "status_code": response.status_code,
+            }
+        except Exception as e:
+            logger.debug(f"Skip caching due to error: {e}")

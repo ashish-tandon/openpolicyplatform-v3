@@ -11,29 +11,34 @@ from .config import settings
 from config.database import get_database_session
 
 # Security scheme
-security = HTTPBearer()
+security = HTTPBearer(auto_error=False)
 
-def get_db() -> Session:
-    """Get database session"""
-    db = get_database_session()
+# Expose DB session via FastAPI dependency injection so tests can override it
+
+def get_db(db: Session = Depends(get_database_session)):
+    """Yield a database session that can be overridden in tests."""
     try:
         yield db
     finally:
         db.close()
 
+
 def get_current_user(
-    credentials: HTTPAuthorizationCredentials = Depends(security),
+    credentials: Optional[HTTPAuthorizationCredentials] = Depends(security),
     db: Session = Depends(get_db)
 ):
     """Get current authenticated user"""
-    # TODO: Implement JWT token validation
-    # For now, return a mock user
+    if credentials is None:
+        raise HTTPException(status_code=status.HTTP_401_UNAUTHORIZED, detail="Not authenticated")
+    # TODO: Implement JWT token validation properly
+    # For tests, return a mock user
     return {
         "id": 1,
         "username": "admin",
         "email": "admin@openpolicy.com",
         "role": "admin"
     }
+
 
 def require_admin(current_user = Depends(get_current_user)):
     """Require admin role"""
